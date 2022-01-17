@@ -1,0 +1,148 @@
+{
+    "EspMed": [
+        {
+            "title": "Cardiologia",
+            "text": "A Cardiologia é a especialidade médica que se destaca pelo diagnóstico e tratamento das doenças do coração e restantes componentes do sistema circulatório."
+        },
+        {
+            "title": "Cirurgia Plástica",
+            "text": "A Cirurgia Plástica tem como objetivo a modificação reconstrutiva de uma parte do corpo com motivo médico ou estético."
+        },
+        {
+            "title": "Fisioterapia",
+            "text": "A Fisioterapia é uma área que estuda, diagnostica, previne e trata disfunções cinético funcionais decorrentes de orgãos ou sistemas do corpo humano."
+        },
+        {
+            "title": "Dermatologia",
+            "text": "A Dermatologia é a especialidade da medicina que se ocupa das doenças que afetam o maior orgão do corpo humano, a pele."
+        },
+        {
+            "title": "Clínica Geral",
+            "text": "A Clínica Geral é especialidade médica que tem como fundamento o primeiro contacto do paciente com os cuidados primários de saúde."
+        },
+        {
+            "title": "Fisiatria",
+            "text": "A Fisiatria é a área da medicina que se dedica à recuperação da função física e cognitiva que pode estar alterada por diversos tipos de doenças."
+        },
+        {
+            "title": "Ginecologia-Obstetrícia",
+            "text": "A Ginecologia é a especialidade médica que estuda as patologias do aparelho reprodutor feminino. A Obstetrícia é a área médica que se ocupa da gravidez e parto."
+        },
+        {
+            "title": "Medicina Interna",
+            "text": "A Medicina Interna é a especialidade que aborda o estado de saúde do paciente no seu todo, tendo em conta os vários distúrbios que podem afetar o seu organismo."
+        },
+        {
+            "title": "Neurologia",
+            "text": "A Neurologia define-se como a especialidade médica que trata das disfunções estruturais do sistema nervoso."
+        },
+        {
+            "title": "Nutrição",
+            "text": "A nutrição é a área clínica que orienta pessoas que necessitem de dieta alimentar específica, como os casos de excesso de peso, diabéticos, hipertensos e outros."
+        },
+        {
+            "title": "Ortopedia",
+            "text": "A Ortopedia é a especialidade que se dedica ao estudo e tratamento de deformações dos ossos, das articulações, dos músculos e dos tendões."
+        },
+        {
+            "title": "Otorrino­laringologia",
+            "text": "A Otorrinolaringologia é a especialidade da medicina que se ocupa do diagnóstico e tratamento das doenças de ouvido, nariz e garganta."
+        },
+        {
+            "title": "Pediatria",
+            "text": "A Pediatria é a área da medicina que trata o ser humano desde o nascimento até à maioridade."
+        },
+        {
+            "title": "Pneumologia",
+            "text": "A Pneumologia é a área da medicina que diagnostica e trata as doenças do aparelho respiratório."
+        },
+        {
+            "title": "Podologia",
+            "text": "A Podologia é uma área da saúde que visa o diagnóstico, tratamento e prevenção de doenças relacionadas com os pés."
+        },
+        {
+            "title": "Psicologia",
+            "text": "A Psicologia é a área da saúde que estuda os processos mentais e do comportamento do ser humano e a sua interação com o ambiente físico e social."
+        },
+        {
+            "title": "Psiquiatria",
+            "text": "A Psiquiatria é a área da medicina que lida com prevenção, diagnóstico e tratamento das diferentes perturbações mentais, sejam elas de origem orgânica ou funcional."
+        },
+        {
+            "title": "Terapia da Fala",
+            "text": "É a área da saúde responsável pelo estudo, prevenção e tratamento das alterações da comunicação."
+        },
+        {
+            "title": "Terapia Ocupacional",
+            "text": "A Terapia Ocupacional é uma profissão relacionada com a promoção da saúde e bem-estar através da ocupação."
+        }
+    ],
+    "MedDent": [
+        {
+            "title": "Cirurgia Oral",
+            "text": "Cirurgia Oral é a área da Medicina Dentária que engloba intervenções cirúrgicas."
+        },
+        {
+            "title": "Ortodontia",
+            "text": "Ortodontia é a especialidade que trata os problemas relacionados com o mau posicionamento dentário e ósseo."
+        },
+        {
+            "title": "Implantologia",
+            "text": "Implantologia é a área da Medicina Dentária que visa a substituição de dentes perdidos através da colocação de implantes."
+        },
+        {
+            "title": "Odonto­pediatria",
+            "text": "Odontopediatria é a especialidade da Medicina Dentária que se dedica à saúde oral dos bebés, crianças e adolescentes."
+        },
+        {
+            "title": "Dentisteria",
+            "text": "A dentisteria é a especialidade responsável pela restauração de lesões dentárias restituindo assim a aparência original do dente."
+        },
+        {
+            "title": "Endodontia",
+            "text": "Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente."
+        },
+        {
+            "title": "Oclusão",
+            "text": "Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias."
+        },
+        {
+            "title": "Reabilitação Oral",
+            "text": "Reabilitação oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social."
+        }
+    ],
+    "ExaMed": [
+        {
+            "title": "Análises Clínicas",
+            "text": "Em parceria com a Avelab, a UpCare Medical Center dispôe deste serviço na sua clínica todos os dias da semana."
+        },
+        {
+            "title": "CBCT",
+            "text": "A TAC dentária é uma técnica de imagiologia que permite obter imagens 3D das estruturas da cabeça em foco na Medicina Dentária."
+        },
+        {
+            "title": "Electro­cardiograma",
+            "text": "O ECG detecta os impulsos eléctricos do coração e permite analisar o ritmo cardíaco e suas alterações."
+        },
+        {
+            "title": "Espirometria",
+            "text": "Exame que mede o fluxo de ar que entra e sai dos pulmões. Pode ser realizado com broncodilatação."
+        },
+        {
+            "title": "Exames Genéticos",
+            "text": "Em parceria com a Genética dispomos de testes genéticos de rastreio pré-natal não invasivos, assim como testes de avaliação de risco."
+        },
+        {
+            "title": "Holter de 24h",
+            "text": "Eletrocardiograma dinâmico que regista a atividade cardíaca ao longo de 24h."
+        },
+        {
+            "title": "Laser",
+            "text": "Atualmente o laser permite cirurgias com melhor pós operatório, assim como acelera a recuperação dos pacientes com problemas musculares e esqueléticos."
+        },
+        {
+            "title": "Polissono­grafia",
+            "text": "A polissonografia é um exame que mede a atividade respiratória, muscular e cerebral durante o sono."
+        }
+    ]
+}

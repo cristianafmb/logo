@@ -1,0 +1,342 @@
+{
+    "banner": "../images/medicinadentaria/background-banner.svg",
+    "head": "Os Nossos Serviços",
+    "title": "Medicina Dentária",
+    "backgroundtop": "../images/medicinadentaria/background-top.svg",
+    "backgroundfooter": "../images/background-footer.svg",
+    "areas": {
+        "head": "Áreas Clínicas",
+        "areas": [
+            {
+                "area": "Especialidades",
+                "link": "/especialidades"
+            },
+            {
+                "area": "Medicina Dentária",
+                "link": "/medicinadentaria"
+            },
+            {
+                "area": "Exames & Análises",
+                "link": "/examesanalises"
+            }
+        ]
+    },
+    "cards": [
+        {
+            "title": "Cirurgia Oral",
+            "details": "Área que engloba não só pequenas intervenções cirúrgicas mas também intervenções cirúrgicas mais complexas, como por exemplo enxertos ósseos.",
+            "btntext": "Saber Mais",
+            "link": "/medicinadentaria/cirurgiaoral"
+        },
+        {
+            "title": "Dentisteria",
+            "details": "Especialidade responsável pela restauração de lesões dentárias, tais como, cáries, alterações de forma, coloração e fracturas dos dentes.",
+            "btntext": "Saber Mais",
+            "link": "/medicinadentaria/dentisteria"
+        },
+        {
+            "title": "Endodontia",
+            "details": "Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente.",
+            "btntext": "Saber Mais",
+            "link": "/medicinadentaria/endodontia"
+        },
+        {
+            "title": "Implantologia",
+            "details": "Área da medicina dentária que visa a substituição de dentes perdidos, tendo como objectivo a reabilitação fixa de espaços edêntulos, através da colocação de implantes.",
+            "btntext": "Saber Mais",
+            "link": "/medicinadentaria/implantologia"
+        },
+        {
+            "title": "Oclusão",
+            "details": "Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias.",
+            "btntext": "Saber Mais",
+            "link": "/medicinadentaria/oclusao"
+        },
+        {
+            "title": "Odontopediatria",
+            "details": "É a especialidade da Medicina Dentária que se dedica à prevenção, tratamento e manutenção da saúde oral dos bebés, crianças e adolescentes.",
+            "btntext": "Saber Mais",
+            "link": "/medicinadentaria/odontopediatria"
+        },
+        {
+            "title": "Ortodontia",
+            "details": "Ortodontia é a especialidade que visa diagnosticar, prevenir e tratar os problemas relacionados com o mau posicionamento dentário e ósseo.",
+            "btntext": "Saber Mais",
+            "link": "/medicinadentaria/ortodontia"
+        },
+        {
+            "title": "Reabilitação Oral",
+            "details": "Reabilitação oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social.",
+            "btntext": "Saber Mais",
+            "link": "/medicinadentaria/reabilitacaooral"
+        }
+    ],
+    "subpages": {
+        "areas": [
+            {
+                "area": "Cirurgia Oral",
+                "link": "/cirurgiaoral"
+            },
+            {
+                "area": "Dentisteria",
+                "link": "/dentisteria"
+            },
+            {
+                "area": "Endodontia",
+                "link": "/endodontia"
+            },
+            {
+                "area": "Implantologia",
+                "link": "/implantologia"
+            },
+            {
+                "area": "Oclusão",
+                "link": "/oclusao"
+            },
+            {
+                "area": "Odontopediatria",
+                "link": "/odontopediatria"
+            },
+            {
+                "area": "Ortodontia",
+                "link": "/ortodontia"
+            },
+            {
+                "area": "Reabilitação Oral",
+                "link": "/eeabilitacaooral"
+            }
+        ],
+        "cirurgiaoral": {
+            "img": "../images/especialidades/cardiologia.svg",
+            "alt": "cirurgiaoral",
+            "head": "Medicina Dentária",
+            "headlink": "/medicinadentaria",
+            "title": "Cirurgia Oral",
+            "link": "/medicinadentaria/cirurgiaoral",
+            "details": "Área que engloba não só pequenas intervenções cirúrgicas mas também intervenções cirúrgicas mais complexas, como por exemplo enxertos ósseos.",
+            "corpoclinico": [
+                {
+                    "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                    "alt": "Dr Tiago Teixeira",
+                    "name": "Dr. Tiago Godinho Teixeira",
+                    "occupation": "Médico"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                    "alt": "Dra Inês Coutinho",
+                    "name": "Dra. Inês Coutinho",
+                    "occupation": "Médica"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/default.svg",
+                    "alt": "Dr David Serra",
+                    "name": "Dr. David Serra",
+                    "occupation": "Médico"
+                }
+            ]
+        },
+        "dentisteria": {
+            "img": "../images/especialidades/cardiologia.svg",
+            "alt": "dentisteria",
+            "head": "Medicina Dentária",
+            "headlink": "/medicinadentaria",
+            "title": "Dentisteria",
+            "link": "/medicinadentaria/dentisteria",
+            "details": "Especialidade responsável pela restauração de lesões dentárias, tais como, cáries, alterações de forma, coloração e fracturas dos dentes.",
+            "corpoclinico": [
+                {
+                    "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                    "alt": "Dr Tiago Teixeira",
+                    "name": "Dr. Tiago Godinho Teixeira",
+                    "occupation": "Médico"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                    "alt": "Dra Inês Coutinho",
+                    "name": "Dra. Inês Coutinho",
+                    "occupation": "Médica"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/default.svg",
+                    "alt": "Dr David Serra",
+                    "name": "Dr. David Serra",
+                    "occupation": "Médico"
+                }
+            ]
+        },
+        "endodontia": {
+            "img": "../images/especialidades/cardiologia.svg",
+            "alt": "endodontia",
+            "head": "Medicina Dentária",
+            "headlink": "/medicinadentaria",
+            "title": "Endodontia",
+            "link": "/medicinadentaria/endodontia",
+            "details": "Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente.",
+            "corpoclinico": [
+                {
+                    "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                    "alt": "Dr Tiago Teixeira",
+                    "name": "Dr. Tiago Godinho Teixeira",
+                    "occupation": "Médico"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                    "alt": "Dra Inês Coutinho",
+                    "name": "Dra. Inês Coutinho",
+                    "occupation": "Médica"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/default.svg",
+                    "alt": "Dr David Serra",
+                    "name": "Dr. David Serra",
+                    "occupation": "Médico"
+                }
+            ]
+        },
+        "implantologia": {
+            "img": "../images/especialidades/cardiologia.svg",
+            "alt": "implantologia",
+            "head": "Medicina Dentária",
+            "headlink": "/medicinadentaria",
+            "title": "Implantologia",
+            "link": "/medicinadentaria/implantologia",
+            "details": "Área da medicina dentária que visa a substituição de dentes perdidos, tendo como objectivo a reabilitação fixa de espaços edêntulos, através da colocação de implantes.",
+            "corpoclinico": [
+                {
+                    "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                    "alt": "Dr Tiago Teixeira",
+                    "name": "Dr. Tiago Godinho Teixeira",
+                    "occupation": "Médico"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                    "alt": "Dra Inês Coutinho",
+                    "name": "Dra. Inês Coutinho",
+                    "occupation": "Médica"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/default.svg",
+                    "alt": "Dr David Serra",
+                    "name": "Dr. David Serra",
+                    "occupation": "Médico"
+                }
+            ]
+        },
+        "oclusao": {
+            "img": "../images/especialidades/cardiologia.svg",
+            "alt": "oclusao",
+            "head": "Medicina Dentária",
+            "headlink": "/medicinadentaria",
+            "title": "Oclusão",
+            "link": "/medicinadentaria/oclusao",
+            "details": "Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias.",
+            "corpoclinico": [
+                {
+                    "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                    "alt": "Dr Tiago Teixeira",
+                    "name": "Dr. Tiago Godinho Teixeira",
+                    "occupation": "Médico"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                    "alt": "Dra Inês Coutinho",
+                    "name": "Dra. Inês Coutinho",
+                    "occupation": "Médica"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/default.svg",
+                    "alt": "Dr David Serra",
+                    "name": "Dr. David Serra",
+                    "occupation": "Médico"
+                }
+            ]
+        },
+        "odontopediatria": {
+            "img": "../images/especialidades/cardiologia.svg",
+            "alt": "odontopediatria",
+            "head": "Medicina Dentária",
+            "headlink": "/medicinadentaria",
+            "title": "Odontopediatria",
+            "link": "/medicinadentaria/odontopediatria",
+            "details": "É a especialidade da Medicina Dentária que se dedica à prevenção, tratamento e manutenção da saúde oral dos bebés, crianças e adolescentes.",
+            "corpoclinico": [
+                {
+                    "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                    "alt": "Dr Tiago Teixeira",
+                    "name": "Dr. Tiago Godinho Teixeira",
+                    "occupation": "Médico"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                    "alt": "Dra Inês Coutinho",
+                    "name": "Dra. Inês Coutinho",
+                    "occupation": "Médica"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/default.svg",
+                    "alt": "Dr David Serra",
+                    "name": "Dr. David Serra",
+                    "occupation": "Médico"
+                }
+            ]
+        },
+        "ortodontia": {
+            "img": "../images/especialidades/cardiologia.svg",
+            "alt": "ortodontia",
+            "head": "Medicina Dentária",
+            "headlink": "/medicinadentaria",
+            "title": "Ortodontia",
+            "link": "/medicinadentaria/ortodontia",
+            "details": "Ortodontia é a especialidade que visa diagnosticar, prevenir e tratar os problemas relacionados com o mau posicionamento dentário e ósseo.",
+            "corpoclinico": [
+                {
+                    "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                    "alt": "Dr Tiago Teixeira",
+                    "name": "Dr. Tiago Godinho Teixeira",
+                    "occupation": "Médico"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                    "alt": "Dra Inês Coutinho",
+                    "name": "Dra. Inês Coutinho",
+                    "occupation": "Médica"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/default.svg",
+                    "alt": "Dr David Serra",
+                    "name": "Dr. David Serra",
+                    "occupation": "Médico"
+                }
+            ]
+        },
+        "reabilitacaooral": {
+            "img": "../images/especialidades/cardiologia.svg",
+            "alt": "reabilitacaooral",
+            "head": "Medicina Dentária",
+            "headlink": "/medicinadentaria",
+            "title": "Reabilitação Oral",
+            "link": "/medicinadentaria/reabilitacaooral",
+            "details": "Reabilitação oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social.",
+            "corpoclinico": [
+                {
+                    "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                    "alt": "Dr Tiago Teixeira",
+                    "name": "Dr. Tiago Godinho Teixeira",
+                    "occupation": "Médico"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                    "alt": "Dra Inês Coutinho",
+                    "name": "Dra. Inês Coutinho",
+                    "occupation": "Médica"
+                },
+                {
+                    "img": "../images/especialidades/corpoclinico/default.svg",
+                    "alt": "Dr David Serra",
+                    "name": "Dr. David Serra",
+                    "occupation": "Médico"
+                }
+            ]
+        }
+    }
+}

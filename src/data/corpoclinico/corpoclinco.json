@@ -1,0 +1,31 @@
+{
+    "corpoclinico": {
+        "head": "Corpo Clínico",
+        "title": "Uma equipa profissional que dá respostas às necessidades do paciente.",
+        "details": "A Medicina Dentária é a área da saúde que previne, diagnostica e trata as doenças que afectam os dentes, as gengivas e a mucosa oral.",
+        "btn": {
+            "text": "Marque Consulta Connosco",
+            "link": ""
+        },
+        "people": [
+            {
+                "img": "../images/sobrenos/corpoclinico/corpoclinico1.png",
+                "name": "Dr. Tiago Godinho Teixeira",
+                "occupation": "Médico",
+                "especiality": "Cardiologia, Medicina Interna"
+            },
+            {
+                "img": "../images/sobrenos/corpoclinico/corpoclinico2.png",
+                "name": "Dr. Tiago Godinho Teixeira",
+                "occupation": "Médico Dentista",
+                "especiality": "Implantologia"
+            },
+            {
+                "img": "../images/sobrenos/corpoclinico/corpoclinico3.png",
+                "name": "Dra. Susana Silva",
+                "occupation": "Médica",
+                "especiality": "Fisioterapia, Posturologia"
+            }
+        ]
+    }
+}

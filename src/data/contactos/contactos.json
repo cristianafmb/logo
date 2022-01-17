@@ -1,0 +1,25 @@
+{
+    "backgroundtop": "../images/especialidades/background-top.svg",
+    "backgroundfooter": "../images/background-footer.svg",
+    "contactos": {
+        "title": "Contactos",
+        "M": "+351 968 788 645",
+        "Mlink": "+351968788645",
+        "T": "+351 234 426 640",
+        "Tlink": "+351234426640"
+    },
+    "email": {
+        "title": "E-mail",
+        "email": "geral@upcare.pt"
+    },
+    "horario": {
+        "title": "Horário de Atendimento",
+        "semana": "Segunda a Sexta: 9h30 - 19h30",
+        "sabado": "Sábado: 09h30 - 12h30"
+    },
+    "morada": {
+        "title": "Morada",
+        "rua": "Avenida Europa Mº 741 Frac. B.",
+        "cpostal": "3810-140 Aveiro"
+    }
+}

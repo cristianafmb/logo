@@ -1,0 +1,21 @@
+{
+    
+    "questoes": {
+        "titulo": "Tem alguma questão?",
+        "texto": "Encontre aqui todas as respostas às suas dúvidas. Caso contrário, tem à sua disposição todos os nossos contactos para esclarecer qualquer questão.",
+        "questoes": [
+            {
+                "texto": "Sobre o Covid-19",
+                "link": ""
+            },
+            {
+                "texto": "Sobre Análises Clínicas",
+                "link": "/examesanalises/analisesclinicas"
+            },
+            {
+                "texto": "Sobre Acordos e Parcerias",
+                "link": ""
+            }
+        ]
+    }
+}

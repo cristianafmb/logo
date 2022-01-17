@@ -1,11 +1,28 @@
+const myCustomQueries = {
+  xs: "(max-width: 320px)",
+  mobile: "(max-width: 768px)",
+  md: "(max-width: 1024px)",
+  l: "(max-width: 1536px)",
+  xl: "(min-width: 1536px)",
+  portrait: "(orientation: portrait)",
+}
+
+
 module.exports = {
   siteMetadata: {
-    title: `UpCare`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Upcare`,
+    description: `A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. Contamos com uma equipa de profissionais de excelência que têm como principal preocupação o bem estar individual de cada paciente.`,
+    author: `Invisual Branding Solutions`,
+    siteUrl: `https://upcare.pt`,
   },
   plugins: [
+    "gatsby-plugin-htaccess",
+    {
+      resolve: "gatsby-plugin-breakpoints",
+      options: {
+        queries: myCustomQueries,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

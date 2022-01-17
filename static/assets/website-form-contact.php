@@ -16,8 +16,9 @@ if (isset($_POST)) {
   $username = $_POST['name'];
   $useremail = $_POST['email'];
   $userphone = $_POST['contact'];
-  $usermessage = $_POST['message'];
-  $userinfo = $_POST['info'];
+  $userespeciality = $_POST['especiality'];
+  $userhours = $_POST['hours'];
+  $userdate = $_POST['date'];
 
   try {
     if (!filter_var($useremail, FILTER_VALIDATE_EMAIL)) {
@@ -47,12 +48,12 @@ if (isset($_POST)) {
     $mail->Body = "
     Acabou de receber um pedido de contacto através de www.upcare.pt<br/>
     _________________________________________________________<br/><br/>
-    <b>Tipo:</b> {$usertype}<br/><br/>
     <b>Nome:</b> {$username}<br/><br/>
     <b>Email:</b> {$useremail}<br/><br/>
     <b>Telefone:</b> {$userphone}<br/><br/>
-    <b>Mensagem:</b> {$usermessage}<br/><br/>
-    <b>Info:</b> {$userinfo}<br/><br/>
+    <b>Especialidade:</b> {$userespeciality}<br/><br/>
+    <b>Horas:</b> {$userhours}<br/><br/>
+    <b>Data:</b> {$userdate}<br/><br/>
     ";
     $mail->send();
     echo 'success';

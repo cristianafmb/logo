@@ -1,0 +1,68 @@
+{
+   
+    "footer": {
+        "logo": "../images/footer/logo.svg",
+        "socialmedia": [
+            {
+                "link": "https://pt-pt.facebook.com/upcaremedicalcenter/",
+                "icon": "../images/footer/facebook.svg",
+                "alt": "facebook"
+            },
+            {
+                "link": "https://www.instagram.com/upcaremedicalcenter/",
+                "icon": "../images/footer/instagram.svg",
+                "alt": "instagram"
+            },
+            {
+                "link": "https://pt.linkedin.com/in/upcare-medical-center-827642137?trk=public_profile_browsemap",
+                "icon": "../images/footer/linkedin.svg",
+                "alt": "linkedin"
+            }
+        ],
+        "links": [
+            [
+                {
+                    "text": "Especialidades",
+                    "link": "/especialidades"
+                },
+                {
+                    "text": "Medicina Dentária",
+                    "link": "/medicinadentaria"
+                },
+                {
+                    "text": "Exames & Análises",
+                    "link": "/examesanalises"
+                }
+            ],
+            [
+                {
+                    "text": "Análises Avelab",
+                    "link": "/"
+                },
+                {
+                    "text": "Acordos e Parcerias",
+                    "link": "/"
+                },
+                {
+                    "text": "Política de Privacidade",
+                    "link": "/"
+                }
+            ],
+            [
+                {
+                    "text": "Sobre Nós",
+                    "link": "/sobrenos"
+                },
+                {
+                    "text": "Blog",
+                    "link": "/blog"
+                },
+                {
+                    "text": "Covid-19",
+                    "link": "/"
+                }
+            ]
+        ],
+        "copyrigths": "Upcare Medical Center 2020 - Todos os direitos reservados"
+    }
+}

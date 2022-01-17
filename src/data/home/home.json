@@ -26,7 +26,7 @@
         "quote": "Queremos ajudá-lo a cuidar da sua saúde. Um passo de cada vez.",
         "person": "Dr. João Mano Nunes",
         "function": "Diretor Clínico",
-        "img": "../images/home/sobre-nos/01.jpg",
+        "img": "../images/home/sobre-nos/01.png",
         "alt": "testemunho"
     },
     "sobre-nos": {
@@ -39,33 +39,37 @@
             "title": "Especialidades",
             "details": "Temos um vasto leque de especialidades médicas de modo a dar resposta às necessidades fundamentais dos nossos pacientes.",
             "button": "Consulte as nossas Especialidades",
-            "href": "/",
-            "img": "../images/home/especialidades/especialidades.png",
-            "alt": "especialidades-especialidades"
+            "href": "/especialidades",
+            "img": "../images/home/especialidades/especialidades.svg",
+            "alt": "especialidades-especialidades",
+            "titlemobile":"Ver Mais"
         },
         {
             "title": "Medicina Dentária",
             "details": "Medicina Dentária é a àrea da saúde que estuda, trata e previne todos os componentes relacionados com as patologias orais e maxilares.",
             "button": "Consulte os nossos Serviços",
-            "href": "/",
-            "img": "../images/home/especialidades/medicina-dentaria.png",
-            "alt": "especialidades-medicina-dentaria"
+            "href": "/medicinadentaria",
+            "img": "../images/home/especialidades/especialidades.svg",
+            "alt": "especialidades-medicina-dentaria",
+            "titlemobile":"Ver Mais"
         },
         {
             "title": "Exames & Análises",
             "details": "Os exames médicos são essenciais para que tenha um diagnóstico assertivo das suas doenças. Conheça os que fazemos na nossa clínica.",
             "button": "Consulte os nossos Exames",
-            "href": "/",
-            "img": "../images/home/especialidades/exames-analises.png",
-            "alt": "especialidades-exames-analises"
+            "href": "/examesanalises",
+            "img": "../images/home/especialidades/exames-analises.svg",
+            "alt": "especialidades-exames-analises",
+            "titlemobile":"Ver Mais"
         },
         {
             "title": "Marcar Consulta",
             "details": "Os exames médicos são essenciais para que tenha um diagnóstico assertivo das suas doenças. Conheça os que fazemos na nossa clínica.",
             "button": "Pedir Marcação de Consulta",
             "href": "/",
-            "img": "../images/home/especialidades/marcar-consulta.png",
-            "alt": "especialidades-marcar-consulta"
+            "img": "../images/home/especialidades/marcar-consulta.svg",
+            "alt": "especialidades-marcar-consulta",
+            "titlemobile":"Pedir Marcação de Consulta"
         }
     ],
     "invisalign": {
@@ -88,8 +92,9 @@
         "head": "Saiba tudo o que está a acontecer na nossa clínica",
         "details": "A Upcare Medical Center está em contacto com os seus utentes para que estejam informados de novidades e soluções clínicas que sejam do seu interesse."
     },
-    "marcacao-rapida": {
-        "img": "../images/home/marcacaorapida/01.png",
-        "alt": "marcacao-rapida"
+    "background": {
+        "top": "../images/background1.svg",
+        "bottom": "../images/background2.svg",
+        "symbol": "../images/symbolup.svg"
     }
 }

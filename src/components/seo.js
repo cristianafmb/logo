@@ -2,15 +2,25 @@
  * SEO component that queries for data with
  *  Gatsby's useStaticQuery React hook
  *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import * as React from "react"
+import React from "react"
 import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
+import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, lang, meta, title }) {
+function SEO({
+  description,
+  lang,
+  meta,
+  title,
+  titleTemplate,
+  img,
+  path,
+  date,
+  article,
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -26,7 +36,31 @@ function Seo({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+
+  const blogJSONLD = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://upcare.pt${path}`,
+    },
+    headline: `${title}`,
+    description: `${description}`,
+    image: `https://upcare.pt${img}`,
+    author: {
+      "@type": "Organization",
+      name: "Upcare",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Upcare",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://upcare.pt/assets/favico.jpg",
+      },
+    },
+    datePublished: `${date}`,
+  }
 
   return (
     <Helmet
@@ -34,7 +68,9 @@ function Seo({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={
+        titleTemplate ? titleTemplate : `%s | ${site.siteMetadata.title}`
+      }
       meta={[
         {
           name: `description`,
@@ -43,6 +79,10 @@ function Seo({ description, lang, meta, title }) {
         {
           property: `og:title`,
           content: title,
+        },
+        {
+          property: `og:image`,
+          content: img,
         },
         {
           property: `og:description`,
@@ -58,7 +98,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          content: site.siteMetadata.author,
         },
         {
           name: `twitter:title`,
@@ -69,21 +109,26 @@ function Seo({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      {article && (
+        <script type="application/ld+json">{JSON.stringify(blogJSONLD)}</script>
+      )}
+    </Helmet>
   )
 }
 
-Seo.defaultProps = {
+SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
 }
 
-Seo.propTypes = {
+SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  article: PropTypes.bool,
 }
 
-export default Seo
+export default SEO
