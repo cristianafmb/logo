@@ -1,9 +1,12 @@
 {
     "banner": "../images/medicinadentaria/background-banner.svg",
+    "bannermobile": "../images/medicinadentaria/background-banner-mobile.svg",
     "head": "Os Nossos Serviços",
     "title": "Medicina Dentária",
     "backgroundtop": "../images/medicinadentaria/background-top.svg",
+    "backgroundtopmobile": "../images/background-top-mobile.svg",
     "backgroundfooter": "../images/background-footer.svg",
+    "backgroundfootermobile": "../images/background-footer-mobile.svg",
     "areas": {
         "head": "Áreas Clínicas",
         "areas": [
@@ -107,7 +110,7 @@
             }
         ],
         "cirurgiaoral": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/medicinadentaria/medicinadentaria.png",
             "alt": "cirurgiaoral",
             "head": "Medicina Dentária",
             "headlink": "/medicinadentaria",
@@ -136,7 +139,7 @@
             ]
         },
         "dentisteria": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/medicinadentaria/medicinadentaria.png",
             "alt": "dentisteria",
             "head": "Medicina Dentária",
             "headlink": "/medicinadentaria",
@@ -165,7 +168,7 @@
             ]
         },
         "endodontia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/medicinadentaria/medicinadentaria.png",
             "alt": "endodontia",
             "head": "Medicina Dentária",
             "headlink": "/medicinadentaria",
@@ -194,7 +197,7 @@
             ]
         },
         "implantologia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/medicinadentaria/medicinadentaria.png",
             "alt": "implantologia",
             "head": "Medicina Dentária",
             "headlink": "/medicinadentaria",
@@ -223,7 +226,7 @@
             ]
         },
         "oclusao": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/medicinadentaria/medicinadentaria.png",
             "alt": "oclusao",
             "head": "Medicina Dentária",
             "headlink": "/medicinadentaria",
@@ -252,7 +255,7 @@
             ]
         },
         "odontopediatria": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/medicinadentaria/medicinadentaria.png",
             "alt": "odontopediatria",
             "head": "Medicina Dentária",
             "headlink": "/medicinadentaria",
@@ -281,7 +284,7 @@
             ]
         },
         "ortodontia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/medicinadentaria/medicinadentaria.png",
             "alt": "ortodontia",
             "head": "Medicina Dentária",
             "headlink": "/medicinadentaria",
@@ -310,7 +313,7 @@
             ]
         },
         "reabilitacaooral": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/medicinadentaria/medicinadentaria.png",
             "alt": "reabilitacaooral",
             "head": "Medicina Dentária",
             "headlink": "/medicinadentaria",

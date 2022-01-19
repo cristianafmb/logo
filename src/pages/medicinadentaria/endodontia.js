@@ -8,45 +8,136 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import Menu from '../../components/menu'
 import SubPage from '../../components/especialidades/subPage'
+import SubPageMobile from '../../components/especialidades/subPageMobile'
 import Especialidades from '../../components/homepage/especialidades'
 import Questoes from '../../components/questoes'
 import Footer from '../../components/footer'
 
 import background from '../../images/especialidades/background.svg'
 
-const Endodontia = ({ data }) => (
+const Endodontia = ({ data }) =>{
+
+  const breakpoints = useBreakpoint();
+
+  return (
   <Layout home mobile={useBreakpoint().mobile}>
-    <div className="no-repeat heigth-banner center" style={{ backgroundImage: `url(${data.medicinadentariaJson.banner})` }}>
-      <SEO title="Especialidades" />
+
+    <SEO title="Especialidades" />
+    {!breakpoints.mobile ? (
+        <>
+    <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${data.medicinadentariaJson.banner})` }}>
 
       <Menu />
+
     </div>
 
-    <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${background})` }}>
+    <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${background})` }}>
 
       <SubPage data={data.medicinadentariaJson} subpage={data.medicinadentariaJson.subpages.endodontia} page="especialidades" form={data.marcacaoJson} />
-      <Especialidades especialidades={data.homeJson.especialidades}  />   
+
+      <Especialidades especialidades={data.homeJson.especialidades} />
 
       <Questoes data={data.questoesJson.questoes} />
-
 
     </div>
 
     <Footer data={data.footerJson.footer} />
 
-  </Layout>
-)
+    </>
+      )
+        :
+        (
+          <>
+            <SubPageMobile
+              bgtop={data.medicinadentariaJson.backgroundtopmobile}
+              bgbanner={data.medicinadentariaJson.bannermobile}
+              especialidades={data.medicinadentariaJson}
+              subpage={data.medicinadentariaJson.subpages.endodontia}
+              page="especialidades"
+              form={data.marcacaoJson}
+              home={data.homeJson.especialidades}
+              bgbottm={data.medicinadentariaJson.backgroundfootermobile}
+              questoes={data.questoesJson.questoes}
+              footer={data.footerJson.footer}
+            />
+          </>
+        )
+      }
+    </Layout>
+  )
+}
 
 export default Endodontia
 
 export const Json = graphql`
 query endodontia {
-  medicinadentariaJson {
+  homeJson {
+    home {
+      head
+      subject
+      details
+      img
+      alt
+    }
+    testimony {
+      function
+      person
+      quote
+      img
+      alt
+    }
+    sobre_nos {
+      details
+      subject
+      head
+    }
+    especialidades{
+      title
+      details
+      button
+      href
+      img
+      alt
+      titlemobile
+    }
+    invisalign{
+      img
+      alt
+      head
+      details
+      button
+      href
+      textoverimg
+    }
+    noticias{
+      title
+      synopsis
+      date
+      img
+      alt
+    }
+    blog{
+      title
+      head
+      details
+      btntxtmobile
+      btnhref
+    } 
+    background{
+      top
+      bottom
+      symbol
+    }
+  }
+    medicinadentariaJson {
       banner
+      bannermobile
       head
       title
       backgroundtop
+      backgroundtopmobile
       backgroundfooter
+      backgroundfootermobile
       areas {
         head
         areas {
@@ -60,7 +151,6 @@ query endodontia {
         link
         title
       }
-      
       subpages {
         endodontia {
           headlink
@@ -81,60 +171,6 @@ query endodontia {
           area
           link
         }
-      }
-    }
-    homeJson {
-      home {
-        head
-        subject
-        details
-        img
-        alt
-      }
-      testimony {
-        function
-        person
-        quote
-        img
-        alt
-      }
-      sobre_nos {
-        details
-        subject
-        head
-      }
-      especialidades{
-        title
-        details
-        button
-        href
-        img
-        alt
-      }
-      invisalign{
-        img
-        alt
-        head
-        details
-        button
-        href
-      }
-      noticias{
-        title
-        synopsis
-        date
-        img
-        alt
-      }
-      blog{
-        title
-        head
-        details
-      } 
-      background{
-        top
-        bottom
-        symbol
       }
     }
     marcacaoJson{
@@ -168,19 +204,21 @@ query endodontia {
         }
       }
     }
-    footerJson{
+    footerJson {
       footer {
-        logo
-        socialmedia {
-          link
-          icon
-          alt
-        }
+        copyrigths
+        copyrightsmobile
         links {
           link
           text
         }
-        copyrigths
+        logo
+        logowhite
+        socialmedia {
+          alt
+          icon
+          link
+        }
       }
     }
 }

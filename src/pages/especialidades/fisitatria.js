@@ -8,48 +8,135 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import Menu from '../../components/menu'
 import SubPage from '../../components/especialidades/subPage'
+import SubPageMobile from '../../components/especialidades/subPageMobile'
 import Questoes from '../../components/questoes'
 import Footer from '../../components/footer'
 
-const Fisitatria = ({ data }) => (
+const Fisitatria = ({ data }) => {
+  
+  const breakpoints = useBreakpoint();
+  
+  return(
   <Layout home mobile={useBreakpoint().mobile}>
-    <div className="no-repeat heigth-banner center" style={{ backgroundImage: `url(${data.especialidadesJson.banner})` }}>
-      <SEO title="Especialidades" />
 
-      <Menu />
-    </div>
+    <SEO title="Especialidades" />
 
-    <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.especialidadesJson.backgroundtop})` }}>
+    {!breakpoints.mobile ? (
+      <>
+        <div className="no-repeat heigth-banner center" style={{ backgroundImage: `url(${data.especialidadesJson.banner})` }}>
 
-      <SubPage data={data.especialidadesJson} subpage={data.especialidadesJson.subpages.fisitatria} page="especialidades" form={data.marcacaoJson} />
+          <Menu />
 
-    </div>
+        </div>
 
+        <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${data.especialidadesJson.backgroundtop})` }}>
 
-    <div className="no-repeat " style={{ backgroundImage: `url(${data.especialidadesJson.backgroundfooter})` }}>
+          <SubPage data={data.especialidadesJson} subpage={data.especialidadesJson.subpages.fisitatria} page="especialidades" form={data.marcacaoJson} />
 
-   
+        </div>
 
-      <Questoes data={data.questoesJson.questoes} />
+        <div className="no-repeat  bg-cover" style={{ backgroundImage: `url(${data.especialidadesJson.backgroundfooter})` }}>
 
+          <Questoes data={data.questoesJson.questoes} />
 
-    </div>
+        </div>
 
-    <Footer data={data.footerJson.footer} />
+        <Footer data={data.footerJson.footer} />
 
+      </>
+    )
+      :
+      (
+        <>
+          <SubPageMobile
+            bgtop={data.especialidadesJson.backgroundtopmobile}
+            bgbanner={data.especialidadesJson.bannermobile}
+            especialidades={data.especialidadesJson}
+            subpage={data.especialidadesJson.subpages.fisitatria}
+            page="especialidades"
+            form={data.marcacaoJson}
+            home={data.homeJson.especialidades}
+            bgbottm={data.especialidadesJson.backgroundfootermobile}
+            questoes={data.questoesJson.questoes}
+            footer={data.footerJson.footer}
+          />
+        </>
+      )
+    }
   </Layout>
-)
+)}
 
 export default Fisitatria
 
 export const Json = graphql`
 query fisitatria {
+  homeJson {
+    home {
+      head
+      subject
+      details
+      img
+      alt
+    }
+    testimony {
+      function
+      person
+      quote
+      img
+      alt
+    }
+    sobre_nos {
+      details
+      subject
+      head
+    }
+    especialidades{
+      title
+      details
+      button
+      href
+      img
+      alt
+      titlemobile
+    }
+    invisalign{
+      img
+      alt
+      head
+      details
+      button
+      href
+      textoverimg
+    }
+    noticias{
+      title
+      synopsis
+      date
+      img
+      alt
+    }
+    blog{
+      title
+      head
+      details
+      btntxtmobile
+      btnhref
+    } 
+    background{
+      top
+      bottom
+      symbol
+    }
+  }
     especialidadesJson {
       banner
+      bannermobile
       head
       title
       backgroundtop
+      backgroundtopmobile
       backgroundfooter
+      backgroundfootermobile
       areas {
         head
         areas {
@@ -122,19 +209,21 @@ query fisitatria {
         }
       }
     }
-    footerJson{
+    footerJson {
       footer {
-        logo
-        socialmedia {
-          link
-          icon
-          alt
-        }
+        copyrigths
+        copyrightsmobile
         links {
           link
           text
         }
-        copyrigths
+        logo
+        logowhite
+        socialmedia {
+          alt
+          icon
+          link
+        }
       }
     }
 }

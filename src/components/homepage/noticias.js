@@ -46,13 +46,13 @@ const Noticias = ({ noticias, blog }) => (
                     <Col sm="9" md="9" lg="9">
                         <Row>
                             <Col sm="5" md="5" lg="5" className="no-space-n-cols">
-                                <hr className="dark-gold"/>
+                                <hr className="gold"/>
                             </Col>
                             <Col sm="5" md="5" lg="5" className="no-space-n-cols">
                                 <Button className="button-noticias-ler-todas oMedium"> <p>Leia todas as nossas notícias</p></Button>
                             </Col>
                             <Col sm="2" md="2" lg="2" className="no-space-n-cols">
-                                <hr className="dark-gold"/>
+                                <hr className="gold"/>
                             </Col>
                         </Row>
                     </Col>

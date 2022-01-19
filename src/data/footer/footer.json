@@ -1,7 +1,7 @@
 {
-   
     "footer": {
         "logo": "../images/footer/logo.svg",
+        "logowhite": "../images/mobile/menu/logowhite.svg",
         "socialmedia": [
             {
                 "link": "https://pt-pt.facebook.com/upcaremedicalcenter/",
@@ -63,6 +63,10 @@
                 }
             ]
         ],
-        "copyrigths": "Upcare Medical Center 2020 - Todos os direitos reservados"
+        "copyrigths": "Upcare Medical Center 2020 - Todos os direitos reservados",
+        "copyrightsmobile": [
+            "Upcare Medical Center ©2020",
+            "Todos os direitos reservados"
+        ]
     }
 }

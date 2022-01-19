@@ -8,45 +8,135 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import Menu from '../../components/menu'
 import SubPage from '../../components/especialidades/subPage'
+import SubPageMobile from '../../components/especialidades/subPageMobile'
 import Especialidades from '../../components/homepage/especialidades'
 import Questoes from '../../components/questoes'
 import Footer from '../../components/footer'
 
 import background from '../../images/especialidades/background.svg'
 
-const ExamesGeneticos = ({ data }) => (
-  <Layout home mobile={useBreakpoint().mobile}>
-    <div className="no-repeat heigth-banner center" style={{ backgroundImage: `url(${data.examesanalisesJson.banner})` }}>
-      <SEO title="Especialidades" />
+const ExamesGeneticos = ({ data }) => {
 
-      <Menu />
-    </div>
+  const breakpoints = useBreakpoint();
 
-    <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${background})` }}>
+  return (
+    <Layout home mobile={useBreakpoint().mobile}>
+      {!breakpoints.mobile ? (
+        <>
+          <SEO title="Especialidades" />
 
-      <SubPage data={data.examesanalisesJson} subpage={data.examesanalisesJson.subpages.examesgeneticos} page="examesanalises" form={data.marcacaoJson} />
-      <Especialidades especialidades={data.homeJson.especialidades}  />   
+          <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${data.examesanalisesJson.banner})` }}>
 
-      <Questoes data={data.questoesJson.questoes} />
+            <Menu />
 
+          </div>
 
-    </div>
+          <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${background})` }}>
 
-    <Footer data={data.footerJson.footer} />
+            <SubPage data={data.examesanalisesJson} subpage={data.examesanalisesJson.subpages.examesgeneticos} page="examesanalises" form={data.marcacaoJson} />
 
-  </Layout>
-)
+            <Especialidades especialidades={data.homeJson.especialidades} />
+
+            <Questoes data={data.questoesJson.questoes} />
+
+          </div>
+
+          <Footer data={data.footerJson.footer} />
+        </>
+      )
+        :
+        (
+          <>
+            <SubPageMobile
+               bgtop={data.examesanalisesJson.backgroundtopmobile}
+               bgbanner={data.examesanalisesJson.bannermobile}
+               especialidades={data.examesanalisesJson}
+               subpage={data.examesanalisesJson.subpages.examesgeneticos}
+               page="especialidades"
+               form={data.marcacaoJson}
+               home={data.homeJson.especialidades}
+               bgbottm={data.examesanalisesJson.backgroundfootermobile}
+               questoes={data.questoesJson.questoes}
+               footer={data.footerJson.footer}
+            />
+          </>
+        )
+      }
+    </Layout>
+  )
+}
 
 export default ExamesGeneticos
 
 export const Json = graphql`
 query examesgeneticos {
-  examesanalisesJson {
+  homeJson {
+    home {
+      head
+      subject
+      details
+      img
+      alt
+    }
+    testimony {
+      function
+      person
+      quote
+      img
+      alt
+    }
+    sobre_nos {
+      details
+      subject
+      head
+    }
+    especialidades{
+      title
+      details
+      button
+      href
+      img
+      alt
+      titlemobile
+    }
+    invisalign{
+      img
+      alt
+      head
+      details
+      button
+      href
+      textoverimg
+    }
+    noticias{
+      title
+      synopsis
+      date
+      img
+      alt
+    }
+    blog{
+      title
+      head
+      details
+      btntxtmobile
+      btnhref
+    } 
+    background{
+      top
+      bottom
+      symbol
+    }
+  }
+    examesanalisesJson {
       banner
+      bannermobile
       head
       title
       backgroundtop
+      backgroundtopmobile
       backgroundfooter
+      backgroundfootermobile
       areas {
         head
         areas {
@@ -60,7 +150,6 @@ query examesgeneticos {
         link
         title
       }
-     
       subpages {
         examesgeneticos {
           headlink
@@ -81,60 +170,6 @@ query examesgeneticos {
           area
           link
         }
-      }
-    }
-    homeJson {
-      home {
-        head
-        subject
-        details
-        img
-        alt
-      }
-      testimony {
-        function
-        person
-        quote
-        img
-        alt
-      }
-      sobre_nos {
-        details
-        subject
-        head
-      }
-      especialidades{
-        title
-        details
-        button
-        href
-        img
-        alt
-      }
-      invisalign{
-        img
-        alt
-        head
-        details
-        button
-        href
-      }
-      noticias{
-        title
-        synopsis
-        date
-        img
-        alt
-      }
-      blog{
-        title
-        head
-        details
-      } 
-      background{
-        top
-        bottom
-        symbol
       }
     }
     marcacaoJson{
@@ -168,19 +203,21 @@ query examesgeneticos {
         }
       }
     }
-    footerJson{
+    footerJson {
       footer {
-        logo
-        socialmedia {
-          link
-          icon
-          alt
-        }
+        copyrigths
+        copyrightsmobile
         links {
           link
           text
         }
-        copyrigths
+        logo
+        logowhite
+        socialmedia {
+          alt
+          icon
+          link
+        }
       }
     }
 }

@@ -1,5 +1,7 @@
 {
     "sobrenos": {
+        "bg": "../images/sobrenos/backgroundtop.png",
+        "bgmobile": "../images/sobrenos/backgroundtopmobile.svg",
         "head": "Sobre Nós",
         "title": "A nossa prioridade será sempre o seu bem estar.",
         "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. Contamos com uma equipa de profissionais de excelência que têm como principal preocupação o bem estar individual de cada paciente. Contamos com várias especialidades médicas e exames auxiliares de diagnóstico para, de uma forma geral, corresponder às necessidades de toda a população."
@@ -9,6 +11,7 @@
         "content": [
             {
                 "background": "../images/sobrenos/especialidades/especialidades.svg",
+                "backgroundmobile": "../images/sobrenos/especialidades/especialidadesmobile.svg",
                 "img": "../images/sobrenos/especialidades/especialidades-simbolo.svg",
                 "title": "Especialidades",
                 "details": "Temos um vasto leque de especialidades médicas de modo a dar resposta às necessidades fundamentais dos nossos pacientes.",
@@ -89,6 +92,7 @@
             },
             {
                 "background": "../images/sobrenos/medicina-dentaria/background.svg",
+                "backgroundmobile": "../images/sobrenos/medicina-dentaria/backgroundmobile.svg",
                 "img": "../images/sobrenos/medicina-dentaria/medicina-dentaria-simbolo.svg",
                 "title": "Medicina Dentária",
                 "details": "Medicina Dentária é a área da saúde que estuda, trata e previne todos os componentes relacionados com as patologias orais e maxilares.",
@@ -125,6 +129,7 @@
             },
             {
                 "background": "../images/sobrenos/examesanalises/background.svg",
+                "backgroundmobile": "../images/sobrenos/examesanalises/backgroundmobile.svg",
                 "img": "../images/sobrenos/examesanalises/simbolo.svg",
                 "title": "Exames & Análises",
                 "details": "Os exames médicos são essenciais para que tenhaum diagnóstico assertivo das suas doenças. Conheça os que fazemos na nossa clínica.",
@@ -160,10 +165,6 @@
                 }
             }
         ]
-    },
-    "marcacao-rapida": {
-        "img": "../images/home/marcacaorapida/01.png",
-        "alt": "marcacao-rapida"
     },
     "opiniao":{
         "title": "A Opinião dos Pacientes",

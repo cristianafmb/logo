@@ -6,7 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import {Row, Col, Button} from 'react-bootstrap';
 
 import TestimonyMobile from './testimonyMobile'
-import InfoSobreNosMobile from './infoSobreNosMobile'
+import Card from '../cardHeadTitleDetails'
 
 
 const SobreNosHome = ({ testimony, sobreNos }) => {
@@ -15,7 +15,7 @@ const SobreNosHome = ({ testimony, sobreNos }) => {
 
             <Row>
                 <Col sm="12" md="7" lg="6" className="mb-4">
-                    <InfoSobreNosMobile head={sobreNos.head} subject={sobreNos.subject} details={sobreNos.details} />
+                    <Card head={sobreNos.head} title={sobreNos.subject} details={sobreNos.details} btn="Saber Mais" btnlink="/"/>
                  
                 </Col>
                 <Col sm="12" md="4" lg="4">

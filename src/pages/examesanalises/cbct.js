@@ -8,45 +8,135 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import Menu from '../../components/menu'
 import SubPage from '../../components/especialidades/subPage'
+import SubPageMobile from '../../components/especialidades/subPageMobile'
 import Especialidades from '../../components/homepage/especialidades'
 import Questoes from '../../components/questoes'
 import Footer from '../../components/footer'
 
 import background from '../../images/especialidades/background.svg'
 
-const Cbct = ({ data }) => (
-  <Layout home mobile={useBreakpoint().mobile}>
-    <div className="no-repeat heigth-banner center" style={{ backgroundImage: `url(${data.examesanalisesJson.banner})` }}>
+const Cbct = ({ data }) => {
+
+  const breakpoints = useBreakpoint();
+
+  return (
+    <Layout home mobile={useBreakpoint().mobile}>
+
       <SEO title="Especialidades" />
+      {!breakpoints.mobile ? (
+        <>
+          <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${data.examesanalisesJson.banner})` }}>
 
-      <Menu />
-    </div>
+            <Menu />
 
-    <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${background})` }}>
+          </div>
 
-      <SubPage data={data.examesanalisesJson} subpage={data.examesanalisesJson.subpages.cbct} page="examesanalises" form={data.marcacaoJson} />
-      <Especialidades especialidades={data.homeJson.especialidades}  />   
+          <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${background})` }}>
 
-      <Questoes data={data.questoesJson.questoes} />
+            <SubPage data={data.examesanalisesJson} subpage={data.examesanalisesJson.subpages.cbct} page="examesanalises" form={data.marcacaoJson} />
 
+            <Especialidades especialidades={data.homeJson.especialidades} />
 
-    </div>
+            <Questoes data={data.questoesJson.questoes} />
 
-    <Footer data={data.footerJson.footer} />
+          </div>
 
-  </Layout>
-)
+          <Footer data={data.footerJson.footer} />
+        </>
+      )
+        :
+        (
+          <>
+            <SubPageMobile
+               bgtop={data.examesanalisesJson.backgroundtopmobile}
+               bgbanner={data.examesanalisesJson.bannermobile}
+               especialidades={data.examesanalisesJson}
+               subpage={data.examesanalisesJson.subpages.cbct}
+               page="especialidades"
+               form={data.marcacaoJson}
+               home={data.homeJson.especialidades}
+               bgbottm={data.examesanalisesJson.backgroundfootermobile}
+               questoes={data.questoesJson.questoes}
+               footer={data.footerJson.footer}
+            />
+          </>
+        )
+      }
+    </Layout>
+  )
+}
 
 export default Cbct
 
 export const Json = graphql`
 query cbct {
-  examesanalisesJson {
+  homeJson {
+    home {
+      head
+      subject
+      details
+      img
+      alt
+    }
+    testimony {
+      function
+      person
+      quote
+      img
+      alt
+    }
+    sobre_nos {
+      details
+      subject
+      head
+    }
+    especialidades{
+      title
+      details
+      button
+      href
+      img
+      alt
+      titlemobile
+    }
+    invisalign{
+      img
+      alt
+      head
+      details
+      button
+      href
+      textoverimg
+    }
+    noticias{
+      title
+      synopsis
+      date
+      img
+      alt
+    }
+    blog{
+      title
+      head
+      details
+      btntxtmobile
+      btnhref
+    } 
+    background{
+      top
+      bottom
+      symbol
+    }
+  }
+    examesanalisesJson {
       banner
+      bannermobile
       head
       title
       backgroundtop
+      backgroundtopmobile
       backgroundfooter
+      backgroundfootermobile
       areas {
         head
         areas {
@@ -60,7 +150,6 @@ query cbct {
         link
         title
       }
-      
       subpages {
         cbct {
           headlink
@@ -81,60 +170,6 @@ query cbct {
           area
           link
         }
-      }
-    }
-    homeJson {
-      home {
-        head
-        subject
-        details
-        img
-        alt
-      }
-      testimony {
-        function
-        person
-        quote
-        img
-        alt
-      }
-      sobre_nos {
-        details
-        subject
-        head
-      }
-      especialidades{
-        title
-        details
-        button
-        href
-        img
-        alt
-      }
-      invisalign{
-        img
-        alt
-        head
-        details
-        button
-        href
-      }
-      noticias{
-        title
-        synopsis
-        date
-        img
-        alt
-      }
-      blog{
-        title
-        head
-        details
-      } 
-      background{
-        top
-        bottom
-        symbol
       }
     }
     marcacaoJson{
@@ -168,19 +203,21 @@ query cbct {
         }
       }
     }
-    footerJson{
+    footerJson {
       footer {
-        logo
-        socialmedia {
-          link
-          icon
-          alt
-        }
+        copyrigths
+        copyrightsmobile
         links {
           link
           text
         }
-        copyrigths
+        logo
+        logowhite
+        socialmedia {
+          alt
+          icon
+          link
+        }
       }
     }
 }

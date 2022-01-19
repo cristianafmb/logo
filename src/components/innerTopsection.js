@@ -24,14 +24,14 @@ const InnerTopsection = ({ data }) => {
                     {data.areas.areas.map((item, i) => (
                         
                         <div key={"area"+i}>
-                            <hr className="dark-gold" style={{ height: "2px" }} />
+                            <hr className="gold" style={{ height: "2px" }} />
                             <Link to={item.link} className="text-decoration-none">
                                  <p className={window.location.href.includes(item.link) ? "bold head-small text-decoration-none oMedium" : "head-small text-decoration-none oMedium"}>{item.area}</p>
                             </Link>
                         </div>
 
                     ))}
-                    <hr className="dark-gold" style={{ height: "2px" }} />
+                    <hr className="gold" style={{ height: "2px" }} />
                 </Col>
             </Row>
         </div>

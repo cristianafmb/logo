@@ -7,107 +7,167 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Menu from '../components/menu'
+import MenuMobile from '../components/menuMobile'
 import InnerTopsection from '../components/innerTopsection'
+import InnerTopsectionMobile from '../components/innerTopsectionMobile'
 import CardsSection from '../components/cardsSection'
+import CardsSectionMobile from '../components/cardsSectionMobile'
 import CorpoClinico from '../components/sobrenos/corpoclinico'
+import CorpoClinicoMobile from '../components/sobrenos/corpoclinicoMobile'
 import Questoes from '../components/questoes'
+import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
+import FooterMobile from '../components/footerMobile'
 
-const MedicinaDentaria = ({ data }) => (
-  <Layout home mobile={useBreakpoint().mobile}>
-    <div className="no-repeat heigth-banner center" style={{ backgroundImage: `url(${data.medicinadentariaJson.banner})` }}>
-      <SEO  title="Medicina Dentária" />
+const MedicinaDentaria = ({ data }) => {
 
-      <Menu />
-    </div>
+  const breakpoints = useBreakpoint();
 
-    <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.medicinadentariaJson.backgroundtop})` }}>
+  return (
+    <Layout home mobile={useBreakpoint().mobile}>
+      <SEO title="Medicina Dentária" />
+      {!breakpoints.mobile ? (
+        <>
+          <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${data.medicinadentariaJson.banner})` }}>
 
-      <InnerTopsection data={data.medicinadentariaJson} />
+            <Menu />
 
-      <CardsSection data={data.medicinadentariaJson.cards} />
-    </div>
+          </div>
 
-    <div className="no-repeat " style={{ backgroundImage: `url(${data.medicinadentariaJson.backgroundfooter})` }}>
+          <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${data.medicinadentariaJson.backgroundtop})` }}>
 
-      <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
+            <InnerTopsection data={data.medicinadentariaJson} />
 
-      <Questoes data={data.questoesJson.questoes} />
+            <CardsSection data={data.medicinadentariaJson.cards} />
+
+          </div>
+
+          <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${data.medicinadentariaJson.backgroundfooter})` }}>
+
+            <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
+
+            <Questoes data={data.questoesJson.questoes} />
+
+          </div>
+
+          <Footer data={data.footerJson.footer} />
+
+        </>
+      )
+        :
+        (
+          <>
+            <div className="no-repeat" style={{ backgroundImage: `url(${data.medicinadentariaJson.backgroundtopmobile})` }}>
 
 
-    </div>
+              <div className="no-repeat heigth-banner" style={{ backgroundImage: `url(${data.medicinadentariaJson.bannermobile})` }}>
 
+                <MenuMobile footer={data.footerJson.footer} />
 
-    <Footer data={data.footerJson.footer} />
+              </div>
 
-  </Layout>
-)
+              <InnerTopsectionMobile data={data.medicinadentariaJson} />
+
+              <CardsSectionMobile data={data.medicinadentariaJson} />
+
+            </div>
+
+            <div className="no-repeat background-bottom" style={{ backgroundImage: `url(${data.medicinadentariaJson.backgroundfootermobile})` }}>
+
+              <CorpoClinicoMobile data={data.corpoclinicoJson.corpoclinico} />
+
+              <QuestoesMobile data={data.questoesJson.questoes} />
+
+            </div>
+
+            <FooterMobile footer={data.footerJson.footer} />
+          </>
+        )}
+    </Layout >
+  )
+}
 
 export default MedicinaDentaria
 
 export const Json = graphql`
 query medicinadentaria {
-    medicinadentariaJson {
-      banner
-      head
-      title
-      backgroundtop
-      backgroundfooter
+  medicinadentariaJson {
+    bannermobile
+    banner
+    head
+    title
+    backgroundfooter
+    backgroundtop
+    backgroundfootermobile
+    backgroundtopmobile
+    areas {
       areas {
-        head
-        areas {
-          area
-          link
-        }
-      }
-      cards {
-        btntext
-        details
+        area
         link
-        title
+      }
+      head
+    }
+    cards {
+      btntext
+      details
+      title
+      link
+    }
+    subpages {
+      areas {
+        area
+        link
       }
     }
-    corpoclinicoJson{
-      corpoclinico {
-        details
-        btn {
-          link
-          text
-        }
-        head
-        people {
-          especiality
-          img
-          name
-          occupation
-        }
-        title
+  }
+  marcacaoJson {
+    img
+    alt
+  }
+  corpoclinicoJson {
+    corpoclinico {
+      title
+      head
+      details
+      btn {
+        link
+        text
+        textmobile
+      }
+      people {
+        especiality
+        img
+        name
+        occupation
       }
     }
-    questoesJson{
-        questoes{
-          titulo
-          texto
-          questoes{
-            link
-            texto
-          }
-        }
+  }
+  questoesJson {
+    questoes {
+      texto
+      titulo
+      questoes {
+        link
+        texto
       }
-    footerJson{
-        footer {
-          logo
-          socialmedia {
-            link
-            icon
-            alt
-          }
-          links {
-            link
-            text
-          }
-          copyrigths
-        }
+    }
+  }
+  footerJson {
+    footer {
+      copyrightsmobile
+      copyrigths
+      links {
+        link
+        text
       }
+      logo
+      logowhite
+      socialmedia {
+        alt
+        icon
+        link
+      }
+    }
+  }
 }
 `

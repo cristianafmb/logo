@@ -8,134 +8,224 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import Menu from '../../components/menu'
 import SubPage from '../../components/especialidades/subPage'
+import SubPageMobile from '../../components/especialidades/subPageMobile'
 import Questoes from '../../components/questoes'
 import Footer from '../../components/footer'
 
-const CirurgiaPlastica = ({ data }) => (
-  <Layout home mobile={useBreakpoint().mobile}>
-    <div className="no-repeat heigth-banner center" style={{ backgroundImage: `url(${data.especialidadesJson.banner})` }}>
+const CirurgiaPlastica = ({ data }) => {
+
+  const breakpoints = useBreakpoint();
+
+  return (
+    <Layout home mobile={useBreakpoint().mobile}>
+
       <SEO title="Especialidades" />
 
-      <Menu />
-    </div>
+      {!breakpoints.mobile ? (
+        <>
+        
+          <div className="no-repeat heigth-banner center" style={{ backgroundImage: `url(${data.especialidadesJson.banner})` }}>
 
-    <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.especialidadesJson.backgroundtop})` }}>
+            <Menu />
 
-      <SubPage data={data.especialidadesJson} subpage={data.especialidadesJson.subpages.cirurgiaplastica} page="especialidades" form={data.marcacaoJson} />
+          </div>
 
-    </div>
+          <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${data.especialidadesJson.backgroundtop})` }}>
 
+            <SubPage data={data.especialidadesJson} subpage={data.especialidadesJson.subpages.cirurgiaplastica} page="especialidades" form={data.marcacaoJson} />
 
-    <div className="no-repeat " style={{ backgroundImage: `url(${data.especialidadesJson.backgroundfooter})` }}>
+          </div>
 
-   
+          <div className="no-repeat  bg-cover" style={{ backgroundImage: `url(${data.especialidadesJson.backgroundfooter})` }}>
 
-      <Questoes data={data.questoesJson.questoes} />
+            <Questoes data={data.questoesJson.questoes} />
 
+          </div>
 
-    </div>
+          <Footer data={data.footerJson.footer} />
 
-    <Footer data={data.footerJson.footer} />
-
-  </Layout>
-)
+        </>
+      )
+        :
+        (
+          <>
+            <SubPageMobile
+              bgtop={data.especialidadesJson.backgroundtopmobile}
+              bgbanner={data.especialidadesJson.bannermobile}
+              especialidades={data.especialidadesJson}
+              subpage={data.especialidadesJson.subpages.cirurgiaplastica}
+              page="especialidades"
+              form={data.marcacaoJson}
+              home={data.homeJson.especialidades}
+              bgbottm={data.especialidadesJson.backgroundfootermobile}
+              questoes={data.questoesJson.questoes}
+              footer={data.footerJson.footer}
+            />
+          </>
+        )}
+    </Layout>
+  )
+}
 
 export default CirurgiaPlastica
 
 export const Json = graphql`
 query cirurgiaplastica {
-    especialidadesJson {
-      banner
+  homeJson {
+    home {
       head
-      title
-      backgroundtop
-      backgroundfooter
-      areas {
-        head
-        areas {
-          area
-          link
-        }
-      }
-      cards {
-        btntext
-        details
-        link
-        title
-      }
-      cardsparttwo {
-        btntext
-        details
-        link
-        title
-      }
-      subpages {
-        cirurgiaplastica {
-          headlink
-          link
-          alt
-          corpoclinico {
-            alt
-            img
-            name
-            occupation
-          }
-          details
-          head
-          img
-          title
-        }
-        areas {
-          area
-          link
-        }
-      }
-    }
-    marcacaoJson{
+      subject
+      details
       img
       alt
     }
-    corpoclinicoJson{
-      corpoclinico {
-        details
-        btn {
-          link
-          text
-        }
-        head
-        people {
-          especiality
+    testimony {
+      function
+      person
+      quote
+      img
+      alt
+    }
+    sobre_nos {
+      details
+      subject
+      head
+    }
+    especialidades{
+      title
+      details
+      button
+      href
+      img
+      alt
+      titlemobile
+    }
+    invisalign{
+      img
+      alt
+      head
+      details
+      button
+      href
+      textoverimg
+    }
+    noticias{
+      title
+      synopsis
+      date
+      img
+      alt
+    }
+    blog{
+      title
+      head
+      details
+      btntxtmobile
+      btnhref
+    } 
+    background{
+      top
+      bottom
+      symbol
+    }
+  }
+  especialidadesJson {
+    banner
+    bannermobile
+    head
+    title
+    backgroundtop
+    backgroundtopmobile
+    backgroundfooter
+    backgroundfootermobile
+    areas {
+      head
+      areas {
+        area
+        link
+      }
+    }
+    cards {
+      btntext
+      details
+      link
+      title
+    }
+    cardsparttwo {
+      btntext
+      details
+      link
+      title
+    }
+    subpages {
+      cirurgiaplastica {
+        headlink
+        link
+        alt
+        corpoclinico {
+          alt
           img
           name
           occupation
         }
+        details
+        head
+        img
         title
       }
+      areas {
+        area
+        link
+      }
     }
-    questoesJson{
+  }
+  marcacaoJson{
+    img
+    alt
+  }
+  corpoclinicoJson{
+    corpoclinico {
+      details
+      btn {
+        link
+        text
+      }
+      head
+      people {
+        especiality
+        img
+        name
+        occupation
+      }
+      title
+    }
+  }
+  questoesJson{
+    questoes{
+      titulo
+      texto
       questoes{
-        titulo
+        link
         texto
-        questoes{
-          link
-          texto
-        }
       }
     }
-    footerJson{
-      footer {
-        logo
-        socialmedia {
-          link
-          icon
-          alt
-        }
-        links {
-          link
-          text
-        }
-        copyrigths
+  }
+  footerJson {
+    footer {
+      copyrigths
+      copyrightsmobile
+      links {
+        link
+        text
+      }
+      logo
+      logowhite
+      socialmedia {
+        alt
+        icon
+        link
       }
     }
+  }
 }
 `

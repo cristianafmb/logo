@@ -9,7 +9,6 @@ import Button from 'react-bootstrap/Button';
 import Testimony from '../../components/homepage/testimony'
 import InfoSobreNos from '../../components/homepage/infoSobreNos'
 
-
 const SobreNosHome = ({ testimony, sobreNos }) => {
     return (
         <div className="section-sobre-nos-home margin-sections position-relative">

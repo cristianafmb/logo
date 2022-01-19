@@ -6,20 +6,6 @@
             "details": "A Medicina Dentaria é a área da saúde que previne, diagonistica e trata as doenças que afetam os detes, as gengivas e a mucosa oral.",
             "img": "../images/home/01.png",
             "alt": "medicina-dentaria"
-        },
-        {
-            "head": "Marcação Consulta",
-            "subject": "Faça-nos uma visita. Marque uma consulta.",
-            "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde.",
-            "img": "../images/home/02.png",
-            "alt": "marcacao-consulta"
-        },
-        {
-            "head": "Dermatologia",
-            "subject": "Estética facial nas nossas instalações.",
-            "details": "A Dermatologia é a especialidade da medicina que se ocupa das doenças que afetam o maior orgão do corpo humano, a pele.",
-            "img": "../images/home/03.png",
-            "alt": "dermatologia"
         }
     ],
     "testimony": {
@@ -78,19 +64,22 @@
         "head": "Invisalign",
         "details": "Graças ao scanner itero element, o invisalign provider pode efetuar um exame digital 3D rápido e preciso dos seus dentes e delinear um plano de tratamento personalizado.",
         "button": "Saber Mais",
-        "href": ""
+        "href": "",
+        "textoverimg":"Reúna-se com o Invisalign provider e dê uma espreitadela no seu sorriso novo. Comece a transformar o seu sorriso imediatamente após o primeiro ajuste."
     },
     "noticias": {
         "title": "A Importância da Terapia da Fala em Tempos de Pandemia",
         "synopsis": "Diversos profissionais, das mais diversas áreas da saúde e da educação, e também diversas famílias, têm referido o impacto que a pandemia trouxe a nível do desenvolvimento motor, social, comunicação e linguística das crianças.",
         "date": "22 de Outubro de 2021",
-        "img": "../images/home/noticias/dezembro.png",
+        "img": "../images/home/noticias/last-new.svg",
         "alt": "noticia-dezembro"
     },
     "blog": {
         "title": "Blog",
         "head": "Saiba tudo o que está a acontecer na nossa clínica",
-        "details": "A Upcare Medical Center está em contacto com os seus utentes para que estejam informados de novidades e soluções clínicas que sejam do seu interesse."
+        "details": "A Upcare Medical Center está em contacto com os seus utentes para que estejam informados de novidades e soluções clínicas que sejam do seu interesse.",
+        "btntxtmobile": "Ver todas as notícias",
+        "btnhref": "/blog"
     },
     "background": {
         "top": "../images/background1.svg",

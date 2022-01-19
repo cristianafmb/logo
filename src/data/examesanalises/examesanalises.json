@@ -1,9 +1,12 @@
 {
     "banner": "../images/examesanalises/background-banner.svg",
+    "bannermobile": "../images/examesanalises/background-banner-mobile.svg",
     "head": "Os Nossos Serviços",
     "title": "Exames & Análises",
     "backgroundtop": "../images/especialidades/background-top.svg",
+    "backgroundtopmobile": "../images/background-top-mobile.svg",
     "backgroundfooter": "../images/background-footer.svg",
+    "backgroundfootermobile": "../images/background-footer-mobile.svg",
     "areas": {
         "head": "Áreas Clínicas",
         "areas": [
@@ -107,7 +110,7 @@
             }
         ],
         "analisesclinicas": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/exmaesanalises/examesanalises.png",
             "alt": "analisesclinicas",
             "head": "Exames & Análises",
             "headlink": "/examesanalises",
@@ -136,7 +139,7 @@
             ]
         },
         "cbct": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/exmaesanalises/examesanalises.png",
             "alt": "cbct",
             "head": "Exames & Análises",
             "headlink": "/examesanalises",
@@ -165,7 +168,7 @@
             ]
         },
         "electrocardiograma": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/exmaesanalises/examesanalises.png",
             "alt": "electrocardiograma",
             "head": "Exames & Análises",
             "headlink": "/examesanalises",
@@ -194,7 +197,7 @@
             ]
         },
         "espirometria": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/exmaesanalises/examesanalises.png",
             "alt": "espirometria",
             "head": "Exames & Análises",
             "headlink": "/examesanalises",
@@ -223,7 +226,7 @@
             ]
         },
         "examesgeneticos": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/exmaesanalises/examesanalises.png",
             "alt": "examesgeneticos",
             "head": "Exames & Análises",
             "headlink": "/examesanalises",
@@ -252,7 +255,7 @@
             ]
         },
         "holter": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/exmaesanalises/examesanalises.png",
             "alt": "holter",
             "head": "Exames & Análises",
             "headlink": "/examesanalises",
@@ -281,7 +284,7 @@
             ]
         },
         "laser": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/exmaesanalises/examesanalises.png",
             "alt": "laser",
             "head": "Exames & Análises",
             "headlink": "/examesanalises",
@@ -310,7 +313,7 @@
             ]
         },
         "polissonografia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/exmaesanalises/examesanalises.png",
             "alt": "polissonografia",
             "head": "Exames & Análises",
             "headlink": "/examesanalises",

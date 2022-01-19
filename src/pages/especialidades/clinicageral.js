@@ -8,89 +8,175 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import Menu from '../../components/menu'
 import SubPage from '../../components/especialidades/subPage'
+import SubPageMobile from '../../components/especialidades/subPageMobile'
 import Questoes from '../../components/questoes'
 import Footer from '../../components/footer'
 
-const ClinicaGeral = ({ data }) => (
-  <Layout home mobile={useBreakpoint().mobile}>
-    <div className="no-repeat heigth-banner center" style={{ backgroundImage: `url(${data.especialidadesJson.banner})` }}>
+const ClinicaGeral = ({ data }) => {
+
+  const breakpoints = useBreakpoint();
+
+  return (
+    <Layout home mobile={useBreakpoint().mobile}>
+
       <SEO title="Especialidades" />
+      {!breakpoints.mobile ? (
+        <>
+          <div className="no-repeat heigth-banner center" style={{ backgroundImage: `url(${data.especialidadesJson.banner})` }}>
 
-      <Menu />
-    </div>
+            <Menu />
 
-    <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.especialidadesJson.backgroundtop})` }}>
+          </div>
 
-      <SubPage data={data.especialidadesJson} subpage={data.especialidadesJson.subpages.clinicageral} page="especialidades" form={data.marcacaoJson} />
+          <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${data.especialidadesJson.backgroundtop})` }}>
 
-    </div>
+            <SubPage data={data.especialidadesJson} subpage={data.especialidadesJson.subpages.clinicageral} page="especialidades" form={data.marcacaoJson} />
 
+          </div>
 
-    <div className="no-repeat " style={{ backgroundImage: `url(${data.especialidadesJson.backgroundfooter})` }}>
+          <div className="no-repeat  bg-cover" style={{ backgroundImage: `url(${data.especialidadesJson.backgroundfooter})` }}>
 
-   
+            <Questoes data={data.questoesJson.questoes} />
 
-      <Questoes data={data.questoesJson.questoes} />
+          </div>
 
+          <Footer data={data.footerJson.footer} />
+        </>
+      )
+        :
+        (
+          <>
+            <SubPageMobile
+              bgtop={data.especialidadesJson.backgroundtopmobile}
+              bgbanner={data.especialidadesJson.bannermobile}
+              especialidades={data.especialidadesJson}
+              subpage={data.especialidadesJson.subpages.clinicageral}
+              page="especialidades"
+              form={data.marcacaoJson}
+              home={data.homeJson.especialidades}
+              bgbottm={data.especialidadesJson.backgroundfootermobile}
+              questoes={data.questoesJson.questoes}
+              footer={data.footerJson.footer}
+            />
+          </>
+        )
+      }
 
-    </div>
-
-    <Footer data={data.footerJson.footer} />
-
-  </Layout>
-)
-
+    </Layout>
+  )
+}
 export default ClinicaGeral
 
 export const Json = graphql`
 query clinicageral {
-    especialidadesJson {
-      banner
+  homeJson {
+    home {
       head
+      subject
+      details
+      img
+      alt
+    }
+    testimony {
+      function
+      person
+      quote
+      img
+      alt
+    }
+    sobre_nos {
+      details
+      subject
+      head
+    }
+    especialidades{
       title
-      backgroundtop
-      backgroundfooter
+      details
+      button
+      href
+      img
+      alt
+      titlemobile
+    }
+    invisalign{
+      img
+      alt
+      head
+      details
+      button
+      href
+      textoverimg
+    }
+    noticias{
+      title
+      synopsis
+      date
+      img
+      alt
+    }
+    blog{
+      title
+      head
+      details
+      btntxtmobile
+      btnhref
+    } 
+    background{
+      top
+      bottom
+      symbol
+    }
+  }
+  especialidadesJson {
+    banner
+    bannermobile
+    head
+    title
+    backgroundtop
+    backgroundtopmobile
+    backgroundfooter
+    backgroundfootermobile
+    areas {
+      head
       areas {
-        head
-        areas {
-          area
-          link
-        }
-      }
-      cards {
-        btntext
-        details
+        area
         link
-        title
-      }
-      cardsparttwo {
-        btntext
-        details
-        link
-        title
-      }
-      subpages {
-        clinicageral {
-          headlink
-          link
-          alt
-          corpoclinico {
-            alt
-            img
-            name
-            occupation
-          }
-          details
-          head
-          img
-          title
-        }
-        areas {
-          area
-          link
-        }
       }
     }
+    cards {
+      btntext
+      details
+      link
+      title
+    }
+    cardsparttwo {
+      btntext
+      details
+      link
+      title
+    }
+    subpages {
+      clinicageral {
+        headlink
+        link
+        alt
+        corpoclinico {
+          alt
+          img
+          name
+          occupation
+        }
+        details
+        head
+        img
+        title
+      }
+      areas {
+        area
+        link
+      }
+    }
+  }
     marcacaoJson{
       img
       alt
@@ -122,19 +208,21 @@ query clinicageral {
         }
       }
     }
-    footerJson{
+    footerJson {
       footer {
-        logo
-        socialmedia {
-          link
-          icon
-          alt
-        }
+        copyrigths
+        copyrightsmobile
         links {
           link
           text
         }
-        copyrigths
+        logo
+        logowhite
+        socialmedia {
+          alt
+          icon
+          link
+        }
       }
     }
 }

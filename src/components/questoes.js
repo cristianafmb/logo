@@ -13,7 +13,7 @@ const Questoes = ({ data }) => (
     <div className="container-questoes mt-5 position-relative">
         <Row>
             <Col sm="12" md="12" lg="12" className="no-space-n-cols">
-                <hr className="dark-gold" style={{ height: "2px" }} />
+                <hr className="gold" style={{ height: "2px" }} />
             </Col>
         </Row>
         <Row className="left">
@@ -38,7 +38,7 @@ const Questoes = ({ data }) => (
         </Row>
         <Row>
             <Col sm="12" md="12" lg="12" className="no-space-n-cols mb-5">
-                <hr className="dark-gold" style={{ height: "2px" }} />
+                <hr className="gold" style={{ height: "2px" }} />
             </Col>
         </Row>
 

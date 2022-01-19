@@ -29,7 +29,7 @@ const Footer = ({ data }) => {
             <Row className=" center heigth-footer d-flex  align-items-center m-auto width-footer">
                 <Col sm="12" md="1" lg="1" className="right ">
                     <a href="/">
-                        <img src={data.logo}  className="max-width"/>
+                        <img src={data.logowhite}  className="max-width"/>
                     </a>
                     
                 </Col>

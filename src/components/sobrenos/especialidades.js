@@ -28,13 +28,13 @@ const Especialidades = ({ data }) => {
                             {data.especs.first.map((array, i) => (
                                 <Row key={"first-"+i}>
                                     <Col key={"first-"+i}>
-                                        <hr className="dark-gold" style={{ height: "2px" }} />
+                                        <hr className="gold" style={{ height: "2px" }} />
                                         <a href={array.href}><p className="head-small oLight">{array.title}</p></a>
 
                                     </Col>
                                 </Row>
                             ))}
-                            <hr className="dark-gold" style={{ height: "2px" }} />
+                            <hr className="gold" style={{ height: "2px" }} />
 
                         </Col>
                         <Col sm="12" lg="4" md="4">
@@ -42,7 +42,7 @@ const Especialidades = ({ data }) => {
                                 (data.especs.second.map((array, j) => (
                                     <Row key={"second-"+j}>
                                         <Col key={"second-"+j}>
-                                            <hr className="dark-gold" style={{ height: "2px" }} />
+                                            <hr className="gold" style={{ height: "2px" }} />
                                             <a href={array.href}><p className="head-small oLight">{array.title}</p></a>
                                             
                                         </Col>

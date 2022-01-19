@@ -1,9 +1,12 @@
 {
     "banner": "../images/especialidades/background-banner.svg",
+    "bannermobile": "../images/especialidades/background-banner-mobile.svg",
     "head": "Os Nossos Serviços",
     "title": "Especialidades",
     "backgroundtop": "../images/especialidades/background-top.svg",
+    "backgroundtopmobile": "../images/background-top-mobile.svg",
     "backgroundfooter": "../images/background-footer.svg",
+    "backgroundfootermobile": "../images/background-footer-mobile.svg",
     "areas": {
         "head": "Áreas Clínicas",
         "areas": [
@@ -215,7 +218,7 @@
             }
         ],
         "cardiologia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "cardiologia",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -244,7 +247,7 @@
             ]
         },
         "cirurgiaplastica": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "cirurgiaplastica",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -273,7 +276,7 @@
             ]
         },
         "clinicageral": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "clinicageral",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -302,7 +305,7 @@
             ]
         },
         "dermatologia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "dermatologia",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -331,7 +334,7 @@
             ]
         },
         "fisitatria": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "fisitatria",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -360,7 +363,7 @@
             ]
         },
         "fisioterapia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "fisioterapia",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -389,7 +392,7 @@
             ]
         },
         "ginecologiaobstetricia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "ginecologiaobstetricia",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -418,7 +421,7 @@
             ]
         },
         "medicinainterna": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "medicinainterna",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -447,7 +450,7 @@
             ]
         },
         "neurologia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "neurologia",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -476,7 +479,7 @@
             ]
         },
         "nutricao": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "nutricao",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -505,7 +508,7 @@
             ]
         },
         "ortopedia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "ortopedia",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -534,7 +537,7 @@
             ]
         },
         "otorrinolaringologia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "otorrinolaringologia",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -563,7 +566,7 @@
             ]
         },
         "pediatria": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "pediatria",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -592,7 +595,7 @@
             ]
         },
         "pneumologia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "pneumologia",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -621,7 +624,7 @@
             ]
         },
         "podologia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "podologia",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -650,7 +653,7 @@
             ]
         },
         "psicologia": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "psicologia",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -679,7 +682,7 @@
             ]
         },
         "psiquiatria": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "psiquiatria",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -708,7 +711,7 @@
             ]
         },
         "terapiafala": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "terapiafala",
             "head": "Especialidades",
             "headlink": "/especialidades",
@@ -737,7 +740,7 @@
             ]
         },
         "terapiaocupacional": {
-            "img": "../images/especialidades/cardiologia.svg",
+            "img": "../images/especialidades/cardiologia.png",
             "alt": "terapiaocupacional",
             "head": "Especialidades",
             "headlink": "/especialidades",

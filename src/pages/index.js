@@ -14,12 +14,17 @@ import SobreNos from '../components/homepage/sobreNosHome'
 import SobreNosMobile from '../components/homepage/sobreNosHomeMobile'
 import Especialidades from '../components/homepage/especialidades'
 import EspecialidadesMobile from '../components/homepage/especialidadesMobile'
-import Invisalgin from '../components/homepage/invisalgin'
+import Invisalign from '../components/homepage/invisalign'
+import InvisalignMobile from '../components/homepage/InvisalignMobile'
 import Noticias from '../components/homepage/noticias'
+import NoticiasMobile from '../components/homepage/noticiasMobile'
 import PedidoMarcacaoRapido from '../components/pedidoMarcacaoRapido'
+import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
 import Questoes from '../components/questoes'
+import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
-import top from '../images/background2.svg'
+import FooterMobile from '../components/footerMobile'
+import top from '../images/background1.svg'
 import bottom from '../images/bottom.svg'
 import up from '../images/home/up.svg'
 
@@ -35,7 +40,7 @@ const IndexPage = ({ data }) => {
       {!breakpoints.mobile ? (
         <>
           <img src={up} className="up" />
-          <div className="no-repeat" style={{ backgroundImage: `url(${top})` }}>
+          <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
             <Menu footer={data.footerJson.footer} />
 
@@ -46,9 +51,9 @@ const IndexPage = ({ data }) => {
 
           <Especialidades especialidades={data.homeJson.especialidades} />
 
-          <div className="no-repeat bg-position-bottom " style={{ backgroundImage: `url(${bottom})` }}>
+          <div className="no-repeat bg-position-bottom  bg-cover" style={{ backgroundImage: `url(${bottom})` }}>
 
-            <Invisalgin data={data.homeJson.invisalign} />
+            <Invisalign data={data.homeJson.invisalign} />
 
             <Noticias noticias={data.homeJson.noticias} blog={data.homeJson.blog} />
 
@@ -73,7 +78,16 @@ const IndexPage = ({ data }) => {
               <SobreNosMobile testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} />
 
               <EspecialidadesMobile especialidades={data.homeJson.especialidades} />
+
+              <InvisalignMobile data={data.homeJson.invisalign} />
+
+              <NoticiasMobile noticias={data.homeJson.noticias} blog={data.homeJson.blog} />
+
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+
+              <QuestoesMobile data={data.questoesJson.questoes} />
             </ div>
+            <FooterMobile footer={data.footerJson.footer} />
           </>
         )}
 
@@ -122,6 +136,7 @@ query IntroHome {
       details
       button
       href
+      textoverimg
     }
     noticias{
       title
@@ -134,6 +149,8 @@ query IntroHome {
       title
       head
       details
+      btntxtmobile
+      btnhref
     } 
     background{
       top
@@ -192,6 +209,7 @@ query IntroHome {
   footerJson{
     footer {
       logo
+      logowhite
       socialmedia {
         link
         icon
@@ -202,6 +220,7 @@ query IntroHome {
         text
       }
       copyrigths
+      copyrightsmobile
     }
   }
 }

@@ -46,7 +46,7 @@ const IntroHome = ({ data }) => {
                         <Row>
                             <Col sm="12" md="4" lg="4" >
 
-                                <CardIntroHome head={data.head} subject={data.subject} details={data.details} />
+                                <CardIntroHome head={data.head} subject={data.subject} details={data.details}/>
 
                             </Col>
                             <Col sm="12" md="8" lg="8">

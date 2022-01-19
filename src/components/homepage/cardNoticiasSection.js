@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../sass/app.scss';
 
 
-const Invisalgin = ({ title, head, details }) => (
+const Invisalign = ({ title, head, details }) => (
     <div className="position-relative">
         <p className= "oBold head-x-small">{title}</p>
 
@@ -15,4 +15,4 @@ const Invisalgin = ({ title, head, details }) => (
     </div>
 )
 
-export default Invisalgin
+export default Invisalign

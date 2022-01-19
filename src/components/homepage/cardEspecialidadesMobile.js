@@ -18,15 +18,15 @@ const CardEspecialidades = ({ title, details, button, href, img, alt }) => {
         // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
         if (typeof (element) != 'undefined' && element != null) {
             // if url is /especialidades/cardiologia for example, then add /especialidades/cardiologia#marcacao
-            if(!window.location.href.includes("#marcacao")){
+            if (!window.location.href.includes("#marcacao")) {
                 window.location.href = window.location.href + "#marcacao"
             }
             // if there is already /especialidades/cardiologia#marcacao for example, put the same url /especialidades/cardiologia#marcacao to go to element with that id
-            else{
+            else {
                 var page = window.location.href.split("#marcacao")[0];
-                window.location.href = page+"#marcacao"
+                window.location.href = page + "#marcacao"
             }
-            
+
         }
         // if there is no element with id #marcacao, then show modal
         else {
@@ -56,11 +56,19 @@ const CardEspecialidades = ({ title, details, button, href, img, alt }) => {
                 </Col>
             </Row>
             <Row className="m-3 mt-5 mb-4">
-                <Col>
-                    <Button onClick={handleShow} className="especialidades-button oMedium">
-                        {button}
-                    </Button>
-                </Col>
+                {title === "Marcar Consulta" ?
+                    <Col>
+                        <Button onClick={handleShow} className="especialidades-button oMedium">
+                            {button}
+                        </Button>
+                    </Col>
+                    :
+                    <Col>
+                        <Button href={href} className="especialidades-button oMedium">
+                            {button}
+                        </Button>
+                    </Col>
+                }
             </Row>
 
             <div>
