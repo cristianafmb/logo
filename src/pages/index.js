@@ -69,7 +69,7 @@ const IndexPage = ({ data }) => {
         (
           <>
             <img src={up} className="up" />
-            <div className="no-repeat" style={{ backgroundImage: `url(${top})` }}>
+            <div className="no-repeat" style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
 
               <MenuMobile footer={data.footerJson.footer} />
 
@@ -77,16 +77,22 @@ const IndexPage = ({ data }) => {
 
               <SobreNosMobile testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} />
 
-              <EspecialidadesMobile especialidades={data.homeJson.especialidades} />
+            </ div>
 
-              <InvisalignMobile data={data.homeJson.invisalign} />
+            <EspecialidadesMobile especialidades={data.homeJson.especialidades} />
 
-              <NoticiasMobile noticias={data.homeJson.noticias} blog={data.homeJson.blog} />
+            <InvisalignMobile data={data.homeJson.invisalign} />
+
+            <NoticiasMobile noticias={data.homeJson.noticias} blog={data.homeJson.blog} />
+
+            <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.homeJson.background.bottommobile})` }}>
 
               <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
 
               <QuestoesMobile data={data.questoesJson.questoes} />
+
             </ div>
+
             <FooterMobile footer={data.footerJson.footer} />
           </>
         )}
@@ -154,7 +160,9 @@ query IntroHome {
     } 
     background{
       top
+      topmobile
       bottom
+      bottommobile
       symbol
     }
   }

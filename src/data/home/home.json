@@ -83,7 +83,9 @@
     },
     "background": {
         "top": "../images/background1.svg",
+        "topmobile": "../images/background-top-mobile.svg",
         "bottom": "../images/background2.svg",
+        "bottommobile": "../images/background-footer-mobile.svg",
         "symbol": "../images/symbolup.svg"
     }
 }

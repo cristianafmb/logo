@@ -24,7 +24,6 @@ import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 
-import bottom from '../images/sobrenos/background.svg'
 import up from '../images/home/up.svg'
 
 const SobreNos = ({ data }) => {
@@ -35,7 +34,7 @@ const SobreNos = ({ data }) => {
     <Layout home mobile={useBreakpoint().mobile}>
       {!breakpoints.mobile ? (
         <>
-          <div className="background-sobrenos" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.bg})` }}>
+          <div className="background-sobrenos" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.bgtop})` }}>
             <SEO title="Sobre Nós" />
 
             <Menu />
@@ -45,7 +44,7 @@ const SobreNos = ({ data }) => {
 
           <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
 
-          <div className="no-repeat background-bottom" style={{ backgroundImage: `url(${bottom})` }}>
+          <div className="no-repeat background-bottom" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.bgbottom})` }}>
             <div className="margin-sections ">
               {data.sobrenosJson.sectionswithbanners.content.map((array, k) => (
                 <Especialidades data={array} key={"especialidade" + k} />
@@ -69,8 +68,8 @@ const SobreNos = ({ data }) => {
         (
           <>
             <img src={up} className="up" />
-            {console.log(data.sobrenosJson.sobrenos.bgmobile)}
-            <div className="no-repeat bg-cover height-100vh" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.bgmobile})` }}>
+
+            <div className="no-repeat bg-cover height-100vh" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.bgtopmobile})` }}>
 
               <MenuMobile footer={data.footerJson.footer} />
 
@@ -86,9 +85,13 @@ const SobreNos = ({ data }) => {
               ))}
             </div>
 
-            <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+            <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.bgbottommobile})` }}>
 
-            <QuestoesMobile data={data.questoesJson.questoes} />
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+
+              <QuestoesMobile data={data.questoesJson.questoes} />
+
+            </div>
 
             <FooterMobile footer={data.footerJson.footer} />
           </>
@@ -106,8 +109,10 @@ export const Json = graphql`
 query SobreNos {
   sobrenosJson {
     sobrenos {
-      bg
-      bgmobile
+      bgtop
+      bgtopmobile
+      bgbottom
+      bgbottommobile
       details
       head
       title

@@ -34,7 +34,7 @@ const Noticias = ({ noticias, blog }) => (
                         <line x1="0" y1="50%" x2="90%" y2="50%"
                             strokeWidth="1" markerEnd="url(#m)" stroke="#8c6f2a" />
                     </svg>
-                    <p className="hover-to-show oOblique">ler notícia</p>
+                    <p className="hover-to-show details-small oOblique">ler notícia</p>
 
                 </Link>
             </Col>

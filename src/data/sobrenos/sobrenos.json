@@ -1,7 +1,9 @@
 {
     "sobrenos": {
-        "bg": "../images/sobrenos/backgroundtop.png",
-        "bgmobile": "../images/sobrenos/backgroundtopmobile.svg",
+        "bgtop": "../images/sobrenos/backgroundtop.png",
+        "bgbottom": "../images/sobrenos/background.svg",
+        "bgtopmobile": "../images/sobrenos/backgroundtopmobile.svg",
+        "bgbottommobile": "../images/background-footer-mobile.svg",
         "head": "Sobre Nós",
         "title": "A nossa prioridade será sempre o seu bem estar.",
         "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. Contamos com uma equipa de profissionais de excelência que têm como principal preocupação o bem estar individual de cada paciente. Contamos com várias especialidades médicas e exames auxiliares de diagnóstico para, de uma forma geral, corresponder às necessidades de toda a população."
