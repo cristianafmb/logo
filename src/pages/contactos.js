@@ -6,46 +6,88 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import Layout from '../components/layout/layout'
 import SEO from '../components/seo'
 import Menu from '../components/menu'
+import MenuMobile from '../components/menuMobile'
 import Contacts from '../components/contactos/contacts'
+import ContactsMobile from '../components/contactos/contactsMobile'
 import Map from '../components/contactos/map'
 import PedidoMarcacaoRapido from '../components/pedidoMarcacaoRapido'
+import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
 import Questoes from '../components/questoes'
+import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
+import FooterMobile from '../components/footerMobile'
 
-const Contactos = ({ data }) => (
+const Contactos = ({ data }) => {
+
+  const breakpoints = useBreakpoint();
+
+  return (
     <Layout home mobile={useBreakpoint().mobile}>
-        <div className="no-repeat  center" style={{ backgroundImage: `url(${data.contactosJson.backgroundtop})` }}>
-            <SEO  title="Contactos" />
-          
+
+      <SEO title="Contactos" />
+      {!breakpoints.mobile ? (
+        <>
+          <div className="no-repeat  bg-cover" style={{ backgroundImage: `url(${data.contactosJson.backgroundtop})` }}>
 
             <Menu />
 
-            <Contacts data={data.contactosJson}/>
+            <Contacts data={data.contactosJson} />
 
-            <Map/>
+            <Map />
 
-        </div>
+          </div>
 
+          <div className="no-repeat " style={{ backgroundImage: `url(${data.contactosJson.backgroundfooter})` }}>
 
-        <div className="no-repeat " style={{ backgroundImage: `url(${data.contactosJson.backgroundfooter})` }}>
-
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img}  alt={data.marcacaoJson.alt} space={false}/>
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={false} />
 
             <Questoes data={data.questoesJson.questoes} />
 
+          </div>
 
-        </div>
+          <Footer data={data.footerJson.footer} />
+        </>
+      )
+        :
+        (
+          <>
+      
+            <div className="no-repeat" style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
 
-        <Footer data={data.footerJson.footer} />
+              <MenuMobile footer={data.footerJson.footer} />
 
+              <ContactsMobile data={data.contactosJson} />
+
+            </ div>
+
+            <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.homeJson.background.bottommobile})` }}>
+
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+
+              <QuestoesMobile data={data.questoesJson.questoes} />
+
+            </ div>
+
+            <FooterMobile footer={data.footerJson.footer} />
+          </>
+        )}
     </Layout>
-)
-
+  )
+}
 export default Contactos
 
 
 export const Json = graphql`
 query ContactoJson {
+  homeJson {
+    background{
+      top
+      topmobile
+      bottom
+      bottommobile
+      symbol
+    }
+  }
   contactosJson {
     backgroundtop
     backgroundfooter
@@ -119,6 +161,7 @@ query ContactoJson {
   footerJson{
     footer {
       logo
+      logowhite
       socialmedia {
         link
         icon
@@ -129,6 +172,7 @@ query ContactoJson {
         text
       }
       copyrigths
+      copyrightsmobile
     }
   }
 }

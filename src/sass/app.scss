@@ -950,6 +950,10 @@ a {
     padding: 5rem 3rem;
 }
 
+.padding-2-2 {
+    padding: 2rem 2rem;
+}
+
 .icon-clinico {
     width: 50% !important;
 }
@@ -1188,7 +1192,9 @@ a {
 }
 
 .img-blog {
-    max-width: 70vh;
+    max-width: 50vh;
+    z-index: 999999;
+    max-height: 40vh;
 }
 
 .blog-right-text {
@@ -1213,5 +1219,25 @@ a {
     }
     &:focus {
         box-shadow: 0 0 0.9rem $gold !important;
+    }
+    @media (max-width: 990px){
+        width: 50%;
+    }
+}
+
+.highlight-img {
+    object-fit: cover;
+    max-height: 45vh;
+    max-width: 90vh;
+}
+
+.blog-html {
+    img {
+        object-fit: cover;
+        max-height: 70vh;
+        max-width: 90vh;
+        @media (max-width: 990px){
+            max-width: calc(42vh + 12 * (100vh - 769vh) / 1151);
+        }
     }
 }

@@ -27,11 +27,19 @@ export const formatVideoCurrentTime = (currentTime) => {
   )
 }
 
+function compare(a, b) {
+  return a.id.localeCompare(b.id, undefined, {
+    numeric: true,
+    sensitivity: 'base'
+  });
+}
+
+var collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
+
 export const parseBlogPosts = (edges) =>
   edges
-    .sort((a, b) => a.id > b.id ? 1 : -1)
     .map(({ node }) => ({
-      id: node.id,
+      id: node.frontmatter.id,
       path: node.frontmatter.path,
       head: node.frontmatter.head,
       title: node.frontmatter.title,
@@ -39,4 +47,6 @@ export const parseBlogPosts = (edges) =>
       data: node.frontmatter.data,
       image: node.frontmatter.image,
       details: node.frontmatter.details,
-    }))
+    }
+    )
+    ).sort((a, b) => String(b['id']).localeCompare(a['id']))
