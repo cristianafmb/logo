@@ -1163,6 +1163,40 @@ a {
     z-index: 999;
     right: 10%;
     top: 5%;
+    transition: rotate_in_cw;
+
+    @keyframes rotate_in_cw {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+    @keyframes rotate_out_cw {
+        0% {
+            transform: rotate(45deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes draw_in {
+        50% {
+            stroke-dashoffset: 100%;
+        }
+        100% {
+            stroke-dashoffset: 0%;
+        }
+    }
+    @keyframes draw_out {
+        50% {
+            stroke-dashoffset: 0%;
+        }
+        100% {
+            stroke-dashoffset: 100%;
+        }
+    }
 }
 
 .bg-cover {
@@ -1220,7 +1254,7 @@ a {
     &:focus {
         box-shadow: 0 0 0.9rem $gold !important;
     }
-    @media (max-width: 990px){
+    @media (max-width: 990px) {
         width: 50%;
     }
 }
@@ -1236,8 +1270,13 @@ a {
         object-fit: cover;
         max-height: 70vh;
         max-width: 90vh;
-        @media (max-width: 990px){
+        @media (max-width: 990px) {
             max-width: calc(42vh + 12 * (100vh - 769vh) / 1151);
         }
     }
+}
+
+.arrow1:hover {
+    fill: yellow;
+    transition: fill 2s;
 }

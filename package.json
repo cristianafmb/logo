@@ -43,6 +43,7 @@
     "react-multi-carousel": "^2.6.5",
     "react-scroll-parallax": "^2.4.3",
     "react-slick": "^0.28.1",
+    "react-spring": "^9.4.2",
     "styled-components": "^5.3.3",
     "typeface-hk-grotesk": "^1.0.0"
   },

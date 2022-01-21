@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useSprings} from "react";
 
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel'
 
+import Arrow from '../../images/home/introhome/arrow.svg';
 import '../../sass/app.scss';
 import CardIntroHome from './cardIntroHome'
 
@@ -20,7 +21,7 @@ function CustomRigthArrow(props) {
             style={{ ...style, display: "table-cell", width: "100%", textAlign: "center" }}
             onClick={onClick}
         >
-            <svg id="Component_3_34" data-name="Component 3 – 34" xmlns="http://www.w3.org/2000/svg" width="135" height="21" viewBox="0 0 135 21">
+            <svg className="arrow1" id="Component_3_34" data-name="Component 3 – 34" xmlns="http://www.w3.org/2000/svg" width="135" height="21" viewBox="0 0 135 21">
 
                 <g id="Group_10" data-name="Group 10" transform="translate(228 94.745) rotate(180)">
 
@@ -46,7 +47,7 @@ const IntroHome = ({ data }) => {
                         <Row>
                             <Col sm="12" md="4" lg="4" >
 
-                                <CardIntroHome head={data.head} subject={data.subject} details={data.details}/>
+                                <CardIntroHome head={data.head} subject={data.subject} details={data.details} />
 
                             </Col>
                             <Col sm="12" md="8" lg="8">
