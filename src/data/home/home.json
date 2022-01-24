@@ -6,6 +6,20 @@
             "details": "A Medicina Dentaria é a área da saúde que previne, diagonistica e trata as doenças que afetam os detes, as gengivas e a mucosa oral.",
             "img": "../images/home/01.png",
             "alt": "medicina-dentaria"
+        },
+        {
+            "head": "Dermatologia",
+            "subject": "Estética Facial nas nossas clínicas.",
+            "details": "A Dermatologia é a especialidade da medicina que se ocupa das doenças que afetam o maior orgão do corpo humano, a pele.",
+            "img": "../images/home/02.png",
+            "alt": "Dermatologia"
+        },
+        {
+            "head": "Marcação Consulta",
+            "subject": "Faça-nos uma visita. Cuide da sua saúde.",
+            "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. ",
+            "img": "../images/home/03.png",
+            "alt": "Marcação Consulta"
         }
     ],
     "testimony": {

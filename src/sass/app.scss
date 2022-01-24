@@ -158,12 +158,10 @@ $background-modal: #d7c891;
     top: 0;
     bottom: 0;
     z-index: 1;
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 15%;
     padding: 0;
-    color: #fff;
     text-align: center;
     background: 0 0;
     border: 0;
@@ -171,8 +169,8 @@ $background-modal: #d7c891;
     transition: opacity 0.15s ease;
     font-size: 25px;
     right: 64% !important;
-    font-size: calc(6px + 12 * (100vw - 769px) / 1151) !important;
     top: 100% !important;
+    display: table-row !important;
 }
 .carousel-control-prev {
     left: -50% !important;
@@ -1279,4 +1277,22 @@ a {
 .arrow1:hover {
     fill: yellow;
     transition: fill 2s;
+}
+
+#arrow-left {
+    margin-top: -25%;
+}
+
+.hover-to-show-carousel {
+    opacity: 1 !important;
+    margin-left: 5%;
+    margin-top: 32%;
+    -webkit-transform: scaleY(1) !important;
+    transform: scaleY(1) !important;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    transition: -webkit-transform 0.26s ease;
+    transition: transform 0.26s ease;
+    transition: transform 0.26s ease, -webkit-transform 0.26s ease;
+    position: absolute;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { animated, useSprings, useSpring, to } from "react-spring";
 import '../sass/app.scss';
 import { Modal, Row, Col } from 'react-bootstrap'
 import { Link } from "gatsby"
@@ -33,6 +34,22 @@ const Menu = ({ footer }) => {
         elemento.classList.add("fade-out")
     };
 
+    const first = useSpring({
+        transform: show2
+            ? "translate(15px, 34px) rotate(-45deg)"
+            : "translate(11px, 14px) rotate(0deg)"
+    });
+    const second = useSpring({
+        transform: show2
+            ? "translate(18px, 15px) rotate(45deg) "
+            : "translate(14px, 22px) rotate(0deg)"
+    });
+    const third = useSpring({
+        transform: show2
+            ? "translate(16px, 33px) rotate(-45deg)"
+            : "translate(11px, 30px) rotate(0deg)"
+    });
+
 
     return (
         <div className="position-relative">
@@ -42,11 +59,24 @@ const Menu = ({ footer }) => {
                 </a>
             </div>
             <div className="m-auto btn-menu-mobile"  >
-                <img src={menuBtnMobile} onClick={handleShow2} aria-controls="example-fade-text" />
+                <svg
+                    onClick={handleShow2}
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#957841"
+                    width="50" height="50" viewBox="0 0 50 50"
+                >
+                    <rect id="Retângulo_42" data-name="Retângulo 42" width="50" height="50" rx="25" fill="#3e3e3e" />
+                    <g id="Grupo_238" data-name="Grupo 238">
+                        <animated.rect width="26" height="3" transform="translate(12 17)" fill="#d7c891" style={first} />
+                        <animated.rect  width={show2 ? "26" : "20" } height="3" transform="translate(15 24)" fill="#d7c891" style={second} />
+                        <animated.rect width="26" height="3" transform="translate(12 31)" fill="#d7c891" style={third} />
+                    </g>
+
+                </svg>
             </div>
             <div>
                 {/*  <Modal id="modal-menu" show={show2} fullscreen={true} onHide={handleHide2} className={show2 ? "mobile-modal-menu fade-in" : "mobile-modal-menu fade-out"}>*/}
-                <Modal id="modal-menu" show={show2} fullscreen={true} onHide={handleHide2} animation={false} className={show2 ? "fade-in" : "fade-out"} >
+                <Modal id="modal-menu" show={show2} fullscreen={true} onHide={handleHide2} animation={false}  >
 
 
                     <div className="section-space-mobile ">
@@ -55,7 +85,20 @@ const Menu = ({ footer }) => {
                         </a>
                     </div>
                     <div className="m-auto btn-menu-mobile"  >
-                        <img src={closeButton} onClick={handleHide2} />
+                        <svg
+                            onClick={handleHide2}
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="#957841"
+                            width="50" height="50" viewBox="0 0 50 50"
+                        >
+                            <rect id="Retângulo_42" data-name="Retângulo 42" width="50" height="50" rx="25" fill="#3e3e3e" />
+                            <g id="Grupo_238" data-name="Grupo 238">
+                                <animated.rect width="26" height="3" transform="translate(12 17)" fill="#d7c891" style={first} />
+                                <animated.rect width={show2 ? "26" : "20" } height="3" transform="translate(15 24)" fill="#d7c891" style={second} />
+                                <animated.rect width="26" height="3" transform="translate(12 31)" fill="#d7c891" style={third} />
+                            </g>
+
+                        </svg>
                     </div>
                     <Modal.Body>
                         <Row className="menu-mobile-options">
