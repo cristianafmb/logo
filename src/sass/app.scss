@@ -154,23 +154,11 @@ $background-modal: #d7c891;
 
 .carousel-control-next {
     margin-right: 4%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
-    padding: 0;
-    text-align: center;
-    background: 0 0;
-    border: 0;
-    opacity: 0.5;
-    transition: opacity 0.15s ease;
     font-size: 25px;
     right: 64% !important;
     top: 100% !important;
     display: table-row !important;
+    margin-top: -5% !important;
 }
 .carousel-control-prev {
     left: -50% !important;
@@ -1279,8 +1267,9 @@ a {
     transition: fill 2s;
 }
 
-#arrow-left {
+#arrow-effect {
     margin-top: -25%;
+    z-index: 9999;
 }
 
 .hover-to-show-carousel {
@@ -1295,4 +1284,29 @@ a {
     transition: transform 0.26s ease;
     transition: transform 0.26s ease, -webkit-transform 0.26s ease;
     position: absolute;
+}
+
+.container-arrow-noticias{
+    margin-left: -10%;
+}
+
+.container-arrow-blog{
+    margin-top: 30%;
+    margin-bottom: -25%;
+    margin-left: -10%;
+}
+
+.container-noposts{
+    height: 70vh;
+    filter: opacity(0.2);
+}
+
+.over-text-noposts{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 990px){
+        top: 20%;
+    }
 }

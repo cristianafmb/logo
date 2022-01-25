@@ -3,6 +3,7 @@ import * as React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
+import { parseBlogPosts } from '../utils/helpers'
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
@@ -33,6 +34,7 @@ import { graphql } from 'gatsby'
 const IndexPage = ({ data }) => {
 
   const breakpoints = useBreakpoint();
+  const posts = parseBlogPosts(data.allMarkdownRemark.edges)
 
   return (
     <Layout home mobile={useBreakpoint().mobile} >
@@ -43,8 +45,8 @@ const IndexPage = ({ data }) => {
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
             <Menu footer={data.footerJson.footer} />
-
-            <IntroHome data={data.homeJson} />
+           
+            <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href}/>
 
             <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} />
           </ div>
@@ -55,7 +57,7 @@ const IndexPage = ({ data }) => {
 
             <Invisalign data={data.homeJson.invisalign} />
 
-            <Noticias noticias={data.homeJson.noticias} blog={data.homeJson.blog} />
+            <Noticias posts={posts} />
 
             <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
 
@@ -73,7 +75,7 @@ const IndexPage = ({ data }) => {
 
               <MenuMobile footer={data.footerJson.footer} />
 
-              <IntroHomeMobile data={data.homeJson} />
+              <IntroHomeMobile data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href}/>
 
               <SobreNosMobile testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} />
 
@@ -106,6 +108,22 @@ export default IndexPage
 
 export const Json = graphql`
 query IntroHome {
+  allMarkdownRemark {
+    edges {
+      node {
+        frontmatter {
+          data
+          date
+          id
+          image
+          path
+          head
+          details
+          title
+        }
+      }
+    }
+  }
   homeJson {
     home {
       head
@@ -113,6 +131,8 @@ query IntroHome {
       details
       img
       alt
+      href
+      btntext
     }
     testimony {
       function
@@ -125,6 +145,8 @@ query IntroHome {
       details
       subject
       head
+      href
+      btntext
     }
     especialidades{
       title

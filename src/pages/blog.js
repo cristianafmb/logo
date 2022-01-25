@@ -8,6 +8,7 @@ import { Link, graphql } from 'gatsby'
 
 import { parseBlogPosts } from '../utils/helpers'
 
+import NoPosts from "../components/blog/noPosts"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Menu from '../components/menu'
@@ -31,12 +32,7 @@ const BlogPage = ({ data }) => {
 
   if (!posts || !Boolean(posts.length)) {
     return (
-      <Layout>
-        <SEO title="Blog" />
-        <div>
-          Errooo
-        </div>
-      </Layout>
+      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson}/>
     )
   }
 

@@ -6,8 +6,9 @@ import Button from 'react-bootstrap/Button'
 
 import '../../sass/app.scss';
 
-const CardIntroHome = ({ head, subject, details }) => (
+const CardIntroHome = ({ head, subject, details, btntext, href }) => (
     <div className="position-relative width-90">
+        
         <div className="mt-5 mb-2 ">
             <p className="head-x-small oBold">{head}</p>
         </div>
@@ -18,9 +19,9 @@ const CardIntroHome = ({ head, subject, details }) => (
             <p className="details-small oRegular">{details}</p>
         </div>
         <div>
-            <Link to="/">
-                <Button variant="warning" size="sm" className="button-intro-home-saber-mais oMedium">Saber Mais</Button>
-            </Link>
+            <a href={href === "/marcacao" ? "#marcacao" : href}>
+                 <Button variant="warning" size="sm" className="button-intro-home-saber-mais oMedium">{btntext}</Button>
+            </a>
         </div>
     </div>
 )

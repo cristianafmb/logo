@@ -15,7 +15,7 @@ const SobreNosHome = ({ testimony, sobreNos }) => {
 
             <Row>
                 <Col sm="12" md="7" lg="6" className="mb-4">
-                    <Card head={sobreNos.head} title={sobreNos.subject} details={sobreNos.details} btn="Saber Mais" btnlink="/"/>
+                    <Card head={sobreNos.head} title={sobreNos.subject} details={sobreNos.details} btn={sobreNos.btntext} btnlink={sobreNos.href}/>
                  
                 </Col>
                 <Col sm="12" md="4" lg="4">

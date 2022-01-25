@@ -6,7 +6,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import '../../sass/app.scss';
 import Card from '../cardHeadTitleDetails'
 
-const IntroHome = ({ data }) => {
+const IntroHome = ({ data, href, btntext }) => {
     return (
         <div className="section-space-mobile margin-sections" >
 
@@ -14,7 +14,7 @@ const IntroHome = ({ data }) => {
                 {data.home.map((data, i) => (
                     <Carousel.Item key={"card-intro-home" + i}>
                         <img src={data.img} alt={data.alt} className="banner-intro-home max-width mb-4" />
-                        <Card head={data.head} subject={data.subject} details={data.details} btn="Saber Mais" btnlin="/" />
+                        <Card head={data.head} subject={data.subject} details={data.details} btn={data.btntext} btnlink={data.href} />
                     </Carousel.Item  >
                 ))}
             </Carousel>

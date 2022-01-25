@@ -10,12 +10,12 @@ const SobreNos = ({ head, title, details, btn, btnlink }) => (
         <p className="head-x-small oBold">{head}</p>
         <p className="title-large oMedium mt-3">{title}</p>
         <p className="details-small oRegular mt-4 mb-3">{details}</p>
-
+    
         {btn ? (
             <div>
-                <Link to={btnlink}>
+                <a href={btnlink === "/marcacao" ? "#marcacao" : btnlink}>
                     <Button variant="warning" size="sm" className="btn-gold btn-big oMedium">{btn}</Button>
-                </Link>
+                </a>
             </div>
         ) : (
             <></>
