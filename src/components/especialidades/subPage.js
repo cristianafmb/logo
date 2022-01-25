@@ -5,12 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../../sass/app.scss';
 import styled from "styled-components"
-import MiniCorpoClinico from '../especialidades/miniCorpoClinico'
+import MiniCorpoClinico from './miniCorpoClinico'
 import PedidoMarcacao from '../pedidoMarcacaoRapido'
 import { Row, Col } from 'react-bootstrap';
 
 
-const Subpage = ({ data, subpage, page, form }) => {
+const Subpage = ({ data, subpage, page, form, areas }) => {
 
 
     return (
@@ -49,7 +49,7 @@ const Subpage = ({ data, subpage, page, form }) => {
                         {page.charAt(0).toUpperCase() + page.slice(1)}
                     </p>
 
-                    {data.subpages.areas.map((item, i) => (
+                    {areas.map((item, i) => (
 
                         <div key={"area" + i}>
                             <hr className="gold" style={{ height: "2px" }} />

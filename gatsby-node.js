@@ -20,6 +20,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const postTemplate = path.resolve(`src/templates/postTemplate.js`)
+  const subPageTemplate = path.resolve(`src/templates/subpageTemplate.js`)
 
   const result = await graphql(`
     {
@@ -31,6 +32,63 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               path
+            }
+          }
+        }
+      }
+      allSubpagesJson {
+        edges {
+          node {
+            subpages {
+              areas {
+                areas {
+                  area
+                  link
+                }
+                head
+              }
+              backgroundfooter
+              backgroundfootermobile
+              backgroundtop
+              backgroundtopmobile
+              banner
+              bannermobile
+              cards {
+                btntext
+                details
+                link
+                title
+              }
+              cardsparttwo {
+                details
+                btntext
+                link
+                title
+              }
+              head
+              href
+              info {
+                all {
+                  corpoclinico {
+                    alt
+                    img
+                    name
+                    occupation
+                  }
+                  alt
+                  details
+                  head
+                  headlink
+                  img
+                  title
+                  link
+                }
+                areas {
+                  area
+                  link
+                }
+              }
+              title
             }
           }
         }
@@ -51,4 +109,21 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       context: {}, // additional data can be passed via context
     })
   })
+  result.data.allSubpagesJson.edges.forEach(({ node }) => {
+    node.subpages.forEach(({ info }) => {
+      info.all.forEach(({ link }) => {
+        createPage({
+          path: link,
+          component: subPageTemplate,
+          context: {
+            house: `Gryffindor`,
+            subpages: node,
+            info: info,
+          },
+          // additional data can be passed via context
+        })
+      })
+    })
+  })
+
 }
