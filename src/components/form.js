@@ -6,10 +6,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Radio from '@mui/material/Radio';
 import { Row, Col, Modal, Button } from 'react-bootstrap'
 
+
 import fbTrack from "../custom/fbTrack"
 
 
-const Formulario = ({ data, title }) => {
+const Formulario = ({ data, title, location }) => {
+    
     const today = new Date()
     const [show, setShow] = useState(false);
     const [showError, setShowError] = useState(false);
@@ -31,13 +33,16 @@ const Formulario = ({ data, title }) => {
 
             e.preventDefault()
             var formData = new FormData()
-            formData.append('name', document.querySelector("#name").value)
-            formData.append('especiality', document.querySelector("#especiality").value)
-            formData.append('email', document.querySelector("#email").value)
-            formData.append('contact', document.querySelector("#contact").value)
-            formData.append('date', document.querySelector("#date").value)
-            formData.append('hours', document.querySelector("#hours").value)
-            formData.append("marcacaoRapida", true)
+            if (typeof document !== 'undefined') {
+                formData.append('name', document.querySelector("#name").value)
+                formData.append('especiality', document.querySelector("#especiality").value)
+                formData.append('email', document.querySelector("#email").value)
+                formData.append('contact', document.querySelector("#contact").value)
+                formData.append('date', document.querySelector("#date").value)
+                formData.append('hours', document.querySelector("#hours").value)
+                formData.append("marcacaoRapida", true)
+            }
+
             axios({
                 url: 'https://invisual.pt/teste-form/website-form-contact.php',
                 method: 'post',
@@ -50,7 +55,7 @@ const Formulario = ({ data, title }) => {
                         : setResponse("Mensagem enviada com sucesso!")
 
                 )
-                setShow(true)
+            setShow(true)
         } else {
             e.preventDefault()
             setResponse("" + checker + ".");
@@ -61,30 +66,33 @@ const Formulario = ({ data, title }) => {
     function checkValues() {
         checker = []
         let checkerTemp = []
-        if (!document.querySelector("#name").value) {
-            checkerTemp.push("Nome")
-        }
-        if (!document.querySelector("#email").value) {
-            checkerTemp.push("Email")
-        }
-        if (!document.querySelector("#contact").value) {
-            checkerTemp.push("Telefone")
-        }
-        if (document.querySelector("#especiality").value == "Especialidade") {
-            checkerTemp.push("Especialidade")
-        }
-        if (document.querySelector("#hours").value == "Horário") {
-            checkerTemp.push("Horário")
-        }
-        if (!document.querySelector("#date").value ) {
-            checkerTemp.push("Data")
-        }
-        if(document.querySelector("#date").value){
-            const dateInput = new Date(document.querySelector("#date").value)
-            if(dateInput < today){
-                checkerTemp.push("Data válida")
+        if (typeof document !== 'undefined') {
+            if (!document.querySelector("#name").value) {
+                checkerTemp.push("Nome")
+            }
+            if (!document.querySelector("#email").value) {
+                checkerTemp.push("Email")
+            }
+            if (!document.querySelector("#contact").value) {
+                checkerTemp.push("Telefone")
+            }
+            if (document.querySelector("#especiality").value == "Especialidade") {
+                checkerTemp.push("Especialidade")
+            }
+            if (document.querySelector("#hours").value == "Horário") {
+                checkerTemp.push("Horário")
+            }
+            if (!document.querySelector("#date").value) {
+                checkerTemp.push("Data")
+            }
+            if (document.querySelector("#date").value) {
+                const dateInput = new Date(document.querySelector("#date").value)
+                if (dateInput < today) {
+                    checkerTemp.push("Data válida")
+                }
             }
         }
+
         if (!polCheck) {
             if (checkerTemp.length < 1) {
                 checkerTemp.push("aceitar os nossos termos e políticas")
@@ -98,17 +106,20 @@ const Formulario = ({ data, title }) => {
 
     const success = () => {
         setResponse("Mensagem enviada com sucesso!")
-        document.getElementById("form").reset();
-        setPolCheck(false)
-        title === "Pedido de Marcação Rápido" ? document.querySelector("#especiality").value = "DEFAULT" : document.querySelector("#especiality").value = title
-        
-        document.querySelector("#hours").value = "DEFAULT"
-        fbTrack("trackCustom", "Envio de formulário Marcação Rápida - Página Home")
-        {/* typeof window !== "undefined" &&
+        if (typeof document !== 'undefined') {
+            document.getElementById("form").reset();
+            setPolCheck(false)
+            title === "Pedido de Marcação Rápido" ? document.querySelector("#especiality").value = "DEFAULT" : document.querySelector("#especiality").value = title
+
+            document.querySelector("#hours").value = "DEFAULT"
+            fbTrack("trackCustom", "Envio de formulário Marcação Rápida - Página Home")
+            {/* typeof window !== "undefined" &&
             window.gtag("event", "Submit", {
                 event_category: "Submit Button",
                 event_label: "Envio de formulário Marcação Rápida - Página Home",
             })*/}
+        }
+
     }
 
     return (
@@ -132,14 +143,14 @@ const Formulario = ({ data, title }) => {
         }`}
             render={data => (
 
-                <div className="position-relative"> 
-                    <Modal show={show} onHide={handleClose}  centered className="">
+                <div className="position-relative">
+                    <Modal show={show} onHide={handleClose} centered className="">
                         <Modal.Header >
                             <Modal.Title>Sucesso!</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>Formulário Enviado.</Modal.Body>
                     </Modal>
-                    <Modal show={showError} onHide={handleCloseError}  centered className="">
+                    <Modal show={showError} onHide={handleCloseError} centered className="">
                         <Modal.Header >
                             <Modal.Title>Faltam os seguintes campos</Modal.Title>
                         </Modal.Header>
@@ -167,7 +178,8 @@ const Formulario = ({ data, title }) => {
 
                                     </Col>
                                     <Col sm="12" md="6" lg="6" >
-                                        <select className={typeof (document.getElementById("marcacao")) != 'undefined' && document.getElementById("marcacao") != null ? "input-form oMedium" : "input-form white oMedium"}
+                                       
+                                        <select className={typeof document === 'undefined' ? <></> : (typeof (document.getElementById("marcacao")) != 'undefined' && document.getElementById("marcacao") != null ? "input-form oMedium" : "input-form white oMedium")}
                                             type="text"
                                             required
                                             placeholder="Especialidade"

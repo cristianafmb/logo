@@ -31,13 +31,15 @@ const Formulario = ({ data, title }) => {
 
             e.preventDefault()
             var formData = new FormData()
-            formData.append('name', document.querySelector("#name").value)
-            formData.append('especiality', document.querySelector("#especiality").value)
-            formData.append('email', document.querySelector("#email").value)
-            formData.append('contact', document.querySelector("#contact").value)
-            formData.append('date', document.querySelector("#date").value)
-            formData.append('hours', document.querySelector("#hours").value)
-            formData.append("marcacaoRapida", true)
+            if (typeof document !== 'undefined') {
+                formData.append('name', document.querySelector("#name").value)
+                formData.append('especiality', document.querySelector("#especiality").value)
+                formData.append('email', document.querySelector("#email").value)
+                formData.append('contact', document.querySelector("#contact").value)
+                formData.append('date', document.querySelector("#date").value)
+                formData.append('hours', document.querySelector("#hours").value)
+                formData.append("marcacaoRapida", true)
+            }
             axios({
                 url: 'https://invisual.pt/teste-form/website-form-contact.php',
                 method: 'post',
@@ -61,28 +63,30 @@ const Formulario = ({ data, title }) => {
     function checkValues() {
         checker = []
         let checkerTemp = []
-        if (!document.querySelector("#name").value) {
-            checkerTemp.push("Nome")
-        }
-        if (!document.querySelector("#email").value) {
-            checkerTemp.push("Email")
-        }
-        if (!document.querySelector("#contact").value) {
-            checkerTemp.push("Telefone")
-        }
-        if (document.querySelector("#especiality").value == "Especialidade") {
-            checkerTemp.push("Especialidade")
-        }
-        if (document.querySelector("#hours").value == "Horário") {
-            checkerTemp.push("Horário")
-        }
-        if (!document.querySelector("#date").value) {
-            checkerTemp.push("Data")
-        }
-        if (document.querySelector("#date").value) {
-            const dateInput = new Date(document.querySelector("#date").value)
-            if (dateInput < today) {
-                checkerTemp.push("Data válida")
+        if (typeof document !== 'undefined') {
+            if (!document.querySelector("#name").value) {
+                checkerTemp.push("Nome")
+            }
+            if (!document.querySelector("#email").value) {
+                checkerTemp.push("Email")
+            }
+            if (!document.querySelector("#contact").value) {
+                checkerTemp.push("Telefone")
+            }
+            if (document.querySelector("#especiality").value == "Especialidade") {
+                checkerTemp.push("Especialidade")
+            }
+            if (document.querySelector("#hours").value == "Horário") {
+                checkerTemp.push("Horário")
+            }
+            if (!document.querySelector("#date").value) {
+                checkerTemp.push("Data")
+            }
+            if (document.querySelector("#date").value) {
+                const dateInput = new Date(document.querySelector("#date").value)
+                if (dateInput < today) {
+                    checkerTemp.push("Data válida")
+                }
             }
         }
         if (!polCheck) {
@@ -98,11 +102,12 @@ const Formulario = ({ data, title }) => {
 
     const success = () => {
         setResponse("Mensagem enviada com sucesso!")
-        document.getElementById("form").reset();
+        if (typeof document !== 'undefined') {
+            title === "Pedido de Marcação Rápido" ? document.querySelector("#especiality").value = "DEFAULT" : document.querySelector("#especiality").value = title
+            document.getElementById("form").reset();
+            document.querySelector("#hours").value = "DEFAULT"
+        }
         setPolCheck(false)
-        title === "Pedido de Marcação Rápido" ? document.querySelector("#especiality").value = "DEFAULT" : document.querySelector("#especiality").value = title
-
-        document.querySelector("#hours").value = "DEFAULT"
         fbTrack("trackCustom", "Envio de formulário Marcação Rápida - Página Home")
         {/* typeof window !== "undefined" &&
             window.gtag("event", "Submit", {
@@ -161,7 +166,7 @@ const Formulario = ({ data, title }) => {
 
                                 <p className="head-medium oLight  mt-3 mb-2">Dados da Consulta</p>
 
-                                <select className={typeof (document.getElementById("marcacao")) != 'undefined' && document.getElementById("marcacao") != null ? "input-form oMedium mt-2" : "input-form white oMedium mt-2"}
+                                <select className={ typeof document !== 'undefined'? (typeof (document.getElementById("marcacao")) != 'undefined' && document.getElementById("marcacao") != null ? "input-form oMedium mt-2" : "input-form white oMedium mt-2") : <></>}
                                     type="text"
                                     required
                                     placeholder="Especialidade"

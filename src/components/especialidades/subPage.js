@@ -11,7 +11,10 @@ import { Row, Col } from 'react-bootstrap';
 
 
 const Subpage = ({ subpage, page, areas }) => {
-
+    const url = ""
+    if (typeof window === 'undefined') {
+        url = window.location.href
+    }
 
     return (
         <div className="pt-5 position-relative">
@@ -54,7 +57,7 @@ const Subpage = ({ subpage, page, areas }) => {
                         <div key={"area" + i}>
                             <hr className="gold" style={{ height: "2px" }} />
                             <Link to={"/" + page + item.link} className="text-decoration-none">
-                                <p className={window.location.href.includes(item.link) ? "bold head-small text-decoration-none oLight" : "head-small text-decoration-none oLight"}>{item.title}</p>
+                                <p className={url.includes(item.link) ? "bold head-small text-decoration-none oLight" : "head-small text-decoration-none oLight"}>{item.title}</p>
                             </Link>
                         </div>
 

@@ -30,7 +30,9 @@ const Menu = ({ footer }) => {
     };
     const handleHide2 = () => {
         setShow2(false)
-        var elemento = document.getElementById("modal-menu");
+        if (typeof document !== 'undefined') {
+            var elemento = document.getElementById("modal-menu");
+        }
         elemento.classList.add("fade-out")
     };
 
@@ -68,7 +70,7 @@ const Menu = ({ footer }) => {
                     <rect id="Retângulo_42" data-name="Retângulo 42" width="50" height="50" rx="25" fill="#3e3e3e" />
                     <g id="Grupo_238" data-name="Grupo 238">
                         <animated.rect width="26" height="3" transform="translate(12 17)" fill="#d7c891" style={first} />
-                        <animated.rect  width={show2 ? "26" : "20" } height="3" transform="translate(15 24)" fill="#d7c891" style={second} />
+                        <animated.rect width={show2 ? "26" : "20"} height="3" transform="translate(15 24)" fill="#d7c891" style={second} />
                         <animated.rect width="26" height="3" transform="translate(12 31)" fill="#d7c891" style={third} />
                     </g>
 
@@ -94,7 +96,7 @@ const Menu = ({ footer }) => {
                             <rect id="Retângulo_42" data-name="Retângulo 42" width="50" height="50" rx="25" fill="#3e3e3e" />
                             <g id="Grupo_238" data-name="Grupo 238">
                                 <animated.rect width="26" height="3" transform="translate(12 17)" fill="#d7c891" style={first} />
-                                <animated.rect width={show2 ? "26" : "20" } height="3" transform="translate(15 24)" fill="#d7c891" style={second} />
+                                <animated.rect width={show2 ? "26" : "20"} height="3" transform="translate(15 24)" fill="#d7c891" style={second} />
                                 <animated.rect width="26" height="3" transform="translate(12 31)" fill="#d7c891" style={third} />
                             </g>
 

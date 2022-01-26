@@ -18,6 +18,7 @@ import Questoes from '../components/questoes'
 import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
+import { BrowserRouter, Route, NavLink, useLocation } from "react-router-dom";
 
 const MedicinaDentaria = ({ data }) => {
 
@@ -87,7 +88,14 @@ const MedicinaDentaria = ({ data }) => {
   )
 }
 
-export default MedicinaDentaria
+export default function App({ data }) {
+  return (
+    <BrowserRouter>
+     <MedicinaDentaria data={data} />
+    </BrowserRouter>
+  );
+}
+
 
 export const Json = graphql`
 query medicinadentaria {

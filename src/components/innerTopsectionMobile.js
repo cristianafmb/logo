@@ -6,6 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../sass/app.scss';
 
 const InnerTopsection = ({ data }) => {
+    const url = ""
+    if (typeof window === 'undefined') {
+        url = window.location.href
+    }
     return (
         <div className="pt-5 position-relative section-space-mobile ">
             <p className="head-x-small oBold mt-5">{data.head}</p>
@@ -19,7 +23,7 @@ const InnerTopsection = ({ data }) => {
                     <div key={"area" + i}>
                         <hr className="gold" style={{ height: "2px" }} />
                         <Link to={item.link} className="text-decoration-none">
-                            <p className={window.location.href.includes(item.link) ? "bold head-medium oLight text-decoration-none" : "head-medium oLight text-decoration-none"}>{item.area}</p>
+                            <p className={url.includes(item.link) ? "bold head-medium oLight text-decoration-none" : "head-medium oLight text-decoration-none"}>{item.area}</p>
                         </Link>
                     </div>
 

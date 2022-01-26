@@ -8,7 +8,8 @@ import '../sass/app.scss';
 import { Row, Col } from 'react-bootstrap';
 
 const InnerTopsection = ({ data }) => {
-   
+    const url = typeof window !== 'undefined' ? window.location.href : '';
+ 
     return (
         <div className="pt-5 position-relative">
             <Row className="container-corpo-clinico pt-5">
@@ -26,7 +27,7 @@ const InnerTopsection = ({ data }) => {
                         <div key={"area"+i}>
                             <hr className="gold" style={{ height: "2px" }} />
                             <Link to={item.link} className="text-decoration-none">
-                                 <p className={window.location.href.includes(item.link) ? "bold head-small text-decoration-none oMedium" : "head-small text-decoration-none oMedium"}>{item.area}</p>
+                                 <p className={url.includes(item.link) ? "bold head-small text-decoration-none oMedium" : "head-small text-decoration-none oMedium"}>{item.area}</p>
                             </Link>
                         </div>
 

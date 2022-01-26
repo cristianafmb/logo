@@ -18,14 +18,19 @@ const Menu = ({ footer }) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
-        var element = document.getElementById("marcacao");
+        if (typeof document !== 'undefined') {
+            var element = document.getElementById("marcacao");
+        }
         // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
         if (typeof (element) != 'undefined' && element != null) {
-            if (!window.location.href.includes("#marcacao")) {
-                window.location.href = window.location.href + "#marcacao"
-            } else {
-                var page = window.location.href.split("#marcacao")[0];
-                window.location.href = page + "#marcacao"
+            if (typeof window === 'undefined') {
+
+                if (!window.location.href.includes("#marcacao")) {
+                    window.location.href = window.location.href + "#marcacao"
+                } else {
+                    var page = window.location.href.split("#marcacao")[0];
+                    window.location.href = page + "#marcacao"
+                }
             }
         }
         // if there is no element with id #marcacao, then show modal

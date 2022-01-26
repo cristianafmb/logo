@@ -18,8 +18,10 @@ import background from '../images/especialidades/background.svg'
 const Template = ({ data, pageContext }) => {
 
   const breakpoints = useBreakpoint()
-
-  const url = window.location.pathname
+  const url = ""
+  if (typeof window === 'undefined') {
+    url = window.location.pathname
+  }
   const pageName = url.split("/")[1]
   const subPageName = url.split("/")[2]
 
@@ -36,7 +38,7 @@ const Template = ({ data, pageContext }) => {
       subPage = { ...value }
     }
   })
-  
+
   const banner = "../images" + subPage.headlink
 
   return (

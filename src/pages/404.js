@@ -17,6 +17,7 @@ import lost from "../images/404/image5.png"
 import { Row, Col } from 'react-bootstrap';
 
 import { graphql } from 'gatsby'
+import { BrowserRouter, Route, NavLink, useLocation } from "react-router-dom";
 
 const NotFoundPage = ({ data }) => (
   <Layout home mobile={useBreakpoint().mobile}>
@@ -42,7 +43,7 @@ const NotFoundPage = ({ data }) => (
         </Col>
       </Row>
 
-      <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+      <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true}  />
       <Questoes data={data.questoesJson.questoes} />
 
     </div>
@@ -51,7 +52,13 @@ const NotFoundPage = ({ data }) => (
 
 )
 
-export default NotFoundPage
+export default function App({ data }) {
+  return (
+    <BrowserRouter>
+     <NotFoundPage data={data} />
+    </BrowserRouter>
+  );
+}
 
 export const Json = graphql`
 query notfoundJson {

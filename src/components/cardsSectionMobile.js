@@ -7,6 +7,10 @@ import '../sass/app.scss';
 
 
 const CardsSection = ({ title, areas }) => {
+    const url = ""
+    if (typeof window === 'undefined') {
+        url = window.location.href
+    }
     return (
         <>
             <div className="position-relative section-space-mobile ">
@@ -19,7 +23,7 @@ const CardsSection = ({ title, areas }) => {
                             {console.log(item)}
                             <hr className="gold" style={{ height: "2px" }} />
                             <Link to={item.link} className="text-decoration-none">
-                                <p className={window.location.href.includes(item.link) ? "bold head-medium oLight text-decoration-none" : "head-medium oLight text-decoration-none"}>{item.title}</p>
+                                <p className={url.includes(item.link) ? "bold head-medium oLight text-decoration-none" : "head-medium oLight text-decoration-none"}>{item.title}</p>
                             </Link>
                         </div>
 
