@@ -31,17 +31,10 @@ import up from '../images/home/up.svg'
 
 import { graphql } from 'gatsby'
 
-export default function App({ data }) {
-  return (
-    <BrowserRouter>
-     <IndexPage data={data} />
-    </BrowserRouter>
-  );
-}
+
 
 
 const IndexPage = ({ data }) => {
-  const location = useLocation();
   
   const breakpoints = useBreakpoint();
   const posts = parseBlogPosts(data.allMarkdownRemark.edges)
@@ -69,7 +62,7 @@ const IndexPage = ({ data }) => {
 
             <Noticias posts={posts} />
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} location={location}/>
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
 
             <Questoes data={data.questoesJson.questoes} />
 
@@ -114,6 +107,7 @@ const IndexPage = ({ data }) => {
   )
 }
 
+export default IndexPage
 
 export const Json = graphql`
 query IntroHome {

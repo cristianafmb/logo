@@ -20,6 +20,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const postTemplate = path.resolve(`src/templates/postTemplate.js`)
+  const pageTemplate = path.resolve(`src/templates/pageTemplate.js`)
   const subPageTemplate = path.resolve(`src/templates/subpageTemplate.js`)
 
   const result = await graphql(`
@@ -32,6 +33,55 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               path
+            }
+          }
+        }
+      }
+      allPagesJson {
+        edges {
+          node {
+            areas {
+              areas {
+                href
+                title
+              }
+              head
+            }
+            backgrounds {
+              backgroundfooter
+              backgroundfootermobile
+              backgroundtop
+              backgroundtopmobile
+            }
+            pages {
+              banner
+              bannermobile
+              head
+              headhref
+              info {
+                simple{
+                  title
+                  details
+                  btntext
+                  href
+                }
+                details {
+                  alt
+                  corpoclinico {
+                    alt
+                    img
+                    name
+                    occupation
+                  }
+                  details
+                  head
+                  headhref
+                  href
+                  img
+                  title
+                }
+              }
+              title
             }
           }
         }
@@ -103,7 +153,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           component: subPageTemplate,
           context: {
             subpages: subpages,
-            backgrounds:node.backgrounds
+            backgrounds: node.backgrounds
           },
           // additional data can be passed via context
         })
@@ -111,4 +161,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 
+
+  result.data.allPagesJson.edges.forEach(({ node }) => {
+    node.pages.forEach(pages => {
+      createPage({
+        path: pages.headhref,
+        component: pageTemplate,
+        context: {
+          areas: node.areas,
+          backgrounds: node.backgrounds,
+          page: pages,
+          infosimple: pages.info.simple,
+          infodetails: pages.info.details,
+        },
+      })
+    })
+  })
 }

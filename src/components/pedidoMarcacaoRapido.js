@@ -13,7 +13,7 @@ import Form from './form'
 
 
 
-const PedidoMarcacoRapida = ({ img, alt, space, subpage, location }) => {
+const PedidoMarcacoRapida = ({ img, alt, space, subpage }) => {
     // all form left
     if (img !== false) {
         return (
@@ -22,7 +22,7 @@ const PedidoMarcacoRapida = ({ img, alt, space, subpage, location }) => {
                     <Col sm="12" md="8" lg="8">
                         <Row className=" pl-5">
                             <Col sm="12" md="12" lg="12">
-                                <Form title="Pedido de Marcação Rápido" location={location}/>
+                                <Form title="Pedido de Marcação Rápido" />
                             </Col>
                         </Row>
 

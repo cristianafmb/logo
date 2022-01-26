@@ -1,0 +1,1291 @@
+{
+    "backgrounds": {
+        "backgroundtop": "../images/medicinadentaria/background-top.svg",
+        "backgroundtopmobile": "../images/background-top-mobile.svg",
+        "backgroundfooter": "../images/background-footer.svg",
+        "backgroundfootermobile": "../images/background-footer-mobile.svg"
+    },
+    "pages": [
+        {
+            "banner": "../images/medicinadentaria/background-banner.svg",
+            "bannermobile": "../images/medicinadentaria/background-banner-mobile.svg",
+            "head": "Os Nossos Serviços",
+            "title": "Medicina Dentária",
+            "headhref": "/medicinadentaria",
+            "info": {
+                "simple": [
+                    {
+                        "title": "Cirurgia Oral",
+                        "details": "Área que engloba não só pequenas intervenções cirúrgicas mas também intervenções cirúrgicas mais complexas, como por exemplo enxertos ósseos.",
+                        "btntext": "Saber Mais",
+                        "href": "/medicinadentaria/cirurgiaoral"
+                    },
+                    {
+                        "title": "Dentisteria",
+                        "details": "Especialidade responsável pela restauração de lesões dentárias, tais como, cáries, alterações de forma, coloração e fracturas dos dentes.",
+                        "btntext": "Saber Mais",
+                        "href": "/medicinadentaria/dentisteria"
+                    },
+                    {
+                        "title": "Endodontia",
+                        "details": "Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente.",
+                        "btntext": "Saber Mais",
+                        "href": "/medicinadentaria/endodontia"
+                    },
+                    {
+                        "title": "Implantologia",
+                        "details": "Área da medicina dentária que visa a substituição de dentes perdidos, tendo como objectivo a reabilitação fixa de espaços edêntulos, através da colocação de implantes.",
+                        "btntext": "Saber Mais",
+                        "href": "/medicinadentaria/implantologia"
+                    },
+                    {
+                        "title": "Oclusão",
+                        "details": "Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias.",
+                        "btntext": "Saber Mais",
+                        "href": "/medicinadentaria/oclusao"
+                    },
+                    {
+                        "title": "Odontopediatria",
+                        "details": "É a especialidade da Medicina Dentária que se dedica à prevenção, tratamento e manutenção da saúde oral dos bebés, crianças e adolescentes.",
+                        "btntext": "Saber Mais",
+                        "href": "/medicinadentaria/odontopediatria"
+                    },
+                    {
+                        "title": "Ortodontia",
+                        "details": "Ortodontia é a especialidade que visa diagnosticar, prevenir e tratar os problemas relacionados com o mau posicionamento dentário e ósseo.",
+                        "btntext": "Saber Mais",
+                        "href": "/medicinadentaria/ortodontia"
+                    },
+                    {
+                        "title": "Reabilitação Oral",
+                        "details": "Reabilitação oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social.",
+                        "btntext": "Saber Mais",
+                        "href": "/medicinadentaria/reabilitacaooral"
+                    }
+                ],
+                "details": [
+                    {
+                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "alt": "cirurgiaoral",
+                        "head": "Medicina Dentária",
+                        "headhref": "/medicinadentaria",
+                        "title": "Cirurgia Oral",
+                        "href": "/medicinadentaria/cirurgiaoral",
+                        "details": "Área que engloba não só pequenas intervenções cirúrgicas mas também intervenções cirúrgicas mais complexas, como por exemplo enxertos ósseos.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "alt": "dentisteria",
+                        "head": "Medicina Dentária",
+                        "headhref": "/medicinadentaria",
+                        "title": "Dentisteria",
+                        "href": "/medicinadentaria/dentisteria",
+                        "details": "Especialidade responsável pela restauração de lesões dentárias, tais como, cáries, alterações de forma, coloração e fracturas dos dentes.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "alt": "endodontia",
+                        "head": "Medicina Dentária",
+                        "headhref": "/medicinadentaria",
+                        "title": "Endodontia",
+                        "href": "/medicinadentaria/endodontia",
+                        "details": "Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "alt": "implantologia",
+                        "head": "Medicina Dentária",
+                        "headhref": "/medicinadentaria",
+                        "title": "Implantologia",
+                        "href": "/medicinadentaria/implantologia",
+                        "details": "Área da medicina dentária que visa a substituição de dentes perdidos, tendo como objectivo a reabilitação fixa de espaços edêntulos, através da colocação de implantes.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "alt": "oclusao",
+                        "head": "Medicina Dentária",
+                        "headhref": "/medicinadentaria",
+                        "title": "Oclusão",
+                        "href": "/medicinadentaria/oclusao",
+                        "details": "Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "alt": "odontopediatria",
+                        "head": "Medicina Dentária",
+                        "headhref": "/medicinadentaria",
+                        "title": "Odontopediatria",
+                        "href": "/medicinadentaria/odontopediatria",
+                        "details": "É a especialidade da Medicina Dentária que se dedica à prevenção, tratamento e manutenção da saúde oral dos bebés, crianças e adolescentes.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "alt": "ortodontia",
+                        "head": "Medicina Dentária",
+                        "headhref": "/medicinadentaria",
+                        "title": "Ortodontia",
+                        "href": "/medicinadentaria/ortodontia",
+                        "details": "Ortodontia é a especialidade que visa diagnosticar, prevenir e tratar os problemas relacionados com o mau posicionamento dentário e ósseo.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "alt": "reabilitacaooral",
+                        "head": "Medicina Dentária",
+                        "headhref": "/medicinadentaria",
+                        "title": "Reabilitação Oral",
+                        "href": "/medicinadentaria/reabilitacaooral",
+                        "details": "Reabilitação oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "banner": "../images/examesanalises/background-banner.svg",
+            "bannermobile": "../images/examesanalises/background-banner-mobile.svg",
+            "head": "Os Nossos Serviços",
+            "title": "Exames & Análises",
+            "headhref": "/examesanalises",
+            "info": {
+                "simple": [
+                    {
+                        "title": "Análises Clínicas",
+                        "details": "Em parceria com a Avelab, a UpCare Medical Center dispôe deste serviço na sua clínica todos os dias da semana.",
+                        "btntext": "Saber Mais",
+                        "href": "/examesanalises/analisesclinicas"
+                    },
+                    {
+                        "title": "CBCT",
+                        "details": "A TAC dentária, conhecida formalmente como CBCT, é uma técnica de imagiologia que permite obter imagens 3D das estruturas da cabeça em foco na Medicina Dentária. ",
+                        "btntext": "Saber Mais",
+                        "href": "/examesanalises/cbct"
+                    },
+                    {
+                        "title": "Electrocardiograma",
+                        "details": "O ECG detecta os impulsos eléctricos do coração e permite analisar o ritmo cardíaco e suas alterações.",
+                        "btntext": "Saber Mais",
+                        "href": "/examesanalises/electrocardiograma"
+                    },
+                    {
+                        "title": "Espirometria",
+                        "details": "Exame que mede o fluxo de ar que entra e sai dos pulmões. Pode ser realizado com broncodilatação.",
+                        "btntext": "Saber Mais",
+                        "href": "/examesanalises/espirometria"
+                    },
+                    {
+                        "title": "Exames Genéticos",
+                        "details": "Em parceria com a Genética dispomos de testes genéticos de rastreio pré-natal não invasivos, assim como testes de avaliação de risco de vários tipos de doenças.",
+                        "btntext": "Saber Mais",
+                        "href": "/examesanalises/examesgeneticos"
+                    },
+                    {
+                        "title": "Holter de 24h",
+                        "details": "Eletrocardiograma dinãmico que regista a atividade cardíaca ao longo de 24h.",
+                        "btntext": "Saber Mais",
+                        "href": "/examesanalises/holter"
+                    },
+                    {
+                        "title": "Laser",
+                        "details": "Tem vindo a assumir um papel relevante por permitir cirurgias com melhor pós operatório, assim como acelerar a recuperação dos pacientes com problemas musculares e esqueléticos.",
+                        "btntext": "Saber Mais",
+                        "href": "/examesanalises/laser"
+                    },
+                    {
+                        "title": "Polissonografia",
+                        "details": "A polissonografia é um exame que mede a atividade respiratória, muscular e cerebral (além de outros parâmetros) durante o sono.",
+                        "btntext": "Saber Mais",
+                        "href": "/examesanalises/polissonografia"
+                    }
+                ],
+                "details": [
+                    {
+                        "img": "../images/exmaesanalises/examesanalises.png",
+                        "alt": "analisesclinicas",
+                        "head": "Exames & Análises",
+                        "headhref": "/examesanalises",
+                        "title": "Análises Clínicas",
+                        "href": "/examesanalises/analisesclinicas",
+                        "details": "Em parceria com a Avelab, a UpCare Medical Center dispôe deste serviço na sua clínica todos os dias da semana.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/exmaesanalises/examesanalises.png",
+                        "alt": "cbct",
+                        "head": "Exames & Análises",
+                        "headhref": "/examesanalises",
+                        "title": "CBCT",
+                        "href": "/examesanalises/cbct",
+                        "details": "A TAC dentária, conhecida formalmente como CBCT, é uma técnica de imagiologia que permite obter imagens 3D das estruturas da cabeça em foco na Medicina Dentária.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/exmaesanalises/examesanalises.png",
+                        "alt": "electrocardiograma",
+                        "head": "Exames & Análises",
+                        "headhref": "/examesanalises",
+                        "title": "Electrocardiograma",
+                        "href": "/examesanalises/electrocardiograma",
+                        "details": "O ECG detecta os impulsos eléctricos do coração e permite analisar o ritmo cardíaco e suas alterações.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/exmaesanalises/examesanalises.png",
+                        "alt": "espirometria",
+                        "head": "Exames & Análises",
+                        "headhref": "/examesanalises",
+                        "title": "Espirometria",
+                        "href": "/examesanalises/espirometria",
+                        "details": "Exame que mede o fluxo de ar que entra e sai dos pulmões. Pode ser realizado com broncodilatação.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/exmaesanalises/examesanalises.png",
+                        "alt": "examesgeneticos",
+                        "head": "Exames & Análises",
+                        "headhref": "/examesanalises",
+                        "title": "Exames Genéticos",
+                        "href": "/examesanalises/examesgeneticos",
+                        "details": "Em parceria com a Genética dispomos de testes genéticos de rastreio pré-natal não invasivos, assim como testes de avaliação de risco de vários tipos de doenças.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/exmaesanalises/examesanalises.png",
+                        "alt": "holter",
+                        "head": "Exames & Análises",
+                        "headhref": "/examesanalises",
+                        "title": "Holter de 24h",
+                        "href": "/examesanalises/holter",
+                        "details": "Eletrocardiograma dinãmico que regista a atividade cardíaca ao longo de 24h.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/exmaesanalises/examesanalises.png",
+                        "alt": "laser",
+                        "head": "Exames & Análises",
+                        "headhref": "/examesanalises",
+                        "title": "Laser",
+                        "href": "/examesanalises/laser",
+                        "details": "Tem vindo a assumir um papel relevante por permitir cirurgias com melhor pós operatório, assim como acelerar a recuperação dos pacientes com problemas musculares e esqueléticos.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/exmaesanalises/examesanalises.png",
+                        "alt": "polissonografia",
+                        "head": "Exames & Análises",
+                        "headhref": "/examesanalises",
+                        "title": "Polissonografia",
+                        "href": "/examesanalises/polissonografia",
+                        "details": "A polissonografia é um exame que mede a atividade respiratória, muscular e cerebral (além de outros parâmetros) durante o sono.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "banner": "../images/especialidades/background-banner.svg",
+            "bannermobile": "../images/especialidades/background-banner-mobile.svg",
+            "head": "Os Nossos Serviços",
+            "title": "Especialidades",
+            "headhref": "/especialidades",
+            "info": {
+                "simple": [
+                    {
+                        "title": "Cardiologia",
+                        "details": "É a especialidade médica que se destaca pelo diagnóstico e tratamento das doenças do coração e restantes componentes do sistema circulatório.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/cardiologia"
+                    },
+                    {
+                        "title": "Cirurgia Plástica",
+                        "details": "A Cirurgia Plática tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/cirurgiaplastica"
+                    },
+                    {
+                        "title": "Clínica Geral",
+                        "details": "A Clínica Geral é especialidade médica que tem como fundamento o primeiro contacto do paciente com os cuidados primários de saúde.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/clinicageral"
+                    },
+                    {
+                        "title": "Dermatologia",
+                        "details": "A Dermatologia é a especialidade da medicina que se ocupa das doenças que afetam o maior orgão do corpo humano, a pele.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/dermatologia"
+                    },
+                    {
+                        "title": "Fisitatria",
+                        "details": "A Fisiatria é a área da medicina que se dedica à recuperação da função física e cognitiva que pode estar alterada por diversos tipos de doenças.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/fisitatria"
+                    },
+                    {
+                        "title": "Fisioterapia",
+                        "details": "É uma área que estuda, diagnostica, previne e trata disfunções cinético funcionais decorrentes de orgãos ou sistemas do corpo humano.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/fisioterapia"
+                    },
+                    {
+                        "title": "Ginecologia-Obstetricia",
+                        "details": "Para além de acompanhar a gravidez e o parto, esta é a especialidade que estuda as patologias do aparelho reprodutor feminino, tais como o cancro, infertilidade. ",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/ginecologiaobstetricia"
+                    },
+                    {
+                        "title": "Medicina Interna",
+                        "details": "A Medicina Interna é a especialidade que aborda o estado de saúde do paciente no seu todo, tendo em conta os vários distúrbios que podem afetar o organismo do paciente.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/medicinainterna"
+                    },
+                    {
+                        "title": "Neurologia",
+                        "details": "A Neurologia define-se como a especialidade médica que trata das disfunções estruturais do sistema nervoso.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/neurologia"
+                    },
+                    {
+                        "title": "Nutrição",
+                        "details": "Área clínica que orienta de forma individual ou em grupo, pessoas que necessitem de dieta alimentar específica, como os casos de excesso de peso, diabéticos, hipertensos, etc.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/nutricao"
+                    },
+                    {
+                        "title": "Ortopedia",
+                        "details": "É a especialidade que se dedica ao estudo e ao tratamento das deformações, congénitas ou adquiridas, dos ossos, das articulações, dos músculos e dos tendões.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/ortopedia"
+                    },
+                    {
+                        "title": "Otorrinolaringologia",
+                        "details": "Especialidade da medicina que se ocupa do diagnóstico e tratamento das doenças da cabeça e pescoço, especialmente ouvido, nariz e garganta.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/otorrinolaringologia"
+                    },
+                    {
+                        "title": "Pediatria",
+                        "details": "A Pediatria é a área da medicina que trata o ser humano desde o nascimento até à idade dos 18 anos.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/pediatria"
+                    },
+                    {
+                        "title": "Pneumologia",
+                        "details": "A Pediatria é a área da medicina que trata o ser humano desde o nascimento até à idade dos 18 anos.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/pneumologia"
+                    },
+                    {
+                        "title": "Podologia",
+                        "details": "A Podologia é uma área da saúde que visa o diagnóstico, tratamento e prevenção de doenças relacionadas com os pés e as repercussões que daí podem advir para o corpo humano.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/podologia"
+                    },
+                    {
+                        "title": "Psicologia",
+                        "details": "A Psicologia é a área da saúde que estuda os processos mentais e do comportamento do ser humano e a sua interação com o ambiente físico e social.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/psicologia"
+                    },
+                    {
+                        "title": "Psiquiatria",
+                        "details": "A Psiquiatria é a área da medicina que lida com prevenção, diagnóstico e tratamento das diferentes perturbações mentais, sejam elas de origem orgânica ou funcional.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/psiquiatria"
+                    },
+                    {
+                        "title": "Terapia da Fala",
+                        "details": "É a área da saúde responsável pelo estudo, prevenção e tratamento das alterações da comunicação, desde a compreensão e expressão da linguagem oral, à leitura e escrita, etc.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/terapiafala"
+                    },
+                    {
+                        "title": "Terapia Ocupacional",
+                        "details": "O principal objetivo da Terapia Ocupacional é capacitar as pessoas para participarem com sucesso em atividades da vida diária nos diversos ambientes bem como na comunidade.",
+                        "btntext": "Saber Mais",
+                        "href": "/especialidades/terapiaocupacional"
+                    }
+                ],
+                "details": [
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "cardiologia",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Cardiologia",
+                        "href": "/especialidades/cardiologia",
+                        "details": "É a especialidade médica que se destaca pelo diagnóstico e tratamento das doenças do coração e restantes componentes do sistema circulatório.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "cirurgiaplastica",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Cirurgia Plástica",
+                        "href": "/especialidades/cirurgiaplastica",
+                        "details": "A Cirurgia Plática tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "clinicageral",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Clínica Geral",
+                        "href": "/especialidades/clinicageral",
+                        "details": "A Clínica Geral é especialidade médica que tem como fundamento o primeiro contacto do paciente com os cuidados primários de saúde.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "dermatologia",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Dermatologia",
+                        "href": "/especialidades/dermatologia",
+                        "details": "A Dermatologia é a especialidade da medicina que se ocupa das doenças que afetam o maior orgão do corpo humano, a pele.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "fisitatria",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Fisitatria",
+                        "href": "/especialidades/fisitatria",
+                        "details": "A Fisiatria é a área da medicina que se dedica à recuperação da função física e cognitiva que pode estar alterada por diversos tipos de doenças.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "fisioterapia",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Fisioterapia",
+                        "href": "/especialidades/fisioterapia",
+                        "details": "É uma área que estuda, diagnostica, previne e trata disfunções cinético funcionais decorrentes de orgãos ou sistemas do corpo humano.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "ginecologiaobstetricia",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Ginecologia-Obstetricia",
+                        "href": "/especialidades/ginecologiaobstetricia",
+                        "details": "Para além de acompanhar a gravidez e o parto, esta é a especialidade que estuda as patologias do aparelho reprodutor feminino, tais como o cancro, infertilidade.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "medicinainterna",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Medicina Interna",
+                        "href": "/especialidades/medicinainterna",
+                        "details": "A Medicina Interna é a especialidade que aborda o estado de saúde do paciente no seu todo, tendo em conta os vários distúrbios que podem afetar o organismo do paciente.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "neurologia",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Neurologia",
+                        "href": "/especialidades/neurologia",
+                        "details": "A Neurologia define-se como a especialidade médica que trata das disfunções estruturais do sistema nervoso.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "nutricao",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Nutrição",
+                        "href": "/especialidades/nutricao",
+                        "details": "Área clínica que orienta de forma individual ou em grupo, pessoas que necessitem de dieta alimentar específica, como os casos de excesso de peso, diabéticos, hipertensos, etc.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "ortopedia",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Ortopedia",
+                        "href": "/especialidades/ortopedia",
+                        "details": "É a especialidade que se dedica ao estudo e ao tratamento das deformações, congénitas ou adquiridas, dos ossos, das articulações, dos músculos e dos tendões.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "otorrinolaringologia",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Otorrinolaringologia",
+                        "href": "/especialidades/otorrinolaringologia",
+                        "details": "Especialidade da medicina que se ocupa do diagnóstico e tratamento das doenças da cabeça e pescoço, especialmente ouvido, nariz e garganta.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "pediatria",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Pediatria",
+                        "href": "/especialidades/pediatria",
+                        "details": "A Pediatria é a área da medicina que trata o ser humano desde o nascimento até à idade dos 18 anos.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "pneumologia",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Pneumologia",
+                        "href": "/especialidades/pneumologia",
+                        "details": "A Pediatria é a área da medicina que trata o ser humano desde o nascimento até à idade dos 18 anos.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "podologia",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Podologia",
+                        "href": "/especialidades/podologia",
+                        "details": "A Podologia é uma área da saúde que visa o diagnóstico, tratamento e prevenção de doenças relacionadas com os pés e as repercussões que daí podem advir para o corpo humano.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "psicologia",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Psicologia",
+                        "href": "/especialidades/psicologia",
+                        "details": "A Psicologia é a área da saúde que estuda os processos mentais e do comportamento do ser humano e a sua interação com o ambiente físico e social.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "psiquiatria",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Psiquiatria",
+                        "href": "/especialidades/psiquiatria",
+                        "details": "A Psiquiatria é a área da medicina que lida com prevenção, diagnóstico e tratamento das diferentes perturbações mentais, sejam elas de origem orgânica ou funcional.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "terapiafala",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Terapia da Fala",
+                        "href": "/especialidades/terapiafala",
+                        "details": "É a área da saúde responsável pelo estudo, prevenção e tratamento das alterações da comunicação, desde a compreensão e expressão da linguagem oral, à leitura e escrita, etc.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "../images/especialidades/cardiologia.png",
+                        "alt": "terapiaocupacional",
+                        "head": "Especialidades",
+                        "headhref": "/especialidades",
+                        "title": "Terapia Ocupacional",
+                        "href": "/especialidades/terapiaocupacional",
+                        "details": "O principal objetivo da Terapia Ocupacional é capacitar as pessoas para participarem com sucesso em atividades da vida diária nos diversos ambientes bem como na comunidade.",
+                        "corpoclinico": [
+                            {
+                                "img": "../images/especialidades/corpoclinico/dr-tiago-teixeira.svg",
+                                "alt": "Dr Tiago Teixeira",
+                                "name": "Dr. Tiago Godinho Teixeira",
+                                "occupation": "Médico"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/dra-ines-coutinho.svg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra. Inês Coutinho",
+                                "occupation": "Médica"
+                            },
+                            {
+                                "img": "../images/especialidades/corpoclinico/default.svg",
+                                "alt": "Dr David Serra",
+                                "name": "Dr. David Serra",
+                                "occupation": "Médico"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "areas": {
+        "head": "Áreas Clínicas",
+        "areas": [
+            {
+                "title": "Especialidades",
+                "href": "/especialidades"
+            },
+            {
+                "title": "Medicina Dentária",
+                "href": "/medicinadentaria"
+            },
+            {
+                "title": "Exames & Análises",
+                "href": "/examesanalises"
+            }
+        ]
+    }
+}

@@ -17,7 +17,7 @@ const CardWhite = ({ data }) => {
                 <p className="head-medium mt-3 mb-4 oLight">{data.title}</p>
                 <p className="head-x-small gold line-height mb-50 oRegular">{data.details}</p>
                 <div className="max-width m-auto center">
-                     <Button className="btn-questoes btn btn-warning btn-sm btn-card-white oMedium" href={data.link}>
+                     <Button className="btn-questoes btn btn-warning btn-sm btn-card-white oMedium" href={data.href}>
                     {data.btntext}
                 </Button>
                 </div>

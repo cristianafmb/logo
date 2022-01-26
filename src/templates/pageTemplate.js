@@ -9,6 +9,12 @@ import SEO from "../components/seo"
 import Menu from '../components/menu'
 import SubPage from '../components/especialidades/subPage'
 import SubPageMobile from '../components/especialidades/subPageMobile'
+import InnerTopsection from '../components/innerTopsection copy'
+import InnerTopsectionMobile from '../components/innerTopsectionMobile'
+import CardsSection from '../components/cardsSection'
+import CardsSectionMobile from '../components/cardsSectionMobile'
+import CorpoClinico from '../components/sobrenos/corpoclinico'
+import CorpoClinicoMobile from '../components/sobrenos/corpoclinicoMobile'
 import Especialidades from '../components/homepage/especialidades'
 import Questoes from '../components/questoes'
 import Footer from '../components/footer'
@@ -18,44 +24,46 @@ import background from '../images/especialidades/background.svg'
 const Template = ({ data, pageContext }) => {
 
   const breakpoints = useBreakpoint()
-  const url = ""
-  if (typeof window === 'undefined') {
-    url = window.location.pathname
+  const areas = pageContext['areas']
+  const backgrounds = pageContext['backgrounds']
+  const infosubpage = pageContext['infodetails']
+  const cards = pageContext['infosimple']
+  const page = pageContext['page']
+
+  var cards2 = null
+  if (cards.length > 10) {
+    cards2 = cards.slice(10, cards.length)
   }
-  const pageName = url.split("/")[1]
-  const subPageName = url.split("/")[2]
-
-  const areas = pageContext['subpages']['simple']
-
-  const allSubPages = pageContext['subpages']['details']
-
-  const background = pageContext['backgrounds']
-
-  var subPage
-
-  allSubPages.map((value) => {
-    if (value['alt'] === subPageName) {
-      subPage = { ...value }
-    }
-  })
-
-  const banner = "../images" + subPage.headlink
-
+console.log(cards2 !== null)
   return (
 
     <Layout home>
-      <SEO title={subPage.title} />
+      <SEO title={page.title} />
       {!breakpoints.mobile ? (
         <>
-          <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${subPage.img})` }}>
+          <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${page.banner})` }}>
 
             <Menu footer={data.footerJson.footer} />
 
           </div>
 
-          <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${background.backgroundtop})` }}>
+          <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${backgrounds.backgroundtop})` }}>
 
-            <SubPage subpage={subPage} page={pageName} areas={areas} />
+            <InnerTopsection data={data.medicinadentariaJson} areas={areas} page={page} />
+
+            <CardsSection data={cards.slice(0, 10)} />
+
+          </div>
+
+          {cards2 !== null ?
+            <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
+            : <></>}
+
+          <div className="no-repeat bg-position-bottom " style={{ backgroundImage: `url(${backgrounds.backgroundfooter})` }}>
+
+            {cards2 === null ?
+              <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
+              :  <CardsSection data={cards2} />}
 
             <Especialidades especialidades={data.homeJson.especialidades} />
 
@@ -69,16 +77,7 @@ const Template = ({ data, pageContext }) => {
         :
         (
           <>
-            <SubPageMobile
-              bgtop={background.backgroundtopmobile}
-              bgbanner={banner + "/" + subPage.headlink + ".png"}
-              areas={areas}
-              subpage={subPage}
-              home={data.homeJson.especialidades}
-              bgbottm={background.backgroundfootermobile}
-              questoes={data.questoesJson.questoes}
-              footer={data.footerJson.footer}
-            />
+
           </>
         )
       }
@@ -90,7 +89,7 @@ export default Template
 
 
 export const Json = graphql`
-  query subpageTemplate {
+  query pageTemplate {
     homeJson {
       background{
         top
