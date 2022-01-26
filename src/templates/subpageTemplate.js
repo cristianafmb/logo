@@ -15,8 +15,6 @@ import Footer from '../components/footer'
 
 import background from '../images/especialidades/background.svg'
 
-
-
 const Template = ({ data, pageContext }) => {
 
   const breakpoints = useBreakpoint()
@@ -24,42 +22,64 @@ const Template = ({ data, pageContext }) => {
   const url = window.location.pathname
   const pageName = url.split("/")[1]
   const subPageName = url.split("/")[2]
-  const areas = pageContext['info']['areas']
 
-  const allSubPages = pageContext['info']['all']
-  var subPage 
+  const areas = pageContext['subpages']['simple']
+
+  const allSubPages = pageContext['subpages']['details']
+
+  const background = pageContext['backgrounds']
+
+  var subPage
 
   allSubPages.map((value) => {
     if (value['alt'] === subPageName) {
       subPage = { ...value }
     }
   })
-
   
-  console.log(subPage)
+  const banner = "../images" + subPage.headlink
 
   return (
 
     <Layout home>
-      <SEO title="ole" />
+      <SEO title={subPage.title} />
+      {!breakpoints.mobile ? (
+        <>
+          <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${subPage.img})` }}>
 
-      <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${subPage.img})` }}>
+            <Menu footer={data.footerJson.footer} />
 
-        <Menu footer={data.footerJson.footer} />
+          </div>
 
-      </div>
+          <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${background.backgroundtop})` }}>
 
-      <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${background})` }}>
+            <SubPage subpage={subPage} page={pageName} areas={areas} />
 
-         <SubPage data={data.especialidadesJson} subpage={subPage} page={pageName} form={data.marcacaoJson} areas={areas} /> 
+            <Especialidades especialidades={data.homeJson.especialidades} />
 
-        <Especialidades especialidades={data.homeJson.especialidades} />
+            <Questoes data={data.questoesJson.questoes} />
 
-        <Questoes data={data.questoesJson.questoes} />
+          </div>
 
-      </div>
-
-      <Footer data={data.footerJson.footer} />
+          <Footer data={data.footerJson.footer} />
+        </>
+      )
+        :
+        (
+          <>
+            <SubPageMobile
+              bgtop={background.backgroundtopmobile}
+              bgbanner={banner + "/" + subPage.headlink + ".png"}
+              areas={areas}
+              subpage={subPage}
+              home={data.homeJson.especialidades}
+              bgbottm={background.backgroundfootermobile}
+              questoes={data.questoesJson.questoes}
+              footer={data.footerJson.footer}
+            />
+          </>
+        )
+      }
     </Layout>
   )
 }
@@ -68,15 +88,15 @@ export default Template
 
 
 export const Json = graphql`
-query cardilogia {
-  homeJson {
-    background{
-      top
+      query cardilogia {
+        homeJson {
+        background{
+        top
       bottom
       symbol
     }
-    especialidades{
-      title
+      especialidades{
+        title
       details
       button
       href
@@ -85,53 +105,53 @@ query cardilogia {
       titlemobile
     }
   }
-    marcacaoJson{
-      img
+      marcacaoJson{
+        img
       alt
     }
-    corpoclinicoJson{
-      corpoclinico {
+      corpoclinicoJson{
+        corpoclinico {
         details
         btn {
-          link
+        link
           text
         }
-        head
-        people {
-          especiality
+      head
+      people {
+        especiality
           img
-          name
-          occupation
+      name
+      occupation
         }
-        title
+      title
       }
     }
-    questoesJson{
-      questoes{
+      questoesJson{
+        questoes{
         titulo
         texto
-        questoes{
-          link
+      questoes{
+        link
           texto
         }
       }
     }
-    footerJson {
-      footer {
+      footerJson {
+        footer {
         copyrigths
         copyrightsmobile
-        links {
-          link
+      links {
+        link
           text
         }
-        logo
-        logowhite
-        socialmedia {
-          alt
+      logo
+      logowhite
+      socialmedia {
+        alt
           icon
-          link
+      link
         }
       }
     }
 }
-`
+      `

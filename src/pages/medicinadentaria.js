@@ -68,7 +68,7 @@ const MedicinaDentaria = ({ data }) => {
 
               <InnerTopsectionMobile data={data.medicinadentariaJson} />
 
-              <CardsSectionMobile data={data.medicinadentariaJson} />
+              <CardsSectionMobile areas={data.medicinadentariaJson.cards} title="Medicina Dentária" />
 
             </div>
 

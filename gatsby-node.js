@@ -39,36 +39,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allSubpagesJson {
         edges {
           node {
-            subpages {
-              areas {
+            backgrounds{
+              bannermobile
+              backgroundtop
+              backgroundtopmobile
+              backgroundfooter
+              backgroundfootermobile
+            }
+            info {
+              pages {
                 areas {
                   area
                   link
                 }
                 head
               }
-              backgroundfooter
-              backgroundfootermobile
-              backgroundtop
-              backgroundtopmobile
-              banner
-              bannermobile
-              cards {
-                btntext
-                details
-                link
-                title
-              }
-              cardsparttwo {
-                details
-                btntext
-                link
-                title
-              }
-              head
-              href
-              info {
-                all {
+              subpages {
+                details {
                   corpoclinico {
                     alt
                     img
@@ -83,12 +70,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                   title
                   link
                 }
-                areas {
-                  area
+                simple {
+                  title
                   link
                 }
               }
-              title
             }
           }
         }
@@ -110,15 +96,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
   result.data.allSubpagesJson.edges.forEach(({ node }) => {
-    node.subpages.forEach(({ info }) => {
-      info.all.forEach(({ link }) => {
+    node.info.forEach(({ subpages }) => {
+      subpages.details.forEach(({ link }) => {
         createPage({
           path: link,
           component: subPageTemplate,
           context: {
-            house: `Gryffindor`,
-            subpages: node,
-            info: info,
+            subpages: subpages,
+            backgrounds:node.backgrounds
           },
           // additional data can be passed via context
         })

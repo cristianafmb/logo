@@ -10,7 +10,7 @@ import PedidoMarcacao from '../pedidoMarcacaoRapido'
 import { Row, Col } from 'react-bootstrap';
 
 
-const Subpage = ({ data, subpage, page, form, areas }) => {
+const Subpage = ({ subpage, page, areas }) => {
 
 
     return (
@@ -54,7 +54,7 @@ const Subpage = ({ data, subpage, page, form, areas }) => {
                         <div key={"area" + i}>
                             <hr className="gold" style={{ height: "2px" }} />
                             <Link to={"/" + page + item.link} className="text-decoration-none">
-                                <p className={window.location.href.includes(item.link) ? "bold head-small text-decoration-none oLight" : "head-small text-decoration-none oLight"}>{item.area}</p>
+                                <p className={window.location.href.includes(item.link) ? "bold head-small text-decoration-none oLight" : "head-small text-decoration-none oLight"}>{item.title}</p>
                             </Link>
                         </div>
 

@@ -58,6 +58,7 @@ const Especialidades = ({ data }) => {
         :
         (
           <>
+          
             <div className="no-repeat" style={{ backgroundImage: `url(${data.especialidadesJson.backgroundtopmobile})` }}>
 
               <div className="no-repeat" style={{ backgroundImage: `url(${data.especialidadesJson.bannermobile})` }}>
@@ -68,7 +69,7 @@ const Especialidades = ({ data }) => {
 
               </div>
 
-              <CardsSectionMobile data={data.especialidadesJson} head="Especialidades" />
+              <CardsSectionMobile areas={data.especialidadesJson.cards} title="Especialidades" />
 
             </div>
 

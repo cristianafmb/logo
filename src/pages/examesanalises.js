@@ -69,7 +69,7 @@ const ExamesAnalises = ({ data }) => {
 
               </div>
 
-              <CardsSectionMobile data={data.examesanalisesJson} />
+              <CardsSectionMobile areas={data.examesanalisesJson.cards} title="Exames e Análises" />
 
             </div>
 

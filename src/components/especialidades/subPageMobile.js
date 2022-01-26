@@ -12,10 +12,11 @@ import Card from '../cardHeadTitleDetails'
 import QuestoesMobile from '../questoesMobile'
 import FooterMobile from '../footerMobile'
 
-const SubpageMobile = ({ bgtop, bgbanner, especialidades, subpage, page, form, home, bgbottm, questoes, footer }) => {
+const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoes, footer }) => {
 
     return (
         <>
+        {console.log(subpage)}
 
             <div className="no-repeat" style={{ backgroundImage: `url(${bgtop})` }}>
 
@@ -48,7 +49,7 @@ const SubpageMobile = ({ bgtop, bgbanner, especialidades, subpage, page, form, h
 
                     <div>
                                     
-                        <CardSectionMobile data={especialidades} />
+                        <CardSectionMobile title={subpage.title} areas={areas}/>
 
                     </div>
 
