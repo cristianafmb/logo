@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import { Link } from "gatsby"
 
-import CardNoticiasSection from "../../components/homepage/cardNoticiasSection"
+import CardNoticiasSection from "../../components/cardHeadTitleDetails"
 
 import Arrow from '../arrow'
 
@@ -25,10 +25,10 @@ const Noticias = ({ posts }) => {
             <Col sm="12" md="8" lg="8">
                 <Row className="height-80">
                     <Col sm="12" md="6" lg="6" className=" p-4">
-                        <CardNoticiasSection title={firstNew.data} head={firstNew.title} details={firstNew.details} />
+                        <CardNoticiasSection head={firstNew.data} title={firstNew.title} details={firstNew.details} />
                     </Col>
                     <Col sm="12" md="6" lg="6" className="p-4">
-                        <CardNoticiasSection head={secondNew.title} title={secondNew.data} details={secondNew.details} />
+                        <CardNoticiasSection title={secondNew.title} head={secondNew.data} details={secondNew.details} />
                     </Col>
                 </Row>
                 

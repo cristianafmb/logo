@@ -1,15 +1,13 @@
-import React, { Component } from 'react'
-import { graphql, Link } from 'gatsby'
-import { Row, Col, Button } from 'react-bootstrap'
+import React from 'react'
+import { graphql } from 'gatsby'
 
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Menu from '../components/menu'
-import SubPage from '../components/especialidades/subPage'
-import SubPageMobile from '../components/especialidades/subPageMobile'
-import InnerTopsection from '../components/innerTopsection copy'
+import MenuMobile from '../components/menuMobile'
+import InnerTopsection from '../components/innerTopsection'
 import InnerTopsectionMobile from '../components/innerTopsectionMobile'
 import CardsSection from '../components/cardsSection'
 import CardsSectionMobile from '../components/cardsSectionMobile'
@@ -17,11 +15,11 @@ import CorpoClinico from '../components/sobrenos/corpoclinico'
 import CorpoClinicoMobile from '../components/sobrenos/corpoclinicoMobile'
 import Especialidades from '../components/homepage/especialidades'
 import Questoes from '../components/questoes'
+import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
+import FooterMobile from '../components/footerMobile'
 
-import background from '../images/especialidades/background.svg'
-
-const Template = ({ data, pageContext }) => {
+const Template = ({ data, pageContext, location }) => {
 
   const breakpoints = useBreakpoint()
   const areas = pageContext['areas']
@@ -34,7 +32,7 @@ const Template = ({ data, pageContext }) => {
   if (cards.length > 10) {
     cards2 = cards.slice(10, cards.length)
   }
-console.log(cards2 !== null)
+  
   return (
 
     <Layout home>
@@ -43,13 +41,13 @@ console.log(cards2 !== null)
         <>
           <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${page.banner})` }}>
 
-            <Menu footer={data.footerJson.footer} />
+            <Menu footer={data.footerJson.footer} location={location}/>
 
           </div>
 
           <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${backgrounds.backgroundtop})` }}>
 
-            <InnerTopsection data={data.medicinadentariaJson} areas={areas} page={page} />
+            <InnerTopsection areas={areas} page={page} location={location} />
 
             <CardsSection data={cards.slice(0, 10)} />
 
@@ -63,9 +61,9 @@ console.log(cards2 !== null)
 
             {cards2 === null ?
               <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
-              :  <CardsSection data={cards2} />}
+              : <CardsSection data={cards2} />}
 
-            <Especialidades especialidades={data.homeJson.especialidades} />
+            <Especialidades especialidades={data.homeJson.especialidades} location={location}/>
 
             <Questoes data={data.questoesJson.questoes} />
 
@@ -77,7 +75,29 @@ console.log(cards2 !== null)
         :
         (
           <>
+            <div className="no-repeat" style={{ backgroundImage: `url(${backgrounds.backgroundtopmobile})` }}>
 
+              <div className="no-repeat" style={{ backgroundImage: `url(${backgrounds.bannermobile})` }}>
+
+                <MenuMobile footer={data.footerJson.footer} location={location}/>
+
+                <InnerTopsectionMobile areas={areas} page={page} location={location} />
+
+              </div>
+              
+              <CardsSectionMobile page={page} cards={cards} location={location} />
+
+            </div>
+
+            <div className="no-repeat background-bottom" style={{ backgroundImage: `url(${backgrounds.backgroundfootermobile})` }}>
+
+              <CorpoClinicoMobile data={data.corpoclinicoJson.corpoclinico} />
+
+              <QuestoesMobile data={data.questoesJson.questoes} />
+
+            </div>
+
+            <FooterMobile footer={data.footerJson.footer} />
           </>
         )
       }

@@ -24,7 +24,7 @@ import FooterMobile from '../components/footerMobile'
 import top from '../images/background1.svg'
 import up from '../images/home/up.svg'
 
-const BlogPage = ({ data }) => {
+const BlogPage = ({ data, location }) => {
 
   const breakpoints = useBreakpoint();
 
@@ -49,7 +49,7 @@ const BlogPage = ({ data }) => {
 
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
-            <Menu footer={data.footerJson.footer} />
+            <Menu footer={data.footerJson.footer} location={location}/>
 
             <HighlightNew head={posts[0].head} title={posts[0].title} details={posts[0].details} path={posts[0].path} btn="Ler Tudo" image={posts[0].image} />
 
@@ -68,7 +68,7 @@ const BlogPage = ({ data }) => {
           <>            
             <div className="no-repeat" style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
 
-              <MenuMobile footer={data.footerJson.footer} />
+              <MenuMobile footer={data.footerJson.footer} location={location}/>
 
               <HighlightNewMobile head={posts[0].head} title={posts[0].title} details={posts[0].details} path={posts[0].path} btn="Ler Tudo" image={posts[0].image} />
 
@@ -137,12 +137,7 @@ query BlogPage {
         background
         details
         especs {
-          first {
             title
-          }
-          second {
-            title
-          }
         }
         img
         title

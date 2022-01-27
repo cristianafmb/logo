@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import {  navigate } from "gatsby"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Button, Modal } from 'react-bootstrap'
@@ -7,7 +8,8 @@ import '../../sass/app.scss';
 import Form from '../form'
 
 
-const CardEspecialidades = ({ title, details, button, href, img, alt }) => {
+const CardEspecialidadesMobile = ({ title, details, button, href, img, alt, location }) => {
+    var url = location.href
     var cardClass = "card-especialidades center";
     if (title === "Marcar Consulta") { cardClass = "card-especialidades center card-gold" }
     const [show, setShow] = useState(false);
@@ -19,17 +21,11 @@ const CardEspecialidades = ({ title, details, button, href, img, alt }) => {
         }
         // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
         if (typeof (element) != 'undefined' && element != null) {
-            if (typeof window === 'undefined') {
-
-                // if url is /especialidades/cardiologia for example, then add /especialidades/cardiologia#marcacao
-                if (!window.location.href.includes("#marcacao")) {
-                    window.location.href = window.location.href + "#marcacao"
-                }
-                // if there is already /especialidades/cardiologia#marcacao for example, put the same url /especialidades/cardiologia#marcacao to go to element with that id
-                else {
-                    var page = window.location.href.split("#marcacao")[0];
-                    window.location.href = page + "#marcacao"
-                }
+            if (!url.includes("#marcacao")) {
+                navigate(url + "#marcacao")
+            } else {
+                var page = url.split("#marcacao")[0];
+                navigate(page + "#marcacao")
             }
         }
         // if there is no element with id #marcacao, then show modal
@@ -93,4 +89,4 @@ const CardEspecialidades = ({ title, details, button, href, img, alt }) => {
     )
 }
 
-export default CardEspecialidades
+export default CardEspecialidadesMobile

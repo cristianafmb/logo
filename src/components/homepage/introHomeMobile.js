@@ -6,7 +6,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import '../../sass/app.scss';
 import Card from '../cardHeadTitleDetails'
 
-const IntroHome = ({ data, href, btntext }) => {
+const IntroHomeMobile = ({ data, href, btntext }) => {
     return (
         <div className="section-space-mobile margin-sections" >
 
@@ -22,4 +22,4 @@ const IntroHome = ({ data, href, btntext }) => {
     )
 }
 
-export default IntroHome
+export default IntroHomeMobile

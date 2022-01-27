@@ -8,7 +8,7 @@ import { Button } from 'react-bootstrap'
 import banner from '../../images/home/invisalign/banner-mobile.svg'
 
 
-const Invisalign = ({ data }) => (
+const InvisalignMobile = ({ data }) => (
     <div className="position-relative section-space-mobile space-sections cover-invisalign center"  >
         <img className="card-white-img" src={banner} alt={data.alt} />
         <p className="position-absolute oLight  p-over-image-invisalign details-x-large">{data.head}</p>
@@ -18,4 +18,4 @@ const Invisalign = ({ data }) => (
     </div>
 )
 
-export default Invisalign
+export default InvisalignMobile

@@ -1,14 +1,13 @@
 {
     "sobrenos": {
-        "bgtop": "../images/sobrenos/backgroundtop.png",
-        "bgbottom": "../images/sobrenos/background.svg",
-        "bgtopmobile": "../images/sobrenos/backgroundtopmobile.svg",
-        "bgbottommobile": "../images/background-footer-mobile.svg",
+        "backgroundtop": "../images/sobrenos/backgroundtop.png",
+        "backgroundfooter": "../images/sobrenos/background.svg",
+        "backgroundtopmobile": "../images/sobrenos/backgroundtopmobile.svg",
+        "backgroundfootermobile": "../images/background-footer-mobile.svg",
         "head": "Sobre Nós",
         "title": "A nossa prioridade será sempre o seu bem estar.",
         "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. Contamos com uma equipa de profissionais de excelência que têm como principal preocupação o bem estar individual de cada paciente. Contamos com várias especialidades médicas e exames auxiliares de diagnóstico para, de uma forma geral, corresponder às necessidades de toda a população."
     },
-    
     "sectionswithbanners": {
         "content": [
             {
@@ -17,80 +16,84 @@
                 "img": "../images/sobrenos/especialidades/especialidades-simbolo.svg",
                 "title": "Especialidades",
                 "details": "Temos um vasto leque de especialidades médicas de modo a dar resposta às necessidades fundamentais dos nossos pacientes.",
-                "especs": {
-                    "first": [
-                        {
-                            "title": "Cirurgia Plástica",
-                            "href": "/especialidades/cirurgiaplastica"
-                        },
-                        {
-                            "title": "Clínca Geral",
-                            "href": "/especialidades/clinicageral"
-                        },
-                        {
-                            "title": "Fisitatria",
-                            "href": "/especialidades/fisitatria"
-                        },
-                        {
-                            "title": "Fisioterapia",
-                            "href": "/especialidades/fisioterapia"
-                        },
-                        {
-                            "title": "Ginecologia - Obstetrícia",
-                            "href": "/especialidades/ginecologiaobstetricia"
-                        },
-                        {
-                            "title": "Medicina Interna",
-                            "href": "/especialidades/medicinainterna"
-                        },
-                        {
-                            "title": "Neurologia",
-                            "href": "/especialidades/neurologia"
-                        },
-                        {
-                            "title": "Nutrição",
-                            "href": "/especialidades/nutricao"
-                        },
-                        {
-                            "title": "Ortopedia",
-                            "href": "/especialidades/ortopedia"
-                        }
-                    ],
-                    "second": [
-                        {
-                            "title": "Otorrintologia",
-                            "href": "/especialidades/otorrintologia"
-                        },
-                        {
-                            "title": "Pediatria",
-                            "href": "/especialidades/pediatria"
-                        },
-                        {
-                            "title": "Pneumologia",
-                            "href": "/especialidades/pneumologia"
-                        },
-                        {
-                            "title": "Podologia",
-                            "href": "/especialidades/podologia"
-                        },
-                        {
-                            "title": "Psicologia",
-                            "href": "/especialidades/psicologia"
-                        },
-                        {
-                            "title": "Psiquiatria",
-                            "href": "/especialidades/psiquiatria"
-                        },
-                        {
-                            "title": "Terapia da Fala",
-                            "href": "/especialidades/terapiafala"
-                        },
-                        {
-                            "title": "Terapia Ocupacional",
-                            "href": "/especialidades/terapiaocupacional"
-                        }
-                    ]
-                }
+                "especs": [
+                    {
+                        "title": "Cardiologia",
+                        "href": "/especialidades/cardiologia"
+                    },
+                    {
+                        "title": "Cirurgia Plástica",
+                        "href": "/especialidades/cirurgiaplastica"
+                    },
+                    {
+                        "title": "Clínca Geral",
+                        "href": "/especialidades/clinicageral"
+                    },
+                    {
+                        "title": "Dermatologia",
+                        "href": "/especialidades/dermatologia"
+                    },
+                    {
+                        "title": "Fisitatria",
+                        "href": "/especialidades/fisitatria"
+                    },
+                    {
+                        "title": "Fisioterapia",
+                        "href": "/especialidades/fisioterapia"
+                    },
+                    {
+                        "title": "Ginecologia - Obstetrícia",
+                        "href": "/especialidades/ginecologiaobstetricia"
+                    },
+                    {
+                        "title": "Medicina Interna",
+                        "href": "/especialidades/medicinainterna"
+                    },
+                    {
+                        "title": "Neurologia",
+                        "href": "/especialidades/neurologia"
+                    },
+                    {
+                        "title": "Nutrição",
+                        "href": "/especialidades/nutricao"
+                    },
+                    {
+                        "title": "Ortopedia",
+                        "href": "/especialidades/ortopedia"
+                    },
+                    {
+                        "title": "Otorrinolaringologia",
+                        "href": "/especialidades/otorrinolaringologia"
+                    },
+                    {
+                        "title": "Pediatria",
+                        "href": "/especialidades/pediatria"
+                    },
+                    {
+                        "title": "Pneumologia",
+                        "href": "/especialidades/pneumologia"
+                    },
+                    {
+                        "title": "Podologia",
+                        "href": "/especialidades/podologia"
+                    },
+                    {
+                        "title": "Psicologia",
+                        "href": "/especialidades/psicologia"
+                    },
+                    {
+                        "title": "Psiquiatria",
+                        "href": "/especialidades/psiquiatria"
+                    },
+                    {
+                        "title": "Terapia da Fala",
+                        "href": "/especialidades/terapiafala"
+                    },
+                    {
+                        "title": "Terapia Ocupacional",
+                        "href": "/especialidades/terapiaocupacional"
+                    }
+                ]
             },
             {
                 "background": "../images/sobrenos/medicina-dentaria/background.svg",
@@ -98,36 +101,40 @@
                 "img": "../images/sobrenos/medicina-dentaria/medicina-dentaria-simbolo.svg",
                 "title": "Medicina Dentária",
                 "details": "Medicina Dentária é a área da saúde que estuda, trata e previne todos os componentes relacionados com as patologias orais e maxilares.",
-                "especs": {
-                    "first": [
-                        {
-                            "title": "Cirurgia Plástica"
-                        },
-                        {
-                            "title": "Clínca Geral"
-                        },
-                        {
-                            "title": "Fisitatria"
-                        },
-                        {
-                            "title": "Fisioterapia"
-                        },
-                        {
-                            "title": "Ginecologia - Obstetrícia"
-                        },
-                        {
-                            "title": "Medicina Interna"
-                        },
-                        {
-                            "title": "Neurologia"
-                        },
-                        {
-                            "title": "Nutrição"
-                        }
-                    ],
-                    "second": [
-                    ]
-                }
+                "especs": [
+                    {
+                        "title": "Cirurgia Oral",
+                        "href": "/medicinadentaria/cirurgiaoral"
+                    },
+                    {
+                        "title": "Dentisteria",
+                        "href": "/medicinadentaria/dentisteria"
+                    },
+                    {
+                        "title": "Endodontia",
+                        "href": "/medicinadentaria/endodontia"
+                    },
+                    {
+                        "title": "Implantologia",
+                        "href": "/medicinadentaria/implantologia"
+                    },
+                    {
+                        "title": "Oclusão",
+                        "href": "/medicinadentaria/oclusao"
+                    },
+                    {
+                        "title": "Odontopediatria",
+                        "href": "/medicinadentaria/odontopediatria"
+                    },
+                    {
+                        "title": "Ortodontia",
+                        "href": "/medicinadentaria/ortodontia"
+                    },
+                    {
+                        "title": "Reabilitação Oral",
+                        "href": "/medicinadentaria/reabilitacaooral"
+                    }
+                ]
             },
             {
                 "background": "../images/sobrenos/examesanalises/background.svg",
@@ -135,42 +142,46 @@
                 "img": "../images/sobrenos/examesanalises/simbolo.svg",
                 "title": "Exames & Análises",
                 "details": "Os exames médicos são essenciais para que tenhaum diagnóstico assertivo das suas doenças. Conheça os que fazemos na nossa clínica.",
-                "especs": {
-                    "first": [
-                        {
-                            "title": "Cirurgia Plástica"
-                        },
-                        {
-                            "title": "Clínca Geral"
-                        },
-                        {
-                            "title": "Fisitatria"
-                        },
-                        {
-                            "title": "Fisioterapia"
-                        },
-                        {
-                            "title": "Ginecologia - Obstetrícia"
-                        },
-                        {
-                            "title": "Medicina Interna"
-                        },
-                        {
-                            "title": "Neurologia"
-                        },
-                        {
-                            "title": "Nutrição"
-                        }
-                    ],
-                    "second": [
-                    ]
-                }
+                "especs": [
+                    {
+                        "title": "Análises Clínicas",
+                        "href": "/examesanalises/analisesclinicas"
+                    },
+                    {
+                        "title": "CBCT",
+                        "href": "/examesanalises/cbct"
+                    },
+                    {
+                        "title": "Electrocardiograma",
+                        "href": "/examesanalises/electrocardiograma"
+                    },
+                    {
+                        "title": "Espirometria",
+                        "href": "/examesanalises/espirometria"
+                    },
+                    {
+                        "title": "Exames Genéticos",
+                        "href": "/examesanalises/examesgeneticos"
+                    },
+                    {
+                        "title": "Holter de 24h",
+                        "href": "/examesanalises/holter"
+                    },
+                    {
+                        "title": "Laser",
+                        "href": "/examesanalises/laser"
+                    },
+                    {
+                        "title": "Polissonografia",
+                        "href": "/examesanalises/polissonografia"
+                    }
+                ]
             }
         ]
     },
-    "opiniao":{
+    "opiniao": {
         "title": "A Opinião dos Pacientes",
-        "opinioes":[
+        "opinioes": [
             {
                 "details": "“Equipa de excelentes profissionais, excelentes instalações, componente humana ao serviços dos pacientes, disponibilidade, super simpáticos. Serviço de excelência…. Irrepreensível!!!.”",
                 "head": "Paula Soares"

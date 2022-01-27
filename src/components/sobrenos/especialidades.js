@@ -5,7 +5,15 @@ import { Row, Col } from 'react-bootstrap';
 
 import '../../sass/app.scss';
 
-const Especialidades = ({ data }) => {
+const EspecialidadesSobreNos = ({ data }) => {
+
+    var areas = data.especs;
+    var areas2 = null
+
+    if (areas.length > 10) {
+        areas2 = areas.slice(10, areas.length)
+        areas = areas.slice(0,10)
+    }
 
     return (
         <div className="no-repeat position-relative" style={{ backgroundImage: `url(${data.background})` }}>
@@ -22,12 +30,12 @@ const Especialidades = ({ data }) => {
                                 {data.details}
                             </p>
 
-
                         </Col>
                         <Col sm="12" lg="4" md="4">
-                            {data.especs.first.map((array, i) => (
-                                <Row key={"first-"+i}>
-                                    <Col key={"first-"+i}>
+
+                            {areas.map((array, i) => (
+                                <Row key={"first-" + i}>
+                                    <Col key={"first-" + i}>
                                         <hr className="gold" style={{ height: "2px" }} />
                                         <a href={array.href}><p className="head-small oLight">{array.title}</p></a>
 
@@ -38,22 +46,21 @@ const Especialidades = ({ data }) => {
 
                         </Col>
                         <Col sm="12" lg="4" md="4">
-                            {data.especs.second.length > 0 &&
-                                (data.especs.second.map((array, j) => (
-                                    <Row key={"second-"+j}>
-                                        <Col key={"second-"+j}>
-                                            <hr className="gold" style={{ height: "2px" }} />
-                                            <a href={array.href}><p className="head-small oLight">{array.title}</p></a>
-                                            
-                                        </Col>
-                                    </Row>
+                            {areas2 !== null ?
+                                (<>
+                                    {areas2.map((array, i) => (
+                                        <Row key={"first-" + i}>
+                                            <Col key={"first-" + i}>
+                                                <hr className="gold" style={{ height: "2px" }} />
+                                                <a href={array.href}><p className="head-small oLight">{array.title}</p></a>
 
-                                )
-                                )
-
-                                )
-
-                            }
+                                            </Col>
+                                        </Row>
+                                    ))
+                                    }
+                                    < hr className="gold" style={{ height: "2px" }} />
+                                </>)
+                                : <></>}
                         </Col>
                     </Row>
                 </Col>
@@ -62,4 +69,4 @@ const Especialidades = ({ data }) => {
     )
 }
 
-export default Especialidades
+export default EspecialidadesSobreNos

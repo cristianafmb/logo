@@ -1,11 +1,10 @@
 import * as React from "react"
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import '../../sass/app.scss';
 
-const Especialidades = ({ data }) => {
+const EspecialidadesSobreNosMobile = ({ data }) => {
 
     return (
         <>
@@ -19,26 +18,16 @@ const Especialidades = ({ data }) => {
                 </div>
             </div>
             <div className="section-space-mobile sobrenos mb-4">
-                {data.especs.first.map((array, i) => (
+                {data.especs.map((array, i) => (
                     <div key={"first-" + i}>
                         <hr className="gold" style={{ height: "2px" }} />
                         <a href={array.href}><p className="head-medium oLight">{array.title}</p></a>
                     </div>
                 ))}
-
-                {data.especs.second.length > 0 &&
-                    (data.especs.second.map((array, j) => (
-                        <div key={"second-" + j}>
-                            <hr className="gold" style={{ height: "2px" }} />
-                            <a href={array.href}><p className="head-medium oLight">{array.title}</p></a>
-                        </div>
-                    )
-                    ))
-                }
                 <hr className="gold" style={{ height: "2px" }} />
             </div>
         </>
     )
 }
 
-export default Especialidades
+export default EspecialidadesSobreNosMobile

@@ -4,7 +4,7 @@ import '../../sass/app.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from "../cardHeadTitleDetails"
 
-const SobreNos = ({ data }) => (
+const SobreNosMobile = ({ data }) => (
     <>
         <div className="position-relative t-15">
             <div className="section-space-mobile">
@@ -14,4 +14,4 @@ const SobreNos = ({ data }) => (
     </>
 )
 
-export default SobreNos
+export default SobreNosMobile

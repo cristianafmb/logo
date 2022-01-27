@@ -7,8 +7,8 @@ import '../sass/app.scss';
 
 import { Row, Col } from 'react-bootstrap';
 
-const InnerTopsection = ({ data, areas, page }) => {
-    const url = typeof window !== 'undefined' ? window.location.href : '';
+const InnerTopsection = ({ areas, page, location }) => {
+    var pathname = location.pathname;
 
     return (
         <div className="pt-5 position-relative">
@@ -19,15 +19,15 @@ const InnerTopsection = ({ data, areas, page }) => {
                 </Col>
                 <Col sm="12" md="2" lg="2" className="col-20">
                     <p className="head-x-small mb-4 oBold">
-                        Áreas Clínicas
+                        {areas.head}
                     </p>
 
                     {areas.areas.map((item, i) => (
-                       
+
                         <div key={"area" + i}>
                             <hr className="gold" style={{ height: "2px" }} />
                             <Link to={item.href} className="text-decoration-none">
-                                <p className={url.includes(item.href) ? "bold head-small text-decoration-none oMedium" : "head-small text-decoration-none oMedium"}>{item.title}</p>
+                                <p className={pathname.includes(item.href) ? "bold head-small text-decoration-none oMedium" : "head-small text-decoration-none oMedium"}>{item.title}</p>
                             </Link>
                         </div>
 

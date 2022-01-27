@@ -7,23 +7,19 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Menu from '../components/menu'
-import SubPage from '../components/especialidades/subPage'
-import SubPageMobile from '../components/especialidades/subPageMobile'
+import SubPage from '../components/subpage/subPage'
+import SubPageMobile from '../components/subpage/subPageMobile'
 import Especialidades from '../components/homepage/especialidades'
 import Questoes from '../components/questoes'
 import Footer from '../components/footer'
 
-import background from '../images/especialidades/background.svg'
 
-const Template = ({ data, pageContext }) => {
+const Template = ({ data, pageContext, location }) => {
 
   const breakpoints = useBreakpoint()
-  const url = ""
-  if (typeof window === 'undefined') {
-    url = window.location.pathname
-  }
-  const pageName = url.split("/")[1]
-  const subPageName = url.split("/")[2]
+  var pathname = location.pathname;
+  const pageName = pathname.split("/")[1]
+  const subPageName = pathname.split("/")[2]
 
   const areas = pageContext['subpages']['simple']
 
@@ -38,8 +34,8 @@ const Template = ({ data, pageContext }) => {
       subPage = { ...value }
     }
   })
-
-  const banner = "../images" + subPage.headlink
+  
+  const banner = "../images" + subPage.headhref
 
   return (
 
@@ -49,15 +45,15 @@ const Template = ({ data, pageContext }) => {
         <>
           <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${subPage.img})` }}>
 
-            <Menu footer={data.footerJson.footer} />
+            <Menu footer={data.footerJson.footer} location={location}/>
 
           </div>
 
           <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${background.backgroundtop})` }}>
 
-            <SubPage subpage={subPage} page={pageName} areas={areas} />
+            <SubPage subpage={subPage} page={pageName} areas={areas} location={location} />
 
-            <Especialidades especialidades={data.homeJson.especialidades} />
+            <Especialidades especialidades={data.homeJson.especialidades} location={location}/>
 
             <Questoes data={data.questoesJson.questoes} />
 
@@ -71,13 +67,14 @@ const Template = ({ data, pageContext }) => {
           <>
             <SubPageMobile
               bgtop={background.backgroundtopmobile}
-              bgbanner={banner + "/" + subPage.headlink + ".png"}
+              bgbanner={banner + "/" + subPage.headhref + ".png"}
               areas={areas}
               subpage={subPage}
               home={data.homeJson.especialidades}
               bgbottm={background.backgroundfootermobile}
               questoes={data.questoesJson.questoes}
               footer={data.footerJson.footer}
+              location={location}
             />
           </>
         )

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import* as React from "react";
 import Slider from "react-slick"
 import arrowLeft from '../../images/sobrenos/arrowLeft.svg';
 import arrowRigth from '../../images/sobrenos/arrowRigth.svg';
@@ -27,7 +27,7 @@ function CustomLeftArrow(props) {
   );
 }
 
-const opinioes2 = ({ data }) => {
+const Opinioes = ({ data }) => {
 
   const settings = {
     dots: false,
@@ -70,4 +70,4 @@ const opinioes2 = ({ data }) => {
 
 }
 
-export default opinioes2
+export default Opinioes

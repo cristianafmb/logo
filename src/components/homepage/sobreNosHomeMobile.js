@@ -3,13 +3,13 @@ import * as React from "react"
 import '../../sass/app.scss';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import {Row, Col, Button} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 
-import TestimonyMobile from './testimonyMobile'
+import Testimony from './testimony'
 import Card from '../cardHeadTitleDetails'
 
 
-const SobreNosHome = ({ testimony, sobreNos }) => {
+const SobreNosHomeMobile = ({ testimony, sobreNos }) => {
     return (
         <div className="section-space-mobile margin-sections position-relative">
 
@@ -19,7 +19,7 @@ const SobreNosHome = ({ testimony, sobreNos }) => {
                  
                 </Col>
                 <Col sm="12" md="4" lg="4">
-                    <TestimonyMobile img={testimony.img} alt={testimony.alt} quote={testimony.quote} person={testimony.person} tfunction={testimony.function} />
+                    <Testimony img={testimony.img} alt={testimony.alt} quote={testimony.quote} person={testimony.person} tfunction={testimony.function} mobile={true}/>
                 </Col>
                 <Col sm="1" md="1" lg="1" />
             </Row>
@@ -27,4 +27,4 @@ const SobreNosHome = ({ testimony, sobreNos }) => {
     )
 }
 
-export default SobreNosHome
+export default SobreNosHomeMobile

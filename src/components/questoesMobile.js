@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
-const Questoes = ({ data }) => (
+const QuestoesMobile = ({ data }) => (
     <div className="container-questoes mt-5 position-relative">
 
         <hr className="gold" style={{ height: "2px" }} />
@@ -48,4 +48,4 @@ const Questoes = ({ data }) => (
 )
 
 
-export default Questoes
+export default QuestoesMobile

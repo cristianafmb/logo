@@ -17,7 +17,7 @@ import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 
-const Contactos = ({ data }) => {
+const Contactos = ({ data, location }) => {
 
   const breakpoints = useBreakpoint();
 
@@ -29,7 +29,7 @@ const Contactos = ({ data }) => {
         <>
           <div className="no-repeat  bg-cover" style={{ backgroundImage: `url(${data.contactosJson.backgroundtop})` }}>
 
-            <Menu />
+            <Menu location={location}/>
 
             <Contacts data={data.contactosJson} />
 
@@ -54,7 +54,7 @@ const Contactos = ({ data }) => {
       
             <div className="no-repeat" style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
 
-              <MenuMobile footer={data.footerJson.footer} />
+              <MenuMobile footer={data.footerJson.footer} location={location}/>
 
               <ContactsMobile data={data.contactosJson} />
 
@@ -130,12 +130,7 @@ query ContactoJson {
         background
         details
         especs {
-          first {
             title
-          }
-          second {
-            title
-          }
         }
         img
         title

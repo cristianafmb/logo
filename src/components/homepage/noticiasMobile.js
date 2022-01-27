@@ -10,7 +10,7 @@ import { Link } from "gatsby"
 
 import Card from "../cardHeadTitleDetails"
 
-const Noticias = ({ noticias, blog }) => (
+const NoticiasMobile = ({ noticias, blog }) => (
     <div className="space-sections section-space-mobile  position-relative" >
         <Row className="max-width">
             <Col sm="12" md="6" lg="6" className="p-4 mb-4">
@@ -44,4 +44,4 @@ const Noticias = ({ noticias, blog }) => (
 
 
 
-export default Noticias
+export default NoticiasMobile

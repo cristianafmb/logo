@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../../sass/app.scss';
 import MenuMobile from '../menuMobile'
-import MiniCorpoClinicoMobile from './miniCorpoClinicoMobile'
+import MiniCorpoClinicoMobile from '../../components/subpage/miniCorpoClinico'
 import CardSectionMobile from '../cardsSectionMobile'
 import PedidoMarcacaoMobile from '../pedidoMarcacaoRapidoMobile'
 import EspecialidadesMobile from '../homepage/especialidadesMobile'
@@ -12,11 +12,10 @@ import Card from '../cardHeadTitleDetails'
 import QuestoesMobile from '../questoesMobile'
 import FooterMobile from '../footerMobile'
 
-const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoes, footer }) => {
+const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoes, footer, location }) => {
 
     return (
         <>
-        {console.log(subpage)}
 
             <div className="no-repeat" style={{ backgroundImage: `url(${bgtop})` }}>
 
@@ -29,19 +28,19 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
                             <Card
                                 head={<div className="d-flex">
                                     <p className="head-x-small oBold" >
-                                        <a href={subpage.headlink} className="text-decoration-none">{subpage.head}</a> </p >
+                                        <a href={subpage.headhref} className="text-decoration-none">{subpage.head}</a> </p >
                                     <p className="head-x-small oBold"> &nbsp;&nbsp; &#62; &nbsp;&nbsp;</p>
                                     <p className="head-x-small oBold">
                                         <a href={subpage.link} className="text-decoration-none">{subpage.title}</a>
                                     </p>
                                 </div >
-                                } title={subpage.title} details={subpage.details} btn={false} />
+                                } title={subpage.title} details={subpage.details} btn={false} subpage={subpage} />
                         </div>
 
 
                         <div className="pt-5 mt-4">
 
-                            <MiniCorpoClinicoMobile corpoclinico={subpage.corpoclinico} />
+                            <MiniCorpoClinicoMobile corpoclinico={subpage.corpoclinico} mobile={true} />
 
                         </div>
 
@@ -49,7 +48,7 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
 
                     <div>
                                     
-                        <CardSectionMobile title={subpage.title} areas={areas}/>
+                        <CardSectionMobile page={subpage} cards={areas} location={location}/>
 
                     </div>
 
@@ -65,7 +64,7 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
 
             <div className="no-repeat background-bottom" style={{ backgroundImage: `url(${bgbottm})` }}>
 
-                <EspecialidadesMobile especialidades={home} />
+                <EspecialidadesMobile especialidades={home} location={location} />
 
                 <QuestoesMobile data={questoes} />
 

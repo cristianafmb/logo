@@ -6,24 +6,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../sass/app.scss';
 
 
-const CardsSection = ({ title, areas }) => {
-    const url = ""
-    if (typeof window === 'undefined') {
-        url = window.location.href
-    }
+const CardsSectionMobile = ({ page, cards, location }) => {
+    if (location !== 'undefined')
+        var pathname = location.pathname;
+
     return (
         <>
             <div className="position-relative section-space-mobile ">
                 <p className="head-x-small mb-4 oBold mt-4">
-                    {title}
+                    {page.title}
                 </p>
                 <div className="sobrenos">
-                    {areas.map((item, i) => (
+                    {cards.map((item, i) => (
                         <div key={"area" + i}>
-                            {console.log(item)}
                             <hr className="gold" style={{ height: "2px" }} />
-                            <Link to={item.link} className="text-decoration-none">
-                                <p className={url.includes(item.link) ? "bold head-medium oLight text-decoration-none" : "head-medium oLight text-decoration-none"}>{item.title}</p>
+                            <Link to={item.href} className="text-decoration-none">
+                                <p className={pathname.includes(item.href) ? "bold head-medium oLight text-decoration-none" : "head-medium oLight text-decoration-none"}>{item.title}</p>
                             </Link>
                         </div>
 
@@ -31,9 +29,9 @@ const CardsSection = ({ title, areas }) => {
                     <hr className="gold" style={{ height: "2px" }} />
                 </div>
             </div>
-            
+
         </>
     )
 }
 
-export default CardsSection
+export default CardsSectionMobile

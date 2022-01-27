@@ -4,9 +4,7 @@ import { Link } from "gatsby"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button'
+import { Row, Col, Button } from 'react-bootstrap'
 
 const CorpoClinico = ({ data }) => (
     <div className="margin-sections position-relative">

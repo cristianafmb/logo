@@ -4,18 +4,14 @@ import { Link } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../../sass/app.scss';
-import styled from "styled-components"
 import MiniCorpoClinico from './miniCorpoClinico'
 import PedidoMarcacao from '../pedidoMarcacaoRapido'
 import { Row, Col } from 'react-bootstrap';
 
 
-const Subpage = ({ subpage, page, areas }) => {
-    const url = ""
-    if (typeof window === 'undefined') {
-        url = window.location.href
-    }
-
+const Subpage = ({ subpage, page, areas, location }) => {
+    var pathname = location.pathname;
+    
     return (
         <div className="pt-5 position-relative">
             <Row className="container-corpo-clinico pt-5">
@@ -24,7 +20,7 @@ const Subpage = ({ subpage, page, areas }) => {
                         <Col sm="12" md="5" lg="5">
                             <div className="d-flex">
                                 <p className="head-x-small oBold">
-                                    <a href={subpage.headlink} className="text-decoration-none">{subpage.head}</a> </p>
+                                    <a href={subpage.headhref} className="text-decoration-none">{subpage.head}</a> </p>
                                 <p className="head-x-small oBold"> &nbsp;&nbsp; &#62; &nbsp;&nbsp;</p>
                                 <p className="head-x-small oBold">
                                     <a href={subpage.link} className="text-decoration-none">{subpage.title}</a>
@@ -38,7 +34,7 @@ const Subpage = ({ subpage, page, areas }) => {
                         <Col sm="12" md="1" lg="1">
                         </Col>
                         <Col sm="12" md="6" lg="6">
-                            <MiniCorpoClinico corpoclinico={subpage.corpoclinico} />
+                            <MiniCorpoClinico corpoclinico={subpage.corpoclinico} mobile={false}/>
                         </Col>
                     </Row>
                     <Row className="mt-5 pt-5">
@@ -49,7 +45,7 @@ const Subpage = ({ subpage, page, areas }) => {
                 </Col>
                 <Col sm="12" md="2" lg="2" className="col-20">
                     <p className="head-x-small mb-4 oBold">
-                        {page.charAt(0).toUpperCase() + page.slice(1)}
+                        {subpage.head}
                     </p>
 
                     {areas.map((item, i) => (
@@ -57,7 +53,7 @@ const Subpage = ({ subpage, page, areas }) => {
                         <div key={"area" + i}>
                             <hr className="gold" style={{ height: "2px" }} />
                             <Link to={"/" + page + item.link} className="text-decoration-none">
-                                <p className={url.includes(item.link) ? "bold head-small text-decoration-none oLight" : "head-small text-decoration-none oLight"}>{item.title}</p>
+                                <p className={pathname.includes(item.link) ? "bold head-small text-decoration-none oLight" : "head-small text-decoration-none oLight"}>{item.title}</p>
                             </Link>
                         </div>
 

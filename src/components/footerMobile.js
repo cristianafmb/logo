@@ -6,7 +6,7 @@ import '../sass/app.scss';
 
 
 
-const Footer = ({ footer }) => {
+const FooterMobile = ({ footer }) => {
 
     function renderSwitch(param) {
         switch (param) {
@@ -79,4 +79,4 @@ const Footer = ({ footer }) => {
     )
 }
 
-export default Footer
+export default FooterMobile

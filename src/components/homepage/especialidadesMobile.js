@@ -8,12 +8,12 @@ import '../../sass/app.scss';
 import CardEspecialidadesMobile from './cardEspecialidadesMobile'
 
 
-const Especialidades = ({ especialidades }) => (
+const EspecialidadesHomeMobile = ({ especialidades, location }) => (
     <div className="space-sections position-relative">
         <Row className="m-4">
             {especialidades.map((data, i) => (
                 <Col sm="12" md="3" lg="3" className="padding-r-0 padding-l-7 mb-4" key={"card-especialidades-"+i}>
-                    <CardEspecialidadesMobile title={data.title} details={data.details} button={data.titlemobile} href={data.href} img={data.img} alt={data.alt} />
+                    <CardEspecialidadesMobile title={data.title} details={data.details} button={data.titlemobile} href={data.href} img={data.img} alt={data.alt} location={location}/>
                 </Col>
                 
             ))}
@@ -21,4 +21,4 @@ const Especialidades = ({ especialidades }) => (
     </div>
 )
 
-export default Especialidades
+export default EspecialidadesHomeMobile

@@ -1,20 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "gatsby"
+import React, { useState } from "react";
+import {  navigate } from "gatsby"
 
-import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import '../sass/app.scss';
-import { Container, Navbar, Badge, Row, Col, Nav, Modal, Button } from 'react-bootstrap'
+import { Container, Navbar, Nav, Modal, } from 'react-bootstrap'
 import logo from '../images/logo.svg'
 import calendario from '../images/calendar.svg'
 import Form from "../components/form"
 
-import closeButton from "../images/mobile/menu/close-btn-menu.svg"
-import logoMobile from "../images/mobile/menu/logo.svg"
-import logoWhiteMobile from "../images/mobile/menu/logowhite.svg"
-import menuBtnMobile from "../images/mobile/btn-menu.svg"
 
-
-const Menu = ({ footer }) => {
+const Menu = ({ location }) => {
+    var url = location.href
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
@@ -23,16 +18,14 @@ const Menu = ({ footer }) => {
         }
         // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
         if (typeof (element) != 'undefined' && element != null) {
-            if (typeof window === 'undefined') {
-
-                if (!window.location.href.includes("#marcacao")) {
-                    window.location.href = window.location.href + "#marcacao"
-                } else {
-                    var page = window.location.href.split("#marcacao")[0];
-                    window.location.href = page + "#marcacao"
-                }
+            if (!url.includes("#marcacao")) {
+                navigate(url + "#marcacao")
+            } else {
+                var page = url.split("#marcacao")[0];
+                navigate(page + "#marcacao")
             }
         }
+
         // if there is no element with id #marcacao, then show modal
         else {
             setShow(true)

@@ -9,7 +9,7 @@ import { Row, Col, Modal, Button } from 'react-bootstrap'
 import fbTrack from "../custom/fbTrack"
 
 
-const Formulario = ({ data, title }) => {
+const FormMobile = ({ data, title }) => {
     const today = new Date()
     const [show, setShow] = useState(false);
     const [showError, setShowError] = useState(false);
@@ -248,5 +248,5 @@ const Formulario = ({ data, title }) => {
 }
 
 
-export default Formulario
+export default FormMobile
 

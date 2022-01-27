@@ -9,7 +9,7 @@ import closeButton from "../images/mobile/menu/close-btn-menu.svg"
 import menuBtnMobile from "../images/mobile/btn-menu.svg"
 
 
-const Menu = ({ footer }) => {
+const MenuMobile = ({ footer }) => {
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
     function renderSwitch(param) {
@@ -154,4 +154,4 @@ const Menu = ({ footer }) => {
         </div>
     )
 }
-export default Menu
+export default MenuMobile

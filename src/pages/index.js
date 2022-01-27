@@ -34,8 +34,8 @@ import { graphql } from 'gatsby'
 
 
 
-const IndexPage = ({ data }) => {
-  
+const IndexPage = ({ data, location }) => {
+
   const breakpoints = useBreakpoint();
   const posts = parseBlogPosts(data.allMarkdownRemark.edges)
 
@@ -47,14 +47,14 @@ const IndexPage = ({ data }) => {
           <img src={up} className="up" />
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
-            <Menu footer={data.footerJson.footer} />
+            <Menu footer={data.footerJson.footer} location={location}/>
            
             <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href}/>
 
             <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} />
           </ div>
 
-          <Especialidades especialidades={data.homeJson.especialidades} />
+          <Especialidades especialidades={data.homeJson.especialidades} location={location} />
 
           <div className="no-repeat bg-position-bottom  bg-cover" style={{ backgroundImage: `url(${bottom})` }}>
 
@@ -76,7 +76,7 @@ const IndexPage = ({ data }) => {
             <img src={up} className="up" />
             <div className="no-repeat" style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
 
-              <MenuMobile footer={data.footerJson.footer} />
+              <MenuMobile footer={data.footerJson.footer} location={location}/>
 
               <IntroHomeMobile data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href}/>
 
@@ -84,7 +84,7 @@ const IndexPage = ({ data }) => {
 
             </ div>
 
-            <EspecialidadesMobile especialidades={data.homeJson.especialidades} />
+            <EspecialidadesMobile especialidades={data.homeJson.especialidades} location={location}/>
 
             <InvisalignMobile data={data.homeJson.invisalign} />
 
@@ -208,12 +208,7 @@ query IntroHome {
         background
         details
         especs {
-          first {
             title
-          }
-          second {
-            title
-          }
         }
         img
         title

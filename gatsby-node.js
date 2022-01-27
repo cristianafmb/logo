@@ -115,7 +115,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                   alt
                   details
                   head
-                  headlink
+                  headhref
                   img
                   title
                   link

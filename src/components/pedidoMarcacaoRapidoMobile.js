@@ -14,7 +14,7 @@ import Form from './form'
 
 
 
-const PedidoMarcacoRapida = ({ img, alt, space, subpage }) => {
+const PedidoMarcacoRapidaMobile = ({ img, alt, space, subpage }) => {
     // all form left
     if (img !== false) {
         return (
@@ -40,4 +40,4 @@ const PedidoMarcacoRapida = ({ img, alt, space, subpage }) => {
     }
 }
 
-export default PedidoMarcacoRapida
+export default PedidoMarcacoRapidaMobile

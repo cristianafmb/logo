@@ -1,13 +1,12 @@
 import * as React from "react"
-import '../../sass/app.scss';
-import { Link } from "gatsby"
+import '../../sass/app.scss'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Card from "../cardHeadTitleDetails"
 
-const CorpoClinico = ({ data }) => (
+const CorpoClinicoMobile = ({ data }) => (
     <div className="margin-sections position-relative">
         <div className="section-space-mobile">
             <Card head={data.head} title={data.title} details={data.details} btn={data.btn.textmobile} btnlink={data.btn.link} />
@@ -42,4 +41,4 @@ const CorpoClinico = ({ data }) => (
 
 )
 
-export default CorpoClinico
+export default CorpoClinicoMobile
