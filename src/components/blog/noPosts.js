@@ -15,7 +15,7 @@ import FooterMobile from '../../components/footerMobile'
 import top from '../../images/background1.svg'
 import up from '../../images/home/up.svg'
 
-const NoPosts = ({ footerJson, questoesJson, homeJson }) => {
+const NoPosts = ({ footerJson, questoesJson, homeJson, location }) => {
   const breakpoints = useBreakpoint();
 
   return (

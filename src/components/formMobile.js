@@ -166,7 +166,7 @@ const FormMobile = ({ data, title }) => {
 
                                 <p className="head-medium oLight  mt-3 mb-2">Dados da Consulta</p>
 
-                                <select className={ typeof document !== 'undefined'? (typeof (document.getElementById("marcacao")) != 'undefined' && document.getElementById("marcacao") != null ? "input-form oMedium mt-2" : "input-form white oMedium mt-2") : <></>}
+                                <select className={ typeof document !== 'undefined'? (typeof (document.getElementById("marcacao")) !== 'undefined' && document.getElementById("marcacao") !== null ? "input-form oMedium mt-2" : "input-form white oMedium mt-2") : <></>}
                                     type="text"
                                     required
                                     placeholder="Especialidade"

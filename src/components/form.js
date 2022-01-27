@@ -26,6 +26,12 @@ const Formulario = ({ data, title }) => {
     const handleCloseError = () => setShowError(false);
     const handleShowError = () => setShowError(true);
 
+    var selectClassName 
+    if (typeof document !== 'undefined') {
+        console.log('not undefined')
+        selectClassName = typeof (document.getElementById("marcacao")) !== 'undefined' && document.getElementById("marcacao") !== null ? "input-form oMedium" : "input-form white oMedium"
+    }
+
 
     function doSubmit(e) {
         checkValues();
@@ -179,7 +185,7 @@ const Formulario = ({ data, title }) => {
                                     </Col>
                                     <Col sm="12" md="6" lg="6" >
                                        
-                                        <select className={typeof document === 'undefined' ? <></> : (typeof (document.getElementById("marcacao")) != 'undefined' && document.getElementById("marcacao") != null ? "input-form oMedium" : "input-form white oMedium")}
+                                        <select className={selectClassName}
                                             type="text"
                                             required
                                             placeholder="Especialidade"

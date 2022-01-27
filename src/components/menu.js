@@ -15,12 +15,11 @@ const Menu = ({ location }) => {
     const handleClose = () => setShow(false);
     const handleShow = () => {
      
-        console.log(ele)
         if (typeof document !== 'undefined') {
             var element = document.getElementById("marcacao");
         }
         // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
-        if (typeof (element) != 'undefined' && element != null) {
+        if ((typeof (element) !== 'undefined') && (element !== null)) {
             if (!url.includes("#marcacao")) {
                 navigate(url + "#marcacao")
             } else {

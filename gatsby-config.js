@@ -44,6 +44,7 @@ module.exports = {
         queries: myCustomQueries,
       },
     },
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
