@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 import Carousel from 'react-bootstrap/Carousel'
 
 import '../../sass/app.scss';

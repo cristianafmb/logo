@@ -1,7 +1,7 @@
 import * as React from "react"
 import '../../sass/app.scss';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const SobreNos = ({ data }) => (
     <div className="position-relative">

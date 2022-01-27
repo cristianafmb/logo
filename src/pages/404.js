@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
@@ -18,11 +18,11 @@ import { Row, Col } from 'react-bootstrap';
 
 import { graphql } from 'gatsby'
 
-const NotFoundPage = ({ data }) => (
+const NotFoundPage = ({ data, location }) => (
   <Layout home mobile={useBreakpoint().mobile}>
     <div className="no-repeat" style={{ backgroundImage: `url(${top})` }}>
       <SEO title="404: Not found" />
-      <Menu />
+      <Menu  location={location}/>
 
       <Row className="mt-10 max-width ">
         <Col className="right">

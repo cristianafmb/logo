@@ -5,11 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../../sass/app.scss';
 import styled from "styled-components"
+import "bootstrap/dist/css/bootstrap.min.css"
 
-import { Row, Col } from 'react-bootstrap';
 
-
-const Contacts = ({ data }) => {
+const ContactsMobile = ({ data }) => {
     return (
         <StyledContacts className="mt-5 left">
             <div className="padding-2-2 bg-white">
@@ -53,7 +52,7 @@ const Contacts = ({ data }) => {
     )
 }
 
-export default Contacts
+export default ContactsMobile
 
 const StyledContacts = styled.div`
   position: relative;

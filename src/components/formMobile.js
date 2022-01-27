@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react"
 import { Link } from "gatsby"
 import axios from 'axios'
 import { graphql, StaticQuery } from "gatsby";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css"
 import Radio from '@mui/material/Radio';
 import { Row, Col, Modal, Button } from 'react-bootstrap'
 

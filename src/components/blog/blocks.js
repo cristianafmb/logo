@@ -1,5 +1,6 @@
 import * as THREE from 'three'
 import React, { useEffect } from 'react'
+import "bootstrap/dist/css/bootstrap.min.css"
 import { Canvas } from '@react-three/fiber'
 import { useSprings, a } from '@react-spring/three'
 

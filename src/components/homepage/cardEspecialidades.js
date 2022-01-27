@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {  navigate } from "gatsby"
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 import { Row, Col, Button, Modal } from 'react-bootstrap'
 
 import '../../sass/app.scss';

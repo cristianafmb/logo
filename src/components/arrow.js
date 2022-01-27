@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { animated, useSpring } from "react-spring";
-
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function Arrow({ id, rot, text, blog }) {
     const [show2, setShow2] = useState(false);

@@ -1,6 +1,6 @@
 import React from "react"
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
@@ -101,11 +101,11 @@ query BlogPage {
         frontmatter {
           data
           date
+          details
+          head
           id
           image
           path
-          head
-          details
           title
         }
       }

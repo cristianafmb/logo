@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 import { animated, useSprings, useSpring, to } from "react-spring";
 import '../sass/app.scss';
 import { Modal, Row, Col } from 'react-bootstrap'

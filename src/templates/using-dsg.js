@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
-
+import "bootstrap/dist/css/bootstrap.min.css"
 const UsingDSG = () => (
   <Layout>
     <Seo title="Using DSG" />

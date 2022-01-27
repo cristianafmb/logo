@@ -4,6 +4,8 @@ import { Row, Col, Button } from 'react-bootstrap'
 
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
+import "bootstrap/dist/css/bootstrap.min.css"
+
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Menu from '../components/menu'
@@ -19,7 +21,7 @@ import top from '../images/background1.svg'
 
 
 
-const Template = ({ data }) => {
+const Template = ({ data, location }) => {
 
   const breakpoints = useBreakpoint()
   const frontmatter = data.markdownRemark.frontmatter // data.markdownRemark holds your post data
@@ -37,7 +39,7 @@ const Template = ({ data }) => {
         <>
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
-            <Menu footer={footerJson.footer} />
+            <Menu footer={footerJson.footer}  location={location}/>
 
             <div>
               <HighlightNew head={frontmatter.head} title={frontmatter.title} details={frontmatter.details} path={frontmatter.path} btn={false} image={frontmatter.image} />
@@ -79,7 +81,7 @@ const Template = ({ data }) => {
           <>
             <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${homeJson.background.topmobile})` }}>
 
-              <MenuMobile footer={footerJson.footer} className="mt-2" />
+              <MenuMobile footer={footerJson.footer} className="mt-2" location={location} />
 
               <HighlightNewMobile head={frontmatter.head} title={frontmatter.title} details={frontmatter.details} path={frontmatter.path} btn={false} image={frontmatter.image} />
 

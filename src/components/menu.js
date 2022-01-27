@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {  navigate } from "gatsby"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import '../sass/app.scss';
 import { Container, Navbar, Nav, Modal, } from 'react-bootstrap'
@@ -13,6 +14,8 @@ const Menu = ({ location }) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
+     
+        console.log(ele)
         if (typeof document !== 'undefined') {
             var element = document.getElementById("marcacao");
         }

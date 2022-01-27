@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./layout.css"
 import Cookies from '../Cookies'
-
+import "bootstrap/dist/css/bootstrap.min.css"
 const Layout = ({ children, home, mobile }) => {
   return (
     <>

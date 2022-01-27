@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { Row, Col } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 import '../sass/app.scss';
 
 

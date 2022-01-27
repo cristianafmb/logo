@@ -29,7 +29,7 @@ const NoPosts = ({ footerJson, questoesJson, homeJson }) => {
 
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
-            <Menu footer={footerJson.footer} />
+            <Menu footer={footerJson.footer}  location={location}/>
 
             <Blocks />
 
@@ -46,7 +46,7 @@ const NoPosts = ({ footerJson, questoesJson, homeJson }) => {
           <>
             <div className="no-repeat" style={{ backgroundImage: `url(${homeJson.background.topmobile})` }}>
 
-              <MenuMobile footer={footerJson.footer} />
+              <MenuMobile footer={footerJson.footer}  location={location}/>
 
               <Blocks />
 

@@ -4,6 +4,8 @@ import { Row, Col, Button } from 'react-bootstrap'
 
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
+import "bootstrap/dist/css/bootstrap.min.css"
+
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Menu from '../components/menu'

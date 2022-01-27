@@ -1,5 +1,5 @@
 import { css } from 'styled-components'
-
+import "bootstrap/dist/css/bootstrap.min.css"
 export const breakpoint = {
     xl:'1200px',
     l:'1024px',

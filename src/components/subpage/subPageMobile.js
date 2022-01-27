@@ -1,6 +1,6 @@
 import React from "react";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import '../../sass/app.scss';
 import MenuMobile from '../menuMobile'
@@ -21,7 +21,7 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
 
                 <div className="no-repeat" style={{ backgroundImage: `url(${bgbanner})` }}>
 
-                    <MenuMobile footer={footer} />
+                    <MenuMobile footer={footer}  location={location} />
 
                     <div className="pt-5 position-relative section-space-mobile ">
                         <div className="mt-5">

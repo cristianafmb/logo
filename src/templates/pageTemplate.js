@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import "bootstrap/dist/css/bootstrap.min.css"
+
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 import Layout from "../components/layout/layout"

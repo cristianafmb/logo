@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import '../../sass/app.scss';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Testimony = ({ img, alt, quote, tfunction, person, mobile }) => (
     <div style={{ textAlign: "center" }} className="position-relative">

@@ -1,6 +1,6 @@
 import React from "react"
 import CookieConsent from "react-cookie-consent"
-
+import "bootstrap/dist/css/bootstrap.min.css"
 const Cookies = () => {
 
     return(
