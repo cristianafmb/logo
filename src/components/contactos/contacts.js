@@ -11,7 +11,7 @@ import { Row, Col } from 'react-bootstrap';
 
 const Contacts = ({ data }) => {
     return (
-        <StyledContacts className="mt-5 left">
+        <div className="mt-5 left container-contactos">
             <div className="padding-5-3 bg-white">
                 <h1 className="details-large gold oLight">{data.contactos.title}</h1>
                 <p className="d-flex mt-3 oMedium">
@@ -44,23 +44,8 @@ const Contacts = ({ data }) => {
                 </p>
             </div>
 
-        </StyledContacts>
+        </div>
     )
 }
 
 export default Contacts
-
-const StyledContacts = styled.div`
-  position: relative;
-  padding: 0 6vw;
-  margin-top: -50vh;
-  color: #BA9E66;
-  width: 100%;
-  display: grid;
-  gap: 3rem;
-  grid-template-columns: 1.4fr 1fr;
-  @media only screen and (max-width: 1090px){
-    grid-template-columns: 1fr;
-  }
-
-`

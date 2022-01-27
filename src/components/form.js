@@ -26,12 +26,6 @@ const Formulario = ({ data, title }) => {
     const handleCloseError = () => setShowError(false);
     const handleShowError = () => setShowError(true);
 
-    var selectClassName 
-
-    useEffect(() => {
-        selectClassName = typeof (document.getElementById("marcacao")) !== 'undefined' && document.getElementById("marcacao") !== null ? "input-form oMedium" : "input-form white oMedium"
-      }, []);
-
 
     function doSubmit(e) {
         checkValues();
@@ -185,7 +179,7 @@ const Formulario = ({ data, title }) => {
                                     </Col>
                                     <Col sm="12" md="6" lg="6" >
                                        
-                                        <select className={selectClassName}
+                                        <select className="input-form oMedium"
                                             type="text"
                                             required
                                             placeholder="Especialidade"

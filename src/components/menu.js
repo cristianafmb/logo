@@ -7,13 +7,19 @@ import { Container, Navbar, Nav, Modal, } from 'react-bootstrap'
 import logo from '../images/logo.svg'
 import calendario from '../images/calendar.svg'
 import Form from "../components/form"
-
+import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
 const Menu = ({ location }) => {
     var url = location.href
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
+
+        if( $('#marcacao').length ) {
+            console.log('FINALLY')
+        }else{
+            console.log("😭")
+        }
      
         if (typeof document !== 'undefined') {
             var element = document.getElementById("marcacao");
