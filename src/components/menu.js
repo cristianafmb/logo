@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import {  navigate } from "gatsby"
+import { navigate } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import '../sass/app.scss';
@@ -14,28 +14,18 @@ const Menu = ({ location }) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
-
-        if( $('#marcacao').length ) {
-            console.log('FINALLY')
-        }else{
-            console.log("😭")
-        }
-     
-        if (typeof document !== 'undefined') {
-            var element = document.getElementById("marcacao");
-        }
         // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
-        if ((typeof (element) !== 'undefined') && (element !== null)) {
+        if ($('#marcacao').length) {
+            console.log('FINALLY')
             if (!url.includes("#marcacao")) {
                 navigate(url + "#marcacao")
             } else {
                 var page = url.split("#marcacao")[0];
                 navigate(page + "#marcacao")
             }
-        }
-
-        // if there is no element with id #marcacao, then show modal
-        else {
+        } else {
+            // if there is no element with id #marcacao, then show modal
+            console.log("😭")
             setShow(true)
         }
     };
