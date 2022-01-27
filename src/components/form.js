@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import axios from 'axios'
 import { graphql, StaticQuery } from "gatsby";
@@ -27,10 +27,10 @@ const Formulario = ({ data, title }) => {
     const handleShowError = () => setShowError(true);
 
     var selectClassName 
-    if (typeof document !== 'undefined') {
-        console.log('not undefined')
+
+    useEffect(() => {
         selectClassName = typeof (document.getElementById("marcacao")) !== 'undefined' && document.getElementById("marcacao") !== null ? "input-form oMedium" : "input-form white oMedium"
-    }
+      }, []);
 
 
     function doSubmit(e) {
