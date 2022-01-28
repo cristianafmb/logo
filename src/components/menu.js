@@ -16,18 +16,14 @@ const Menu = ({ location }) => {
     const handleShow = () => {
         // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
         if ($('#marcacao').length) {
-            console.log('FINALLY')
             if (!url.includes("#marcacao")) {
-                console.log('url nao')
                 navigate(url + "#marcacao")
             } else {
-                console.log('url sim')
                 var page = url.split("#marcacao")[0];
                 navigate(page + "#marcacao")
             }
         } else {
             // if there is no element with id #marcacao, then show modal
-            console.log("😭")
             setShow(true)
         }
     };

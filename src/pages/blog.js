@@ -104,7 +104,9 @@ query BlogPage {
           details
           head
           id
-          image
+          image{
+            relativePath
+          }
           path
           title
         }

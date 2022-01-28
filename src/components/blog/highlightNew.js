@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby"
-import "bootstrap/dist/css/bootstrap.min.css"
+
 import '../../sass/app.scss';
 import { Row, Col, Button } from 'react-bootstrap'
 
@@ -38,7 +38,7 @@ const HighlightNew = ({ head, title, details, path, image, btn }) => {
 
                 <Col sm="12" md="8" lg="8">
 
-                    <img src={image} alt={title} className="max-width highlight-img" />
+                    <img src={"/images/s"+image.relativePath} alt={title} className="max-width highlight-img" />
 
                 </Col>
 

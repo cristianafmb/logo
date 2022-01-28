@@ -81,20 +81,13 @@
         }
     ],
     "invisalign": {
-        "img": "../images/home/invisalign/banner.png",
+        "img": "../images/home/invisalign/banner.svg",
         "alt": "banner-invisalign",
         "head": "Invisalign",
         "details": "Graças ao scanner itero element, o invisalign provider pode efetuar um exame digital 3D rápido e preciso dos seus dentes e delinear um plano de tratamento personalizado.",
         "button": "Saber Mais",
         "href": "",
         "textoverimg":"Reúna-se com o Invisalign provider e dê uma espreitadela no seu sorriso novo. Comece a transformar o seu sorriso imediatamente após o primeiro ajuste."
-    },
-    "noticias": {
-        "title": "A Importância da Terapia da Fala em Tempos de Pandemia",
-        "synopsis": "Diversos profissionais, das mais diversas áreas da saúde e da educação, e também diversas famílias, têm referido o impacto que a pandemia trouxe a nível do desenvolvimento motor, social, comunicação e linguística das crianças.",
-        "date": "22 de Outubro de 2021",
-        "img": "../images/home/noticias/last-new.svg",
-        "alt": "noticia-dezembro"
     },
     "blog": {
         "title": "Blog",

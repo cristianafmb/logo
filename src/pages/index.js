@@ -88,7 +88,7 @@ const IndexPage = ({ data, location }) => {
 
             <InvisalignMobile data={data.homeJson.invisalign} />
 
-            <NoticiasMobile noticias={data.homeJson.noticias} blog={data.homeJson.blog} />
+            <NoticiasMobile posts={posts} blogIntro={data.homeJson.blog} />
 
             <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.homeJson.background.bottommobile})` }}>
 
@@ -120,7 +120,9 @@ query IntroHome {
           details
           head
           id
-          image
+          image{
+            relativePath
+          }
           path
           title
         }
@@ -168,13 +170,6 @@ query IntroHome {
       button
       href
       textoverimg
-    }
-    noticias{
-      title
-      synopsis
-      date
-      img
-      alt
     }
     blog{
       title

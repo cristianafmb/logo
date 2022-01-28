@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
-
 import '../../sass/app.scss';
 import { Row, Col, Button } from 'react-bootstrap'
 import Arrow from '../arrow'
@@ -23,7 +22,7 @@ const AllPosts = ({ posts }) => {
           <div className="mt-5">
             <div className="d-flex section-intro-home">
               <div>
-                <img src={p.image} alt={p.title} className="img-blog" />
+                <img src={"/images/"+ p.image.relativePath} alt={p.title} className="img-blog" />
               </div>
               <div className="blog-right-text">
                 <div className="mt-5 mb-2 ">

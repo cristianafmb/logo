@@ -12,8 +12,7 @@ import Questoes from '../components/questoes'
 import Footer from '../components/footer'
 import top from '../images/background1.svg'
 
-import lost from "../images/404/image5.png"
-
+import lost from "../images/404/image5.webp"
 import { Row, Col } from 'react-bootstrap';
 
 import { graphql } from 'gatsby'

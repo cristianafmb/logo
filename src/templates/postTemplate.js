@@ -123,7 +123,9 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
       data
       id
-      image
+      image{
+        relativePath
+      }
       path
       head
       details
