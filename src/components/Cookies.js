@@ -9,10 +9,10 @@ const Cookies = () => {
             buttonText='Aceitar'
             cookieName='cookie'
             style={{ 
-                background: '#eeeae6',
+                background: '#957841',
                 justifyContent: 'center',
                 alignItems: 'center',
-                borderTop: '1px solid #000'
+                borderTop: '1px solid #d7c891'
             }}
             contentStyle={{
                 fontFamily: 'rM, sans-serif',
@@ -20,13 +20,13 @@ const Cookies = () => {
                 letterSpacing: '1px',
                 fontSize: '11px',
                 lineHeight: '15px',
-                color: '#000',
+                color: '#fff',
                 maxWidth: 'fit-content',
                 textAlign: 'justify'
             }}
             buttonStyle={{ 
-                color: '#eeeae6',
-                background: '#000',
+                color: '#fff',
+                background: '#d7c891',
                 fontFamily: 'rM, sans-serif',
                 textTransform: 'uppercase',
                 letterSpacing: '1px',
