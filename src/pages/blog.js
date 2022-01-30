@@ -21,8 +21,8 @@ import Questoes from '../components/questoes'
 import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
-import top from '../images/background1.svg'
-import up from '../images/home/up.svg'
+import top from '../images/background1.png'
+import up from '../images/home/up.png'
 
 const BlogPage = ({ data, location }) => {
 
@@ -105,7 +105,11 @@ query BlogPage {
           head
           id
           image{
-            relativePath
+            childImageSharp {
+              fluid( quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
           path
           title

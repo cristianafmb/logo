@@ -17,7 +17,7 @@ import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 
-import top from '../images/background1.svg'
+import top from '../images/background1.png'
 
 
 
@@ -30,7 +30,7 @@ const Template = ({ data, location }) => {
   const footerJson = data.footerJson
 
   const html = data.markdownRemark.html
-
+  console.log(data)
   return (
 
     <Layout home>
@@ -124,7 +124,11 @@ export const pageQuery = graphql`
       data
       id
       image{
-        relativePath
+        childImageSharp {
+          fluid( quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
       path
       head

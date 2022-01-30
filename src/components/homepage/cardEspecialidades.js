@@ -38,7 +38,7 @@ const CardEspecialidades = ({ title, details, button, href, img, alt , location}
         <div className={cardClass + " position-relative"}>
             <Row className="m-2 height-especialidades-img">
                 <Col className="m-auto">
-                    <img src={img} alt={alt} className="especialidades-img" />
+                    <img src={img} alt={alt} className="especialidades-img max-width-8vh" />
                 </Col>
             </Row>
             <Row className="m-2 ">

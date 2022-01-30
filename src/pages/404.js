@@ -10,9 +10,9 @@ import Menu from '../components/menu'
 import PedidoMarcacaoRapido from '../components/pedidoMarcacaoRapido'
 import Questoes from '../components/questoes'
 import Footer from '../components/footer'
-import top from '../images/background1.svg'
+import top from '../images/background1.png'
 
-import lost from "../images/404/image5.webp"
+import lost from "../images/404/image5.png"
 import { Row, Col } from 'react-bootstrap';
 
 import { graphql } from 'gatsby'

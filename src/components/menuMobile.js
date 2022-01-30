@@ -5,8 +5,8 @@ import { animated, useSprings, useSpring, to } from "react-spring";
 import '../sass/app.scss';
 import { Modal, Row, Col } from 'react-bootstrap'
 import { Link } from "gatsby"
-import closeButton from "../images/mobile/menu/close-btn-menu.svg"
-import menuBtnMobile from "../images/mobile/btn-menu.svg"
+import closeButton from "../images/mobile/menu/close-btn-menu.png"
+import menuBtnMobile from "../images/mobile/btn-menu.png"
 
 
 const MenuMobile = ({ footer }) => {

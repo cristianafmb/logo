@@ -24,7 +24,7 @@ import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 
-import up from '../images/home/up.svg'
+import up from '../images/home/up.png'
 
 const SobreNos = ({ data, location }) => {
 

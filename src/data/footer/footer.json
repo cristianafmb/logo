@@ -1,21 +1,21 @@
 {
     "footer": {
-        "logo": "../images/footer/logo.svg",
-        "logowhite": "../images/mobile/menu/logowhite.svg",
+        "logo": "../images/footer/logo.jpg",
+        "logowhite": "../images/mobile/menu/logowhite.png",
         "socialmedia": [
             {
                 "link": "https://pt-pt.facebook.com/upcaremedicalcenter/",
-                "icon": "../images/footer/facebook.svg",
+                "icon": "../images/footer/facebook.jpg",
                 "alt": "facebook"
             },
             {
                 "link": "https://www.instagram.com/upcaremedicalcenter/",
-                "icon": "../images/footer/instagram.svg",
+                "icon": "../images/footer/instagram.jpg",
                 "alt": "instagram"
             },
             {
                 "link": "https://pt.linkedin.com/in/upcare-medical-center-827642137?trk=public_profile_browsemap",
-                "icon": "../images/footer/linkedin.svg",
+                "icon": "../images/footer/linkedin.jpg",
                 "alt": "linkedin"
             }
         ],

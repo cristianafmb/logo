@@ -1,7 +1,7 @@
 ---
 head: "22 de Outubro, 2021"
 title: "Cientistas decifram como as interações neuroimunes queimam gordura visceral"
-image: "../images/blog/001/01.svg"
+image: "../images/blog/001/01.jpg"
 details: "CExiste uma relação entre a obesidade e pelo menos 13 tipos de cancro, incluindo dois dos mais prevalentes (cancro da mama e cancro colorretal), bem como doenças cardiovasculares que continuam a ser uma das principais causas de morte em todo o mundo."
 id: "001"
 date: "2021-10-22" #tem que ser formato YYYY-MM-DD
@@ -27,7 +27,7 @@ Neste Open Day, aos especialistas da Unidade de Mama juntaram-se vários palestr
 <br>
 <br>
 
-<img src="../images/blog/004/02.svg">
+<img src="../images/blog/004/02.jpg">
 <br>
 <br>
 <br>

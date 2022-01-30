@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import '../../sass/app.scss';
 
 import { Col, Row } from 'react-bootstrap'
-import banner from '../../images/home/invisalign/banner.svg'
+import banner from '../../images/home/invisalign/banner.png'
 import CardWhiteLeft from "./cardWhiteLeft";
 
 

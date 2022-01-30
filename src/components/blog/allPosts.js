@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import "bootstrap/dist/css/bootstrap.min.css"
 import '../../sass/app.scss';
 import { Row, Col, Button } from 'react-bootstrap'
@@ -21,8 +22,8 @@ const AllPosts = ({ posts }) => {
 
           <div className="mt-5">
             <div className="d-flex section-intro-home">
-              <div>
-                <img src={"/images/"+ p.image.relativePath} alt={p.title} className="img-blog" />
+              <div className="container-img-blog ">
+                <Img fluid={p.image.childImageSharp.fluid} alt={p.title} className="img-blog " />
               </div>
               <div className="blog-right-text">
                 <div className="mt-5 mb-2 ">

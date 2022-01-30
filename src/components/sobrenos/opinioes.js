@@ -1,7 +1,7 @@
 import* as React from "react";
 import Slider from "react-slick"
-import arrowLeft from '../../images/sobrenos/arrowLeft.svg';
-import arrowRigth from '../../images/sobrenos/arrowRigth.svg';
+import arrowLeft from '../../images/sobrenos/arrowLeft.png';
+import arrowRigth from '../../images/sobrenos/arrowRigth.png';
 import "bootstrap/dist/css/bootstrap.min.css"
 import '../../sass/app.scss';
 

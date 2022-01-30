@@ -1,7 +1,7 @@
 ---
 head: "22 de Outubro, 2021"
 title: "A Importância da Terapia da Fala em Tempos de Pandemia"
-image: "../images/blog/004/01.svg"
+image: "../images/blog/004/01.jpg"
 details: "Diversos profissionais, das mais diversas áreas da saúde e da educação, e também diversas famílias, têm referido o impacto que a pandemia trouxe a nível do desenvolvimento motor, social, comunicativo e linguístico das crianças."
 id: "004"
 date: "2021-10-22" #tem que ser formato YYYY-MM-DD
@@ -27,7 +27,7 @@ Neste Open Day, aos especialistas da Unidade de Mama juntaram-se vários palestr
 <br>
 <br>
 
-<img src="../images/blog/004/02.svg">
+<img src="../images/blog/004/02.jpg">
 <br>
 <br>
 <br>

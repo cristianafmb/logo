@@ -4,8 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 import '../sass/app.scss';
 import { Container, Navbar, Nav, Modal, } from 'react-bootstrap'
-import logo from '../images/logo.svg'
-import calendario from '../images/calendar.svg'
+import logo from '../images/logo.png'
+import calendario from '../images/calendar.png'
 import Form from "../components/form"
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 

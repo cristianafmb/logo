@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
+import Img from "gatsby-image"
 
 import '../../sass/app.scss';
 
@@ -20,7 +21,7 @@ const Noticias = ({ posts }) => {
     <div className="space-sections max-width  position-relative" >
         <Row className="max-width">
             <Col sm="12" md="4" lg="4" >
-                <img className="card-white-img img-noticias" src={"/images/"+firstNew.image.relativePath} alt={firstNew.title} />
+                <Img fluid={firstNew.image.childImageSharp.fluid} alt={firstNew.title} className="card-white-img img-noticias" />
             </Col>
             <Col sm="12" md="8" lg="8">
                 <Row className="height-80">

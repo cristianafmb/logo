@@ -12,8 +12,8 @@ import Questoes from '../../components/questoes'
 import QuestoesMobile from '../../components/questoesMobile'
 import Footer from '../../components/footer'
 import FooterMobile from '../../components/footerMobile'
-import top from '../../images/background1.svg'
-import up from '../../images/home/up.svg'
+import top from '../../images/background1.png'
+import up from '../../images/home/up.png'
 
 const NoPosts = ({ footerJson, questoesJson, homeJson, location }) => {
   const breakpoints = useBreakpoint();

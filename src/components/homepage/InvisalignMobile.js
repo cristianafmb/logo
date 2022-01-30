@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import '../../sass/app.scss';
 
 import { Button } from 'react-bootstrap'
-import banner from '../../images/home/invisalign/banner-mobile.svg'
+import banner from '../../images/home/invisalign/banner-mobile.png'
 
 
 const InvisalignMobile = ({ data }) => (

@@ -1,7 +1,7 @@
 ---
 head: "22 de Outubro, 2021"
 title: "Dia Mundial da Saúde Mental 2021: o bom, o mau e o futuro"
-image: "../images/blog/003/01.svg"
+image: "../images/blog/003/01.jpg"
 details: "Durante a pandemia, algo único aconteceu – o “corre-corre” do dia a dia acalmou e, assim, com menos distrações, começamos a olhar para nós. "
 id: "003"
 date: "2021-10-22" #tem que ser formato YYYY-MM-DD
@@ -27,7 +27,7 @@ Neste Open Day, aos especialistas da Unidade de Mama juntaram-se vários palestr
 <br>
 <br>
 
-<img src="../images/blog/004/02.svg">
+<img src="../images/blog/004/02.jpg">
 <br>
 <br>
 <br>
