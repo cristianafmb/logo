@@ -9,7 +9,7 @@ import PedidoMarcacao from '../pedidoMarcacaoRapido'
 import { Row, Col } from 'react-bootstrap';
 
 
-const Subpage = ({ subpage, page, areas, location }) => {
+const Subpage = ({ subpage, page, areas, location, marcacaoRef }) => {
     var pathname = location.pathname;
     
     return (
@@ -39,7 +39,7 @@ const Subpage = ({ subpage, page, areas, location }) => {
                     </Row>
                     <Row className="mt-5 pt-5">
                         <Col sm="8" md="8" lg="8">
-                            <PedidoMarcacao img={false}  alt={false} space={false} subpage={subpage}/>
+                            <PedidoMarcacao img={false}  alt={false} space={false} subpage={subpage} marcacaoRef={marcacaoRef}/>
                         </Col>
                     </Row>
                 </Col>

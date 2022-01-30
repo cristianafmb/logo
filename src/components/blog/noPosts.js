@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useRef} from "react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 import '../../sass/app.scss';
@@ -17,7 +17,7 @@ import up from '../../images/home/up.png'
 
 const NoPosts = ({ footerJson, questoesJson, homeJson, location }) => {
   const breakpoints = useBreakpoint();
-
+  const marcacaoRef= useRef(null);
   return (
     <Layout home>
 
@@ -29,7 +29,7 @@ const NoPosts = ({ footerJson, questoesJson, homeJson, location }) => {
 
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
-            <Menu footer={footerJson.footer}  location={location}/>
+            <Menu footer={footerJson.footer}  location={location} marcacaoRef={marcacaoRef}/>
 
             <Blocks />
 

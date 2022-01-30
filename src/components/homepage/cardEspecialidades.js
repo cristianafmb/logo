@@ -6,9 +6,10 @@ import { Row, Col, Button, Modal } from 'react-bootstrap'
 
 import '../../sass/app.scss';
 import Form from '../../components/form'
+import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
 
-const CardEspecialidades = ({ title, details, button, href, img, alt , location}) => {
+const CardEspecialidades = ({ title, details, button, href, img, alt , location, marcacaoRef}) => {
     var url = location.href
     var cardClass = "card-especialidades center";
     if (title === "Marcar Consulta") { cardClass = "card-especialidades center card-gold" }
@@ -16,20 +17,11 @@ const CardEspecialidades = ({ title, details, button, href, img, alt , location}
 
     const handleClose = () => setShow(false);
     const handleShow = () => {
-        if (typeof document !== 'undefined') {
-            var element = document.getElementById("marcacao");
-        }
         // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
-        if (typeof (element) !== 'undefined' && element != null) {
-            if (!url.includes("#marcacao")) {
-                navigate(url + "#marcacao")
-            } else {
-                var page = url.split("#marcacao")[0];
-                navigate(page + "#marcacao")
-            }
-        }
-        // if there is no element with id #marcacao, then show modal
-        else {
+        if ($('#marcacao').length > 0) {
+            marcacaoRef.current.scrollIntoView();
+        } else {
+            // if there is no element with id #marcacao, then show modal
             setShow(true)
         }
     };

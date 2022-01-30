@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useRef} from "react"
 import { graphql } from 'gatsby'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
@@ -20,6 +20,8 @@ const Contactos = ({ data, location }) => {
 
   const breakpoints = useBreakpoint();
 
+  const marcacaoRef= useRef(null);
+
   return (
     <Layout home mobile={useBreakpoint().mobile}>
 
@@ -28,7 +30,7 @@ const Contactos = ({ data, location }) => {
         <>
           <div className="no-repeat  bg-cover" style={{ backgroundImage: `url(${data.contactosJson.backgroundtop})` }}>
 
-            <Menu location={location}/>
+            <Menu location={location} marcacaoRef={marcacaoRef}/>
 
             <Contacts data={data.contactosJson} />
 
@@ -38,7 +40,7 @@ const Contactos = ({ data, location }) => {
 
           <div className="no-repeat " style={{ backgroundImage: `url(${data.contactosJson.backgroundfooter})` }}>
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={false} />
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={false} marcacaoRef={marcacaoRef}/>
 
             <Questoes data={data.questoesJson.questoes} />
 

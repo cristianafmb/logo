@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useRef} from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -13,11 +13,11 @@ import Form from './form'
 
 
 
-const PedidoMarcacoRapida = ({ img, alt, space, subpage }) => {
+const PedidoMarcacoRapida = ({ img, alt, space, subpage, marcacaoRef }) => {
     // all form left
     if (img !== false) {
         return (
-            <div className={space === true ? "space-sections position-relative" : "position-relative"} id="marcacao">
+            <div className={space === true ? "space-sections position-relative" : "position-relative"} id="marcacao" ref={marcacaoRef}>
                 <Row className="max-width  no-space-n-cols">
                     <Col sm="12" md="8" lg="8">
                         <Row className=" pl-5">
@@ -37,7 +37,7 @@ const PedidoMarcacoRapida = ({ img, alt, space, subpage }) => {
     // form in especialidades/... 
     else {
         return (
-            <div className={space === true ? "space-sections" : ""} id="marcacao">
+            <div className={space === true ? "space-sections" : ""} id="marcacao" ref={marcacaoRef}>
                 <Row className="max-width no-space-n-cols">
                     <Col sm="12" md="12" lg="12">
                         <Row >

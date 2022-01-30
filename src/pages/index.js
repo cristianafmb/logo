@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useRef} from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -38,7 +38,7 @@ const IndexPage = ({ data, location }) => {
 
   const breakpoints = useBreakpoint();
   const posts = parseBlogPosts(data.allMarkdownRemark.edges)
-
+  const marcacaoRef= useRef(null);
   return (
     <Layout home mobile={useBreakpoint().mobile} >
       <SEO title="Home" />
@@ -47,14 +47,14 @@ const IndexPage = ({ data, location }) => {
           <img src={up} className="up" />
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
-            <Menu footer={data.footerJson.footer} location={location}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
            
             <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href}/>
 
             <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} />
           </ div>
 
-          <Especialidades especialidades={data.homeJson.especialidades} location={location} />
+          <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef}/>
 
           <div className="no-repeat bg-position-bottom  bg-cover" style={{ backgroundImage: `url(${bottom})` }}>
 
@@ -62,7 +62,7 @@ const IndexPage = ({ data, location }) => {
 
             <Noticias posts={posts} />
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef}/>
 
             <Questoes data={data.questoesJson.questoes} />
 

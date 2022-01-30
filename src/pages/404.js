@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useRef} from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -17,11 +17,15 @@ import { Row, Col } from 'react-bootstrap';
 
 import { graphql } from 'gatsby'
 
-const NotFoundPage = ({ data, location }) => (
+const NotFoundPage = ({ data, location }) => {
+  
+  const marcacaoRef= useRef(null);
+  
+  return(
   <Layout home mobile={useBreakpoint().mobile}>
     <div className="no-repeat" style={{ backgroundImage: `url(${top})` }}>
       <SEO title="404: Not found" />
-      <Menu  location={location}/>
+      <Menu  location={location} marcacaoRef={marcacaoRef}/>
 
       <Row className="mt-10 max-width ">
         <Col className="right">
@@ -41,14 +45,14 @@ const NotFoundPage = ({ data, location }) => (
         </Col>
       </Row>
 
-      <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true}  />
+      <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true}  marcacaoRef={marcacaoRef}/>
       <Questoes data={data.questoesJson.questoes} />
 
     </div>
     <Footer data={data.footerJson.footer} />
   </Layout>
 
-)
+)}
 
 export default NotFoundPage
 

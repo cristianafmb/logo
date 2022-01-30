@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useRef} from "react"
 import '../sass/app.scss';
 
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -30,6 +30,8 @@ const SobreNos = ({ data, location }) => {
 
   const breakpoints = useBreakpoint();
 
+  const marcacaoRef= useRef(null);
+
   return (
     <Layout home mobile={useBreakpoint().mobile}>
       {!breakpoints.mobile ? (
@@ -37,7 +39,7 @@ const SobreNos = ({ data, location }) => {
           <div className="background-sobrenos" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.backgroundtop})` }}>
             <SEO title="Sobre Nós" />
 
-            <Menu location={location}/>
+            <Menu location={location} marcacaoRef={marcacaoRef}/>
 
             <Sobrenos data={data.sobrenosJson.sobrenos} />
           </ div>
@@ -52,7 +54,7 @@ const SobreNos = ({ data, location }) => {
             </div>
             <img src={up} className="up-sobrenos" />
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef}/>
 
             <Opinioes data={data.sobrenosJson.opiniao} />
 

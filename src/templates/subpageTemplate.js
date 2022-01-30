@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {useRef} from "react"
 import { graphql, Link } from 'gatsby'
 import { Row, Col, Button } from 'react-bootstrap'
 
@@ -19,6 +19,9 @@ import Footer from '../components/footer'
 const Template = ({ data, pageContext, location }) => {
 
   const breakpoints = useBreakpoint()
+
+  const marcacaoRef= useRef(null);
+
   var pathname = location.pathname;
   const pageName = pathname.split("/")[1]
   const subPageName = pathname.split("/")[2]
@@ -47,15 +50,15 @@ const Template = ({ data, pageContext, location }) => {
         <>
           <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${subPage.img})` }}>
 
-            <Menu footer={data.footerJson.footer} location={location}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
 
           </div>
 
           <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${background.backgroundtop})` }}>
 
-            <SubPage subpage={subPage} page={pageName} areas={areas} location={location} />
+            <SubPage subpage={subPage} page={pageName} areas={areas} location={location} marcacaoRef={marcacaoRef} />
 
-            <Especialidades especialidades={data.homeJson.especialidades} location={location}/>
+            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef}/>
 
             <Questoes data={data.questoesJson.questoes} />
 

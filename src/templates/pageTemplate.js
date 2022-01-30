@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from "react"
 import { graphql } from 'gatsby'
 
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -30,6 +30,8 @@ const Template = ({ data, pageContext, location }) => {
   const cards = pageContext['infosimple']
   const page = pageContext['page']
 
+  const marcacaoRef= useRef(null);
+
   var cards2 = null
   if (cards.length > 10) {
     cards2 = cards.slice(10, cards.length)
@@ -43,7 +45,7 @@ const Template = ({ data, pageContext, location }) => {
         <>
           <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${page.banner})` }}>
 
-            <Menu footer={data.footerJson.footer} location={location}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
 
           </div>
 
@@ -65,7 +67,7 @@ const Template = ({ data, pageContext, location }) => {
               <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
               : <CardsSection data={cards2} />}
 
-            <Especialidades especialidades={data.homeJson.especialidades} location={location}/>
+            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef}/>
 
             <Questoes data={data.questoesJson.questoes} />
 

@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useRef} from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -31,7 +31,7 @@ const PedidoMarcacoRapidaMobile = ({ img, alt, space, subpage }) => {
     // form in especialidades/... 
     else {
         return (
-            <div className={space === true ? "space-sections" : ""} id="marcacao">
+            <div className={space === true ? "space-sections" : ""} id="marcacao" >
                 <div className="max-width no-space-n-cols">
                     <FormMobile title={subpage.title} />
                 </div>

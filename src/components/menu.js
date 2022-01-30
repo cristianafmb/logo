@@ -9,19 +9,14 @@ import calendario from '../images/calendar.png'
 import Form from "../components/form"
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
-const Menu = ({ location }) => {
-    var url = location.href
+const Menu = ({ location, marcacaoRef }) => {
+
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
         // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
-        if ($('#marcacao').length) {
-            if (!url.includes("#marcacao")) {
-                navigate(url + "#marcacao")
-            } else {
-                var page = url.split("#marcacao")[0];
-                navigate(page + "#marcacao")
-            }
+        if ($('#marcacao').length > 0) {
+            marcacaoRef.current.scrollIntoView();
         } else {
             // if there is no element with id #marcacao, then show modal
             setShow(true)

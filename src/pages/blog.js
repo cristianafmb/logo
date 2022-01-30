@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useRef} from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -30,6 +30,8 @@ const BlogPage = ({ data, location }) => {
 
   const posts = parseBlogPosts(data.allMarkdownRemark.edges)
 
+  const marcacaoRef= useRef(null);
+
   if (!posts || !Boolean(posts.length)) {
     return (
       <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson}/>
@@ -49,7 +51,7 @@ const BlogPage = ({ data, location }) => {
 
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
-            <Menu footer={data.footerJson.footer} location={location}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
 
             <HighlightNew head={posts[0].head} title={posts[0].title} details={posts[0].details} path={posts[0].path} btn="Ler Tudo" image={posts[0].image} />
 

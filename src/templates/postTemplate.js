@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {useRef} from "react"
 import { graphql, Link } from 'gatsby'
 import { Row, Col, Button } from 'react-bootstrap'
 
@@ -29,6 +29,8 @@ const Template = ({ data, location }) => {
   const questoesJson = data.questoesJson
   const footerJson = data.footerJson
 
+  const marcacaoRef= useRef(null);
+
   const html = data.markdownRemark.html
   console.log(data)
   return (
@@ -39,7 +41,7 @@ const Template = ({ data, location }) => {
         <>
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
-            <Menu footer={footerJson.footer}  location={location}/>
+            <Menu footer={footerJson.footer}  location={location} marcacaoRef={marcacaoRef}/>
 
             <div>
               <HighlightNew head={frontmatter.head} title={frontmatter.title} details={frontmatter.details} path={frontmatter.path} btn={false} image={frontmatter.image} />
