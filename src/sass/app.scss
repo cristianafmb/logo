@@ -605,6 +605,9 @@ input:focus-visible {
     @media (max-width: 990px) {
         font-size: calc(18px + 12 * (25vw - 514px) / 1045) !important;
     }
+    @media (min-width: 300px) and (max-width: 500px){
+        line-height: 2 !important;
+    }
 }
 
 .footer-text-bottom {
@@ -636,6 +639,9 @@ input:focus-visible {
     top: 50%;
     margin-top: -290px !important;
     max-width: 95%;
+    @media (min-width: 300px) and (max-width: 500px) {
+        top: 65% !important;
+    }
 }
 
 .width-footer {

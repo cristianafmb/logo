@@ -47,7 +47,7 @@ const BlogPage = ({ data, location }) => {
 
         <>
 
-          <img src={up} className="up" />
+          <img src={up} className="up" alt="up"/>
 
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 

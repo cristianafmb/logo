@@ -24,7 +24,7 @@ const EspecialidadesSobreNos = ({ data }) => {
 
                     <Row className="width-90 mt-5 mb-5">
                         <Col sm="12" lg="4" md="4">
-                            <img src={data.img} />
+                            <img src={data.img} alt="especialidades"/>
                             <p className="head-large mt-5 oLight">{data.title}</p>
                             <p className="details-xx-small mt-5 oRegular">
                                 {data.details}
@@ -35,7 +35,7 @@ const EspecialidadesSobreNos = ({ data }) => {
 
                             {areas.map((array, i) => (
                                 <Row key={"first-" + i}>
-                                    <Col key={"first-" + i}>
+                                    <Col>
                                         <hr className="gold" style={{ height: "2px" }} />
                                         <a href={array.href}><p className="head-small oLight">{array.title}</p></a>
 
@@ -49,8 +49,8 @@ const EspecialidadesSobreNos = ({ data }) => {
                             {areas2 !== null ?
                                 (<>
                                     {areas2.map((array, i) => (
-                                        <Row key={"first-" + i}>
-                                            <Col key={"first-" + i}>
+                                        <Row key={"second-" + i}>
+                                            <Col >
                                                 <hr className="gold" style={{ height: "2px" }} />
                                                 <a href={array.href}><p className="head-small oLight">{array.title}</p></a>
 

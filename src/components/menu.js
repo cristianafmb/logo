@@ -66,7 +66,7 @@ const Menu = ({ location, marcacaoRef }) => {
             <div>
                 <a className="container-btn-marcacao" onClick={handleShow}>
                     <div className="btn-icon-marcacao">
-                        <img src={calendario} />
+                        <img src={calendario} alt="calendar"/>
                     </div>
 
                     <div className="btn-text-marcacao">

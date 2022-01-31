@@ -27,7 +27,7 @@ Neste Open Day, aos especialistas da Unidade de Mama juntaram-se vários palestr
 <br>
 <br>
 
-<img src="../images/blog/004/02.jpg">
+<img src="../images/blog/004/02.jpg" alt="A Importância da Terapia da Fala em Tempos de Pandemia">
 <br>
 <br>
 <br>

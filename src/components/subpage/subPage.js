@@ -50,7 +50,7 @@ const Subpage = ({ subpage, page, areas, location, marcacaoRef }) => {
 
                     {areas.map((item, i) => (
 
-                        <div key={"area" + i}>
+                        <div key={"subpage-area" + i}>
                             <hr className="gold" style={{ height: "2px" , margin: "0"}} />
                             <Link to={item.href} className="text-decoration-none">
                                 <p className={pathname.includes(item.href) ? "bold head-small text-decoration-none oLight line-height-2" : "head-small text-decoration-none oLight line-height-2"}>{item.title}</p>

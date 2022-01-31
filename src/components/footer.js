@@ -28,9 +28,9 @@ const Footer = ({ data }) => {
         <div  style={{ backgroundColor: "#D7C891" }} className="position-relative">
             <Row className=" center heigth-footer d-flex  align-items-center m-auto width-footer">
                 <Col sm="12" md="1" lg="1" className="right ">
-                    <a href="/">
-                        <img src={data.logowhite}  className="max-width"/>
-                    </a>
+                    <Link to="/">
+                        <img src={data.logowhite}  className="max-width" alt="logo"/>
+                    </Link>
                     
                 </Col>
                 <Col sm="12" md="2" lg="2">

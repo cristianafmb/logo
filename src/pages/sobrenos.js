@@ -52,7 +52,7 @@ const SobreNos = ({ data, location }) => {
                 <Especialidades data={array} key={"especialidade" + k} />
               ))}
             </div>
-            <img src={up} className="up-sobrenos" />
+            <img src={up} className="up-sobrenos" alt="up"/>
 
             <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef}/>
 
@@ -69,7 +69,7 @@ const SobreNos = ({ data, location }) => {
         :
         (
           <>
-            <img src={up} className="up" />
+            <img src={up} className="up" alt="up"/>
 
             <div className="no-repeat bg-cover height-100vh" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.backgroundtopmobile})` }}>
 

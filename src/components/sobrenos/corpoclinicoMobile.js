@@ -14,9 +14,9 @@ const CorpoClinicoMobile = ({ data }) => (
         <Row className="container-corpo-clinico">
             <Col className="grid-container" style={{ marginLeft: "5px" }}>
                 {data.people.map((data, i) => (
-                    <div className="left">
+                    <div className="left" key={"staff-mobile-"+i}>
                         <div>
-                            <img src={data.img} style={{ width: "90%" }} />
+                            <img src={data.img} style={{ width: "90%" }} alt="data"/>
                         </div>
                         <div>
                             <p className="head-xx-small oMedium mt-3">

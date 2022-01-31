@@ -22,7 +22,7 @@ const CorpoClinico = ({ data }) => (
                     {data.people.map((data, i) => (
                         <Col className="left" sm="12" md="4" lg="4" key={"dr"+i}>
                             <div>
-                                <img src={data.img} style={{ width: "80%" }} />
+                                <img src={data.img} style={{ width: "80%" }} alt="img"/>
                             </div>
                             <div>
                                 <p className="head-xx-small oMedium mt-3">

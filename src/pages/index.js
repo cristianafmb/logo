@@ -44,7 +44,7 @@ const IndexPage = ({ data, location }) => {
       <SEO title="Home" />
       {!breakpoints.mobile ? (
         <>
-          <img src={up} className="up" />
+          <img src={up} className="up" alt="up" />
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
             <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
@@ -73,7 +73,7 @@ const IndexPage = ({ data, location }) => {
         :
         (
           <>
-            <img src={up} className="up" />
+            <img src={up} className="up" alt="up" />
             <div className="no-repeat" style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
 
               <MenuMobile footer={data.footerJson.footer} location={location}/>

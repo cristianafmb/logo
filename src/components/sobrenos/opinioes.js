@@ -12,7 +12,7 @@ function CustomRigthArrow(props) {
       className={className + " m-auto arrows"}
       style={{ ...style, display: "table-cell", width: "25%", textAlign: "center" }}
       onClick={onClick}
-    > <img src={arrowRigth} /> </div>
+    > <img src={arrowRigth} alt="arrow rigth" /> </div>
   );
 }
 
@@ -23,7 +23,7 @@ function CustomLeftArrow(props) {
       className={className + " m-auto arrows"}
       style={{ ...style, display: "table-cell", width: "25%", textAlign: "center" }}
       onClick={onClick}
-    > <img src={arrowLeft} /> </div>
+    > <img src={arrowLeft} alt="arrow left"/> </div>
   );
 }
 

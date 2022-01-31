@@ -27,9 +27,9 @@ const FooterMobile = ({ footer }) => {
         <div style={{ backgroundColor: "#D7C891" }} className="position-relative height-100vh max-width center-footer ">
 
             <div className="section-space-mobile center">
-                <a href="/">
-                    <img src={footer.logowhite} className="mt-4 mb-4" />
-                </a>
+                <Link to="/">
+                    <img src={footer.logowhite} className="mt-4 mb-4" alt="logo mobile"/>
+                </Link>
 
             </div>
             <div>
@@ -66,8 +66,8 @@ const FooterMobile = ({ footer }) => {
                     ))}
                 </Row>
                 {footer.copyrightsmobile.map((paragraph, j) => (
-                    <Row className="center">
-                        <Col key={"col-footer-mobile-menu-paragraph-" + j}>
+                    <Row className="center" key={"row-footer-mobile-menu-paragraph-" + j}>
+                        <Col >
                             <p className="footer-text oMedium">
                                 {paragraph}
                             </p>
