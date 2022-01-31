@@ -23,7 +23,7 @@ const Subpage = ({ subpage, page, areas, location, marcacaoRef }) => {
                                     <a href={subpage.headhref} className="text-decoration-none">{subpage.head}</a> </p>
                                 <p className="head-x-small oBold"> &nbsp;&nbsp; &#62; &nbsp;&nbsp;</p>
                                 <p className="head-x-small oBold">
-                                    <a href={subpage.link} className="text-decoration-none">{subpage.title}</a>
+                                    <a href={subpage.href} className="text-decoration-none">{subpage.title}</a>
                                 </p>
                             </div>
 
@@ -51,14 +51,14 @@ const Subpage = ({ subpage, page, areas, location, marcacaoRef }) => {
                     {areas.map((item, i) => (
 
                         <div key={"area" + i}>
-                            <hr className="gold" style={{ height: "2px" }} />
-                            <Link to={"/" + page + item.link} className="text-decoration-none">
-                                <p className={pathname.includes(item.link) ? "bold head-small text-decoration-none oLight" : "head-small text-decoration-none oLight"}>{item.title}</p>
+                            <hr className="gold" style={{ height: "2px" , margin: "0"}} />
+                            <Link to={item.href} className="text-decoration-none">
+                                <p className={pathname.includes(item.href) ? "bold head-small text-decoration-none oLight line-height-2" : "head-small text-decoration-none oLight line-height-2"}>{item.title}</p>
                             </Link>
                         </div>
 
                     ))}
-                    <hr className="gold" style={{ height: "2px" }} />
+                    <hr className="gold" style={{ height: "2px" , margin: "0"}} />
                 </Col>
             </Row>
 

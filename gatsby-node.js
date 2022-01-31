@@ -99,7 +99,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               pages {
                 areas {
                   area
-                  link
+                  href
                 }
                 head
               }
@@ -117,11 +117,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                   headhref
                   img
                   title
-                  link
+                  href
                 }
                 simple {
                   title
-                  link
+                  href
                 }
               }
             }
@@ -146,9 +146,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 	});
 	result.data.allSubpagesJson.edges.forEach(({ node }) => {
 		node.info.forEach(({ subpages }) => {
-			subpages.details.forEach(({ link }) => {
+			subpages.details.forEach(({ href }) => {
 				createPage({
-					path: link,
+					path: href,
 					component: subPageTemplate,
 					context: {
 						subpages: subpages,

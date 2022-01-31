@@ -25,13 +25,14 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
 
                     <div className="pt-5 position-relative section-space-mobile ">
                         <div className="mt-5">
+                            {console.log(subpage)}
                             <Card
                                 head={<div className="d-flex">
                                     <p className="head-x-small oBold" >
                                         <a href={subpage.headhref} className="text-decoration-none">{subpage.head}</a> </p >
                                     <p className="head-x-small oBold"> &nbsp;&nbsp; &#62; &nbsp;&nbsp;</p>
                                     <p className="head-x-small oBold">
-                                        <a href={subpage.link} className="text-decoration-none">{subpage.title}</a>
+                                        <a href={subpage.href} className="text-decoration-none">{subpage.title}</a>
                                     </p>
                                 </div >
                                 } title={subpage.title} details={subpage.details} btn={false} subpage={subpage} />

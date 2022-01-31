@@ -31,7 +31,7 @@ const Template = ({ data, pageContext, location }) => {
   const allSubPages = pageContext['subpages']['details']
 
   const background = pageContext['backgrounds']
-
+  console.log(background)
   var subPage
 
   allSubPages.map((value) => {

@@ -1023,7 +1023,10 @@ a {
 .user-icon {
     border-radius: 100%;
     box-shadow: 0 0 3px 2px #ba9e66;
-    width: 110px;
+    max-width: 110px;
+    object-fit: cover;
+    object-position: center;
+    width: 110px !important;
 }
 
 .card-especialidades {
@@ -1368,4 +1371,8 @@ a {
 
 .max-width-8vh{
     max-width: 8vh;
+}
+
+.line-height-2{
+    line-height: 2 !important;
 }

@@ -19,14 +19,14 @@ const CardsSectionMobile = ({ page, cards, location }) => {
                 <div className="sobrenos">
                     {cards.map((item, i) => (
                         <div key={"area" + i}>
-                            <hr className="gold" style={{ height: "2px" }} />
+                            <hr className="gold" style={{ height: "2px", margin: "0" }} />
                             <Link to={item.href} className="text-decoration-none">
-                                <p className={pathname.includes(item.href) ? "bold head-medium oLight text-decoration-none" : "head-medium oLight text-decoration-none"}>{item.title}</p>
+                                <p className={pathname.includes(item.href) ? "bold head-medium oLight text-decoration-none line-height-2" : "head-medium oLight text-decoration-none line-height-2"}>{item.title}</p>
                             </Link>
                         </div>
 
                     ))}
-                    <hr className="gold" style={{ height: "2px" }} />
+                    <hr className="gold" style={{ height: "2px" , margin: "0"}} />
                 </div>
             </div>
 
