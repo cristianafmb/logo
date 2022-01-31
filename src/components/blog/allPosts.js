@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import "bootstrap/dist/css/bootstrap.min.css"
 import '../../sass/app.scss';
-import { Row, Col, Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import Arrow from '../arrow'
 
 const AllPosts = ({ posts }) => {

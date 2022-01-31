@@ -7,7 +7,7 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Menu from '../components/menu'
 import MenuMobile from '../components/menuMobile'
 import HighlightNew from '../components/blog/highlightNew'
@@ -36,7 +36,7 @@ const Template = ({ data, location }) => {
   return (
 
     <Layout home>
-      <SEO title={frontmatter.title} />
+      <Seo title={frontmatter.title} />
       {!breakpoints.mobile ? (
         <>
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>

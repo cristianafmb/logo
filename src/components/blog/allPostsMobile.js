@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import '../../sass/app.scss';
-import { Row, Col, Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 
 
 const AllPosts = ({ posts }) => {

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import {  navigate } from "gatsby"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Row, Col, Button, Modal } from 'react-bootstrap'
@@ -9,15 +8,14 @@ import Form from '../../components/form'
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
 
-const CardEspecialidades = ({ title, details, button, href, img, alt , location, marcacaoRef}) => {
-    var url = location.href
+const CardEspecialidades = ({ title, details, button, href, img, alt , marcacaoRef}) => {
     var cardClass = "card-especialidades center";
     if (title === "Marcar Consulta") { cardClass = "card-especialidades center card-gold" }
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => {
-        // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
+        // if there is an element with id #marcacao
         if ($('#marcacao').length > 0) {
             marcacaoRef.current.scrollIntoView();
         } else {

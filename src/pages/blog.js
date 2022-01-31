@@ -4,13 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import { parseBlogPosts } from '../utils/helpers'
 
 import NoPosts from "../components/blog/noPosts"
 import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Menu from '../components/menu'
 import MenuMobile from '../components/menuMobile'
 import HighlightNew from '../components/blog/highlightNew'
@@ -41,7 +41,7 @@ const BlogPage = ({ data, location }) => {
   return (
     <Layout home>
 
-      <SEO title="Blog" />
+      <Seo title="Blog" />
 
       {!breakpoints.mobile ? (
 

@@ -27,14 +27,6 @@ export const formatVideoCurrentTime = (currentTime) => {
   )
 }
 
-function compare(a, b) {
-  return a.id.localeCompare(b.id, undefined, {
-    numeric: true,
-    sensitivity: 'base'
-  });
-}
-
-var collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
 
 export const parseBlogPosts = (edges) =>
   edges

@@ -2,9 +2,8 @@ import React, {useRef} from "react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 import '../../sass/app.scss';
-import { Row, Col, Button } from 'react-bootstrap'
 import Layout from "../../components/layout/layout"
-import SEO from "../../components/seo"
+import Seo from "../../components/seo"
 import Menu from '../../components/menu'
 import MenuMobile from '../../components/menuMobile'
 import Blocks from '../../components/blog/blocks'
@@ -13,7 +12,6 @@ import QuestoesMobile from '../../components/questoesMobile'
 import Footer from '../../components/footer'
 import FooterMobile from '../../components/footerMobile'
 import top from '../../images/background1.png'
-import up from '../../images/home/up.png'
 
 const NoPosts = ({ footerJson, questoesJson, homeJson, location }) => {
   const breakpoints = useBreakpoint();
@@ -21,7 +19,7 @@ const NoPosts = ({ footerJson, questoesJson, homeJson, location }) => {
   return (
     <Layout home>
 
-      <SEO title="Blog" />
+      <Seo title="Blog" />
 
       {!breakpoints.mobile ? (
 

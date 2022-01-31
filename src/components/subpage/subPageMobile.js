@@ -12,7 +12,7 @@ import Card from '../cardHeadTitleDetails'
 import QuestoesMobile from '../questoesMobile'
 import FooterMobile from '../footerMobile'
 
-const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoes, footer, location }) => {
+const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoes, footer, location, marcacaoRef }) => {
 
     return (
         <>
@@ -55,7 +55,7 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
 
                     <div className="pt-5 mt-4 section-space-mobile">
 
-                        <PedidoMarcacaoMobile img={false} alt={false} space={false} subpage={subpage} />
+                        <PedidoMarcacaoMobile img={false} alt={false} space={false} subpage={subpage}  marcacaoRef={marcacaoRef} />
 
                     </div >
 
@@ -65,7 +65,7 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
 
             <div className="no-repeat background-bottom" style={{ backgroundImage: `url(${bgbottm})` }}>
 
-                <EspecialidadesMobile especialidades={home} location={location} />
+                <EspecialidadesMobile especialidades={home} marcacaoRef={marcacaoRef} />
 
                 <QuestoesMobile data={questoes} />
 

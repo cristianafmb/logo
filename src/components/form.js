@@ -1,30 +1,27 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import axios from 'axios'
 import { graphql, StaticQuery } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css"
 import Radio from '@mui/material/Radio';
-import { Row, Col, Modal, Button } from 'react-bootstrap'
+import { Row, Col, Modal } from 'react-bootstrap'
 
 
 import fbTrack from "../custom/fbTrack"
 
 
-const Formulario = ({ data, title }) => {
+const Formulario = ({ title }) => {
     
     const today = new Date()
     const [show, setShow] = useState(false);
     const [showError, setShowError] = useState(false);
     const [response, setResponse] = useState("")
     var checker = [];
-    var checkerTemp = [];
     const [polCheck, setPolCheck] = useState(false)
 
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     const handleCloseError = () => setShowError(false);
-    const handleShowError = () => setShowError(true);
 
 
     function doSubmit(e) {
@@ -76,10 +73,10 @@ const Formulario = ({ data, title }) => {
             if (!document.querySelector("#contact").value) {
                 checkerTemp.push("Telefone")
             }
-            if (document.querySelector("#especiality").value == "Especialidade") {
+            if (document.querySelector("#especiality").value === "Especialidade") {
                 checkerTemp.push("Especialidade")
             }
-            if (document.querySelector("#hours").value == "Horário") {
+            if (document.querySelector("#hours").value === "Horário") {
                 checkerTemp.push("Horário")
             }
             if (!document.querySelector("#date").value) {

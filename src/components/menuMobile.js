@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css"
-import { animated, useSprings, useSpring, to } from "react-spring";
+import { animated, useSpring } from "react-spring";
 import '../sass/app.scss';
 import { Modal, Row, Col } from 'react-bootstrap'
 import { Link } from "gatsby"
-import closeButton from "../images/mobile/menu/close-btn-menu.png"
-import menuBtnMobile from "../images/mobile/btn-menu.png"
 
 
 const MenuMobile = ({ footer }) => {
-    const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
     function renderSwitch(param) {
         switch (param) {
@@ -128,7 +125,7 @@ const MenuMobile = ({ footer }) => {
                             <Row className="m-auto half-width mb-4">
                                 {footer.socialmedia.map((data, i) => (
                                     <Col className={renderSwitch(i)} key={"col-footer-mobile-menu-icons-" + i}>
-                                        <a href={data.link} target="_blank">
+                                        <a href={data.link} target="_blank" rel="noreferrer">
                                             <img src={data.icon} alt={data.alt} className="footer-icons-mobile" />
                                         </a>
                                     </Col>

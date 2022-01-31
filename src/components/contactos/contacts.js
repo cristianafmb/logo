@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "gatsby"
+import * as React from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import '../../sass/app.scss';
-import styled from "styled-components"
-
-import { Row, Col } from 'react-bootstrap';
 
 
 const Contacts = ({ data }) => {

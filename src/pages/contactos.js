@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import Layout from '../components/layout/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import Menu from '../components/menu'
 import MenuMobile from '../components/menuMobile'
 import Contacts from '../components/contactos/contacts'
@@ -25,7 +25,7 @@ const Contactos = ({ data, location }) => {
   return (
     <Layout home mobile={useBreakpoint().mobile}>
 
-      <SEO title="Contactos" />
+      <Seo title="Contactos" />
       {!breakpoints.mobile ? (
         <>
           <div className="no-repeat  bg-cover" style={{ backgroundImage: `url(${data.contactosJson.backgroundtop})` }}>

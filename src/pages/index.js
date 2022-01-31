@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, { useRef } from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -6,7 +6,7 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import { parseBlogPosts } from '../utils/helpers'
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Menu from '../components/menu'
 import MenuMobile from '../components/menuMobile'
 import IntroHome from '../components/homepage/introHome'
@@ -38,23 +38,23 @@ const IndexPage = ({ data, location }) => {
 
   const breakpoints = useBreakpoint();
   const posts = parseBlogPosts(data.allMarkdownRemark.edges)
-  const marcacaoRef= useRef(null);
+  const marcacaoRef = useRef(null);
   return (
     <Layout home mobile={useBreakpoint().mobile} >
-      <SEO title="Home" />
+      <Seo title="Home" />
       {!breakpoints.mobile ? (
         <>
           <img src={up} className="up" alt="up" />
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
-           
-            <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
+
+            <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} />
 
             <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} />
           </ div>
 
-          <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef}/>
+          <Especialidades especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} />
 
           <div className="no-repeat bg-position-bottom  bg-cover" style={{ backgroundImage: `url(${bottom})` }}>
 
@@ -62,7 +62,7 @@ const IndexPage = ({ data, location }) => {
 
             <Noticias posts={posts} />
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef}/>
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
 
             <Questoes data={data.questoesJson.questoes} />
 
@@ -76,15 +76,15 @@ const IndexPage = ({ data, location }) => {
             <img src={up} className="up" alt="up" />
             <div className="no-repeat" style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
 
-              <MenuMobile footer={data.footerJson.footer} location={location}/>
+              <MenuMobile footer={data.footerJson.footer} location={location} />
 
-              <IntroHomeMobile data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href}/>
+              <IntroHomeMobile data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} />
 
               <SobreNosMobile testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} />
 
             </ div>
 
-            <EspecialidadesMobile especialidades={data.homeJson.especialidades} location={location}/>
+            <EspecialidadesMobile especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} />
 
             <InvisalignMobile data={data.homeJson.invisalign} />
 
@@ -92,7 +92,7 @@ const IndexPage = ({ data, location }) => {
 
             <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.homeJson.background.bottommobile})` }}>
 
-              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
 
               <QuestoesMobile data={data.questoesJson.questoes} />
 

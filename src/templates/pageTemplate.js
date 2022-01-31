@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Menu from '../components/menu'
 import MenuMobile from '../components/menuMobile'
 import InnerTopsection from '../components/innerTopsection'
@@ -26,7 +26,6 @@ const Template = ({ data, pageContext, location }) => {
   const breakpoints = useBreakpoint()
   const areas = pageContext['areas']
   const backgrounds = pageContext['backgrounds']
-  const infosubpage = pageContext['infodetails']
   const cards = pageContext['infosimple']
   const page = pageContext['page']
 
@@ -40,7 +39,7 @@ const Template = ({ data, pageContext, location }) => {
   return (
 
     <Layout home>
-      <SEO title={page.title} />
+      <Seo title={page.title} />
       {!breakpoints.mobile ? (
         <>
           <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${page.banner})` }}>
@@ -97,7 +96,7 @@ const Template = ({ data, pageContext, location }) => {
 
               <CorpoClinicoMobile data={data.corpoclinicoJson.corpoclinico} />
 
-              <QuestoesMobile data={data.questoesJson.questoes} />
+              <QuestoesMobile data={data.questoesJson.questoes} marcacaoRef={marcacaoRef}/>
 
             </div>
 

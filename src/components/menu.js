@@ -1,7 +1,6 @@
-import React, { useState, useRef } from "react";
-import { navigate } from "gatsby"
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
-
+import { Link } from 'gatsby'
 import '../sass/app.scss';
 import { Container, Navbar, Nav, Modal, } from 'react-bootstrap'
 import logo from '../images/logo.png'
@@ -9,12 +8,12 @@ import calendario from '../images/calendar.png'
 import Form from "../components/form"
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
-const Menu = ({ location, marcacaoRef }) => {
+const Menu = ({ marcacaoRef }) => {
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
-        // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
+        // if there is an element with id #marcacao
         if ($('#marcacao').length > 0) {
             marcacaoRef.current.scrollIntoView();
         } else {
@@ -23,35 +22,16 @@ const Menu = ({ location, marcacaoRef }) => {
         }
     };
 
-
-    const [fullscreen, setFullscreen] = useState(true);
-    const [show2, setShow2] = useState(false);
-
-    function handleShow2(breakpoint) {
-        setFullscreen(breakpoint);
-        setShow2(true);
-    }
-
-    function renderSwitch(param) {
-        switch (param) {
-            case 0:
-                return 'right';
-            case 1:
-                return 'center';
-            case 2:
-                return 'left';
-            default:
-                return 'center';
-        }
-    }
-
-
     return (
         <div className="position-relative">
 
             <Navbar expand="lg" >
                 <Container id="navbar">
-                    <Navbar.Brand href="/" className="m-auto logo" ><img src={logo} alt="logo" className="m-auto" /></Navbar.Brand>
+                    <Navbar.Brand className="m-auto logo" >
+                        <Link to="/">
+                            <img src={logo} alt="logo" className="m-auto" />
+                        </Link>
+                    </Navbar.Brand>
                     <Navbar.Collapse id="navbar-without-logo">
                         <Nav className="me-auto max-width">
                             <Nav.Link href="/sobrenos" className="oMedium m-auto navbar-letters">Sobre Nós</Nav.Link>
@@ -64,15 +44,15 @@ const Menu = ({ location, marcacaoRef }) => {
                 </Container>
             </Navbar>
             <div>
-                <a className="container-btn-marcacao" onClick={handleShow}>
+                <button  className="container-btn-marcacao" onClick={handleShow}>
                     <div className="btn-icon-marcacao">
-                        <img src={calendario} alt="calendar"/>
+                        <img src={calendario} alt="calendar" />
                     </div>
 
                     <div className="btn-text-marcacao">
                         <span className="oExtraBold details-small">Marcar Consulta</span>
                     </div>
-                </a>
+                </button >
                 <div>
 
                     <Modal

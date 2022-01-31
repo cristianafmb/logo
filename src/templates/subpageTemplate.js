@@ -1,13 +1,12 @@
 import React, {useRef} from "react"
-import { graphql, Link } from 'gatsby'
-import { Row, Col, Button } from 'react-bootstrap'
+import { graphql } from 'gatsby'
 
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Menu from '../components/menu'
 import SubPage from '../components/subpage/subPage'
 import SubPageMobile from '../components/subpage/subPageMobile'
@@ -34,7 +33,7 @@ const Template = ({ data, pageContext, location }) => {
   console.log(background)
   var subPage
 
-  allSubPages.map((value) => {
+  allSubPages.forEach((value) => {
     if (value['alt'] === subPageName) {
       subPage = { ...value }
     }
@@ -45,7 +44,7 @@ const Template = ({ data, pageContext, location }) => {
   return (
 
     <Layout home>
-      <SEO title={subPage.title} />
+      <Seo title={subPage.title} />
       {!breakpoints.mobile ? (
         <>
           <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${subPage.img})` }}>
@@ -80,6 +79,7 @@ const Template = ({ data, pageContext, location }) => {
               questoes={data.questoesJson.questoes}
               footer={data.footerJson.footer}
               location={location}
+              marcacaoRef={marcacaoRef}
             />
           </>
         )

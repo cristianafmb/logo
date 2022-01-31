@@ -1,35 +1,25 @@
 import React, { useState } from "react";
-import {  navigate } from "gatsby"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Row, Col, Button, Modal } from 'react-bootstrap'
 
 import '../../sass/app.scss';
 import Form from '../form'
+import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
 
-const CardEspecialidadesMobile = ({ title, details, button, href, img, alt, location }) => {
-    var url = location.href
+const CardEspecialidadesMobile = ({ title, details, button, href, img, alt, marcacaoRef }) => {
     var cardClass = "card-especialidades center";
     if (title === "Marcar Consulta") { cardClass = "card-especialidades center card-gold" }
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => {
-        if (typeof document !== 'undefined') {
-            var element = document.getElementById("marcacao");
-        }
-        // if there is an element with id #marcacao, then the path is https://upcare.pt/actualPage#marcacao
-        if (typeof (element) !== 'undefined' && element != null) {
-            if (!url.includes("#marcacao")) {
-                navigate(url + "#marcacao")
-            } else {
-                var page = url.split("#marcacao")[0];
-                navigate(page + "#marcacao")
-            }
-        }
-        // if there is no element with id #marcacao, then show modal
-        else {
+        // if there is an element with id #marcacao
+        if ($('#marcacao').length > 0) {
+            marcacaoRef.current.scrollIntoView();
+        } else {
+            // if there is no element with id #marcacao, then show modal
             setShow(true)
         }
     };

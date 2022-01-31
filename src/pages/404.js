@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Menu from '../components/menu'
 import PedidoMarcacaoRapido from '../components/pedidoMarcacaoRapido'
 import Questoes from '../components/questoes'
@@ -24,7 +24,7 @@ const NotFoundPage = ({ data, location }) => {
   return(
   <Layout home mobile={useBreakpoint().mobile}>
     <div className="no-repeat" style={{ backgroundImage: `url(${top})` }}>
-      <SEO title="404: Not found" />
+      <Seo title="404: Not found" />
       <Menu  location={location} marcacaoRef={marcacaoRef}/>
 
       <Row className="mt-10 max-width ">

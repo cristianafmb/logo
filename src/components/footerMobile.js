@@ -39,7 +39,7 @@ const FooterMobile = ({ footer }) => {
                 {footer.links.map((array, j) => (
                     <Col sm="12" md="12" lg="12" key={"row-footer-mobile-menu-" + j}>
                         {j !== 0 ?
-                            < hr className="white m-auto" style={{ height: "2px" }} /> : ""
+                            < hr className="white" style={{ height: "2px" }} /> : ""
                         }
                         <Row>
                             {array.map((item, k) => (
@@ -55,11 +55,11 @@ const FooterMobile = ({ footer }) => {
                 ))
                 }
             </Row>
-            <div className="footer-text-menu-mobile center">
+            <div className="footer-text-menu-mobile">
                 <Row className="m-auto half-width mb-4">
                     {footer.socialmedia.map((data, i) => (
                         <Col className={renderSwitch(i)} key={"col-footer-mobile-menu-icons-" + i}>
-                            <a href={data.link} target="_blank">
+                            <a href={data.link} target="_blank" rel="noreferrer">
                                 <img src={data.icon} alt={data.alt} className="footer-icons-mobile" />
                             </a>
                         </Col>

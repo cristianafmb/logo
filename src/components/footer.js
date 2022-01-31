@@ -37,7 +37,7 @@ const Footer = ({ data }) => {
                     <Row className="m-auto half-width">
                         {data.socialmedia.map((data, i) => (
                             <Col className={renderSwitch(i)} sm="12" md="4" lg="4" key={"col-footer-icons-"+i}>
-                                <a href={data.link} target="_blank">
+                                <a href={data.link} target="_blank" rel="noreferrer">
                                     <img src={data.icon} alt={data.alt} className="footer-icons"/>
                                 </a>
                             </Col>

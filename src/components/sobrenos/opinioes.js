@@ -11,7 +11,7 @@ function CustomRigthArrow(props) {
     <div
       className={className + " m-auto arrows"}
       style={{ ...style, display: "table-cell", width: "25%", textAlign: "center" }}
-      onClick={onClick}
+      onClick={onClick}  aria-hidden="true"
     > <img src={arrowRigth} alt="arrow rigth" /> </div>
   );
 }
@@ -22,7 +22,7 @@ function CustomLeftArrow(props) {
     <div
       className={className + " m-auto arrows"}
       style={{ ...style, display: "table-cell", width: "25%", textAlign: "center" }}
-      onClick={onClick}
+      onClick={onClick} aria-hidden="true"
     > <img src={arrowLeft} alt="arrow left"/> </div>
   );
 }
@@ -39,7 +39,6 @@ const Opinioes = ({ data }) => {
     arrows: true,
     nextArrow: <CustomRigthArrow />,
     prevArrow: <CustomLeftArrow />,
-    autoplay: false,
     centerMode: false
   };
   return (

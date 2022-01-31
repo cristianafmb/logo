@@ -195,6 +195,19 @@ $background-modal: #d7c891;
     padding: 1rem;
     .menu-mobile-options {
         top: 65% !important;
+        @media (max-width: 500px){
+            top: 70% !important;
+        }
+    }
+}
+
+.menu-mobile-options {
+    position: absolute;
+    top: 50%;
+    margin-top: -290px !important;
+    max-width: 95%;
+    @media (min-width: 300px) and (max-width: 500px) {
+        top: 65% !important;
     }
 }
 
@@ -634,15 +647,7 @@ input:focus-visible {
     margin: auto;
 }
 
-.menu-mobile-options {
-    position: absolute;
-    top: 50%;
-    margin-top: -290px !important;
-    max-width: 95%;
-    @media (min-width: 300px) and (max-width: 500px) {
-        top: 65% !important;
-    }
-}
+
 
 .width-footer {
     width: 95% !important;

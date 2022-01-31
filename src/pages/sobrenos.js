@@ -6,7 +6,7 @@ import { graphql } from 'gatsby'
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import Menu from '../components/menu'
 import MenuMobile from '../components/menuMobile'
@@ -37,7 +37,7 @@ const SobreNos = ({ data, location }) => {
       {!breakpoints.mobile ? (
         <>
           <div className="background-sobrenos" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.backgroundtop})` }}>
-            <SEO title="Sobre Nós" />
+            <Seo title="Sobre Nós" />
 
             <Menu location={location} marcacaoRef={marcacaoRef}/>
 
