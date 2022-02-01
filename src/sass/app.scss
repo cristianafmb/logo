@@ -905,6 +905,9 @@ a {
 .bg-position-bottom {
     background-position: bottom;
 }
+.bg-position-top {
+    background-position: top;
+}
 
 .modal-marcacao-rapida .modal-content {
     background-color: $gold_hover;
@@ -1400,4 +1403,7 @@ a {
 
 .logo-upcare{
     max-width: 25vh;
+}
+.not-found{
+    max-width: 20vh;
 }
