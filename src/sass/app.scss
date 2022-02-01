@@ -1009,13 +1009,13 @@ a {
 }
 
 .up {
-    position: fixed;
+    position: fixed !important;
     left: -240px;
     width: 40%;
 }
 
 .up-sobrenos {
-    position: absolute;
+    position: absolute fixed !important;
     width: 40%;
     left: -9%;
     bottom: 17%;
