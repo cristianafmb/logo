@@ -80,7 +80,7 @@ const MenuMobile = ({ footer }) => {
 
                     <div className="section-space-mobile ">
                         <Link to="/">
-                            <img src={footer.logowhite} className="mt-4" alt="logo white"/>
+                            <img src={footer.logowhite} className="mt-4" alt="logo white" />
                         </Link>
                     </div>
                     <div className="m-auto btn-menu-mobile"  >
