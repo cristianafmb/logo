@@ -33,7 +33,7 @@ const BlogPage = ({ data, location }) => {
 
   const marcacaoRef= useRef(null);
 
-  if (!posts || !Boolean(posts.length)) {
+  if (posts || Boolean(posts.length)) {
     return (
       <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson}/>
     )

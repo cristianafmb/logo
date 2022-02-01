@@ -56,17 +56,18 @@ function Lights() {
   )
 }
 
-export default function Blocks() {
+export default function Blocks( { text }) {
   return (
     <>
-      <div className='container-noposts'>
+      <div className='container-noposts mt-2'>
         <Canvas linear flat shadows camera={{ position: [0, 0, 100], fov: 100 }}>
           <Lights />
 
           <Content />
         </Canvas>
       </div>
-      <p className='over-text-noposts details-xx-small oRegular'>De momento não existem notícias para mostrar.</p>
+      <p className='over-text-noposts-404 title-large oMedium  gold mb-4'>404</p>
+      <p className='over-text-noposts details-x-small oRegular gold'>{text}</p>
     </>
   )
 }

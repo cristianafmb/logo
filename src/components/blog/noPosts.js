@@ -29,7 +29,7 @@ const NoPosts = ({ footerJson, questoesJson, homeJson, location }) => {
 
             <Menu footer={footerJson.footer}  location={location} marcacaoRef={marcacaoRef}/>
 
-            <Blocks />
+            <Blocks text="De momento não existem notícias para mostrar." />
 
             <Questoes data={questoesJson.questoes} />
 
@@ -46,7 +46,7 @@ const NoPosts = ({ footerJson, questoesJson, homeJson, location }) => {
 
               <MenuMobile footer={footerJson.footer}  location={location}/>
 
-              <Blocks />
+              <Blocks text="De momento não existem notícias para mostrar." />
 
               <QuestoesMobile data={questoesJson.questoes} />
 

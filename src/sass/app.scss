@@ -1351,6 +1351,15 @@ a {
         top: 20%;
     }
 }
+.over-text-noposts-404 {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 990px) {
+        top: 15%;
+    }
+}
 
 .container-contactos {
     position: relative;
