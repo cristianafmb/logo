@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
-import Img from "gatsby-image"
+import Image from '../Images'
 
 import '../../sass/app.scss';
 
@@ -23,8 +23,8 @@ const NoticiasMobile = ({ posts, blogIntro }) => {
                 <Col sm="12" md="6" lg="6" className="p-4 mb-4">
                     <Card head={blogIntro.title} title={blogIntro.head} details={blogIntro.details} btn={blogIntro.btntxtmobile} btnlink={blogIntro.btnhref} />
                 </Col>
-                <Col sm="12" md="4" lg="4" >
-                    <Img fluid={firstNew.image.childImageSharp.fluid} alt={firstNew.alt} className="card-white-img img-noticias" />
+                <Col sm="12" md="4" lg="4" > 
+                    <Image src={firstNew.image} alt={firstNew.title} className="card-white-img img-noticias" />
                 </Col>
                 <Col sm="12" md="6" lg="6" className=" mt-5">
                     <Card head={firstNew.head} title={firstNew.title} details={firstNew.details} btn={false} btnlink={false} />

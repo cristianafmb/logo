@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, { useRef } from "react"
 import '../sass/app.scss';
 
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -24,22 +24,23 @@ import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 
-import up from '../images/home/up.png'
+import Image from '../components/Images'
 
 const SobreNos = ({ data, location }) => {
 
   const breakpoints = useBreakpoint();
 
-  const marcacaoRef= useRef(null);
+  const marcacaoRef = useRef(null);
 
   return (
     <Layout home mobile={useBreakpoint().mobile}>
       {!breakpoints.mobile ? (
         <>
+
           <div className="background-sobrenos" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.backgroundtop})` }}>
             <Seo title="Sobre Nós" />
 
-            <Menu location={location} marcacaoRef={marcacaoRef}/>
+            <Menu location={location} marcacaoRef={marcacaoRef} />
 
             <Sobrenos data={data.sobrenosJson.sobrenos} />
           </ div>
@@ -52,9 +53,9 @@ const SobreNos = ({ data, location }) => {
                 <Especialidades data={array} key={"especialidade" + k} />
               ))}
             </div>
-            <img src={up} className="up-sobrenos" alt="up"/>
+            <Image src="home/up.png" className="up" alt="up" />
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef}/>
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
 
             <Opinioes data={data.sobrenosJson.opiniao} />
 
@@ -69,8 +70,7 @@ const SobreNos = ({ data, location }) => {
         :
         (
           <>
-            <img src={up} className="up" alt="up"/>
-
+            <Image src="home/up.png" className="up" alt="up" />
             <div className="no-repeat bg-cover height-100vh" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.backgroundtopmobile})` }}>
 
               <MenuMobile footer={data.footerJson.footer} location={location} />

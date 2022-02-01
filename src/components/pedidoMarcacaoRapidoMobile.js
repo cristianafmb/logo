@@ -3,6 +3,7 @@ import * as React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import '../sass/app.scss';
+import Image from '../components/Images'
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -17,7 +18,7 @@ const PedidoMarcacoRapidaMobile = ({ img, alt, space, subpage, marcacaoRef }) =>
                 <FormMobile title="Pedido de Marcação Rápido" />
                 <Row className="max-width  no-space-n-cols">
                     <Col sm="12" md="4" lg="4" >
-                        <img src={img} alt={alt} className="max-width " />
+                        <Image src={img} alt={alt} className="max-width " />
                     </Col>
                 </Row>
             </div>

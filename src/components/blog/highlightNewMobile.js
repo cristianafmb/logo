@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import '../../sass/app.scss';
 import { Button } from 'react-bootstrap'
+import Image from '../Images'
 
 
 const HighlightNew = ({ head, title, details, path, image, btn }) => {
@@ -10,7 +11,7 @@ const HighlightNew = ({ head, title, details, path, image, btn }) => {
     return (
         <div className="section-intro-home mt-5 mb-5">
 
-            <img src={image} alt={title} className="max-width highlight-img" />
+            <Image src={image} alt={title} className="max-width highlight-img" />
 
 
             <div className="position-relative width-90">

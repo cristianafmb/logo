@@ -8,6 +8,8 @@ import { graphql } from 'gatsby'
 
 import { parseBlogPosts } from '../utils/helpers'
 
+import Image from '../components/Images'
+
 import NoPosts from "../components/blog/noPosts"
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
@@ -22,7 +24,6 @@ import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 import top from '../images/background1.png'
-import up from '../images/home/up.png'
 
 const BlogPage = ({ data, location }) => {
 
@@ -47,7 +48,7 @@ const BlogPage = ({ data, location }) => {
 
         <>
 
-          <img src={up} className="up" alt="up"/>
+          <Image src="home/up.png" className="up" alt="up"/>
 
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
@@ -106,13 +107,7 @@ query BlogPage {
           details
           head
           id
-          image{
-            childImageSharp {
-              fluid( quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          image
           path
           title
         }

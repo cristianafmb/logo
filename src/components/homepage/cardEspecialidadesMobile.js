@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Row, Col, Button, Modal } from 'react-bootstrap'
+import Image from '../Images'
 
 import '../../sass/app.scss';
 import Form from '../form'
@@ -28,7 +29,7 @@ const CardEspecialidadesMobile = ({ title, details, button, href, img, alt, marc
         <div className={cardClass + " position-relative"}>
             <Row className="m-3 height-especialidades-img mt-3">
                 <Col className="m-auto ">
-                    <img src={img} alt={alt} className="especialidades-img max-width-8vh" />
+                    <Image src={img} alt={alt} className="especialidades-img max-width-8vh m-auto" />
                 </Col>
             </Row>
             <Row className="m-3 mt-5">

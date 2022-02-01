@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { Row, Col } from 'react-bootstrap'
 import "bootstrap/dist/css/bootstrap.min.css"
 import '../sass/app.scss';
+import Image from './Images'
 
 
 
@@ -26,9 +27,9 @@ const FooterMobile = ({ footer }) => {
     return (
         <div style={{ backgroundColor: "#D7C891" }} className="position-relative height-100vh max-width center-footer ">
 
-            <div className="section-space-mobile center">
+            <div className="section-space-mobile center pt-4">
                 <Link to="/">
-                    <img src={footer.logowhite} className="mt-4 mb-4" alt="logo mobile"/>
+                    <Image src={footer.logowhite} className=" mb-4 logo-upcare" alt="logo mobile"/>
                 </Link>
 
             </div>
@@ -60,7 +61,7 @@ const FooterMobile = ({ footer }) => {
                     {footer.socialmedia.map((data, i) => (
                         <Col className={renderSwitch(i)} key={"col-footer-mobile-menu-icons-" + i}>
                             <a href={data.link} target="_blank" rel="noreferrer">
-                                <img src={data.icon} alt={data.alt} className="footer-icons-mobile" />
+                                <Image src={data.icon} alt={data.alt} className="footer-icons-mobile" />
                             </a>
                         </Col>
                     ))}

@@ -5,6 +5,7 @@ import '../sass/app.scss';
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Image from './Images'
 
 
 const Footer = ({ data }) => {
@@ -29,7 +30,7 @@ const Footer = ({ data }) => {
             <Row className=" center heigth-footer d-flex  align-items-center m-auto width-footer">
                 <Col sm="12" md="1" lg="1" className="right ">
                     <Link to="/">
-                        <img src={data.logowhite}  className="max-width" alt="logo"/>
+                        <Image src={data.logowhite}  className="max-width" alt="logo"/>
                     </Link>
                     
                 </Col>
@@ -38,7 +39,7 @@ const Footer = ({ data }) => {
                         {data.socialmedia.map((data, i) => (
                             <Col className={renderSwitch(i)} sm="12" md="4" lg="4" key={"col-footer-icons-"+i}>
                                 <a href={data.link} target="_blank" rel="noreferrer">
-                                    <img src={data.icon} alt={data.alt} className="footer-icons"/>
+                                    <Image src={data.icon} alt={data.alt} className="footer-icons"/>
                                 </a>
                             </Col>
                         ))}

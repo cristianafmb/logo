@@ -3,8 +3,8 @@ import '../sass/app.scss';
 import "bootstrap/dist/css/bootstrap.min.css"
 import Button from 'react-bootstrap/Button';
 
-const CardHeadTitleDetails = ({ head, title, details, btn, btnlink, maxwidth }) => (
-    <div className="position-relative mb-5">
+const CardHeadTitleDetails = ({ head, title, details, btn, btnlink, maxwidth, mt }) => (
+    <div className={"position-relative mb-5" + (mt ? " mt-3" : " ")}>
 
         <p className="head-x-small oBold">{head}</p>
         <p className="title-large oMedium mt-3">{title}</p>

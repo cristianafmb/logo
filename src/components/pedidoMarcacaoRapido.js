@@ -2,6 +2,7 @@ import * as React from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
+import Image from '../components/Images'
 import '../sass/app.scss';
 
 import Row from 'react-bootstrap/Row'
@@ -28,7 +29,7 @@ const PedidoMarcacoRapida = ({ img, alt, space, subpage, marcacaoRef }) => {
 
                     </Col>
                     <Col sm="12" md="4" lg="4" >
-                        <img src={img} alt={alt} className="max-width " />
+                        <Image src={img} alt={alt} className="max-width " />
                     </Col>
                 </Row>
             </div>

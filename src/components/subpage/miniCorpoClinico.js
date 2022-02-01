@@ -3,6 +3,7 @@ import * as React from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import '../../sass/app.scss';
+import Image from '../Images'
 import { Row, Col } from 'react-bootstrap';
 
 
@@ -14,7 +15,7 @@ const MiniCorpoClinico = ({ corpoclinico, mobile }) => {
                 <div className="grid-container center">
                     {corpoclinico.map((item, i) => (
                         <div key={"mini-" + i}>
-                            <img src={item.img} alt={item.alt} className="user-icon icon-clinico" />
+                            <Image src={item.img} alt={item.alt} className="user-icon icon-clinico" />
                             <p className="head-xx-small  oMedium mt-3">{item.name}</p>
                             <p className="head-xx-small light-gold oMedium mt-3 mb-4">{item.occupation}</p>
                         </div>
@@ -25,7 +26,7 @@ const MiniCorpoClinico = ({ corpoclinico, mobile }) => {
                 :
                 corpoclinico.map((item, i) => (
                     <Col key={"mini-" + i}>
-                        <img src={item.img} alt={item.alt} className="user-icon icon-clinico" />
+                        <Image src={item.img} alt={item.alt} className="user-icon icon-clinico" />
                         <p className="head-xx-small  oMedium mt-3">{item.name}</p>
                         <p className="head-xx-small light-gold oMedium">{item.occupation}</p>
                     </Col>

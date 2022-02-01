@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, { useRef } from "react"
 import { graphql, Link } from 'gatsby'
 import { Row, Col, Button } from 'react-bootstrap'
 
@@ -20,7 +20,6 @@ import FooterMobile from '../components/footerMobile'
 import top from '../images/background1.png'
 
 
-
 const Template = ({ data, location }) => {
 
   const breakpoints = useBreakpoint()
@@ -29,10 +28,10 @@ const Template = ({ data, location }) => {
   const questoesJson = data.questoesJson
   const footerJson = data.footerJson
 
-  const marcacaoRef= useRef(null);
+  const marcacaoRef = useRef(null);
 
   const html = data.markdownRemark.html
-  console.log(data)
+
   return (
 
     <Layout home>
@@ -41,7 +40,7 @@ const Template = ({ data, location }) => {
         <>
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
-            <Menu footer={footerJson.footer}  location={location} marcacaoRef={marcacaoRef}/>
+            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
             <div>
               <HighlightNew head={frontmatter.head} title={frontmatter.title} details={frontmatter.details} path={frontmatter.path} btn={false} image={frontmatter.image} />
@@ -118,20 +117,15 @@ const Template = ({ data, location }) => {
 export default Template
 
 export const pageQuery = graphql`
-      query ($path: String!) {
-        markdownRemark(frontmatter: {path: {eq: $path } }) {
-        html
+  
+  query ($path: String!) {
+    markdownRemark(frontmatter: {path: {eq: $path } }) {
+      html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
       data
       id
-      image{
-        childImageSharp {
-          fluid( quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+      image
       path
       head
       details

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby"
-import Img from "gatsby-image"
 
 import '../../sass/app.scss';
 import { Row, Col, Button } from 'react-bootstrap'
+import Image from '../Images'
 
 
 const HighlightNew = ({ head, title, details, path, image, btn }) => {
@@ -38,7 +38,8 @@ const HighlightNew = ({ head, title, details, path, image, btn }) => {
                 </Col>
 
                 <Col sm="12" md="8" lg="8">
-                    <Img fluid={image.childImageSharp.fluid} alt={title} className="max-width highlight-img" />
+                    {console.log(image)}
+                    <Image src={image} alt={title} className="max-width highlight-img" />
                 </Col>
 
             </Row>

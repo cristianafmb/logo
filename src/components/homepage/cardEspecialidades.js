@@ -2,13 +2,14 @@ import React, { useState } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Row, Col, Button, Modal } from 'react-bootstrap'
+import Image from '../Images'
 
 import '../../sass/app.scss';
 import Form from '../../components/form'
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
 
-const CardEspecialidades = ({ title, details, button, href, img, alt , marcacaoRef}) => {
+const CardEspecialidades = ({ title, details, button, href, img, alt, marcacaoRef }) => {
     var cardClass = "card-especialidades center";
     if (title === "Marcar Consulta") { cardClass = "card-especialidades center card-gold" }
     const [show, setShow] = useState(false);
@@ -28,7 +29,7 @@ const CardEspecialidades = ({ title, details, button, href, img, alt , marcacaoR
         <div className={cardClass + " position-relative"}>
             <Row className="m-2 height-especialidades-img">
                 <Col className="m-auto">
-                    <img src={img} alt={alt} className="especialidades-img max-width-8vh" />
+                    <Image src={img} alt={alt} className="especialidades-img max-width-8vh m-auto" />
                 </Col>
             </Row>
             <Row className="m-2 ">
@@ -60,7 +61,7 @@ const CardEspecialidades = ({ title, details, button, href, img, alt , marcacaoR
                             {button}
                         </Button>
                     </Col>
-            }
+                }
 
             </Row>
 

@@ -2,6 +2,7 @@ import * as React from "react"
 import '../../sass/app.scss'
 
 import "bootstrap/dist/css/bootstrap.min.css"
+import Image from '../Images'
 
 import { Row, Col } from 'react-bootstrap';
 import Card from "../cardHeadTitleDetails"
@@ -16,7 +17,7 @@ const CorpoClinicoMobile = ({ data }) => (
                 {data.people.map((data, i) => (
                     <div className="left" key={"staff-mobile-"+i}>
                         <div>
-                            <img src={data.img} style={{ width: "90%" }} alt="data"/>
+                            <Image src={data.img} style={{ width: "90%" }} alt="data"/>
                         </div>
                         <div>
                             <p className="head-xx-small oMedium mt-3">

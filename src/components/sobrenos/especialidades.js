@@ -3,6 +3,7 @@ import * as React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Row, Col } from 'react-bootstrap';
 
+import Image from '../Images'
 import '../../sass/app.scss';
 
 const EspecialidadesSobreNos = ({ data }) => {
@@ -24,7 +25,7 @@ const EspecialidadesSobreNos = ({ data }) => {
 
                     <Row className="width-90 mt-5 mb-5">
                         <Col sm="12" lg="4" md="4">
-                            <img src={data.img} alt="especialidades"/>
+                            <Image src={data.img} alt="especialidades" className="especialidades-img max-width-6vh " />
                             <p className="head-large mt-5 oLight">{data.title}</p>
                             <p className="details-xx-small mt-5 oRegular">
                                 {data.details}

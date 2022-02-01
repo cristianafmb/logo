@@ -10,19 +10,19 @@
         },
         "people": [
             {
-                "img": "../images/sobrenos/corpoclinico/corpoclinico1.jpg",
+                "img": "sobrenos/corpoclinico/corpoclinico1.jpg",
                 "name": "Dr. Tiago Godinho Teixeira",
                 "occupation": "Médico",
                 "especiality": "Cardiologia, Medicina Interna"
             },
             {
-                "img": "../images/sobrenos/corpoclinico/corpoclinico2.jpg",
+                "img": "sobrenos/corpoclinico/corpoclinico2.jpg",
                 "name": "Dr. Tiago Godinho Teixeira",
                 "occupation": "Médico Dentista",
                 "especiality": "Implantologia"
             },
             {
-                "img": "../images/sobrenos/corpoclinico/corpoclinico3.jpg",
+                "img": "sobrenos/corpoclinico/corpoclinico3.jpg",
                 "name": "Dra. Susana Silva",
                 "occupation": "Médica",
                 "especiality": "Fisioterapia, Posturologia"

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "gatsby"
-import Img from "gatsby-image"
 import "bootstrap/dist/css/bootstrap.min.css"
 import '../../sass/app.scss';
 import { Button } from 'react-bootstrap'
 import Arrow from '../arrow'
+import Image from '../Images'
 
 const AllPosts = ({ posts }) => {
 
@@ -23,7 +23,7 @@ const AllPosts = ({ posts }) => {
           <div className="mt-5">
             <div className="d-flex section-intro-home">
               <div className="container-img-blog ">
-                <Img fluid={p.image.childImageSharp.fluid} alt={p.title} className="img-blog " />
+                <Image src={p.image} alt={p.title} className="img-blog " />
               </div>
               <div className="blog-right-text">
                 <div className="mt-5 mb-2 ">

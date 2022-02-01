@@ -5,7 +5,7 @@ import { animated, useSpring } from "react-spring";
 import '../sass/app.scss';
 import { Modal, Row, Col } from 'react-bootstrap'
 import { Link } from "gatsby"
-
+import Image from './Images'
 
 const MenuMobile = ({ footer }) => {
     const [show2, setShow2] = useState(false);
@@ -52,9 +52,9 @@ const MenuMobile = ({ footer }) => {
 
     return (
         <div className="position-relative">
-            <div className="section-space-mobile ">
+            <div className="section-space-mobile pt-4">
                 <Link to="/">
-                    <img src={footer.logo} className="mt-4" alt="logo" />
+                    <Image src={footer.logo} className="logo-upcare" alt="logo logo-upcare" />
                 </Link>
             </div>
             <div className="m-auto btn-menu-mobile"  >
@@ -78,9 +78,9 @@ const MenuMobile = ({ footer }) => {
                 <Modal id="modal-menu" show={show2} fullscreen={true} onHide={handleHide2} animation={false}  >
 
 
-                    <div className="section-space-mobile ">
+                    <div className="section-space-mobile pt-4 ">
                         <Link to="/">
-                            <img src={footer.logowhite} className="mt-4" alt="logo white" />
+                            <Image src={footer.logowhite} className="logo-upcare" alt="logo white" />
                         </Link>
                     </div>
                     <div className="m-auto btn-menu-mobile"  >
@@ -126,7 +126,7 @@ const MenuMobile = ({ footer }) => {
                                 {footer.socialmedia.map((data, i) => (
                                     <Col className={renderSwitch(i)} key={"col-footer-mobile-menu-icons-" + i}>
                                         <a href={data.link} target="_blank" rel="noreferrer">
-                                            <img src={data.icon} alt={data.alt} className="footer-icons-mobile" />
+                                            <Image src={data.icon} alt={data.alt} className="footer-icons-mobile" />
                                         </a>
                                     </Col>
                                 ))}

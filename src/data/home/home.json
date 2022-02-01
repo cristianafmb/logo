@@ -4,7 +4,7 @@
             "head": "Medicina Dentária",
             "subject": "Preocupamo-nos com a saúde do seu sorriso.",
             "details": "A Medicina Dentaria é a área da saúde que previne, diagonistica e trata as doenças que afetam os detes, as gengivas e a mucosa oral.",
-            "img": "../images/home/01.jpg",
+            "img": "home/01.jpg",
             "alt": "medicina-dentaria",
             "href": "/medicinadentaria",
             "btntext": "Saber Mais"
@@ -13,7 +13,7 @@
             "head": "Dermatologia",
             "subject": "Estética Facial nas nossas clínicas.",
             "details": "A Dermatologia é a especialidade da medicina que se ocupa das doenças que afetam o maior orgão do corpo humano, a pele.",
-            "img": "../images/home/02.jpg",
+            "img": "home/02.jpg",
             "alt": "Dermatologia",
             "href":"/especialidades/dermatologia",
             "btntext": "Saber Mais"
@@ -22,7 +22,7 @@
             "head": "Marcação Consulta",
             "subject": "Faça-nos uma visita. Cuide da sua saúde.",
             "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. ",
-            "img": "../images/home/03.jpg",
+            "img": "home/03.jpg",
             "alt": "Marcação Consulta",
             "href": "/marcacao",
             "btntext": "Saber Mais"
@@ -32,7 +32,7 @@
         "quote": "Queremos ajudá-lo a cuidar da sua saúde. Um passo de cada vez.",
         "person": "Dr. João Mano Nunes",
         "function": "Diretor Clínico",
-        "img": "../images/home/sobre-nos/01.png",
+        "img": "home/sobre-nos/01.png",
         "alt": "testemunho"
     },
     "sobre-nos": {
@@ -48,7 +48,7 @@
             "details": "Temos um vasto leque de especialidades médicas de modo a dar resposta às necessidades fundamentais dos nossos pacientes.",
             "button": "Consulte as nossas Especialidades",
             "href": "/especialidades",
-            "img": "../images/home/especialidades/especialidades.png",
+            "img": "home/especialidades/especialidades.png",
             "alt": "especialidades-especialidades",
             "titlemobile":"Ver Mais"
         },
@@ -57,7 +57,7 @@
             "details": "Medicina Dentária é a àrea da saúde que estuda, trata e previne todos os componentes relacionados com as patologias orais e maxilares.",
             "button": "Consulte os nossos Serviços",
             "href": "/medicinadentaria",
-            "img": "../images/home/especialidades/especialidades.png",
+            "img": "home/especialidades/especialidades.png",
             "alt": "especialidades-medicina-dentaria",
             "titlemobile":"Ver Mais"
         },
@@ -66,7 +66,7 @@
             "details": "Os exames médicos são essenciais para que tenha um diagnóstico assertivo das suas doenças. Conheça os que fazemos na nossa clínica.",
             "button": "Consulte os nossos Exames",
             "href": "/examesanalises",
-            "img": "../images/home/especialidades/exames-analises.png",
+            "img": "home/especialidades/exames-analises.png",
             "alt": "especialidades-exames-analises",
             "titlemobile":"Ver Mais"
         },
@@ -75,13 +75,14 @@
             "details": "Os exames médicos são essenciais para que tenha um diagnóstico assertivo das suas doenças. Conheça os que fazemos na nossa clínica.",
             "button": "Pedir Marcação de Consulta",
             "href": "/",
-            "img": "../images/home/especialidades/marcar-consulta.png",
+            "img": "home/especialidades/marcar-consulta.png",
             "alt": "especialidades-marcar-consulta",
             "titlemobile":"Pedir Marcação de Consulta"
         }
     ],
     "invisalign": {
-        "img": "../images/home/invisalign/banner.png",
+        "img": "home/invisalign/banner.png",
+        "imgmobile": "home/invisalign/banner-mobile.png",
         "alt": "banner-invisalign",
         "head": "Invisalign",
         "details": "Graças ao scanner itero element, o invisalign provider pode efetuar um exame digital 3D rápido e preciso dos seus dentes e delinear um plano de tratamento personalizado.",

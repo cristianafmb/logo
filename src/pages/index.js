@@ -27,10 +27,10 @@ import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 import top from '../images/background1.png'
 import bottom from '../images/bottom.png'
-import up from '../images/home/up.png'
 
 import { graphql } from 'gatsby'
 
+import Image from '../components/Images'
 
 
 
@@ -44,7 +44,7 @@ const IndexPage = ({ data, location }) => {
       <Seo title="Home" />
       {!breakpoints.mobile ? (
         <>
-          <img src={up} className="up" alt="up" />
+          <Image src="home/up.png" className="up" alt="up" />
           <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
             <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
@@ -73,7 +73,7 @@ const IndexPage = ({ data, location }) => {
         :
         (
           <>
-            <img src={up} className="up" alt="up" />
+             <Image src="home/up.png" className="up" alt="up" />
             <div className="no-repeat" style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
 
               <MenuMobile footer={data.footerJson.footer} location={location} />
@@ -120,13 +120,7 @@ query IntroHome {
           details
           head
           id
-          image{
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          image
           path
           title
         }
@@ -139,6 +133,7 @@ query IntroHome {
       subject
       details
       img
+      
       alt
       href
       btntext
@@ -168,6 +163,7 @@ query IntroHome {
     }
     invisalign{
       img
+      imgmobile
       alt
       head
       details

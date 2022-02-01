@@ -2,6 +2,9 @@ import * as React from "react"
 import '../../sass/app.scss';
 import { Link } from "gatsby"
 
+
+import Image from '../Images'
+
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import { Row, Col, Button } from 'react-bootstrap'
@@ -22,7 +25,7 @@ const CorpoClinico = ({ data }) => (
                     {data.people.map((data, i) => (
                         <Col className="left" sm="12" md="4" lg="4" key={"dr"+i}>
                             <div>
-                                <img src={data.img} style={{ width: "80%" }} alt="img"/>
+                                <Image src={data.img} style={{ width: "80%" }} alt="img"/>
                             </div>
                             <div>
                                 <p className="head-xx-small oMedium mt-3">

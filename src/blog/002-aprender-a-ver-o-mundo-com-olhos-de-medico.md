@@ -1,7 +1,7 @@
 ---
 head: "22 de Outubro, 2021"
 title: "Aprender a ver o mundo com olhos de médico"
-image: "../images/blog/002/01.jpg"
+image: "blog/002/01.jpg"
 details: "Em Outubro de 2020 teve início a primeira edição do curso Fundamentals of Medicine, concebido conjuntamente pela Faculdade de Medicina da Universidade do Algarve e pela Fundação Champalimaud."
 id: "002"
 date: "2021-10-22" #tem que ser formato YYYY-MM-DD
