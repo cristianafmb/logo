@@ -25,8 +25,6 @@ import Questoes from '../components/questoes'
 import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
-import top from '../images/background1.png'
-import bottom from '../images/bottom.png'
 
 import { graphql } from 'gatsby'
 
@@ -45,8 +43,9 @@ const IndexPage = ({ data, location }) => {
       {!breakpoints.mobile ? (
         <>
           <Image src="home/up.png" className="up" alt="up" />
-          <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
+          <div className="no-repeat position-relative ">
+            <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
             <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} />
@@ -56,8 +55,8 @@ const IndexPage = ({ data, location }) => {
 
           <Especialidades especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} />
 
-          <div className="no-repeat bg-position-bottom  bg-cover" style={{ backgroundImage: `url(${bottom})` }}>
-
+          <div className="no-repeat position-relative bg-position-bottom">
+            <Image src={data.homeJson.background.bottom} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <Invisalign data={data.homeJson.invisalign} />
 
             <Noticias posts={posts} />
@@ -73,8 +72,10 @@ const IndexPage = ({ data, location }) => {
         :
         (
           <>
-             <Image src="home/up.png" className="up" alt="up" />
-            <div className="no-repeat" style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
+            <Image src="home/up.png" className="up" alt="up" />
+            <div className="no-repeat position-relative" >
+
+              <Image src={data.homeJson.background.topmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
               <MenuMobile footer={data.footerJson.footer} location={location} />
 
@@ -90,7 +91,9 @@ const IndexPage = ({ data, location }) => {
 
             <NoticiasMobile posts={posts} blogIntro={data.homeJson.blog} />
 
-            <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.homeJson.background.bottommobile})` }}>
+            <div className="no-repeat position-relative bg-position-bottom" >
+
+              <Image src={data.homeJson.background.bottommobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
               <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
 

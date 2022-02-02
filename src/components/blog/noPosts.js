@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, { useRef } from "react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 import '../../sass/app.scss';
@@ -13,9 +13,11 @@ import Footer from '../../components/footer'
 import FooterMobile from '../../components/footerMobile'
 import top from '../../images/background1.png'
 
+import Image from '../Images'
+
 const NoPosts = ({ footerJson, questoesJson, homeJson, location }) => {
   const breakpoints = useBreakpoint();
-  const marcacaoRef= useRef(null);
+  const marcacaoRef = useRef(null);
   return (
     <Layout home>
 
@@ -25,9 +27,11 @@ const NoPosts = ({ footerJson, questoesJson, homeJson, location }) => {
 
         <>
 
-          <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
+          <div className="no-repeat bg-cover position-relative" >
 
-            <Menu footer={footerJson.footer}  location={location} marcacaoRef={marcacaoRef}/>
+            <Image src={homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
             <Blocks text="De momento não existem notícias para mostrar." />
 
@@ -42,9 +46,11 @@ const NoPosts = ({ footerJson, questoesJson, homeJson, location }) => {
         :
         (
           <>
-            <div className="no-repeat" style={{ backgroundImage: `url(${homeJson.background.topmobile})` }}>
+            <div className="no-repeat position-relative" >
 
-              <MenuMobile footer={footerJson.footer}  location={location}/>
+              <Image src={homeJson.background.topmobile} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+              <MenuMobile footer={footerJson.footer} location={location} />
 
               <Blocks text="De momento não existem notícias para mostrar." />
 

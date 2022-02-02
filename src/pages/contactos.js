@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, { useRef } from "react"
 import { graphql } from 'gatsby'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
@@ -16,11 +16,13 @@ import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 
+import Image from '../components/Images'
+
 const Contactos = ({ data, location }) => {
 
   const breakpoints = useBreakpoint();
 
-  const marcacaoRef= useRef(null);
+  const marcacaoRef = useRef(null);
 
   return (
     <Layout home mobile={useBreakpoint().mobile}>
@@ -28,9 +30,11 @@ const Contactos = ({ data, location }) => {
       <Seo title="Contactos" />
       {!breakpoints.mobile ? (
         <>
-          <div className="no-repeat  bg-cover" style={{ backgroundImage: `url(${data.contactosJson.backgroundtop})` }}>
+          <div className="no-repeat  bg-cover position-relative">
 
-            <Menu location={location} marcacaoRef={marcacaoRef}/>
+            <Image src={data.contactosJson.backgroundtop} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+            <Menu location={location} marcacaoRef={marcacaoRef} />
 
             <Contacts data={data.contactosJson} />
 
@@ -38,9 +42,11 @@ const Contactos = ({ data, location }) => {
 
           </div>
 
-          <div className="no-repeat " style={{ backgroundImage: `url(${data.contactosJson.backgroundfooter})` }}>
+          <div className="no-repeat position-relative" >
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={false} marcacaoRef={marcacaoRef}/>
+            <Image src={data.contactosJson.backgroundfooter} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={false} marcacaoRef={marcacaoRef} />
 
             <Questoes data={data.questoesJson.questoes} />
 
@@ -52,16 +58,20 @@ const Contactos = ({ data, location }) => {
         :
         (
           <>
-      
-            <div className="no-repeat" style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
 
-              <MenuMobile footer={data.footerJson.footer} location={location}/>
+            <div className="no-repeat position-relative" >
+
+              <Image src={data.homeJson.background.topmobile} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+              <MenuMobile footer={data.footerJson.footer} location={location} />
 
               <ContactsMobile data={data.contactosJson} />
 
             </ div>
 
-            <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.homeJson.background.bottommobile})` }}>
+            <div className="no-repeat bg-position-bottom position-relative">
+
+              <Image src={data.homeJson.background.bottommobile} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
               <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
 

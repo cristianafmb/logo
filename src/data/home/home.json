@@ -98,10 +98,10 @@
         "btnhref": "/blog"
     },
     "background": {
-        "top": "../images/background1.png",
-        "topmobile": "../images/background-top-mobile.png",
-        "bottom": "../images/background2.png",
-        "bottommobile": "../images/background-footer-mobile.png",
-        "symbol": "../images/symbolup.png"
+        "top": "background1.png",
+        "topmobile": "background-top-mobile.png",
+        "bottom": "background-bottom.png",
+        "bottommobile": "background-footer-mobile.png",
+        "symbol": "symbolup.png"
     }
 }

@@ -37,7 +37,7 @@ const Noticias = ({ posts }) => {
                 <Row>
                     <Col sm="3" md="3" lg="3" >
                         <a href={firstNew.path} className="container-arrow-noticias">
-                            <Arrow id="arrow-effect"  rot={false} text="ler notícia" />
+                            <Arrow id="arrow-effect"  rot={false} text="ler notícia" blog={false} big={false}/>
                         </a>
                        
                     </Col>

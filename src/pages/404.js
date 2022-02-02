@@ -13,16 +13,14 @@ import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 import Blocks from '../components/blog/blocks'
-import top from '../images/background1.png'
 
 import Image from '../components/Images'
 
 import { graphql } from 'gatsby'
 
-const NotFoundPage = ({ data, location }) => {
+const NotFoundPage = ({ data }) => {
 
   const marcacaoRef = useRef(null);
-
   const breakpoints = useBreakpoint();
 
   return (
@@ -30,9 +28,10 @@ const NotFoundPage = ({ data, location }) => {
       <Seo title="Página não encontrada" />
       {!breakpoints.mobile ? (
         <>
-          <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
 
-            <Menu location={location} marcacaoRef={marcacaoRef} />
+          <div className="no-repeat position-relative " >
+            <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+            <Menu marcacaoRef={marcacaoRef} />
 
             <Blocks text="Página não encontrada." />
 
@@ -46,9 +45,9 @@ const NotFoundPage = ({ data, location }) => {
         :
         (
           <>
-            <div className="no-repeat " style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
-
-              <MenuMobile footer={data.footerJson.footer} location={location} />
+            <div className="no-repeat position-relative">
+              <Image src={data.homeJson.background.topmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover height-max" />
+              <MenuMobile footer={data.footerJson.footer} />
 
               <Blocks text="Página não encontrada." />
 

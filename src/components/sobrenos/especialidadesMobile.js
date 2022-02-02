@@ -9,7 +9,8 @@ const EspecialidadesSobreNosMobile = ({ data }) => {
 
     return (
         <>
-            <div className="no-repeat position-relative heigth-50vh" style={{ backgroundImage: `url(${data.backgroundmobile})` }}>
+            <div className="no-repeat position-relative heigth-50vh" >
+                <Image src={data.backgroundmobile} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
                 <div className="section-space-mobile align-bg-center">
                     <div className="mt-5 ">
                         <Image src={data.img} className="mt-5 max-width-6vh " alt="especialidades" />

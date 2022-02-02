@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, { useRef } from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -23,7 +23,6 @@ import Questoes from '../components/questoes'
 import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
-import top from '../images/background1.png'
 
 const BlogPage = ({ data, location }) => {
 
@@ -31,11 +30,11 @@ const BlogPage = ({ data, location }) => {
 
   const posts = parseBlogPosts(data.allMarkdownRemark.edges)
 
-  const marcacaoRef= useRef(null);
+  const marcacaoRef = useRef(null);
 
-  if (posts || Boolean(posts.length)) {
+  if (!posts || !Boolean(posts.length)) {
     return (
-      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson}/>
+      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} />
     )
   }
 
@@ -48,11 +47,13 @@ const BlogPage = ({ data, location }) => {
 
         <>
 
-          <Image src="home/up.png" className="up" alt="up"/>
+          <Image src="home/up.png" className="up" alt="up" />
 
-          <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
+          <div className="no-repeat bg-cover position-relative">
 
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
+            <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
             <HighlightNew head={posts[0].head} title={posts[0].title} details={posts[0].details} path={posts[0].path} btn="Ler Tudo" image={posts[0].image} />
 
@@ -68,10 +69,12 @@ const BlogPage = ({ data, location }) => {
       )
         :
         (
-          <>            
-            <div className="no-repeat" style={{ backgroundImage: `url(${data.homeJson.background.topmobile})` }}>
+          <>
+            <div className="no-repeat position-relative">
 
-              <MenuMobile footer={data.footerJson.footer} location={location}/>
+              <Image src={data.homeJson.background.topmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+              <MenuMobile footer={data.footerJson.footer} location={location} />
 
               <HighlightNewMobile head={posts[0].head} title={posts[0].title} details={posts[0].details} path={posts[0].path} btn="Ler Tudo" image={posts[0].image} />
 
@@ -79,7 +82,9 @@ const BlogPage = ({ data, location }) => {
 
             </ div>
 
-            <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.homeJson.background.bottommobile})` }}>
+            <div className="no-repeat bg-position-bottom position-relative" >
+
+              <Image src={data.homeJson.background.bottommobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
               <QuestoesMobile data={data.questoesJson.questoes} />
 

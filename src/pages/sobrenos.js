@@ -37,7 +37,8 @@ const SobreNos = ({ data, location }) => {
       {!breakpoints.mobile ? (
         <>
 
-          <div className="background-sobrenos" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.backgroundtop})` }}>
+          <div className="background-sobrenos position-relative" >
+            <Image src={data.sobrenosJson.sobrenos.backgroundtop} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <Seo title="Sobre Nós" />
 
             <Menu location={location} marcacaoRef={marcacaoRef} />
@@ -47,7 +48,8 @@ const SobreNos = ({ data, location }) => {
 
           <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
 
-          <div className="no-repeat background-bottom" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.backgroundfooter})` }}>
+          <div className="no-repeat background-bottom position-relative" >
+            <Image src={data.sobrenosJson.sobrenos.backgroundfooter} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <div className="margin-sections ">
               {data.sobrenosJson.sectionswithbanners.content.map((array, k) => (
                 <Especialidades data={array} key={"especialidade" + k} />
@@ -71,7 +73,8 @@ const SobreNos = ({ data, location }) => {
         (
           <>
             <Image src="home/up.png" className="up" alt="up" />
-            <div className="no-repeat bg-cover height-100vh" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.backgroundtopmobile})` }}>
+            <div className="no-repeat bg-cover height-100vh position-relative" >
+              <Image src={data.sobrenosJson.sobrenos.backgroundtopmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
               <MenuMobile footer={data.footerJson.footer} location={location} />
 
@@ -87,7 +90,8 @@ const SobreNos = ({ data, location }) => {
               ))}
             </div>
 
-            <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${data.sobrenosJson.sobrenos.backgroundfootermobile})` }}>
+            <div className="no-repeat bg-position-bottom position-relative" >
+              <Image src={data.sobrenosJson.sobrenos.backgroundfootermobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
               <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
 

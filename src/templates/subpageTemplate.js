@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, { useRef } from "react"
 import { graphql } from 'gatsby'
 
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
@@ -14,12 +14,13 @@ import Especialidades from '../components/homepage/especialidades'
 import Questoes from '../components/questoes'
 import Footer from '../components/footer'
 
+import Image from '../components/Images'
 
 const Template = ({ data, pageContext, location }) => {
 
   const breakpoints = useBreakpoint()
 
-  const marcacaoRef= useRef(null);
+  const marcacaoRef = useRef(null);
 
   var pathname = location.pathname;
   const pageName = pathname.split("/")[1]
@@ -38,7 +39,7 @@ const Template = ({ data, pageContext, location }) => {
       subPage = { ...value }
     }
   })
-  
+
   const banner = "../images" + subPage.headhref
 
   return (
@@ -47,17 +48,21 @@ const Template = ({ data, pageContext, location }) => {
       <Seo title={subPage.title} />
       {!breakpoints.mobile ? (
         <>
-          <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${subPage.img})` }}>
+          <div className="no-repeat heigth-banner center position-relative">
 
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
+            <Image src={subPage.img} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
           </div>
 
-          <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${background.backgroundtop})` }}>
+          <div className="no-repeat bg-position-bottom position-relative" >
+
+            <Image src={background.backgroundtop} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
             <SubPage subpage={subPage} page={pageName} areas={areas} location={location} marcacaoRef={marcacaoRef} />
 
-            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef}/>
+            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef} />
 
             <Questoes data={data.questoesJson.questoes} />
 

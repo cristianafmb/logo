@@ -1,10 +1,10 @@
 {
     "backgrounds": {
-        "bannermobile": "../images/especialidades/background-banner-mobile.png",
-        "backgroundtop": "../images/especialidades/background-top.png",
-        "backgroundtopmobile": "../images/background-top-mobile.png",
-        "backgroundfooter": "../images/background-footer.png",
-        "backgroundfootermobile": "../images/background-footer-mobile.png"
+        "bannermobile": "especialidades/background-banner-mobile.png",
+        "backgroundtop": "especialidades/background-top.png",
+        "backgroundtopmobile": "background-top-mobile.png",
+        "backgroundfooter": "background-footer.png",
+        "backgroundfootermobile": "background-footer-mobile.png"
     },
     "info": [
         {
@@ -46,7 +46,7 @@
                 ],
                 "details": [
                     {
-                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "img": "medicinadentaria/medicinadentaria.png",
                         "alt": "dentista",
                         "head": "Medicina Dentária",
                         "headhref": "/medicinadentaria",
@@ -75,7 +75,7 @@
                         ]
                     },
                     {
-                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "img": "medicinadentaria/medicinadentaria.png",
                         "alt": "endodontia",
                         "head": "Medicina Dentária",
                         "headhref": "/medicinadentaria",
@@ -98,7 +98,7 @@
                         ]
                     },
                     {
-                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "img": "medicinadentaria/medicinadentaria.png",
                         "alt": "odontopediatria",
                         "head": "Medicina Dentária",
                         "headhref": "/medicinadentaria",
@@ -115,7 +115,7 @@
                         ]
                     },
                     {
-                        "img": "../images/medicinadentaria/medicinadentaria.png",
+                        "img": "medicinadentaria/medicinadentaria.png",
                         "alt": "ortodontia",
                         "head": "Medicina Dentária",
                         "headhref": "/medicinadentaria",
@@ -233,7 +233,7 @@
                 ],
                 "details": [
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "cardiologia",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -250,7 +250,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "cirurgiaplasticareconstrutivaestetica",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -267,7 +267,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "clinicageral",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -284,7 +284,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "clinicageralfamiliar",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -301,7 +301,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "dermatologia",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -318,7 +318,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "fisioterapia",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -341,7 +341,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "medicinaestetica",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -358,7 +358,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "neuropsicologia",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -375,7 +375,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "neurologia",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -392,7 +392,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "nutricao",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -409,7 +409,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "obstetricia",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -426,7 +426,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "ortopedia",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -449,7 +449,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "otorrinolaringologia",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -466,7 +466,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "pediatria",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -489,7 +489,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "pneumologia",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -506,7 +506,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "podologia",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -523,7 +523,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "psicologia",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -540,7 +540,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "psiquiatria",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -557,7 +557,7 @@
                         ]
                     },
                     {
-                        "img": "../images/especialidades/cardiologia.png",
+                        "img": "especialidades/cardiologia.png",
                         "alt": "terapiaocupacional",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
@@ -609,7 +609,7 @@
                 ],
                 "details": [
                     {
-                        "img": "../images/examesanalises/examesanalises.png",
+                        "img": "examesanalises/examesanalises.png",
                         "alt": "analisesclinicas",
                         "head": "Exames & Análises",
                         "headhref": "/examesanalises",

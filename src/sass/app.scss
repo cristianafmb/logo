@@ -6,7 +6,7 @@ $gold_hover: #9c814c;
 $dark_gold_hover: #8c6f2a;
 $gold_shadow: #908058;
 $black: #3e3e3e;
-$background-modal: #d7c891;
+$background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a28650, #957841);
 
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
@@ -312,7 +312,7 @@ $background-modal: #d7c891;
 
 .title-x-large {
     font-size: calc(35px + 12 * (100vw - 769px) / 1151);
-    color: #84754e;
+    color: $dark_gold;
     font-weight: 650;
     line-height: 1;
 }
@@ -694,12 +694,12 @@ input:focus-visible {
 
 .head-large {
     font-size: calc(30px + 12 * (27vw - 769px) / 1151);
-    color: #957841;
+    color: $gold;
 }
 
 .head-small {
     font-size: calc(18px + 12 * (27vw - 769px) / 1151);
-    color: #957841;
+    color: $gold;
     line-height: 0;
 }
 
@@ -910,7 +910,8 @@ a {
 }
 
 .modal-marcacao-rapida .modal-content {
-    background-color: $gold_hover;
+    background-color: $background-modal;
+    background-image: $background-modal;
     color: $white !important;
     .details-large,
     .details-xx-small,
@@ -1038,7 +1039,7 @@ a {
 
 .user-icon {
     border-radius: 100%;
-    box-shadow: 0 0 3px 2px #ba9e66;
+    box-shadow: 0 0 3px 2px $gold_shadow;
     max-width: 110px;
     object-fit: cover;
     object-position: center;
@@ -1141,7 +1142,7 @@ a {
 
 #modal-menu {
     .modal-content {
-        background-color: $background-modal;
+        background-color: rgb(215, 200, 145);
     }
 }
 
@@ -1344,20 +1345,20 @@ a {
 
 .over-text-noposts {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     @media (max-width: 990px) {
-        top: 20%;
+        top: 30%;
     }
 }
 .over-text-noposts-404 {
     position: absolute;
-    top: 32%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     @media (max-width: 990px) {
-        top: 15%;
+        top: 25%;
     }
 }
 
@@ -1365,7 +1366,7 @@ a {
     position: relative;
     padding: 0 6vw;
     margin-top: -50vh;
-    color: #ba9e66;
+    color: $light_gold;
     width: 100%;
     display: grid;
     gap: 3rem;
@@ -1416,3 +1417,8 @@ a {
 .not-found{
     max-width: 20vh;
 }
+
+.z-index-minus-1{
+    z-index: -1;
+}
+

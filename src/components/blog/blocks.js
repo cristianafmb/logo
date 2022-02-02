@@ -67,7 +67,7 @@ export default function Blocks( { text }) {
         </Canvas>
       </div>
       <p className='over-text-noposts-404 title-large oMedium  gold mb-4'>404</p>
-      <p className='over-text-noposts details-x-small oRegular gold'>{text}</p>
+      <p className='over-text-noposts details-x-small oRegular gold center'>{text}</p>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, { useRef } from "react"
 import { graphql } from 'gatsby'
 
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -21,6 +21,8 @@ import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 
+import Image from '../components/Images'
+
 const Template = ({ data, pageContext, location }) => {
 
   const breakpoints = useBreakpoint()
@@ -29,26 +31,30 @@ const Template = ({ data, pageContext, location }) => {
   const cards = pageContext['infosimple']
   const page = pageContext['page']
 
-  const marcacaoRef= useRef(null);
+  const marcacaoRef = useRef(null);
 
   var cards2 = null
   if (cards.length > 10) {
     cards2 = cards.slice(10, cards.length)
   }
-  
+
   return (
 
     <Layout home>
       <Seo title={page.title} />
       {!breakpoints.mobile ? (
         <>
-          <div className="no-repeat heigth-banner center bg-cover" style={{ backgroundImage: `url(${page.banner})` }}>
+          <div className="no-repeat heigth-banner center position-relative">
 
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
+            <Image src={page.banner} alt="bg-banner" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
           </div>
 
-          <div className="no-repeat bg-position-bottom bg-cover" style={{ backgroundImage: `url(${backgrounds.backgroundtop})` }}>
+          <div className="no-repeat bg-position-bottom position-relative" >
+
+            <Image src={backgrounds.backgroundtop} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
             <InnerTopsection areas={areas} page={page} location={location} />
 
@@ -60,13 +66,15 @@ const Template = ({ data, pageContext, location }) => {
             <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
             : <></>}
 
-          <div className="no-repeat bg-position-bottom " style={{ backgroundImage: `url(${backgrounds.backgroundfooter})` }}>
+          <div className="no-repeat bg-position-bottom position-relative" >
+
+            <Image src={backgrounds.backgroundfooter} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
             {cards2 === null ?
               <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
               : <CardsSection data={cards2} />}
 
-            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef}/>
+            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef} />
 
             <Questoes data={data.questoesJson.questoes} />
 
@@ -78,25 +86,31 @@ const Template = ({ data, pageContext, location }) => {
         :
         (
           <>
-            <div className="no-repeat" style={{ backgroundImage: `url(${backgrounds.backgroundtopmobile})` }}>
+            <div className="no-repeat position-relative" >
 
-              <div className="no-repeat" style={{ backgroundImage: `url(${backgrounds.bannermobile})` }}>
+              <Image src={backgrounds.backgroundtopmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-                <MenuMobile footer={data.footerJson.footer} location={location}/>
+              <div className="no-repeat position-relative" >
+
+                <Image src={page.bannermobile} alt="bg-banner-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+                <MenuMobile footer={data.footerJson.footer} location={location} />
 
                 <InnerTopsectionMobile areas={areas} page={page} location={location} />
 
               </div>
-              
+
               <CardsSectionMobile page={page} cards={cards} location={location} />
 
             </div>
 
-            <div className="no-repeat background-bottom" style={{ backgroundImage: `url(${backgrounds.backgroundfootermobile})` }}>
+            <div className="no-repeat background-bottom position-relative" >
+
+              <Image src={backgrounds.backgroundfootermobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
               <CorpoClinicoMobile data={data.corpoclinicoJson.corpoclinico} />
 
-              <QuestoesMobile data={data.questoesJson.questoes} marcacaoRef={marcacaoRef}/>
+              <QuestoesMobile data={data.questoesJson.questoes} marcacaoRef={marcacaoRef} />
 
             </div>
 

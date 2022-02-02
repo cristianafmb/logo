@@ -19,6 +19,8 @@ import FooterMobile from '../components/footerMobile'
 
 import top from '../images/background1.png'
 
+import Image from '../components/Images'
+
 
 const Template = ({ data, location }) => {
 
@@ -38,7 +40,9 @@ const Template = ({ data, location }) => {
       <Seo title={frontmatter.title} />
       {!breakpoints.mobile ? (
         <>
-          <div className="no-repeat bg-cover" style={{ backgroundImage: `url(${top})` }}>
+          <div className="no-repeat bg-cover position-relative" >
+
+            <Image src={homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
             <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
@@ -80,7 +84,9 @@ const Template = ({ data, location }) => {
         :
         (
           <>
-            <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${homeJson.background.topmobile})` }}>
+            <div className="no-repeat bg-position-bottom position-relative" >
+
+              <Image src={homeJson.background.topmobile} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
               <MenuMobile footer={footerJson.footer} className="mt-2" location={location} />
 
@@ -88,7 +94,9 @@ const Template = ({ data, location }) => {
 
             </ div>
 
-            <div className="no-repeat bg-position-bottom" style={{ backgroundImage: `url(${homeJson.background.bottommobile})` }}>
+            <div className="no-repeat bg-position-bottom position-relative" >
+
+              <Image src={homeJson.background.bottommobile} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  bottom-0" />
 
               <div
                 className="details-small oRegular blog-html section-intro-home"

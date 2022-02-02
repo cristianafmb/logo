@@ -17,7 +17,8 @@ const EspecialidadesSobreNos = ({ data }) => {
     }
 
     return (
-        <div className="no-repeat position-relative" style={{ backgroundImage: `url(${data.background})` }}>
+        <div className="no-repeat position-relative" >
+        <Image src={data.background} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <Row className="max-width">
                 <Col sm="0" md="4" lg="4">
                 </Col>

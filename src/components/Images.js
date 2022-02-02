@@ -4,6 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import PropTypes from 'prop-types'
 
 const Image = ({ src, alt,  className, ...rest }) => {
+
   const data = useStaticQuery(graphql`
     query {
       images: allFile(
@@ -42,7 +43,6 @@ const Image = ({ src, alt,  className, ...rest }) => {
     return <img src={publicURL} alt={alt} {...rest} />
   }
 
- 
   return <GatsbyImage image={childImageSharp.gatsbyImageData} {...rest} className={className} alt={alt}/>
 }
 
