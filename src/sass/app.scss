@@ -190,14 +190,12 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     margin-top: 10% !important;
 }
 
-
-
 .center-footer {
     flex: 1 1 auto;
     padding: 1rem;
     .menu-mobile-options {
         top: 65% !important;
-        @media (max-width: 500px){
+        @media (max-width: 500px) {
             top: 70% !important;
         }
     }
@@ -620,7 +618,7 @@ input:focus-visible {
     @media (max-width: 990px) {
         font-size: calc(18px + 12 * (25vw - 514px) / 1045) !important;
     }
-    @media (min-width: 300px) and (max-width: 500px){
+    @media (min-width: 300px) and (max-width: 500px) {
         line-height: 2 !important;
     }
 }
@@ -648,8 +646,6 @@ input:focus-visible {
     object-fit: cover;
     margin: auto;
 }
-
-
 
 .width-footer {
     width: 95% !important;
@@ -1387,38 +1383,107 @@ a {
     }
 }
 
-.margin-bottom-svg{
+.margin-bottom-svg {
     margin-bottom: -45%;
 }
 
-.container-img-blog{
-    width: 50vh
+.container-img-blog {
+    width: 50vh;
 }
 
-.max-width-8vh{
+.max-width-8vh {
     max-width: 8vh;
 }
-.max-width-6vh{
+.max-width-6vh {
     max-width: 6vh;
 }
 
-.line-height-2{
+.line-height-2 {
     line-height: 2 !important;
 }
 
-.align-bg-center{
+.align-bg-center {
     margin: auto;
     padding: 10px;
 }
 
-.logo-upcare{
+.logo-upcare {
     max-width: 25vh;
 }
-.not-found{
+.not-found {
     max-width: 20vh;
 }
 
-.z-index-minus-1{
+.z-index-minus-1 {
     z-index: -1;
 }
 
+.container-image-corpo-clinico {
+    max-width: 25vh;
+    max-height: 50vh;
+    min-height: 50vh;
+}
+
+.img-corpo-clinico {
+    width: 100%;
+    max-height: 30vh;
+    object-fit: cover;
+    object-position: top center;
+}
+.fade-first {
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+.fade-second {
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 14s;
+}
+.fade-third {
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+
+@keyframes multiple-image-crossfade {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    5% {
+        opacity: 1;
+        display: block;
+    }
+    50% {
+        opacity: 1;
+        display: block;
+    }
+    95% {
+        opacity: 1;
+        display: block;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.fade-enter {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}
