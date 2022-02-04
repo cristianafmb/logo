@@ -1,54 +1,44 @@
 import React, { useState, useEffect } from "react"
 import '../../sass/app.scss';
 import { Link } from "gatsby"
-
+import { render } from 'react-dom'
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
-import { Row, Col, Button } from 'react-bootstrap'
-
-import { CSSTransition, SwitchTransition } from "react-transition-group";
+import { Row, Col, Button, Alert, Container } from 'react-bootstrap'
+import { Spring, useTransition, animated } from 'react-spring'
 import CardCorpoClinico from './cardCorpoClinico'
+import { CSSTransition } from 'react-transition-group';
+
+
 
 const CorpoClinico = ({ data }) => {
     const number_per_cols = Math.floor(data.people.length / 3);
 
-    const first_col = data.people.slice(0, 3)
+    const first_col = data.people.slice(0, number_per_cols)
+
     const second_col = data.people.slice(number_per_cols, number_per_cols * 2)
     const third_col = data.people.slice(number_per_cols * 2, data.people.length)
 
-    const images = first_col
+    var body = $('#teste');
+    var backgrounds = [`url(${first_col[0].img})`, `url(${first_col[1].img})`, `url(${first_col[2].img})`];
+    var current = 0;
 
-    const [slide, setSlide] = useState(0);
+    function nextBackground() {
+        body.css(
+            'background',
+            backgrounds[current = ++current % backgrounds.length]
+        );
 
-    const imageElements = images.map((item, i) => {
-        return (
-            <>
-                <img src={item.img} key={i} alt={`slideshow ${i + 1}`} className="img-corpo-clinico" />
-                <div className="d-flex max-width">
-                    <p className="head-xx-small oMedium mt-3 d-flex" >
-                        {item.name}
-                    </p>
-                </div>
-                <p className="head-xx-small light-gold oMedium " >
-                    {item.occupation}
-                </p>
-                <p className="head-xx-small light-gold oMedium  ">
-                    {item.especiality}
-                </p>
-            </>);
-    });
+        setTimeout(nextBackground, 5000);
+    }
+    setTimeout(nextBackground, 5000);
+    body.css('background', backgrounds[0]);
 
-    useEffect(() => {
-        const slideshowTimer = setInterval(() => {
-            slide + 1 > images.length - 1 ? setSlide(0) : setSlide(slide + 1);
-        }, 3000);
-
-        return () => clearInterval(slideshowTimer);
-    });
 
     return (
         <div className="margin-sections position-relative">
+
             <Row className="container-corpo-clinico">
                 <Col sm="12" md="4" lg="4" className="m-auto">
                     <p className="head-x-small oBold">{data.head}</p>
@@ -59,14 +49,12 @@ const CorpoClinico = ({ data }) => {
                     </Link>
                 </Col>
                 <Col sm="12" md="7" lg="7" style={{ marginLeft: "5px" }}>
+                    <Row>
+                        <Col sm="12" lg="4" md="4">
+                            <div id="teste" />
+                        </Col>
+                    </Row>
 
-                    <SwitchTransition>
-                        <CSSTransition key={slide} timeout={500} classNames="fade" appear>
-                            <div className="container-image-corpo-clinico">
-                                {imageElements[slide]}
-                            </div>
-                        </CSSTransition>
-                    </SwitchTransition>
 
                 </Col>
             </Row >

@@ -13,115 +13,134 @@
                 "img": "../images/corpoclinico/cirurgia-plastica/dr-luis-cabral.jpg",
                 "name": "Dr. Luís Cabral",
                 "occupation": "Médico",
-                "especiality": "Cirurgia Plástica"
+                "especiality": "Cirurgia Plástica",
+                "state": true
             },
             {
                 "img": "../images/corpoclinico/clinica-geral-familiar/dra-sara-santana.jpg",
                 "name": "Dra. Sara Santana",
                 "occupation": "Médica",
-                "especiality": "Clínica Geral Familiar"
+                "especiality": "Clínica Geral Familiar",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/dentista/dra-maria-joao-duarte.jpg",
                 "name": "Dra. Maria João Duarte",
                 "occupation": "Médica",
-                "especiality": "Medicina Dentária"
+                "especiality": "Medicina Dentária",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/dentista/dra-sonia-teixeira.jpg",
                 "name": "Dra. Sónia Teixeira",
                 "occupation": "Médica",
-                "especiality": "Medicina Dentária"
+                "especiality": "Medicina Dentária",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/dentista/dr-joao-nunes.jpg",
                 "name": "Dr. João Nunes",
                 "occupation": "Médico",
-                "especiality": "Medicina Dentária"
+                "especiality": "Medicina Dentária",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/dermatologia/dr-david-serra.jpg",
                 "name": "Dr. David Serra",
                 "occupation": "Médico",
-                "especiality": "Dermatologia"
+                "especiality": "Dermatologia",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/endodontia/dr-rodrigo-camargo.jpg",
                 "name": "Dr. Rodrigo Camargo",
                 "occupation": "Médico",
-                "especiality": "Endodontia"
+                "especiality": "Endodontia",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/endodontia/dra-andreia-hortensio.jpg",
                 "name": "Dra. Andreia Hortênsio",
                 "occupation": "Médica",
-                "especiality": "Endodontia"
+                "especiality": "Endodontia",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/fisioterapia/dr-ivo-bento.jpg",
                 "name": "Dr. Ivo Bento",
                 "occupation": "Médico",
-                "especiality": "Fisioterapia"
+                "especiality": "Fisioterapia",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/medicina-estetica/dra-sara-pereira.jpg",
                 "name": "Dra. Sara Pereira",
                 "occupation": "Médica",
-                "especiality": "Medicina Estética"
+                "especiality": "Medicina Estética",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/neuropsicologia/dra-filipa-miriam.jpg",
                 "name": "Dra. Filipa Miriam",
                 "occupation": "Médica",
-                "especiality": "Neuropsicologia"
+                "especiality": "Neuropsicologia",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/odontopediatria/dra-mariana-gomes.jpg",
                 "name": "Dra. Mariana Gomes",
                 "occupation": "Médica",
-                "especiality": "Odontopediatria"
+                "especiality": "Odontopediatria",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/ortodontia/dr-rui-pedro.jpg",
                 "name": "Dr. Rui Pedro",
                 "occupation": "Médico",
-                "especiality": "Ortodontia"
+                "especiality": "Ortodontia",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/otorrinolaringologia/dr-joao-barosa.jpg",
                 "name": "Dr. João Barosa",
                 "occupation": "Médico",
-                "especiality": "Otorrinolaringologia"
+                "especiality": "Otorrinolaringologia",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/podologia/dr-vitor-barbosa.jpg",
                 "name": "Dr. Vítor Barbosa",
                 "occupation": "Médico",
-                "especiality": "Podologia"
+                "especiality": "Podologia",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/psicologia/dra-ana-menezes.jpg",
                 "name": "Dra. Ana Menezes",
                 "occupation": "Médica",
-                "especiality": "Psicologia"
+                "especiality": "Psicologia",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/psiquiatria/dr-oscar-neves.jpg",
                 "name": "Dr. Óscar Neves",
                 "occupation": "Médico",
-                "especiality": "Psiquiatria"
+                "especiality": "Psiquiatria",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/terapia-ocupacional/dra-raquel-costa.jpg",
                 "name": "Dra. Raquel Costa",
                 "occupation": "Médica",
-                "especiality": "Terapia Ocupacional"
+                "especiality": "Terapia Ocupacional",
+                "state": false
             },
             {
                 "img": "../images/corpoclinico/terapia-ocupacional/dr-bruno-francisco.jpg",
                 "name": "Dr. Bruno Francisco",
                 "occupation": "Médico",
-                "especiality": "Terapia Ocupacional"
+                "especiality": "Terapia Ocupacional",
+                "state": false
             }
         ]
     }

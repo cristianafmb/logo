@@ -158,6 +158,7 @@ query SobreNos {
         img
         name
         occupation
+        state
       }
       title
     }

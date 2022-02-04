@@ -1427,8 +1427,14 @@ a {
 .img-corpo-clinico {
     width: 100%;
     max-height: 30vh;
+    min-height: 30vh;
     object-fit: cover;
     object-position: top center;
+    background-size: cover;
+    background-position: center;
+    will-change: opacity;
+    justify-content: center;
+    height: 100%;
 }
 .fade-first {
     animation-name: multiple-image-crossfade;
@@ -1486,4 +1492,37 @@ a {
 .fade-exit-active {
     opacity: 0;
     transition: opacity 300ms;
+}
+
+.alert-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+.alert-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+    opacity: 1;
+}
+.alert-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+
+#teste {
+    width: 100%;
+    max-height: 30vh;
+    min-height: 30vh;
+    max-width: 22vh;
+    object-fit: cover;
+    object-position: top center;
+    background-size: cover !important;
+    background-position: center !important;
+    will-change: opacity;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: background-image 0.5s linear;
 }
