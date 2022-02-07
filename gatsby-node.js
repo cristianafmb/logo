@@ -1,5 +1,7 @@
 const path = require('path');
 
+
+
 exports.onCreatePage = async ({ page, actions }) => {
 	const { createPage, deletePage } = actions;
 	// Check if the page is a localized 404

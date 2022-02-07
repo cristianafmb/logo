@@ -113,6 +113,7 @@ function Seo({
       {article && (
         <script type="application/ld+json">{JSON.stringify(blogJSONLD)}</script>
       )}
+     
     </Helmet>
   )
 }

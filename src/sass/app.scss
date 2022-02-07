@@ -1435,6 +1435,7 @@ a {
     will-change: opacity;
     justify-content: center;
     height: 100%;
+    
 }
 .fade-first {
     animation-name: multiple-image-crossfade;
@@ -1512,7 +1513,7 @@ a {
     transition: opacity 300ms, transform 300ms;
 }
 
-#teste {
+#imgFirstCol {
     width: 100%;
     max-height: 30vh;
     min-height: 30vh;
@@ -1523,6 +1524,39 @@ a {
     background-position: center !important;
     will-change: opacity;
     height: 100%;
-    position: absolute;
     -webkit-transition: background-image 0.5s linear;
+    transition: background-image 0.5s linear;
+    position: relative;
+}
+
+#imgSecondCol {
+    width: 100%;
+    max-height: 30vh;
+    min-height: 30vh;
+    max-width: 22vh;
+    object-fit: cover;
+    object-position: top center;
+    background-size: cover !important;
+    background-position: center !important;
+    will-change: opacity;
+    height: 100%;
+    -webkit-transition: background-image 0.5s linear;
+    transition: background-image 0.5s linear;
+    position: relative;
+}
+
+#imgThirdCol {
+    width: 100%;
+    max-height: 30vh;
+    min-height: 30vh;
+    max-width: 22vh;
+    object-fit: cover;
+    object-position: top center;
+    background-size: cover !important;
+    background-position: center !important;
+    will-change: opacity;
+    height: 100%;
+    -webkit-transition: background-image 0.5s linear;
+    transition: background-image 0.5s linear;
+    position: relative;
 }
