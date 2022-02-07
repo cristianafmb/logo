@@ -1422,6 +1422,7 @@ a {
     max-width: 25vh;
     max-height: 50vh;
     min-height: 50vh;
+    width: 100%
 }
 
 .img-corpo-clinico {
@@ -1435,7 +1436,12 @@ a {
     will-change: opacity;
     justify-content: center;
     height: 100%;
-    
+    opacity: 0;
+}
+
+.p-corpo-clinico{
+    opacity: 0;
+    width: 100%;
 }
 .fade-first {
     animation-name: multiple-image-crossfade;
@@ -1514,6 +1520,7 @@ a {
 }
 
 #imgFirstCol {
+    right: 0;
     width: 100%;
     max-height: 30vh;
     min-height: 30vh;
@@ -1524,12 +1531,16 @@ a {
     background-position: center !important;
     will-change: opacity;
     height: 100%;
-    -webkit-transition: background-image 0.5s linear;
-    transition: background-image 0.5s linear;
+    -webkit-transition: background-image 0.5s ease-in-out !important;
+    transition: background-image 0.5s ease-in-out !important;
+    -moz-transition: background-image 0.5s ease-in-out !important;
+    -ms-transition: background-image 0.5s ease-in-out !important;
+    -o-transition: background-image 0.5s ease-in-out !important;
     position: relative;
 }
 
 #imgSecondCol {
+    right: 0;
     width: 100%;
     max-height: 30vh;
     min-height: 30vh;
@@ -1540,12 +1551,16 @@ a {
     background-position: center !important;
     will-change: opacity;
     height: 100%;
-    -webkit-transition: background-image 0.5s linear;
-    transition: background-image 0.5s linear;
+    -webkit-transition: background-image 0.5s ease-in-out !important;
+    transition: background-image 0.5s ease-in-out !important;
+    -moz-transition: background-image 0.5s ease-in-out !important;
+    -ms-transition: background-image 0.5s ease-in-out !important;
+    -o-transition: background-image 0.5s ease-in-out !important;
     position: relative;
 }
 
 #imgThirdCol {
+    right: 0;
     width: 100%;
     max-height: 30vh;
     min-height: 30vh;
@@ -1556,7 +1571,47 @@ a {
     background-position: center !important;
     will-change: opacity;
     height: 100%;
-    -webkit-transition: background-image 0.5s linear;
-    transition: background-image 0.5s linear;
+    -webkit-transition: background-image 0.5s ease-in-out !important;
+    transition: background-image 0.5s ease-in-out !important;
+    -moz-transition: background-image 0.5s ease-in-out !important;
+    -ms-transition: background-image 0.5s ease-in-out !important;
+    -o-transition: background-image 0.5s ease-in-out !important;
     position: relative;
+}
+
+.top {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    opacity: 1;
+}
+.top-second {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    opacity: 1;
+}
+.top-third {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    opacity: 1;
+}
+
+@keyframes fade {
+    0% {
+        opacity:0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

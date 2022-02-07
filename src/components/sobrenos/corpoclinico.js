@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 import $ from 'jquery' // important: case sensitive.
 import { Row, Col, Button } from 'react-bootstrap'
+import { keyframes } from "@emotion/react";
 
 const CorpoClinico = ({ data }) => {
     const number_per_cols = Math.floor(data.people.length / 3);
@@ -14,131 +15,134 @@ const CorpoClinico = ({ data }) => {
     const second_col = data.people.slice(number_per_cols, number_per_cols * 2)
     const third_col = data.people.slice(number_per_cols * 2, data.people.length)
 
+    var currentFirstCol = 0;
+    var currentSecondCol = 0;
+    var currentThirdCol = 0;
     if (typeof window !== 'undefined') {
-        var dataImg1 = $('#imgFirstCol');
-        var dataName1 = $('#nameFirstCol')
-        var dataOccupation1 = $('#occupationFirstCol')
-        var dataEspeciality1 = $('#especialityFirstCol')
-        var currentFirstCol = 0;
+        $('#firstCol0').addClass("top")
+        $('#pNameFirstCol0').addClass("top")
+        $('#pOccupationFirstCol0').addClass("top")
+        $('#pEspecialityFirstCol0').addClass("top")
 
-        var dataImg2 = $('#imgSecondCol');
-        var dataName2 = $('#nameSecondCol')
-        var dataOccupation2 = $('#occupationSecondCol')
-        var dataEspeciality2 = $('#especialitySecondCol')
-        var currentSecondCol = 0;
+        $('#secondCol0').addClass("top-second")
+        $('#pNameSecondCol0').addClass("top-second")
+        $('#pOccupationSecondCol0').addClass("top-second")
+        $('#pEspecialitySecondCol0').addClass("top-second")
 
-        var dataImg3 = $('#imgThirdCol');
-        var dataName3 = $('#nameThirdCol')
-        var dataOccupation3 = $('#occupationThirdCol')
-        var dataEspeciality3 = $('#especialityThirdCol')
-        var currentThirdCol = 0;
+        $('#thirdCol0').addClass("top-third")
+        $('#pNameThirdCol0').addClass("top-third")
+        $('#pOccupationThirdCol0').addClass("top-third")
+        $('#pEspecialityThirdCol0').addClass("top-third")
 
-        dataImg1.css('background', `url(${first_col[0].img})`);
-        dataName1.html(first_col[0].name)
-        dataOccupation1.html(first_col[0].occupation)
-        dataEspeciality1.html(first_col[0].especiality)
         setTimeout(nextBackgroundFirstCol(), 5000);
-
-        dataImg2.css('background', `url(${second_col[0].img})`);
-        dataName2.html(second_col[0].name)
-        dataOccupation2.html(second_col[0].occupation)
-        dataEspeciality2.html(second_col[0].especiality)
-        setTimeout(nextBackgroundSecondCol(), 9000);
-
-        dataImg3.css('background', `url(${third_col[0].img})`);
-        dataName3.html(third_col[0].name)
-        dataOccupation3.html(third_col[0].occupation)
-        dataEspeciality3.html(third_col[0].especiality)
-        setTimeout(nextBackgroundThirdCol(), 7000);
+        setTimeout(nextBackgroundSecondCol, 9000);
+        setTimeout(nextBackgroundThirdCol, 7000);
 
         function nextBackgroundFirstCol() {
-            dataImg1.css(
-                'background',
-                `url(${first_col[currentFirstCol = ++currentFirstCol % first_col.length].img})`
-            );
-            dataName1.html(first_col[currentFirstCol].name)
-            dataEspeciality1.html(first_col[currentFirstCol].especiality)
-            dataOccupation1.html(first_col[currentFirstCol].occupation)
+            $('#firstCol' + currentFirstCol).removeClass("top")
+            $('#pNameFirstCol' + currentFirstCol).removeClass("top")
+            $('#pOccupationFirstCol' + currentFirstCol).removeClass("top")
+            $('#pEspecialityFirstCol' + currentFirstCol).removeClass("top")
+            currentFirstCol = ++currentFirstCol % first_col.length
+            $('#firstCol' + currentFirstCol).addClass("top")
+            $('#pNameFirstCol' + currentFirstCol).addClass("top")
+            $('#pOccupationFirstCol' + currentFirstCol).addClass("top")
+            $('#pEspecialityFirstCol' + currentFirstCol).addClass("top")
             setTimeout(nextBackgroundFirstCol, 5000);
         }
 
         function nextBackgroundSecondCol() {
-            dataImg2.css(
-                'background',
-                `url(${second_col[currentSecondCol = ++currentSecondCol % second_col.length].img})`
-            );
-            dataName2.html(second_col[currentSecondCol].name)
-            dataEspeciality2.html(second_col[currentSecondCol].especiality)
-            dataOccupation2.html(second_col[currentSecondCol].occupation)
+            $('#secondCol' + currentSecondCol).removeClass("top-second")
+            $('#pNameSecondCol' + currentSecondCol).removeClass("top-second")
+            $('#pOccupationSecondCol' + currentSecondCol).removeClass("top-second")
+            $('#pEspecialitySecondCol' + currentSecondCol).removeClass("top-second")
+            currentSecondCol = ++currentSecondCol % second_col.length
+            $('#secondCol' + currentSecondCol).addClass("top-second")
+            $('#pNameSecondCol' + currentSecondCol).addClass("top-second")
+            $('#pOccupationSecondCol' + currentSecondCol).addClass("top-second")
+            $('#pEspecialitySecondCol' + currentSecondCol).addClass("top-second")
             setTimeout(nextBackgroundSecondCol, 9000);
         }
 
         function nextBackgroundThirdCol() {
-            dataImg3.css(
-                'background',
-                `url(${third_col[currentThirdCol = ++currentThirdCol % third_col.length].img})`
-            );
-            dataName3.html(third_col[currentThirdCol].name)
-            dataEspeciality3.html(third_col[currentThirdCol].especiality)
-            dataOccupation3.html(third_col[currentThirdCol].occupation)
+            $('#thirdCol' + currentThirdCol).removeClass("top-third")
+            $('#pNameThirdCol' + currentThirdCol).removeClass("top-third")
+            $('#pOccupationThirdCol' + currentThirdCol).removeClass("top-third")
+            $('#pEspecialityThirdCol' + currentThirdCol).removeClass("top-third")
+            currentThirdCol = ++currentThirdCol % second_col.length
+            $('#thirdCol' + currentThirdCol).addClass("top-third")
+            $('#pNameThirdCol' + currentThirdCol).addClass("top-third")
+            $('#pOccupationThirdCol' + currentThirdCol).addClass("top-third")
+            $('#pEspecialityThirdCol' + currentThirdCol).addClass("top-third")
             setTimeout(nextBackgroundThirdCol, 7000);
         }
 
-
     }
-        return (
-            <div className="margin-sections position-relative">
+    return (
+        <div className="margin-sections position-relative">
 
-                <Row className="container-corpo-clinico">
-                    <Col sm="12" md="4" lg="4" className="m-auto">
-                        <p className="head-x-small oBold">{data.head}</p>
-                        <p className="title-large oExtraBold mt-3 mb-5">{data.title}</p>
-                        <p className="details-small mt-2 oRegular">{data.details}</p>
-                        <Link to={data.btn.link}>
-                            <Button variant="warning" size="sm" className="button-intro-home-saber-mais btn-big oMedium">{data.btn.text}</Button>
-                        </Link>
-                    </Col>
-                    <Col sm="12" md="7" lg="7" style={{ marginLeft: "5px" }}>
-                        <Row>
-                            <Col sm="12" lg="4" md="4">
-                                <div className="container-image-corpo-clinico">
-                                    <div id="imgFirstCol" className="img-corpo-clinico" />
-                                    <div className=" max-width">
-                                        <p className="head-xx-small oMedium mt-3 " id="nameFirstCol" />
+            <Row className="container-corpo-clinico">
+                <Col sm="12" md="4" lg="4" className="m-auto">
+                    <p className="head-x-small oBold">{data.head}</p>
+                    <p className="title-large oExtraBold mt-3 mb-5">{data.title}</p>
+                    <p className="details-small mt-2 oRegular">{data.details}</p>
+                    <Link to={data.btn.link}>
+                        <Button variant="warning" size="sm" className="button-intro-home-saber-mais btn-big oMedium">{data.btn.text}</Button>
+                    </Link>
+                </Col>
+                <Col sm="12" md="7" lg="7" style={{ marginLeft: "5px" }}>
+                    <Row>
+                        <Col sm="12" lg="4" md="4" className="d-flex">
+                            <div className="container-image-corpo-clinico position-relative">
+                                {first_col.map((item, i) => (
+                                    <div className="position-absolute">
+                                        <img className="img-corpo-clinico" src={item.img} id={"firstCol" + i} />
+                                        <div className=" max-width">
+                                            <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"pNameFirstCol" + i} > {item.name} </p>
+                                        </div>
+                                        <p className="head-xx-small light-gold oMedium p-corpo-clinico" id={"pOccupationFirstCol" + i}> {item.occupation}</p>
+                                        <p className="head-xx-small light-gold oMedium  p-corpo-clinico" id={"pEspecialityFirstCol" + i}> {item.especiality}</p>
                                     </div>
-                                    <p className="head-xx-small light-gold oMedium " id="occupationFirstCol" />
-                                    <p className="head-xx-small light-gold oMedium  " id="especialityFirstCol" />
-                                </div>
-
-                            </Col>
-                            <Col sm="12" lg="4" md="4">
-                                <div className="container-image-corpo-clinico">
-                                    <div id="imgSecondCol" className="img-corpo-clinico" />
-                                    <div className=" max-width">
-                                        <p className="head-xx-small oMedium mt-3 " id="nameSecondCol" />
+                                ))}
+                            </div>
+                        </Col>
+                        <Col sm="12" lg="4" md="4" className="d-flex">
+                            <div className="container-image-corpo-clinico position-relative">
+                                {second_col.map((itemSecond, j) => (
+                                    <div className="position-absolute">
+                                        <img className="img-corpo-clinico" src={itemSecond.img} id={"secondCol" + j} />
+                                        <div className=" max-width">
+                                            <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"pNameSecondCol" + j} > {itemSecond.name} </p>
+                                        </div>
+                                        <p className="head-xx-small light-gold oMedium p-corpo-clinico" id={"pOccupationSecondCol" + j}> {itemSecond.occupation}</p>
+                                        <p className="head-xx-small light-gold oMedium  p-corpo-clinico" id={"pEspecialitySecondCol" + j}> {itemSecond.especiality}</p>
                                     </div>
-                                    <p className="head-xx-small light-gold oMedium " id="occupationSecondCol" />
-                                    <p className="head-xx-small light-gold oMedium  " id="especialitySecondCol" />
-                                </div>
-                            </Col>
-                            <Col sm="12" lg="4" md="4">
-                                <div className="container-image-corpo-clinico">
-                                    <div id="imgThirdCol" className="img-corpo-clinico" />
-                                    <div className=" max-width">
-                                        <p className="head-xx-small oMedium mt-3 " id="nameThirdCol" />
+                                ))}
+                            </div>
+                        </Col>
+                        <Col sm="12" lg="4" md="4" className="d-flex">
+                            <div className="container-image-corpo-clinico position-relative">
+                                {third_col.map((itemThird, k) => (
+                                    <div className="position-absolute">
+                                        <img className="img-corpo-clinico" src={itemThird.img} id={"thirdCol" + k} />
+                                        <div className=" max-width">
+                                            <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"pNameThirdCol" + k} > {itemThird.name} </p>
+                                        </div>
+                                        <p className="head-xx-small light-gold oMedium p-corpo-clinico" id={"pOccupationThirdCol" + k}> {itemThird.occupation}</p>
+                                        <p className="head-xx-small light-gold oMedium  p-corpo-clinico" id={"pEspecialityThirdCol" + k}> {itemThird.especiality}</p>
                                     </div>
-                                    <p className="head-xx-small light-gold oMedium " id="occupationThirdCol" />
-                                    <p className="head-xx-small light-gold oMedium  " id="especialityThirdCol" />
-                                </div>
-                            </Col>
-                        </Row>
+                                ))}
+                            </div>
+                        </Col>
+
+                    </Row>
 
 
-                    </Col>
-                </Row >
-            </div >
-        )
-    
+                </Col>
+            </Row >
+        </div >
+    )
+
 }
 
 export default CorpoClinico
