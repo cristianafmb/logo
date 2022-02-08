@@ -1315,13 +1315,16 @@ a {
     margin: 5%;
 }
 .user-icon {
-    border-radius: 100%;
+    border-radius: 50%;
     box-shadow: 0 0 3px 2px $gold_shadow;
     max-width: 110px;
     object-fit: cover;
     object-position: center;
     width: 110px !important;
     overflow: hidden;
+    img{
+        border-radius: 50%;
+    }
 }
 .especialidades-img {
     margin-bottom: 0 !important;
