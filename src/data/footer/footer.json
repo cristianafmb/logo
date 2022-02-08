@@ -45,14 +45,11 @@
                 },
                 {
                     "text": "Política de Privacidade",
-                    "link": "/"
+                    "link": "/politica-de-privacidade/"
                 }
             ],
             [
-                {
-                    "text": "Sobre Nós",
-                    "link": "/sobrenos"
-                },
+                
                 {
                     "text": "Blog",
                     "link": "/blog"
@@ -60,6 +57,10 @@
                 {
                     "text": "Covid-19",
                     "link": "/"
+                },
+                {
+                    "text": "Termos & Condições",
+                    "link": "/termos-e-condicoes"
                 }
             ]
         ],

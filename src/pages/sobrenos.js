@@ -29,7 +29,6 @@ import Image from '../components/Images'
 const SobreNos = ({ data, location }) => {
 
   const breakpoints = useBreakpoint();
-
   const marcacaoRef = useRef(null);
 
   return (

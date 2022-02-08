@@ -5,11 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 import $ from 'jquery' // important: case sensitive.
 import { Row, Col, Button } from 'react-bootstrap'
-import { keyframes } from "@emotion/react";
 
 const CorpoClinico = ({ data }) => {
     const number_per_cols = Math.floor(data.people.length / 3);
-
+    console.log('not mobile')
     const first_col = data.people.slice(0, number_per_cols)
 
     const second_col = data.people.slice(number_per_cols, number_per_cols * 2)

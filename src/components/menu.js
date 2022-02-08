@@ -8,8 +8,8 @@ import calendario from '../images/calendar.png'
 import Form from "../components/form"
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
-const Menu = ({ marcacaoRef }) => {
-
+const Menu = ({ marcacaoRef, location }) => {
+    var url = location.pathname
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
@@ -24,7 +24,6 @@ const Menu = ({ marcacaoRef }) => {
 
     return (
         <div className="position-relative">
-
             <Navbar expand="lg" >
                 <Container id="navbar">
                     <Navbar.Brand className="m-auto logo" >
@@ -33,18 +32,18 @@ const Menu = ({ marcacaoRef }) => {
                         </Link>
                     </Navbar.Brand>
                     <Navbar.Collapse id="navbar-without-logo">
-                        <Nav className="me-auto max-width">
-                            <Nav.Link href="/sobrenos" className="oMedium m-auto navbar-letters">Sobre Nós</Nav.Link>
-                            <Nav.Link href="/especialidades" className="oMedium m-auto navbar-letters">Especialidades</Nav.Link>
-                            <Nav.Link href="/medicinadentaria" className="oMedium m-auto navbar-letters">Medicina Dentária</Nav.Link>
-                            <Nav.Link href="/examesanalises" className="oMedium m-auto navbar-letters">Exames & Análises</Nav.Link>
-                            <Nav.Link href="/contactos" className="oMedium m-auto navbar-letters">Contactos</Nav.Link>
+                        <Nav className="me-auto max-width" id="navbar2" >
+                            <Nav.Link href="/sobrenos" className={url.includes("sobrenos") ? "oMedium m-auto navbar-letters  link-active" : "oMedium m-auto navbar-letters leftSide "}>Sobre Nós</Nav.Link>
+                            <Nav.Link href="/especialidades" className={url.includes("especialidades") ? "oMedium m-auto navbar-letters  link-active" : "oMedium m-auto navbar-letters leftSide "}>Especialidades</Nav.Link>
+                            <Nav.Link href="/medicinadentaria" className={url.includes("medicinadentaria") ? "oMedium m-auto navbar-letters  link-active" : "oMedium m-auto navbar-letters leftSide "}>Medicina Dentária</Nav.Link>
+                            <Nav.Link href="/examesanalises" className={url.includes("examesanalises") ? "oMedium m-auto navbar-letters  link-active" : "oMedium m-auto navbar-letters  leftSide"}>Exames & Análises</Nav.Link>
+                            <Nav.Link href="/contactos" className={url.includes("contactos") ? "oMedium m-auto navbar-letters  link-active" : "oMedium m-auto navbar-letters leftSide "}>Contactos</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
             <div>
-                <button  className="container-btn-marcacao" onClick={handleShow}>
+                <button className="container-btn-marcacao" onClick={handleShow}>
                     <div className="btn-icon-marcacao">
                         <img src={calendario} alt="calendar" />
                     </div>
