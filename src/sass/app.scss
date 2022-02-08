@@ -224,7 +224,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     font-size: 0.9vw;
     color: $gold !important;
 }
-.navbar-expand-lg  {
+.navbar-expand-lg {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -263,7 +263,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     transform: translate3d(0, 0, 0);
 }
 
-.link-active{
+.link-active {
     border-bottom: 2px solid $gold;
 }
 #navbar {
@@ -1316,7 +1316,12 @@ a {
 }
 .user-icon {
     border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -khtml-border-radius: 100%;
     box-shadow: 0 0 3px 2px $gold_shadow;
+    -webkit-appearance: 0 0 3px 2px $gold_shadow;
+    -webkit-box-shadow: 0 0 3px 2px $gold_shadow;
     max-width: 110px;
     object-fit: cover;
     object-position: center;
