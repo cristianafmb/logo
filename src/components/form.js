@@ -109,8 +109,8 @@ const Formulario = ({ title }) => {
             title === "Pedido de Marcação Rápido" ? document.querySelector("#especiality").value = "DEFAULT" : document.querySelector("#especiality").value = title
 
             document.querySelector("#hours").value = "DEFAULT"
-            fbTrack("trackCustom", "Envio de formulário Marcação Rápida - Página Home")
-            {/* typeof window !== "undefined" &&
+            {/*fbTrack("trackCustom", "Envio de formulário Marcação Rápida - Página Home")
+             typeof window !== "undefined" &&
             window.gtag("event", "Submit", {
                 event_category: "Submit Button",
                 event_label: "Envio de formulário Marcação Rápida - Página Home",
