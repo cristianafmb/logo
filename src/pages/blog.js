@@ -34,7 +34,7 @@ const BlogPage = ({ data, location }) => {
 
   if (!posts || !Boolean(posts.length)) {
     return (
-      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} />
+      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} location={location}/>
     )
   }
 

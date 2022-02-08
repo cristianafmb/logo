@@ -18,7 +18,7 @@ import Image from '../components/Images'
 
 import { graphql } from 'gatsby'
 
-const NotFoundPage = ({ data }) => {
+const NotFoundPage = ({ data, location }) => {
 
   const marcacaoRef = useRef(null);
   const breakpoints = useBreakpoint();
@@ -31,7 +31,7 @@ const NotFoundPage = ({ data }) => {
 
           <div className="no-repeat position-relative " >
             <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-            <Menu marcacaoRef={marcacaoRef} />
+            <Menu marcacaoRef={marcacaoRef} location={location}/>
 
             <Blocks text="Página não encontrada." />
 
