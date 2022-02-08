@@ -1316,19 +1316,16 @@ a {
 }
 .user-icon {
     border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -khtml-border-radius: 100%;
     box-shadow: 0 0 3px 2px $gold_shadow;
-    -webkit-appearance: 0 0 3px 2px $gold_shadow;
-    -webkit-box-shadow: 0 0 3px 2px $gold_shadow;
     max-width: 110px;
     object-fit: cover;
     object-position: center;
     width: 110px !important;
+    overflow: hidden;
 }
 .especialidades-img {
     margin-bottom: 0 !important;
+    max-width: 5vh !important
 }
 .margin-l-05 {
     margin-left: 0.5rem !important;
