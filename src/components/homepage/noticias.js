@@ -35,13 +35,13 @@ const Noticias = ({ posts }) => {
                 </Row>
                 
                 <Row>
-                    <Col sm="3" md="3" lg="3" >
+                    <Col sm="4" md="4" lg="4" >
                         <a href={firstNew.path} className="container-arrow-noticias">
                             <Arrow id="arrow-effect"  rot={false} text="ler notícia" blog={false} big={false}/>
                         </a>
                        
                     </Col>
-                    <Col sm="9" md="9" lg="9">
+                    <Col sm="8" md="8" lg="8">
                         <Row>
                             <Col sm="5" md="5" lg="5" className="no-space-n-cols">
                                 <hr className="gold" />

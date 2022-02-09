@@ -23,8 +23,8 @@ function Arrow({ id, rot, text, blog, big }) {
 
     const textStyleLeft = useSpring({
         opacity: showText ? 1 : 0,
-        marginLeft: "3%",
-        marginTop: "32%",
+        marginLeft: "-50%",
+        marginTop: "25%",
         transform: showText ? "scaleY(1)" : "scaleY(0)",
         transformOrigin: "bottom",
         transition: "transform 0.05s ease",
@@ -33,7 +33,7 @@ function Arrow({ id, rot, text, blog, big }) {
 
     const textStyleRigth = useSpring({
         opacity: showText ? 1 : 0,
-        marginLeft: "9%",
+        marginLeft: "5%",
         marginTop: "1%",
         transform: showText ? "scaleY(1)" : "scaleY(0)",
         transformOrigin: "bottom",
@@ -77,7 +77,7 @@ function Arrow({ id, rot, text, blog, big }) {
         <>
             {rot ? <>
                 <div>
-                    <animated.p className="details-small oOblique" style={textStyleLeft}>{text}</animated.p>
+                    <animated.p className="details-small oOblique left-text-arrow" style={textStyleLeft}>{text}</animated.p>
                     <svg
                         viewBox="10 60 190 90"
                         height="85px"

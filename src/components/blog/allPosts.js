@@ -58,7 +58,7 @@ const AllPosts = ({ posts }) => {
         <div className="max-width m-auto center">
           <Button
             onClick={() => seeMorePosts()}
-            className="btn-more-posts mt-10 details-x-small"
+            className="btn-more-posts mt-10 details-x-small center"
           >Ver mais notícias
           </Button>
         </div>

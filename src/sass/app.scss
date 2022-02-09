@@ -364,16 +364,13 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     width: 95% !important;
 }
 .footer-icons {
-    width: calc(1.5vh + 12 * (100vw - 769px) / 1151);
+    width: calc(20px + 12 * (100vw - 769px) / 1151);
 }
 .footer-icons-mobile {
     width: 60% !important;
 }
 .logo-footer {
-    width: calc(11vh + 12 * (100vw - 769px) / 1151) !important;
-    @media (min-width: 912px) and (max-width: 1025px) {
-        width: calc(7vh + 12 * (100vw - 769px) / 1151) !important;
-    }
+    width: calc(105px + 12 * (100vw - 769px) / 1151) !important;
 }
 /** END - footer **/
 
@@ -618,19 +615,30 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     margin: auto;
     display: block;
 }
-.col-page{
+.col-page {
     width: 20% !important;
-    
-    @media (min-width: 1024px) and (max-width: 1149px){
+
+    @media (min-width: 1024px) and (max-width: 1149px) {
         width: 32% !important;
     }
-    @media (min-width: 1150px) and (max-width: 1367px){
+    @media (min-width: 1150px) and (max-width: 1367px) {
         width: 25% !important;
     }
 }
 /** END - cards **/
 
 /** START - arrows **/
+.left-text-arrow {
+    @media (min-width: 1500px) {
+        margin-left: -28% !important;
+        margin-top: 22% !important;
+    }
+}
+.arrow-right{
+    @media (min-width: 1500px) {
+        margin-left: 0 !important;
+    }
+}
 .arrow-left {
     width: calc(175px + 12 * (100vw - 769px) / 1151);
 
@@ -676,10 +684,10 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     z-index: 9999;
     margin-top: -5%;
 }
-#arrow-effect-blog{
+#arrow-effect-blog {
     z-index: 9999;
     margin-top: 18%;
-    @media (min-width: 1919px){
+    @media (min-width: 1919px) {
         margin-top: -14%;
     }
 }
@@ -705,7 +713,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     margin-top: auto;
     margin-left: 5%;
     width: 35%;
-    @media (min-width: 1919px){
+    @media (min-width: 1919px) {
         margin-top: 0 !important;
     }
 }
@@ -722,7 +730,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         @media (max-width: 990px) {
             max-width: calc(42vh + 12 * (100vh - 769vh) / 1151);
         }
-        @media (min-width: 1000px) and (max-width: 1367px){
+        @media (min-width: 1000px) and (max-width: 1367px) {
             max-width: calc(40vh + 12 * (100vh - 769vh) / 1151);
         }
     }
@@ -734,7 +742,6 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     margin-top: 30%;
     margin-bottom: -25%;
     margin-left: -10%;
-
 }
 .container-noposts {
     height: 70vh;
@@ -968,10 +975,9 @@ input:focus-visible {
         @media (min-width: 1023px) and (max-width: 1600px) {
             font-size: calc(10px + 12 * (100vw - 769px) / 1151);
         }
-        @media (min-width: 1950px){
+        @media (min-width: 1950px) {
             font-size: calc(10px + 12 * (100vw - 769px) / 1151);
         }
-        
     }
 }
 // btn fixed in home - black btn in right that follows the page
