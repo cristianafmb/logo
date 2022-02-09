@@ -634,7 +634,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         margin-top: 22% !important;
     }
 }
-.arrow-right{
+.arrow-right {
     @media (min-width: 1500px) {
         margin-left: 0 !important;
     }
@@ -902,13 +902,28 @@ input:focus-visible {
     height: 100%;
     opacity: 0;
     @media (max-width: 990px) {
-        max-height: 25vh;
-        min-height: 25vh;
+        max-height: calc(13vh + 12 * (100vw - 769px) / 11510);
+        min-height: calc(13vh + 12 * (100vw - 769px) / 11510);
+        border-radius: 50%;
+        box-shadow: 0 0 3px 2px $gold_shadow;
+        max-width: calc(13vh + 12 * (100vw - 769px) / 11510);
+        object-fit: cover;
+        background-position: top;
+        background-size: cover;
+        object-position: center;
+        width: calc(13vh + 12 * (100vw - 769px) / 11510) !important;
+        overflow: hidden;
+        img {
+            border-radius: 50%;
+        }
     }
 }
 .p-corpo-clinico {
     opacity: 0;
     width: 100%;
+}
+.min-height-25vh{
+    min-height: 25vh;
 }
 /** END - corpo clinico **/
 
@@ -1138,6 +1153,48 @@ input:focus-visible {
         opacity: 0;
     }
 }
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.top-first-mobile {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    opacity: 1 !important;
+}
+.top-second-mobile{
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    opacity: 1 !important;
+}
+.top-third-mobile{
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    opacity: 1 !important;
+}
+.top-fourth-mobile{
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    opacity: 1 !important;
+}
 .top {
     animation-name: fade;
     animation-timing-function: ease-in-out;
@@ -1165,23 +1222,14 @@ input:focus-visible {
     animation-duration: 6s;
     opacity: 1;
 }
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
+
 /** END - effects **/
 
 /** START - general **/
+.grid-container-two-rows{
+    display: grid !important;
+    grid-template-columns: auto auto;
+}
 .m-auto {
     margin: auto;
 }
