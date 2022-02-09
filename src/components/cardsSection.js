@@ -12,7 +12,7 @@ const CardsSection = ({ data }) => {
             <Row className="max-width">
                 {data.map((item, i) => (
 
-                    <Col sm="12" md="2" lg="2" className="mb-4 col-20" key={"col" + i}>
+                    <Col sm="12" md="2" lg="2" className="mb-4 col-page" key={"col" + i}>
                         <div className="bg-white height-max position-relative hover-border-gold position-relative">
 
                             <div className="p-4">

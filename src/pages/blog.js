@@ -34,7 +34,7 @@ const BlogPage = ({ data, location }) => {
 
   if (!posts || !Boolean(posts.length)) {
     return (
-      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} location={location}/>
+      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} location={location} />
     )
   }
 
@@ -59,8 +59,15 @@ const BlogPage = ({ data, location }) => {
 
             <AllPosts posts={posts} />
 
-            <Questoes data={data.questoesJson.questoes} />
+            <div className=" no-repeat bg-cover position-relative ">
+              <Image src={data.homeJson.background.bottom} alt="bg-bottom" objectPosition="0% 35%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max bg-position-top" />
 
+              <div className="margin-sections">
+
+              </div>
+
+              <Questoes data={data.questoesJson.questoes} />
+            </div>
           </div>
 
           <Footer data={data.footerJson.footer} />

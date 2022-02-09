@@ -35,7 +35,7 @@ const CorpoClinico = ({ data }) => {
 
         setTimeout(nextBackgroundFirstCol(), 5000);
         setTimeout(nextBackgroundSecondCol, 9000);
-        setTimeout(nextBackgroundThirdCol, 7000);
+        setTimeout(nextBackgroundThirdCol, 6000);
 
         function nextBackgroundFirstCol() {
             $('#firstCol' + currentFirstCol).removeClass("top")
@@ -73,7 +73,7 @@ const CorpoClinico = ({ data }) => {
             $('#pNameThirdCol' + currentThirdCol).addClass("top-third")
             $('#pOccupationThirdCol' + currentThirdCol).addClass("top-third")
             $('#pEspecialityThirdCol' + currentThirdCol).addClass("top-third")
-            setTimeout(nextBackgroundThirdCol, 7000);
+            setTimeout(nextBackgroundThirdCol, 6000);
         }
 
     }

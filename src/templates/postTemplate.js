@@ -22,7 +22,7 @@ import top from '../images/background1.png'
 import Image from '../components/Images'
 
 
-const Template = ({ data, location }) => {
+const PostTemplate = ({ data, location }) => {
 
   const breakpoints = useBreakpoint()
   const frontmatter = data.markdownRemark.frontmatter // data.markdownRemark holds your post data
@@ -40,11 +40,12 @@ const Template = ({ data, location }) => {
       <Seo title={frontmatter.title} />
       {!breakpoints.mobile ? (
         <>
-          <div className="no-repeat bg-cover position-relative" >
+
+          <div className="no-repeat position-relative " >
 
             <Image src={homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
+            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} post={true}/>
 
             <div>
               <HighlightNew head={frontmatter.head} title={frontmatter.title} details={frontmatter.details} path={frontmatter.path} btn={false} image={frontmatter.image} />
@@ -122,7 +123,7 @@ const Template = ({ data, location }) => {
   )
 }
 
-export default Template
+export default PostTemplate
 
 export const pageQuery = graphql`
   

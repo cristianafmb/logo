@@ -12,20 +12,24 @@ import Card from '../cardHeadTitleDetails'
 import QuestoesMobile from '../questoesMobile'
 import FooterMobile from '../footerMobile'
 
+import Image from '../../components/Images'
+
 const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoes, footer, location, marcacaoRef }) => {
 
     return (
         <>
+            {console.log(bgtop)}
+            <div className="no-repeat position-relative">
 
-            <div className="no-repeat" style={{ backgroundImage: `url(${bgtop})` }}>
+                <Image src={bgtop} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+                <div className="no-repeat position-relative" >
 
-                <div className="no-repeat" style={{ backgroundImage: `url(${bgbanner})` }}>
+                    <Image src={bgbanner} alt="bg-top" className="position-absolute max-width bg-cover heigth-banner" />
 
-                    <MenuMobile footer={footer}  location={location} />
+                    <MenuMobile footer={footer} location={location} />
 
                     <div className="pt-5 position-relative section-space-mobile ">
                         <div className="mt-5">
-                            {console.log(subpage)}
                             <Card
                                 head={<div className="d-flex">
                                     <p className="head-x-small oBold" >
@@ -48,14 +52,14 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
                     </div>
 
                     <div>
-                                    
-                        <CardSectionMobile page={subpage} cards={areas} location={location}/>
+
+                        <CardSectionMobile page={subpage} cards={areas} location={location} />
 
                     </div>
 
                     <div className="pt-5 mt-4 section-space-mobile">
 
-                        <PedidoMarcacaoMobile img={false} alt={false} space={false} subpage={subpage}  marcacaoRef={marcacaoRef} />
+                        <PedidoMarcacaoMobile img={false} alt={false} space={false} subpage={subpage} marcacaoRef={marcacaoRef} />
 
                     </div >
 

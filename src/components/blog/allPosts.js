@@ -36,7 +36,7 @@ const AllPosts = ({ posts }) => {
                   <p className="details-small oRegular">{p.details}</p>
                 </div>
                 <Link to={p.path} className="container-arrow-blog">
-                  <Arrow id="arrow-effect" rot={false} text="ler" blog={true} />
+                  <Arrow id="arrow-effect-blog" rot={false} text="ler" blog={true} />
 
                 </Link>
               </div>

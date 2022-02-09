@@ -31,7 +31,7 @@ const NoticiasMobile = ({ posts, blogIntro }) => {
                 </Col>
                 <Col sm="12" md="8" lg="8" className="mt-2">
                     <Link to={firstNew.path} className="calCell bottom-0 text-decoration-none">
-                        <Arrow id="arrow-effect" rot={false} text="ler notícia" big={true} />
+                        <Arrow id="arrow-effect-big" rot={false} text="ler notícia" big={true} />
                     </Link>
                 </Col>
             </Row>

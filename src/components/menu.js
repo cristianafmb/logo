@@ -8,7 +8,7 @@ import calendario from '../images/calendar.png'
 import Form from "../components/form"
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
-const Menu = ({ marcacaoRef, location }) => {
+const Menu = ({ marcacaoRef, location, post }) => {
     var url = location.pathname
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);

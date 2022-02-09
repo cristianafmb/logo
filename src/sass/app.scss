@@ -138,7 +138,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     line-height: 1;
 }
 .title-x-large {
-    font-size: calc(35px + 12 * (100vw - 769px) / 1151);
+    font-size: calc(30px + 12 * (100vw - 769px) / 11510);
     color: $dark_gold;
     font-weight: 650;
     line-height: 1;
@@ -158,7 +158,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     }
 }
 .head-medium {
-    font-size: calc(21px + 12 * (27vw - 769px) / 1151);
+    font-size: calc(12px + 12 * (100vw - 769px) / 1151);
     color: $gold;
     @media (max-width: 990px) {
         font-size: calc(24px + 12 * (27vw - 769px) / 1151);
@@ -182,9 +182,12 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     line-height: 0;
 }
 .head-xxx-small {
-    font-size: calc(2px + 12 * (95vw - 769px) / 1151);
+    font-size: calc(5px + 12 * (100vw - 769px) / 1151);
     color: $gold;
     margin: auto;
+    @media (max-width: 990px) {
+        font-size: calc(7px + 12 * (100vw - 769px) / 1151);
+    }
 }
 /** END - fonts **/
 
@@ -221,8 +224,11 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     }
 }
 .navbar-letters {
-    font-size: 0.9vw;
+    font-size: calc(12px + 12 * (100vw - 769px) / 11510) !important;
     color: $gold !important;
+    @media (min-width: 1025px) {
+        font-size: calc(14px + 12 * (100vw - 769px) / 11510) !important;
+    }
 }
 .navbar-expand-lg {
     display: flex;
@@ -358,13 +364,16 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     width: 95% !important;
 }
 .footer-icons {
-    width: 135%;
-    @media (max-width: 1100px) {
-        width: 170% !important;
-    }
+    width: calc(1.5vh + 12 * (100vw - 769px) / 1151);
 }
 .footer-icons-mobile {
     width: 60% !important;
+}
+.logo-footer {
+    width: calc(11vh + 12 * (100vw - 769px) / 1151) !important;
+    @media (min-width: 912px) and (max-width: 1025px) {
+        width: calc(7vh + 12 * (100vw - 769px) / 1151) !important;
+    }
 }
 /** END - footer **/
 
@@ -549,7 +558,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     color: $gold !important;
     border-color: $gold !important;
     border-radius: 40px !important;
-    width: 10%;
+    width: 15%;
     z-index: 9999;
     margin: auto;
     display: flex;
@@ -609,6 +618,16 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     margin: auto;
     display: block;
 }
+.col-page{
+    width: 20% !important;
+    
+    @media (min-width: 1024px) and (max-width: 1149px){
+        width: 32% !important;
+    }
+    @media (min-width: 1150px) and (max-width: 1367px){
+        width: 25% !important;
+    }
+}
 /** END - cards **/
 
 /** START - arrows **/
@@ -634,15 +653,48 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 }
 // end arrow in homepage , section "Noticias"
 #arrow-effect {
-    margin-top: -25%;
     z-index: 9999;
+    margin-top: 18%;
+    @media (min-width: 1201px) and (max-width: 1365px) {
+        margin-top: 18%;
+        margin-left: -17%;
+    }
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        margin-top: 15%;
+        margin-left: -35%;
+    }
+    @media (min-width: 991px) and (max-width: 1023px) {
+        margin-top: 20%;
+        margin-left: -15%;
+    }
+    @media (min-width: 769px) and (max-width: 1023px) {
+        margin-top: 15%;
+        margin-left: -75%;
+    }
+}
+#arrow-effect-big {
+    z-index: 9999;
+    margin-top: -5%;
+}
+#arrow-effect-blog{
+    z-index: 9999;
+    margin-top: 18%;
+    @media (min-width: 1919px){
+        margin-top: -14%;
+    }
 }
 /** END - arrows **/
 
 /** START - blog **/
 .img-noticias {
-    max-height: 350px;
+    max-height: calc(31vh + 12 * (100vw - 769px) / 1151);
     object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 66vh;
+    @media (max-width: 1200px) and (min-width: 1024px) {
+        max-height: calc(21vh + 12 * (100vw - 769px) / 1151);
+    }
 }
 .img-blog {
     max-width: 50vh;
@@ -653,6 +705,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     margin-top: auto;
     margin-left: 5%;
     width: 35%;
+    @media (min-width: 1919px){
+        margin-top: 0 !important;
+    }
 }
 .highlight-img {
     object-fit: cover;
@@ -667,6 +722,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         @media (max-width: 990px) {
             max-width: calc(42vh + 12 * (100vh - 769vh) / 1151);
         }
+        @media (min-width: 1000px) and (max-width: 1367px){
+            max-width: calc(40vh + 12 * (100vh - 769vh) / 1151);
+        }
     }
 }
 .container-arrow-noticias {
@@ -676,6 +734,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     margin-top: 30%;
     margin-bottom: -25%;
     margin-left: -10%;
+
 }
 .container-noposts {
     height: 70vh;
@@ -702,6 +761,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 .container-img-blog {
     width: 50vh;
 }
+
 /** END - blog **/
 
 /** START - forms **/
@@ -904,7 +964,14 @@ input:focus-visible {
 
     .details-small {
         color: $white !important;
-        font-size: calc(4px + 12 * (100vw - 769px) / 1151);
+        font-size: calc(5px + 12 * (100vw - 769px) / 1151);
+        @media (min-width: 1023px) and (max-width: 1600px) {
+            font-size: calc(10px + 12 * (100vw - 769px) / 1151);
+        }
+        @media (min-width: 1950px){
+            font-size: calc(10px + 12 * (100vw - 769px) / 1151);
+        }
+        
     }
 }
 // btn fixed in home - black btn in right that follows the page
@@ -921,6 +988,7 @@ input:focus-visible {
     text-decoration: none !important;
     z-index: 99;
 }
+
 .btn-icon-marcacao {
     height: 100%;
     display: flex;
@@ -1088,7 +1156,7 @@ input:focus-visible {
     animation-name: fade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 7s;
+    animation-duration: 6s;
     opacity: 1;
 }
 @keyframes fade {
@@ -1317,18 +1385,18 @@ a {
 .user-icon {
     border-radius: 50%;
     box-shadow: 0 0 3px 2px $gold_shadow;
-    max-width: 110px;
+    max-width: calc(100px + 12 * (100vw - 769px) / 11510);
     object-fit: cover;
     object-position: center;
-    width: 110px !important;
+    width: calc(100px + 12 * (100vw - 769px) / 11510) !important;
     overflow: hidden;
-    img{
+    img {
         border-radius: 50%;
     }
 }
 .especialidades-img {
     margin-bottom: 0 !important;
-    max-width: 5vh !important
+    max-width: calc(55px + 12 * (100vw - 769px) / 1151) !important;
 }
 .margin-l-05 {
     margin-left: 0.5rem !important;

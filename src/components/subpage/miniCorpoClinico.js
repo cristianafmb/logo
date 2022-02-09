@@ -15,11 +15,15 @@ const MiniCorpoClinico = ({ corpoclinico, mobile }) => {
                 <div className="grid-container center">
                     {corpoclinico.map((item, i) => (
                         <div key={"mini-" + i}>
-                            <div className="user-icon icon-clinico">
+                            <div className="user-icon icon-clinico m-auto">
                                 <Image src={item.img} alt={item.alt} />
                             </div>
-                            <p className="head-xx-small  oMedium mt-3">{item.name}</p>
-                            <p className="head-xx-small light-gold oMedium mt-3 mb-4">{item.occupation}</p>
+                            <div className="center">
+                                <p className="head-xx-small  oMedium mt-3">{item.name}</p>
+                            </div>
+                            <div className="center">
+                                <p className="head-xx-small light-gold oMedium mt-3 mb-4">{item.occupation}</p>
+                            </div>
                         </div>
 
                     ))}
@@ -27,12 +31,16 @@ const MiniCorpoClinico = ({ corpoclinico, mobile }) => {
             )
                 :
                 corpoclinico.map((item, i) => (
-                    <Col key={"mini-" + i}>
-                        <div className="user-icon icon-clinico">
+                    <Col key={"mini-" + i} className="mt-3">
+                        <div className="user-icon icon-clinico ">
                             <Image src={item.img} alt={item.alt} />
                         </div>
-                        <p className="head-xx-small  oMedium mt-3">{item.name}</p>
-                        <p className="head-xx-small light-gold oMedium">{item.occupation}</p>
+                        <div className="left">
+                            <p className="head-xx-small  oMedium mt-3">{item.name}</p>
+                        </div>
+                        <div className="left">
+                            <p className="head-xx-small light-gold oMedium">{item.occupation}</p>
+                        </div>
                     </Col>
 
                 ))

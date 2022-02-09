@@ -17,7 +17,7 @@ const Subpage = ({ subpage, page, areas, location, marcacaoRef }) => {
             <Row className="container-corpo-clinico pt-5">
                 <Col sm="12" md="10" lg="10" className="col-80">
                     <Row className="mb-5 pb-5">
-                        <Col sm="12" md="5" lg="5">
+                        <Col sm="12" md="6" lg="6">
                             <div className="d-flex">
                                 <p className="head-x-small oBold">
                                     <a href={subpage.headhref} className="text-decoration-none">{subpage.head}</a> </p>
@@ -28,12 +28,12 @@ const Subpage = ({ subpage, page, areas, location, marcacaoRef }) => {
                             </div>
 
 
-                            <p className="title-x-large mt-3 mb-3 gold oExtraBold">{subpage.title}</p>
+                            <p className="title-large mt-3 mb-3 gold oExtraBold">{subpage.title}</p>
                             <p className="details-xx-small mt-4 pe-5 oRegular">{subpage.details}</p>
                         </Col>
                         <Col sm="12" md="1" lg="1">
                         </Col>
-                        <Col sm="12" md="6" lg="6">
+                        <Col sm="12" md="5" lg="5">
                             <MiniCorpoClinico corpoclinico={subpage.corpoclinico} mobile={false}/>
                         </Col>
                     </Row>

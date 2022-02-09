@@ -21,10 +21,10 @@ const Noticias = ({ posts }) => {
     return(
     <div className="space-sections max-width  position-relative" >
         <Row className="max-width">
-            <Col sm="12" md="4" lg="4" >
+            <Col sm="12" md="5" lg="4" >
                 <Image src={firstNew.image} alt={firstNew.title} className="card-white-img img-noticias" />
             </Col>
-            <Col sm="12" md="8" lg="8">
+            <Col sm="12" md="7" lg="8">
                 <Row className="height-80">
                     <Col sm="12" md="6" lg="6" className=" p-4">
                         <CardNoticiasSection head={firstNew.data} title={firstNew.title} details={firstNew.details} />

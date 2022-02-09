@@ -23,21 +23,21 @@ import FooterMobile from '../components/footerMobile'
 
 import Image from '../components/Images'
 
-const Template = ({ data, pageContext, location }) => {
+const PageTemplate = ({ data, pageContext, location }) => {
 
   const breakpoints = useBreakpoint()
   const areas = pageContext['areas']
   const backgrounds = pageContext['backgrounds']
-  const cards = pageContext['infosimple']
+  var cards = pageContext['infosimple']
   const page = pageContext['page']
 
   const marcacaoRef = useRef(null);
 
-  var cards2 = null
-  if (cards.length > 10) {
-    cards2 = cards.slice(10, cards.length)
+  var cards2 = null;
+  if (cards.length > 11) {
+    cards2 = cards.slice(Math.ceil((cards.length) / 2), (cards.length))
+    cards = cards.slice(0, Math.ceil((cards.length) / 2))
   }
-
   return (
 
     <Layout home>
@@ -58,7 +58,7 @@ const Template = ({ data, pageContext, location }) => {
 
             <InnerTopsection areas={areas} page={page} location={location} />
 
-            <CardsSection data={cards.slice(0, 10)} />
+            <CardsSection data={cards} />
 
           </div>
 
@@ -122,7 +122,7 @@ const Template = ({ data, pageContext, location }) => {
   )
 }
 
-export default Template
+export default PageTemplate
 
 
 export const Json = graphql`

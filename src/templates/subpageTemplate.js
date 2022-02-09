@@ -16,7 +16,7 @@ import Footer from '../components/footer'
 
 import Image from '../components/Images'
 
-const Template = ({ data, pageContext, location }) => {
+const SubPageTemplate = ({ data, pageContext, location }) => {
 
   const breakpoints = useBreakpoint()
 
@@ -31,7 +31,8 @@ const Template = ({ data, pageContext, location }) => {
   const allSubPages = pageContext['subpages']['details']
 
   const background = pageContext['backgrounds']
-  console.log(background)
+
+  
   var subPage
 
   allSubPages.forEach((value) => {
@@ -40,7 +41,6 @@ const Template = ({ data, pageContext, location }) => {
     }
   })
 
-  const banner = "../images" + subPage.headhref
 
   return (
 
@@ -76,7 +76,7 @@ const Template = ({ data, pageContext, location }) => {
           <>
             <SubPageMobile
               bgtop={background.backgroundtopmobile}
-              bgbanner={banner + "/" + subPage.headhref + ".png"}
+              bgbanner={subPage.img }
               areas={areas}
               subpage={subPage}
               home={data.homeJson.especialidades}
@@ -93,7 +93,7 @@ const Template = ({ data, pageContext, location }) => {
   )
 }
 
-export default Template
+export default SubPageTemplate
 
 
 export const Json = graphql`

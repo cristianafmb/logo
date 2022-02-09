@@ -623,12 +623,6 @@
                         "details": "O principal objetivo da Terapia Ocupacional é capacitar as pessoas para participarem com sucesso em atividades da vida diária nos diversos ambientes bem como na comunidade.",
                         "corpoclinico": [
                             {
-                                "img": "corpoclinico/terapia-ocupacional/dr-bruno-francisco-icon.jpg",
-                                "alt": "Dr Bruno Francisco",
-                                "name": "Dr. Bruno Francisco",
-                                "occupation": "Médico Terapeuta Ocupacional"
-                            },
-                            {
                                 "img": "corpoclinico/terapia-ocupacional/dra-raquel-costa-icon.jpg",
                                 "alt": "Dra Raquel Costa",
                                 "name": "Dra. Raquel Costa",

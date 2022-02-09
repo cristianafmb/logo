@@ -30,9 +30,8 @@ const Footer = ({ data }) => {
             <Row className=" center heigth-footer d-flex  align-items-center m-auto width-footer">
                 <Col sm="12" md="1" lg="1" className="right ">
                     <Link to="/">
-                        <Image src={data.logowhite}  className="max-width" alt="logo"/>
+                        <Image src={data.logowhite}  className="logo-footer" alt="logo"/>
                     </Link>
-                    
                 </Col>
                 <Col sm="12" md="2" lg="2">
                     <Row className="m-auto half-width">

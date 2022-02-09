@@ -134,13 +134,6 @@
                 "occupation": "Médica",
                 "especiality": "Terapia Ocupacional",
                 "state": false
-            },
-            {
-                "img": "../images/corpoclinico/terapia-ocupacional/dr-bruno-francisco.jpg",
-                "name": "Dr. Bruno Francisco",
-                "occupation": "Médico",
-                "especiality": "Terapia Ocupacional",
-                "state": false
             }
         ]
     }
