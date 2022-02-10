@@ -706,8 +706,8 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     height: 100%;
     width: 100%;
     max-width: 66vh;
-    @media (max-width: 1200px) and (min-width: 1024px) {
-        max-height: calc(21vh + 12 * (100vw - 769px) / 1151);
+    @media (max-width: 1200px) and (min-width: 1023px) {
+        max-height: calc(310px + 12 * (100vw - 769px) / 1151);
     }
 }
 .img-blog {
