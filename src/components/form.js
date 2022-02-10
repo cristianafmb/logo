@@ -11,7 +11,7 @@ import fbTrack from "../custom/fbTrack"
 
 
 const Formulario = ({ title }) => {
-    
+
     const today = new Date()
     const [show, setShow] = useState(false);
     const [showError, setShowError] = useState(false);
@@ -175,7 +175,7 @@ const Formulario = ({ title }) => {
 
                                     </Col>
                                     <Col sm="12" md="6" lg="6" >
-                                       
+
                                         <select className="input-form oMedium"
                                             type="text"
                                             required
@@ -205,7 +205,27 @@ const Formulario = ({ title }) => {
                                                     </optgroup>
                                                 </>
                                                 :
-                                                <option value="DEFAULT"  >{title} </option>
+                                                <>
+
+                                                    <optgroup label="Especialidades Médicas">
+                                                        {data.formJson.EspMed.map((data, i) => (
+
+                                                            <option value={data.title === title ? "DEFAULT" : data.title} key={"selectesp" + i}>{data.title}</option>
+                                                        ))}
+                                                    </optgroup>
+                                                    <optgroup label="Medicina Dentária">
+                                                        {data.formJson.MedDent.map((data, i) => (
+                                                            <option value={data.title === title ? "DEFAULT" : data.title} key={"selectmeddent" + i}>{data.title}</option>
+                                                        ))}
+                                                    </optgroup>
+                                                    <optgroup label="Exames Médicos">
+                                                        {data.formJson.ExaMed.map((data, i) => (
+                                                            <option value={data.title === title ? "DEFAULT" : data.title} key={"selectexamed" + i}>{data.title}</option>
+                                                        ))}
+                                                    </optgroup>
+                                                </>
+
+
                                             }
 
                                         </select>

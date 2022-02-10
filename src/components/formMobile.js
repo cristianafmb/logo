@@ -163,7 +163,7 @@ const FormMobile = ({ title }) => {
 
                                 <p className="head-medium oLight  mt-3 mb-2">Dados da Consulta</p>
 
-                                <select className={ typeof document !== 'undefined'? (typeof (document.getElementById("marcacao")) !== 'undefined' && document.getElementById("marcacao") !== null ? "input-form oMedium mt-2" : "input-form white oMedium mt-2") : <></>}
+                                <select className="input-form oMedium mt-2"
                                     type="text"
                                     required
                                     placeholder="Especialidade"
@@ -192,7 +192,24 @@ const FormMobile = ({ title }) => {
                                             </optgroup>
                                         </>
                                         :
-                                        <option value="DEFAULT"  >{title} </option>
+                                        <>
+                                            <optgroup label="Especialidades Médicas">
+                                                {data.formJson.EspMed.map((data, i) => (
+                                                    <option value={data.title=== title ? "DEFAULT" : data.title} key={"selectesp" + i}>{data.title}</option>
+                                                ))}
+                                            </optgroup>
+                                            <optgroup label="Medicina Dentária">
+                                                {data.formJson.MedDent.map((data, i) => (
+                                                    <option value={data.title=== title ? "DEFAULT" : data.title} key={"selectmeddent" + i}>{data.title}</option>
+                                                ))}
+                                            </optgroup>
+                                            <optgroup label="Exames Médicos">
+                                                {data.formJson.ExaMed.map((data, i) => (
+                                                    <option value={data.title=== title ? "DEFAULT" : data.title} key={"selectexamed" + i}>{data.title}</option>
+                                                ))}
+                                            </optgroup>
+                                        </>
+
                                     }
 
                                 </select>
