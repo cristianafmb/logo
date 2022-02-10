@@ -56,7 +56,7 @@ function Arrow({ id, rot, text, blog, big }) {
         return (
             <>
                 <div>
-                    <p className="details-small oOblique arrow-right" style={{ opacity: 1, marginRight: "15%", marginTop: "-3%", position: "absolute", right: "0" }}>{text}</p>
+                    <p className="details-small oOblique" style={{ opacity: 1, marginRight: "15%", marginTop: "-3%", position: "absolute", right: "0" }}>{text}</p>
                     <svg
                         viewBox="10 120 190 90"
                         height="250px"

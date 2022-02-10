@@ -497,7 +497,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     box-shadow: 0px 3px 5px 1px $gold;
 
     p {
-        font-size: 10px !important;
+        font-size: calc(9px + (3 * (100vw - 769px)) / 1151);
     }
 
     &:hover {
@@ -635,6 +635,12 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     }
 }
 .arrow-right {
+    @media (min-width: 990px) and (max-width: 1025px){
+        margin-top: 5px !important;
+    }
+    @media (min-width: 1025px){
+        margin-top: 1% !important;
+    }
     @media (min-width: 1500px) {
         margin-left: 0 !important;
     }
@@ -736,7 +742,10 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     }
 }
 .container-arrow-noticias {
-    margin-left: -10%;
+    padding-left: calc(4% + 12 * (100vw - 769px) / 1151) !important;
+    @media (min-width: 1025px){
+        padding-left: calc(2% + 12 * (100vw - 769px) / 1151) !important;
+    }
 }
 .container-arrow-blog {
     margin-top: 30%;
@@ -768,7 +777,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 .container-img-blog {
     width: 50vh;
 }
-
+.pl-5vh{
+    padding-left: 5vh !important;
+}
 /** END - blog **/
 
 /** START - forms **/

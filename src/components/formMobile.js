@@ -220,7 +220,7 @@ const FormMobile = ({ title }) => {
                                         <span className="d-inline head-xx-small oMedium">
                                             Aceito os dados por mim submetidos poderão ser armazenados e utilizados de acordo com a {" "}
 
-                                            <Link to="/politica_de_privacidade" className="underline d-inline head-xx-small  oMedium">
+                                            <Link to="/politica-de-privacidade" className="underline d-inline head-xx-small  oMedium">
                                                 &nbsp;Política de Privacidade
                                             </Link>
                                             , para marcação de consultas.
