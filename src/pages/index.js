@@ -58,8 +58,9 @@ const IndexPage = ({ data, location }) => {
           <div className="no-repeat position-relative bg-position-bottom">
             <Image src={data.homeJson.background.bottom} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <Invisalign data={data.homeJson.invisalign} />
-
-            <Noticias posts={posts} />
+            {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
+              <Noticias posts={posts} />
+            }
 
             <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
 
@@ -89,7 +90,10 @@ const IndexPage = ({ data, location }) => {
 
             <InvisalignMobile data={data.homeJson.invisalign} />
 
-            <NoticiasMobile posts={posts} blogIntro={data.homeJson.blog} />
+            {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
+              <NoticiasMobile posts={posts} blogIntro={data.homeJson.blog} />
+            }
+
 
             <div className="no-repeat position-relative bg-position-bottom" >
 

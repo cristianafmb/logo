@@ -6,6 +6,7 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
+import NoPosts from "../components/blog/noPosts"
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 import Menu from '../components/menu'
@@ -33,6 +34,12 @@ const PostTemplate = ({ data, location }) => {
   const marcacaoRef = useRef(null);
 
   const html = data.markdownRemark.html
+  
+  if(frontmatter.path === "/noposts/"){
+    return (
+      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} location={location} />
+    )
+  }
 
   return (
 

@@ -32,7 +32,7 @@ const BlogPage = ({ data, location }) => {
 
   const marcacaoRef = useRef(null);
 
-  if (!posts || !Boolean(posts.length)) {
+  if (!posts || !Boolean(posts.length ) || posts[0].path === "/noposts/") {
     return (
       <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} location={location} />
     )
