@@ -1,13 +1,14 @@
-import * as React from "react"
+import React, { useState } from "react";
 import { Link } from "gatsby"
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Button } from 'react-bootstrap'
 import "bootstrap/dist/css/bootstrap.min.css"
 import '../sass/app.scss';
 import Image from './Images'
 
 
+import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
-const FooterMobile = ({ footer }) => {
+const FooterMobile = ({ footer, marcacaoRef }) => {
 
     function renderSwitch(param) {
         switch (param) {
@@ -23,13 +24,12 @@ const FooterMobile = ({ footer }) => {
     }
 
 
-
     return (
         <div style={{ backgroundColor: "#D7C891" }} className="position-relative height-100vh max-width center-footer ">
 
             <div className="section-space-mobile center pt-4">
                 <Link to="/">
-                    <Image src={footer.logowhite} className=" mb-4 logo-upcare" alt="logo mobile"/>
+                    <Image src={footer.logowhite} className=" mb-4 logo-upcare" alt="logo mobile" />
                 </Link>
 
             </div>
@@ -37,6 +37,7 @@ const FooterMobile = ({ footer }) => {
 
             </div>
             <Row className="menu-mobile-options center">
+              
                 {footer.links.map((array, j) => (
                     <Col sm="12" md="12" lg="12" key={"row-footer-mobile-menu-" + j}>
                         {j !== 0 ?
@@ -51,7 +52,6 @@ const FooterMobile = ({ footer }) => {
                                 </Col>
                             ))}
                         </Row>
-                        < hr className="white" style={{ height: "2px" }} /> 
                     </Col>
 
                 ))

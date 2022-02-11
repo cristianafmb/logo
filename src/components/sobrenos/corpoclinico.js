@@ -8,12 +8,11 @@ import { Row, Col, Button, Modal } from 'react-bootstrap'
 
 import Form from "../../components/form"
 
-const CorpoClinico = ({ data, marcacaoRef, first_col, second_col, third_col }) => {
-    console.log(first_col, second_col, third_col)
+const CorpoClinico = ({ data, marcacaoRef }) => {
+    console.log('not mobile')
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
-        console.log('show')
         // if there is an element with id #marcacao
         if ($('#marcacao').length > 0) {
             marcacaoRef.current.scrollIntoView();
@@ -22,10 +21,87 @@ const CorpoClinico = ({ data, marcacaoRef, first_col, second_col, third_col }) =
             setShow(true)
         }
     };
-   
+    var currentFirst, currentSecond, currentThird
+    currentFirst = currentSecond = currentThird = 0
+    const number_per_cols = Math.floor(data.people.length / 3);
 
-   
-   
+    const first_col = data.people.slice(0, number_per_cols)
+
+    const second_col = data.people.slice(number_per_cols, number_per_cols * 2)
+    const third_col = data.people.slice(number_per_cols * 2, data.people.length)
+
+    var timer_first = 5000
+    var timer_second = 9000
+    var timer_third = 6000
+
+    var class_first_top = "top"
+    var class_second_top = "top-second"
+    var class_third_top = "top-third"
+
+
+    useEffect(() => {
+
+        $('#first0').addClass(class_first_top)
+        $('#nameFirst0').addClass(class_first_top)
+        $('#occupationFirst0').addClass(class_first_top)
+        $('#especialityFirst0').addClass(class_first_top)
+
+        $('#second0').addClass(class_second_top)
+        $('#nameSecond0').addClass(class_second_top)
+        $('#occupationSecond0').addClass(class_second_top)
+        $('#especialitySecond0').addClass(class_second_top)
+
+        $('#third0').addClass(class_third_top)
+        $('#nameThird0').addClass(class_third_top)
+        $('#occupationThird0').addClass(class_third_top)
+        $('#especialityThird0').addClass(class_third_top)
+
+        setTimeout(nextBackgroundFirst, timer_first);
+        setTimeout(nextBackgroundSecond, timer_second);
+        setTimeout(nextBackgroundThird, timer_third);
+
+
+
+        function nextBackgroundFirst() {
+            $('#first' + currentFirst).removeClass(class_first_top)
+            $('#nameFirst' + currentFirst).removeClass(class_first_top)
+            $('#occupationFirst' + currentFirst).removeClass(class_first_top)
+            $('#especialityFirst' + currentFirst).removeClass(class_first_top)
+            currentFirst = ++currentFirst % first_col.length
+            $('#first' + currentFirst).addClass(class_first_top)
+            $('#nameFirst' + currentFirst).addClass(class_first_top)
+            $('#occupationFirst' + currentFirst).addClass(class_first_top)
+            $('#especialityFirst' + currentFirst).addClass(class_first_top)
+            setTimeout(nextBackgroundFirst, timer_first);
+        }
+
+        function nextBackgroundSecond() {
+            $('#second' + currentSecond).removeClass(class_second_top)
+            $('#nameSecond' + currentSecond).removeClass(class_second_top)
+            $('#occupationSecond' + currentSecond).removeClass(class_second_top)
+            $('#especialitySecond' + currentSecond).removeClass(class_second_top)
+            currentSecond = ++currentSecond % second_col.length
+            $('#second' + currentSecond).addClass(class_second_top)
+            $('#nameSecond' + currentSecond).addClass(class_second_top)
+            $('#occupationSecond' + currentSecond).addClass(class_second_top)
+            $('#especialitySecond' + currentSecond).addClass(class_second_top)
+            setTimeout(nextBackgroundSecond, timer_second);
+        }
+
+        function nextBackgroundThird() {
+            $('#third' + currentThird).removeClass(class_third_top)
+            $('#nameThird' + currentThird).removeClass(class_third_top)
+            $('#occupationThird' + currentThird).removeClass(class_third_top)
+            $('#especialityThird' + currentThird).removeClass(class_third_top)
+            currentThird = ++currentThird % second_col.length
+            $('#third' + currentThird).addClass(class_third_top)
+            $('#nameThird' + currentThird).addClass(class_third_top)
+            $('#occupationThird' + currentThird).addClass(class_third_top)
+            $('#especialityThird' + currentThird).addClass(class_third_top)
+            setTimeout(nextBackgroundThird, timer_third);
+        }
+
+    })
     return (
         <div className="margin-sections position-relative">
 

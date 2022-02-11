@@ -105,7 +105,7 @@ const IndexPage = ({ data, location }) => {
 
             </ div>
 
-            <FooterMobile footer={data.footerJson.footer} />
+            <FooterMobile footer={data.footerJson.footer}  />
           </>
         )}
 

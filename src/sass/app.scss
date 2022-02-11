@@ -1180,30 +1180,26 @@ input:focus-visible {
 }
 .top-first-mobile {
     animation-name: fade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-duration: 6s;
     opacity: 1 !important;
 }
 .top-second-mobile{
     animation-name: fade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 7s;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
     opacity: 1 !important;
 }
 .top-third-mobile{
     animation-name: fade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
     animation-duration: 9s;
     opacity: 1 !important;
 }
 .top-fourth-mobile{
     animation-name: fade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
+    animation-timing-function: ease-in;
+    animation-duration: 12s;
     opacity: 1 !important;
 }
 .top {
@@ -1212,9 +1208,6 @@ input:focus-visible {
     animation-iteration-count: infinite;
     animation-duration: 5s;
     opacity: 1;
-    @media (max-width: 990px) {
-        animation-duration: 10s !important;
-    }
 }
 .top-second {
     animation-name: fade;
@@ -1222,9 +1215,7 @@ input:focus-visible {
     animation-iteration-count: infinite;
     animation-duration: 9s;
     opacity: 1;
-    @media (max-width: 990px) {
-        animation-duration: 12s !important;
-    }
+
 }
 .top-third {
     animation-name: fade;
