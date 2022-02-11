@@ -54,7 +54,7 @@ const Politica = ({ data }) => {
         site upcare.pt. Sempre que o utilizador termine a utilização deste serviço, a Upcare Medical
         Center não assume qualquer responsabilidade pela informação recolhida fora das
         respectivas páginas electrónicas.</p>
-      <p className=""><span className="">3 | O que são cookies e como é que Up Care Medical Center os utiliza?</span><br />
+      <p className=""><span className="bold">3 | O que são cookies e como é que Up Care Medical Center os utiliza?</span><br />
         Para poder prestar um serviço mais personalizado e ao agrado dos utilizadores, A Upcare
         Medical Center utiliza cookies para recolher e guardar informação. Um cookie é um pequeno
         ficheiro informativo que é enviado do servidor do site www.upcare.pt para o browser do

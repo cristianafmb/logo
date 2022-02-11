@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../../sass/app.scss';
 import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -31,7 +31,7 @@ const CorpoClinico = ({ data, marcacaoRef }) => {
     var currentFirstCol = 0;
     var currentSecondCol = 0;
     var currentThirdCol = 0;
-    if (typeof window !== 'undefined') {
+    useEffect(() => {
         $('#firstCol0').addClass("top")
         $('#pNameFirstCol0').addClass("top")
         $('#pOccupationFirstCol0').addClass("top")
@@ -90,7 +90,7 @@ const CorpoClinico = ({ data, marcacaoRef }) => {
             setTimeout(nextBackgroundThirdCol, 6000);
         }
 
-    }
+    })
     return (
         <div className="margin-sections position-relative">
 
