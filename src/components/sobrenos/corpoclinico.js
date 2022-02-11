@@ -1,14 +1,28 @@
-import * as React from "react"
+import React, { useState } from "react";
 import '../../sass/app.scss';
 import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import $ from 'jquery' // important: case sensitive.
-import { Row, Col, Button } from 'react-bootstrap'
+import { Row, Col, Button, Modal } from 'react-bootstrap'
 
-const CorpoClinico = ({ data }) => {
+import Form from "../../components/form"
+
+const CorpoClinico = ({ data, marcacaoRef }) => {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => {
+        console.log('show')
+        // if there is an element with id #marcacao
+        if ($('#marcacao').length > 0) {
+            marcacaoRef.current.scrollIntoView();
+        } else {
+            // if there is no element with id #marcacao, then show modal
+            setShow(true)
+        }
+    };
     const number_per_cols = Math.floor(data.people.length / 3);
-    
+
     const first_col = data.people.slice(0, number_per_cols)
 
     const second_col = data.people.slice(number_per_cols, number_per_cols * 2)
@@ -85,9 +99,8 @@ const CorpoClinico = ({ data }) => {
                     <p className="head-x-small oBold">{data.head}</p>
                     <p className="title-large oExtraBold mt-3 mb-5">{data.title}</p>
                     <p className="details-small mt-2 oRegular">{data.details}</p>
-                    <Link to={data.btn.link}>
-                        <Button variant="warning" size="sm" className="button-intro-home-saber-mais btn-big oMedium">{data.btn.text}</Button>
-                    </Link>
+                    <Button onClick={handleShow} variant="warning" size="sm" className="button-intro-home-saber-mais btn-big oMedium">{data.btn.text}</Button>
+
                 </Col>
                 <Col sm="12" md="7" lg="7" style={{ marginLeft: "5px" }}>
                     <Row>
@@ -139,6 +152,21 @@ const CorpoClinico = ({ data }) => {
 
                 </Col>
             </Row >
+
+            <div>
+
+                <Modal
+                    show={show} onHide={handleClose}
+                    size="lg"
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered
+                    className="modal-marcacao-rapida"
+                >
+                    <Modal.Body >
+                        <Form title="Pedido de Marcação Rápido" />
+                    </Modal.Body>
+                </Modal>
+            </div>
         </div >
     )
 

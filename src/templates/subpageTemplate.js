@@ -26,21 +26,10 @@ const SubPageTemplate = ({ data, pageContext, location }) => {
   const pageName = pathname.split("/")[1]
   const subPageName = pathname.split("/")[2]
 
-  const areas = pageContext['subpages']['simple']
-
-  const allSubPages = pageContext['subpages']['details']
+  const areas = pageContext['areas']
 
   const background = pageContext['backgrounds']
-
-  
-  var subPage
-
-  allSubPages.forEach((value) => {
-    if (value['alt'] === subPageName) {
-      subPage = { ...value }
-    }
-  })
-
+  const subPage = pageContext['subpages']
 
   return (
 
@@ -76,7 +65,7 @@ const SubPageTemplate = ({ data, pageContext, location }) => {
           <>
             <SubPageMobile
               bgtop={background.backgroundtopmobile}
-              bgbanner={subPage.img }
+              bgbanner={subPage.img}
               areas={areas}
               subpage={subPage}
               home={data.homeJson.especialidades}
@@ -89,7 +78,7 @@ const SubPageTemplate = ({ data, pageContext, location }) => {
           </>
         )
       }
-    </Layout>
+    </Layout >
   )
 }
 

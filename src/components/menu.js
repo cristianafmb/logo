@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from 'gatsby'
 import '../sass/app.scss';
-import { Container, Navbar, Nav, Modal, } from 'react-bootstrap'
+import { Container, Navbar, Nav, Modal } from 'react-bootstrap'
 import logo from '../images/logo.png'
 import calendario from '../images/calendar.png'
 import Form from "../components/form"

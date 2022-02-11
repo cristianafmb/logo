@@ -10,130 +10,112 @@
         },
         "people": [
             {
-                "img": "../images/corpoclinico/cirurgia-plastica/dr-luis-cabral.jpg",
+                "img": "../images/corpoclinico/especialidades/dr-luis-cabral.jpg",
                 "name": "Dr. Luís Cabral",
                 "occupation": "Médico",
-                "especiality": "Cirurgia Plástica",
-                "state": true
+                "especiality": "Cirurgia Plástica"
             },
             {
-                "img": "../images/corpoclinico/clinica-geral-familiar/dra-sara-santana.jpg",
+                "img": "../images/corpoclinico/especialidades/dra-sara-santana.jpg",
                 "name": "Dra. Sara Santana",
                 "occupation": "Médica",
-                "especiality": "Clínica Geral Familiar",
-                "state": false
+                "especiality": "Clínica Geral Familiar"
             },
             {
-                "img": "../images/corpoclinico/dentista/dra-maria-joao-duarte.jpg",
+                "img": "../images/corpoclinico/medicinadentaria/dra-maria-joao-duarte.jpg",
                 "name": "Dra. Maria João Duarte",
                 "occupation": "Médica",
-                "especiality": "Medicina Dentária",
-                "state": false
+                "especiality": "Medicina Dentária"
             },
             {
-                "img": "../images/corpoclinico/dentista/dra-sonia-teixeira.jpg",
+                "img": "../images/corpoclinico/medicinadentaria/dra-sonia-teixeira.jpg",
                 "name": "Dra. Sónia Teixeira",
                 "occupation": "Médica",
-                "especiality": "Medicina Dentária",
-                "state": false
+                "especiality": "Medicina Dentária"
             },
             {
-                "img": "../images/corpoclinico/dentista/dr-joao-nunes.jpg",
+                "img": "../images/corpoclinico/medicinadentaria/dr-joao-nunes.jpg",
                 "name": "Dr. João Nunes",
-                "occupation": "Médico",
-                "especiality": "Medicina Dentária",
-                "state": false
+                "occupation": "Médico Dentista",
+                "especiality": "Reabilitação Oral"
             },
             {
-                "img": "../images/corpoclinico/dermatologia/dr-david-serra.jpg",
+                "img": "../images/corpoclinico/especialidades/dr-david-serra.jpg",
                 "name": "Dr. David Serra",
                 "occupation": "Médico",
-                "especiality": "Dermatologia",
-                "state": false
+                "especiality": "Dermatologia"
             },
             {
-                "img": "../images/corpoclinico/endodontia/dr-rodrigo-camargo.jpg",
+                "img": "../images/corpoclinico/medicinadentaria/dr-rodrigo-camargo.jpg",
                 "name": "Dr. Rodrigo Camargo",
                 "occupation": "Médico",
-                "especiality": "Endodontia",
-                "state": false
+                "especiality": "Endodontia"
             },
             {
-                "img": "../images/corpoclinico/endodontia/dra-andreia-hortensio.jpg",
+                "img": "../images/corpoclinico/medicinadentaria/dra-andreia-hortensio.jpg",
                 "name": "Dra. Andreia Hortênsio",
                 "occupation": "Médica",
-                "especiality": "Endodontia",
-                "state": false
+                "especiality": "Endodontia"
             },
             {
-                "img": "../images/corpoclinico/fisioterapia/dr-ivo-bento.jpg",
+                "img": "../images/corpoclinico/especialidades/dr-ivo-bento.jpg",
                 "name": "Dr. Ivo Bento",
                 "occupation": "Médico",
-                "especiality": "Fisioterapia",
-                "state": false
+                "especiality": "Fisioterapia"
             },
             {
-                "img": "../images/corpoclinico/medicina-estetica/dra-sara-pereira.jpg",
+                "img": "../images/corpoclinico/especialidades/dra-sara-pereira.jpg",
                 "name": "Dra. Sara Pereira",
                 "occupation": "Médica",
-                "especiality": "Medicina Estética",
-                "state": false
+                "especiality": "Medicina Estética"
             },
             {
-                "img": "../images/corpoclinico/neuropsicologia/dra-filipa-miriam.jpg",
+                "img": "../images/corpoclinico/especialidades/dra-filipa-miriam.jpg",
                 "name": "Dra. Filipa Miriam",
                 "occupation": "Médica",
-                "especiality": "Neuropsicologia",
-                "state": false
+                "especiality": "Neuropsicologia"
             },
             {
-                "img": "../images/corpoclinico/odontopediatria/dra-mariana-gomes.jpg",
+                "img": "../images/corpoclinico/medicinadentaria/dra-mariana-gomes.jpg",
                 "name": "Dra. Mariana Gomes",
                 "occupation": "Médica",
-                "especiality": "Odontopediatria",
-                "state": false
+                "especiality": "Odontopediatria"
             },
             {
-                "img": "../images/corpoclinico/ortodontia/dr-rui-pedro.jpg",
+                "img": "../images/corpoclinico/medicinadentaria/dr-rui-pedro.jpg",
                 "name": "Dr. Rui Pedro",
                 "occupation": "Médico",
-                "especiality": "Ortodontia",
-                "state": false
+                "especiality": "Ortodontia"
             },
             {
-                "img": "../images/corpoclinico/otorrinolaringologia/dr-joao-barosa.jpg",
+                "img": "../images/corpoclinico/especialidades/dr-joao-barosa.jpg",
                 "name": "Dr. João Barosa",
                 "occupation": "Médico",
-                "especiality": "Otorrinolaringologia",
-                "state": false
+                "especiality": "Otorrinolaringologia"
             },
             {
-                "img": "../images/corpoclinico/podologia/dr-vitor-barbosa.jpg",
+                "img": "../images/corpoclinico/especialidades/dr-vitor-barbosa.jpg",
                 "name": "Dr. Vítor Barbosa",
                 "occupation": "Médico",
-                "especiality": "Podologia",
-                "state": false
+                "especiality": "Podologia"
             },
             {
-                "img": "../images/corpoclinico/psicologia/dra-ana-menezes.jpg",
+                "img": "../images/corpoclinico/especialidades/dra-ana-menezes.jpg",
                 "name": "Dra. Ana Menezes",
                 "occupation": "Médica",
-                "especiality": "Psicologia",
-                "state": false
+                "especiality": "Psicologia"
             },
             {
-                "img": "../images/corpoclinico/psiquiatria/dr-oscar-neves.jpg",
+                "img": "../images/corpoclinico/especialidades/dr-oscar-neves.jpg",
                 "name": "Dr. Óscar Neves",
                 "occupation": "Médico",
-                "especiality": "Psiquiatria",
-                "state": false
+                "especiality": "Psiquiatria"
             },
             {
-                "img": "../images/corpoclinico/terapia-ocupacional/dra-raquel-costa.jpg",
+                "img": "../images/corpoclinico/especialidades/dra-raquel-costa.jpg",
                 "name": "Dra. Raquel Costa",
                 "occupation": "Médica",
-                "especiality": "Terapia Ocupacional",
-                "state": false
+                "especiality": "Terapia Ocupacional"
             }
         ]
     }

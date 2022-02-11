@@ -33,10 +33,10 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
   const marcacaoRef = useRef(null);
 
-  var cards2 = null;
-  if (cards.length > 11) {
-    cards2 = cards.slice(Math.ceil((cards.length) / 2), (cards.length))
-    cards = cards.slice(0, Math.ceil((cards.length) / 2))
+
+  var cards2 = null
+  if (cards.length > 10) {
+    cards2 = cards.slice(10, cards.length)
   }
   return (
 
@@ -58,12 +58,12 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
             <InnerTopsection areas={areas} page={page} location={location} />
 
-            <CardsSection data={cards} />
+            <CardsSection data={cards.slice(0, 10)} />
 
           </div>
 
           {cards2 !== null ?
-            <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
+            <CorpoClinico data={data.corpoclinicoJson.corpoclinico} marcacaoRef={marcacaoRef} />
             : <></>}
 
           <div className="no-repeat bg-position-bottom position-relative" >
@@ -71,7 +71,7 @@ const PageTemplate = ({ data, pageContext, location }) => {
             <Image src={backgrounds.backgroundfooter} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
             {cards2 === null ?
-              <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
+              <CorpoClinico data={data.corpoclinicoJson.corpoclinico}  marcacaoRef={marcacaoRef}/>
               : <CardsSection data={cards2} />}
 
             <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef} />

@@ -172,7 +172,7 @@ const Formulario = ({ title }) => {
                                     <Col sm="12" md="6" lg="6" >
 
                                         <input className="input-form oMedium" type='text' id="name" name='name' placeholder='Nome' required />
-
+                                        <label for="name">Nome</label>
                                     </Col>
                                     <Col sm="12" md="6" lg="6" >
 

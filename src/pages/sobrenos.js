@@ -45,7 +45,7 @@ const SobreNos = ({ data, location }) => {
             <Sobrenos data={data.sobrenosJson.sobrenos} />
           </ div>
 
-          <CorpoClinico data={data.corpoclinicoJson.corpoclinico} />
+          <CorpoClinico data={data.corpoclinicoJson.corpoclinico} marcacaoRef={marcacaoRef}/>
 
           <div className="no-repeat background-bottom position-relative" >
             <Image src={data.sobrenosJson.sobrenos.backgroundfooter} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
@@ -157,7 +157,6 @@ query SobreNos {
         img
         name
         occupation
-        state
       }
       title
     }
