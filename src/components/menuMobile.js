@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import { animated, useSpring } from "react-spring";
@@ -6,8 +6,11 @@ import '../sass/app.scss';
 import { Modal, Row, Col } from 'react-bootstrap'
 import { Link } from "gatsby"
 import Image from './Images'
+import calendario from '../images/calendar.png'
 
-const MenuMobile = ({ footer }) => {
+import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
+
+const MenuMobile = ({ footer, marcacaoRef }) => {
     const [show2, setShow2] = useState(false);
     function renderSwitch(param) {
         switch (param) {
@@ -49,13 +52,32 @@ const MenuMobile = ({ footer }) => {
             : "translate(11px, 30px) rotate(0deg)"
     });
 
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+
+    const handleShow = () => {
+        // if there is an element with id #marcacao
+        if ($('#marcacao').length > 0) {
+            marcacaoRef.current.scrollIntoView();
+        } else {
+            // if there is no element with id #marcacao, then show modal
+            setShow(true)
+        }
+    };
 
     return (
         <div className="position-relative">
             <div className="section-space-mobile pt-4">
                 <Link to="/">
-                    <Image src={footer.logo} className="logo-upcare" alt="logo logo-upcare" />
+                    <Image src={footer.logo} className="logo-upcare mt-2" alt="logo logo-upcare " />
                 </Link>
+            </div>
+            <div>
+                <button className="container-btn-marcacao-mobile" onClick={handleShow}>
+
+                    <img src={calendario} alt="calendar" />
+                </button >
+
             </div>
             <div className="m-auto btn-menu-mobile"  >
                 <svg
@@ -73,6 +95,7 @@ const MenuMobile = ({ footer }) => {
 
                 </svg>
             </div>
+
             <div>
                 {/*  <Modal id="modal-menu" show={show2} fullscreen={true} onHide={handleHide2} className={show2 ? "mobile-modal-menu fade-in" : "mobile-modal-menu fade-out"}>*/}
                 <Modal id="modal-menu" show={show2} fullscreen={true} onHide={handleHide2} animation={false}  >

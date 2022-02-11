@@ -8,6 +8,7 @@ import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 import Menu from '../components/menu'
 import MenuMobile from '../components/menuMobile'
+import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
 import Questoes from '../components/questoes'
 import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
@@ -47,10 +48,12 @@ const NotFoundPage = ({ data, location }) => {
           <>
             <div className="no-repeat position-relative">
               <Image src={data.homeJson.background.topmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover height-max" />
-              <MenuMobile footer={data.footerJson.footer} />
+              <MenuMobile footer={data.footerJson.footer}  marcacaoRef={marcacaoRef}/>
 
               <Blocks text="Página não encontrada." />
 
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+              
               <QuestoesMobile data={data.questoesJson.questoes} />
 
             </ div>

@@ -635,10 +635,10 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     }
 }
 .arrow-right {
-    @media (min-width: 990px) and (max-width: 1025px){
+    @media (min-width: 990px) and (max-width: 1025px) {
         margin-top: 5px !important;
     }
-    @media (min-width: 1025px){
+    @media (min-width: 1025px) {
         margin-top: 1% !important;
     }
     @media (min-width: 1500px) {
@@ -743,7 +743,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 }
 .container-arrow-noticias {
     padding-left: calc(4% + 12 * (100vw - 769px) / 1151) !important;
-    @media (min-width: 1025px){
+    @media (min-width: 1025px) {
         padding-left: calc(2% + 12 * (100vw - 769px) / 1151) !important;
     }
 }
@@ -764,6 +764,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     @media (max-width: 990px) {
         top: 30%;
     }
+    @media (max-width: 600px) {
+        top: 13%;
+    }
 }
 .over-text-noposts-404 {
     position: absolute;
@@ -773,11 +776,14 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     @media (max-width: 990px) {
         top: 25%;
     }
+    @media (max-width: 600px) {
+        top: 10%;
+    }
 }
 .container-img-blog {
     width: 50vh;
 }
-.pl-5vh{
+.pl-5vh {
     padding-left: 5vh !important;
 }
 /** END - blog **/
@@ -933,7 +939,7 @@ input:focus-visible {
     opacity: 0;
     width: 100%;
 }
-.min-height-25vh{
+.min-height-25vh {
     min-height: 25vh;
 }
 /** END - corpo clinico **/
@@ -1033,6 +1039,21 @@ input:focus-visible {
     color: $white !important;
     text-decoration: none !important;
 }
+
+.container-btn-marcacao-mobile {
+    position: fixed;
+    top: 5%;
+    right: 25%;
+    padding: 15px;
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 100px;
+    text-decoration: none !important;
+    z-index: 99;
+}
+
 .btn-text-marcacao:hover {
     width: 200px;
     z-index: 99;
@@ -1184,19 +1205,19 @@ input:focus-visible {
     animation-duration: 6s;
     opacity: 1 !important;
 }
-.top-second-mobile{
+.top-second-mobile {
     animation-name: fade;
     animation-timing-function: ease-in;
     animation-duration: 10s;
     opacity: 1 !important;
 }
-.top-third-mobile{
+.top-third-mobile {
     animation-name: fade;
     animation-timing-function: ease-in;
     animation-duration: 9s;
     opacity: 1 !important;
 }
-.top-fourth-mobile{
+.top-fourth-mobile {
     animation-name: fade;
     animation-timing-function: ease-in;
     animation-duration: 12s;
@@ -1215,7 +1236,6 @@ input:focus-visible {
     animation-iteration-count: infinite;
     animation-duration: 9s;
     opacity: 1;
-
 }
 .top-third {
     animation-name: fade;
@@ -1228,7 +1248,7 @@ input:focus-visible {
 /** END - effects **/
 
 /** START - general **/
-.grid-container-two-rows{
+.grid-container-two-rows {
     display: grid !important;
     grid-template-columns: auto auto;
 }
@@ -1536,7 +1556,7 @@ a {
     padding: 10px;
 }
 .logo-upcare {
-    max-width: 25vh;
+    max-width: 15vh;
 }
 .not-found {
     max-width: 20vh;

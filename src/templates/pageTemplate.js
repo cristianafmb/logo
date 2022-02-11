@@ -20,6 +20,7 @@ import Questoes from '../components/questoes'
 import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
+import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
 
 import Image from '../components/Images'
 
@@ -95,7 +96,7 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
                 <Image src={page.bannermobile} alt="bg-banner-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-                <MenuMobile footer={data.footerJson.footer} location={location} />
+                <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
 
                 <InnerTopsectionMobile areas={areas} page={page} location={location} />
 
@@ -110,6 +111,8 @@ const PageTemplate = ({ data, pageContext, location }) => {
               <Image src={backgrounds.backgroundfootermobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
               <CorpoClinicoMobile data={data.corpoclinicoJson.corpoclinico}  />
+
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
 
               <QuestoesMobile data={data.questoesJson.questoes} marcacaoRef={marcacaoRef} />
 

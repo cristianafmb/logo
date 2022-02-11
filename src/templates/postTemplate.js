@@ -17,6 +17,7 @@ import Questoes from '../components/questoes'
 import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
+import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
 
 import top from '../images/background1.png'
 
@@ -37,7 +38,7 @@ const PostTemplate = ({ data, location }) => {
   
   if(frontmatter.path === "/noposts/"){
     return (
-      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} location={location} />
+      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} location={location} marcacaoJson={data.marcacaoJson}/>
     )
   }
 
@@ -96,7 +97,7 @@ const PostTemplate = ({ data, location }) => {
 
               <Image src={homeJson.background.topmobile} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-              <MenuMobile footer={footerJson.footer} className="mt-2" location={location} />
+              <MenuMobile footer={footerJson.footer} className="mt-2" location={location} marcacaoRef={marcacaoRef}/>
 
               <HighlightNewMobile head={frontmatter.head} title={frontmatter.title} details={frontmatter.details} path={frontmatter.path} btn={false} image={frontmatter.image} />
 
@@ -117,7 +118,7 @@ const PostTemplate = ({ data, location }) => {
                 </Link>
               </div>
 
-
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
 
               <QuestoesMobile data={questoesJson.questoes} />
 
@@ -166,6 +167,10 @@ export const pageQuery = graphql`
           texto
         }
       }
+    }
+    marcacaoJson{
+      img
+      alt
     }
       footerJson{
         footer {

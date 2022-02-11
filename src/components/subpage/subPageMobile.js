@@ -18,7 +18,6 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
 
     return (
         <>
-            {console.log(bgtop)}
             <div className="no-repeat position-relative">
 
                 <Image src={bgtop} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
@@ -26,7 +25,7 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
 
                     <Image src={bgbanner} alt="bg-top" className="position-absolute max-width bg-cover heigth-banner" />
 
-                    <MenuMobile footer={footer} location={location} />
+                    <MenuMobile footer={footer} location={location} marcacaoRef={marcacaoRef} />
 
                     <div className="pt-5 position-relative section-space-mobile ">
                         <div className="mt-5">
@@ -67,7 +66,10 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
 
             </div>
 
-            <div className="no-repeat background-bottom" style={{ backgroundImage: `url(${bgbottm})` }}>
+
+            <div className="no-repeat position-relative">
+
+                <Image src={bgbottm} alt="bg-bottom" className="position-absolute max-width bg-cover height-max  background-bottom" />
 
                 <EspecialidadesMobile especialidades={home} marcacaoRef={marcacaoRef} />
 

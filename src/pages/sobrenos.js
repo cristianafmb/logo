@@ -75,7 +75,7 @@ const SobreNos = ({ data, location }) => {
             <div className="no-repeat bg-cover height-100vh position-relative" >
               <Image src={data.sobrenosJson.sobrenos.backgroundtopmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-              <MenuMobile footer={data.footerJson.footer} location={location} />
+              <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
 
               <SobrenosMobile data={data.sobrenosJson.sobrenos} />
 

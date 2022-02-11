@@ -19,6 +19,7 @@ import HighlightNew from '../components/blog/highlightNew'
 import HighlightNewMobile from '../components/blog/highlightNewMobile'
 import AllPosts from '../components/blog/allPosts'
 import AllPostsMobile from '../components/blog/allPostsMobile'
+import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
 import Questoes from '../components/questoes'
 import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
@@ -81,7 +82,7 @@ const BlogPage = ({ data, location }) => {
 
               <Image src={data.homeJson.background.topmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-              <MenuMobile footer={data.footerJson.footer} location={location} />
+              <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
               <HighlightNewMobile head={posts[0].head} title={posts[0].title} details={posts[0].details} path={posts[0].path} btn="Ler Tudo" image={posts[0].image} />
 
@@ -92,6 +93,8 @@ const BlogPage = ({ data, location }) => {
             <div className="no-repeat bg-position-bottom position-relative" >
 
               <Image src={data.homeJson.background.bottommobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
 
               <QuestoesMobile data={data.questoesJson.questoes} />
 

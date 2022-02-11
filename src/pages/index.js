@@ -78,7 +78,7 @@ const IndexPage = ({ data, location }) => {
 
               <Image src={data.homeJson.background.topmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-              <MenuMobile footer={data.footerJson.footer} location={location} />
+              <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
 
               <IntroHomeMobile data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} />
 

@@ -12,6 +12,7 @@ import MenuMobile from '../components/menuMobile'
 import Politica from "../components/politica/politica"
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
+import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
 
 import Image from '../components/Images'
 
@@ -37,7 +38,7 @@ const PoliticaPage = ({ data, location }) => {
           <>
             <div className="no-repeat position-relative ">
               <Image src="try1.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
-              <MenuMobile footer={data.footerJson.footer} location={location} />
+              <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
 
               <Politica />
             </div>
