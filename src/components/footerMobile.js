@@ -51,6 +51,7 @@ const FooterMobile = ({ footer }) => {
                                 </Col>
                             ))}
                         </Row>
+                        < hr className="white" style={{ height: "2px" }} /> 
                     </Col>
 
                 ))
