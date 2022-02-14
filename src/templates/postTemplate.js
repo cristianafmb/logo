@@ -35,10 +35,10 @@ const PostTemplate = ({ data, location }) => {
   const marcacaoRef = useRef(null);
 
   const html = data.markdownRemark.html
-  
-  if(frontmatter.path === "/noposts/"){
+
+  if (frontmatter.path === "/noposts/") {
     return (
-      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} location={location} marcacaoJson={data.marcacaoJson}/>
+      <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} location={location} marcacaoJson={data.marcacaoJson} />
     )
   }
 
@@ -53,7 +53,7 @@ const PostTemplate = ({ data, location }) => {
 
             <Image src={homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} post={true}/>
+            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} post={true} />
 
             <div>
               <HighlightNew head={frontmatter.head} title={frontmatter.title} details={frontmatter.details} path={frontmatter.path} btn={false} image={frontmatter.image} />
@@ -84,8 +84,14 @@ const PostTemplate = ({ data, location }) => {
             </div>
 
           </div>
+          <div className="no-repeat bg-position-top position-relative "  >
+            
+            <Image src={homeJson.background.bottom} alt="bg-bottom" objectPosition="0% 35%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-          <Questoes data={questoesJson.questoes} />
+            <Questoes data={questoesJson.questoes} />
+
+          </ div>
+
 
           <Footer data={footerJson.footer} />
         </>
@@ -97,7 +103,7 @@ const PostTemplate = ({ data, location }) => {
 
               <Image src={homeJson.background.topmobile} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-              <MenuMobile footer={footerJson.footer} className="mt-2" location={location} marcacaoRef={marcacaoRef}/>
+              <MenuMobile footer={footerJson.footer} className="mt-2" location={location} marcacaoRef={marcacaoRef} />
 
               <HighlightNewMobile head={frontmatter.head} title={frontmatter.title} details={frontmatter.details} path={frontmatter.path} btn={false} image={frontmatter.image} />
 
@@ -118,7 +124,7 @@ const PostTemplate = ({ data, location }) => {
                 </Link>
               </div>
 
-              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef}/>
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
 
               <QuestoesMobile data={questoesJson.questoes} />
 

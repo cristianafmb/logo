@@ -53,6 +53,11 @@ const SubPageTemplate = ({ data, pageContext, location }) => {
             <SubPage subpage={subPage} page={pageName} areas={areas} location={location} marcacaoRef={marcacaoRef} />
 
             <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef} />
+          </div>
+
+          <div className="no-repeat position-relative ">
+
+            <Image src={data.homeJson.background.bottom} alt="bg-bottom" objectPosition="0% 35%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
             <Questoes data={data.questoesJson.questoes} />
 
