@@ -39,12 +39,16 @@ const ContactsMobile = ({ data }) => {
 
             <div className="padding-2-2 bg-white">
                 <h1 className="details-large gold oLight">{data.morada.title}</h1>
-                <p className="d-flex mt-3 oMedium">
-                    {data.morada.rua}
-                </p>
-                <p className="d-flex mt-3 oMedium">
-                    {data.morada.cpostal}
-                </p>
+                <a href="https://www.google.com/maps/place/Av.+Europa+741,+3800-533+Cacia/@40.6682766,-8.6101639,17z/data=!3m1!4b1!4m5!3m4!1s0xd2398fa7dca35fb:0xa8c82186ec639a9f!8m2!3d40.6682726!4d-8.6079752" target="_blank">
+                    <p className="d-flex mt-3 oMedium">
+                        {data.morada.rua}
+                    </p>
+                    <p className="d-flex mt-3 oMedium">
+                        {data.morada.cpostal}
+                    </p>
+                </a>
+
+
             </div>
 
         </StyledContacts>
