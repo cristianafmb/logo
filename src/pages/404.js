@@ -52,7 +52,7 @@ const NotFoundPage = ({ data, location }) => {
 
               <Blocks text="Página não encontrada." />
 
-              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef}/>
               
               <QuestoesMobile data={data.questoesJson.questoes} />
 
