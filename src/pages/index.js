@@ -49,7 +49,7 @@ const IndexPage = ({ data, location }) => {
             <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
             <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} />
-
+          {console.log(data.homeJson.testimony)}
             <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} />
           </ div>
 
