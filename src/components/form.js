@@ -9,6 +9,7 @@ import { Row, Col, Modal } from 'react-bootstrap'
 
 import fbTrack from "../custom/fbTrack"
 
+import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
 const Formulario = ({ title }) => {
 
@@ -22,7 +23,7 @@ const Formulario = ({ title }) => {
     const handleClose = () => setShow(false);
 
     const handleCloseError = () => setShowError(false);
-
+    const [errorResponse, setErrorResponse] = useState("")
 
     function doSubmit(e) {
         checkValues();
@@ -57,6 +58,11 @@ const Formulario = ({ title }) => {
             e.preventDefault()
             setResponse("" + checker + ".");
             setShowError(true)
+            if (checker.length > 2) {
+                setErrorResponse("Faltam preencher")
+            } else {
+                setErrorResponse("Falta preencher")
+            }
         }
     }
 
@@ -65,36 +71,50 @@ const Formulario = ({ title }) => {
         let checkerTemp = []
         if (typeof document !== 'undefined') {
             if (!document.querySelector("#name").value) {
-                checkerTemp.push("Nome")
+                checkerTemp.push(" Nome")
             }
             if (!document.querySelector("#email").value) {
-                checkerTemp.push("Email")
+                checkerTemp.push(" Email")
+            }
+            if (document.querySelector("#email").value) {
+                if (!document.querySelector("#email").value.toLowerCase()
+                    .match(
+                        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                    )) {
+                        checkerTemp.push(" Email válido")
+                }
             }
             if (!document.querySelector("#contact").value) {
-                checkerTemp.push("Telefone")
+                checkerTemp.push(" Telemóvel")
+            }
+            if (document.querySelector("#contact").value) {
+                if(!$.isNumeric(document.querySelector("#contact").value) || document.querySelector("#contact").value.match(/\d/g).length!==9){
+                    checkerTemp.push(" Telemóvel válido")
+                }
             }
             if (document.querySelector("#especiality").value === "Especialidade") {
-                checkerTemp.push("Especialidade")
+                checkerTemp.push(" Especialidade")
             }
             if (document.querySelector("#hours").value === "Horário") {
-                checkerTemp.push("Horário")
+                checkerTemp.push(" Horário")
             }
             if (!document.querySelector("#date").value) {
-                checkerTemp.push("Data")
+                checkerTemp.push(" Data")
             }
             if (document.querySelector("#date").value) {
                 const dateInput = new Date(document.querySelector("#date").value)
                 if (dateInput < today) {
-                    checkerTemp.push("Data válida")
+                    checkerTemp.push(" Data válida")
                 }
             }
+            
         }
 
         if (!polCheck) {
             if (checkerTemp.length < 1) {
-                checkerTemp.push("aceitar os nossos termos e políticas")
+                checkerTemp.push(" aceitar os nossos termos e políticas")
             } else {
-                checkerTemp.push("e aceitar os nossos termos e políticas")
+                checkerTemp.push(" e aceitar os nossos termos e políticas")
             }
         }
         checker = checkerTemp
@@ -149,7 +169,7 @@ const Formulario = ({ title }) => {
                     </Modal>
                     <Modal show={showError} onHide={handleCloseError} centered className="">
                         <Modal.Header >
-                            <Modal.Title>Faltam os seguintes campos</Modal.Title>
+                            <Modal.Title>{errorResponse}</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>{response}</Modal.Body>
                     </Modal>
@@ -172,7 +192,7 @@ const Formulario = ({ title }) => {
                                     <Col sm="12" md="6" lg="6" >
 
                                         <input className="input-form oMedium" type='text' id="name" name='name' placeholder='Nome' required />
-                                        <label for="name">Nome</label>
+                                        
                                     </Col>
                                     <Col sm="12" md="6" lg="6" >
 

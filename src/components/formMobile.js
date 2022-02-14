@@ -7,6 +7,7 @@ import Radio from '@mui/material/Radio';
 import { Modal } from 'react-bootstrap'
 
 import fbTrack from "../custom/fbTrack"
+import { isNumeric } from "jquery";
 
 
 const FormMobile = ({ title }) => {
@@ -20,7 +21,7 @@ const FormMobile = ({ title }) => {
     const handleClose = () => setShow(false);
 
     const handleCloseError = () => setShowError(false);
-
+    const [errorResponse, setErrorResponse] = useState("")
 
     function doSubmit(e) {
         checkValues();
@@ -54,6 +55,11 @@ const FormMobile = ({ title }) => {
             e.preventDefault()
             setResponse("" + checker + ".");
             setShowError(true)
+            if (checker.length > 2) {
+                setErrorResponse("Faltam preencher")
+            } else {
+                setErrorResponse("Falta preencher")
+            }
         }
     }
 
@@ -62,37 +68,52 @@ const FormMobile = ({ title }) => {
         let checkerTemp = []
         if (typeof document !== 'undefined') {
             if (!document.querySelector("#name").value) {
-                checkerTemp.push("Nome")
+                checkerTemp.push(" Nome")
             }
             if (!document.querySelector("#email").value) {
-                checkerTemp.push("Email")
+                checkerTemp.push(" Email")
+            }
+            if (document.querySelector("#email").value) {
+                if (!document.querySelector("#email").value.toLowerCase()
+                    .match(
+                        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                    )) {
+                        checkerTemp.push(" Email válido")
+                }
             }
             if (!document.querySelector("#contact").value) {
-                checkerTemp.push("Telefone")
+                checkerTemp.push(" Telemóvel")
+            }
+            if (document.querySelector("#contact").value) {
+                if(!isNumeric(document.querySelector("#contact").value) || document.querySelector("#contact").value.match(/\d/g).length!==9){
+                    checkerTemp.push(" Telemóvel válido")
+                }
             }
             if (document.querySelector("#especiality").value === "Especialidade") {
-                checkerTemp.push("Especialidade")
+                checkerTemp.push(" Especialidade")
             }
             if (document.querySelector("#hours").value === "Horário") {
-                checkerTemp.push("Horário")
+                checkerTemp.push(" Horário")
             }
             if (!document.querySelector("#date").value) {
-                checkerTemp.push("Data")
+                checkerTemp.push(" Data")
             }
             if (document.querySelector("#date").value) {
                 const dateInput = new Date(document.querySelector("#date").value)
                 if (dateInput < today) {
-                    checkerTemp.push("Data válida")
+                    checkerTemp.push(" Data válida")
                 }
             }
+            
         }
         if (!polCheck) {
             if (checkerTemp.length < 1) {
-                checkerTemp.push("aceitar os nossos termos e políticas")
+                checkerTemp.push("Aceitar os nossos termos e políticas")
             } else {
-                checkerTemp.push("e aceitar os nossos termos e políticas")
+                checkerTemp.push(" e aceitar os nossos termos e políticas")
             }
         }
+
         checker = checkerTemp
     }
 
@@ -143,7 +164,7 @@ const FormMobile = ({ title }) => {
                     </Modal>
                     <Modal show={showError} onHide={handleCloseError} centered className="">
                         <Modal.Header >
-                            <Modal.Title>Faltam os seguintes campos</Modal.Title>
+                            <Modal.Title>{errorResponse}</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>{response}</Modal.Body>
                     </Modal>
@@ -195,17 +216,17 @@ const FormMobile = ({ title }) => {
                                         <>
                                             <optgroup label="Especialidades Médicas">
                                                 {data.formJson.EspMed.map((data, i) => (
-                                                    <option value={data.title=== title ? "DEFAULT" : data.title} key={"selectesp" + i}>{data.title}</option>
+                                                    <option value={data.title === title ? "DEFAULT" : data.title} key={"selectesp" + i}>{data.title}</option>
                                                 ))}
                                             </optgroup>
                                             <optgroup label="Medicina Dentária">
                                                 {data.formJson.MedDent.map((data, i) => (
-                                                    <option value={data.title=== title ? "DEFAULT" : data.title} key={"selectmeddent" + i}>{data.title}</option>
+                                                    <option value={data.title === title ? "DEFAULT" : data.title} key={"selectmeddent" + i}>{data.title}</option>
                                                 ))}
                                             </optgroup>
                                             <optgroup label="Exames Médicos">
                                                 {data.formJson.ExaMed.map((data, i) => (
-                                                    <option value={data.title=== title ? "DEFAULT" : data.title} key={"selectexamed" + i}>{data.title}</option>
+                                                    <option value={data.title === title ? "DEFAULT" : data.title} key={"selectexamed" + i}>{data.title}</option>
                                                 ))}
                                             </optgroup>
                                         </>
