@@ -118,7 +118,7 @@ const PostTemplate = ({ data, location }) => {
                 </Link>
               </div>
 
-              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef}/>
 
               <QuestoesMobile data={questoesJson.questoes} />
 

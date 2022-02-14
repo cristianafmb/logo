@@ -89,6 +89,7 @@ const PageTemplate = ({ data, pageContext, location }) => {
         (
           <>
             <div className="no-repeat position-relative" >
+             
 
               <Image src={backgrounds.backgroundtopmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
@@ -112,9 +113,9 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
               <CorpoClinicoMobile data={data.corpoclinicoJson.corpoclinico}  />
 
-              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef}/>
 
-              <QuestoesMobile data={data.questoesJson.questoes} marcacaoRef={marcacaoRef} />
+              <QuestoesMobile data={data.questoesJson.questoes}  />
 
             </div>
 
