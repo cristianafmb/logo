@@ -25,7 +25,7 @@ const TermosPage = ({ data, location }) => {
       {!breakpoints.mobile ? (
         <>
           <div className="no-repeat position-relative ">
-            <Image src="bg-termos.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
+            <Image src="background-termos.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
             <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
             <Termos />
           </div>
@@ -36,7 +36,7 @@ const TermosPage = ({ data, location }) => {
         (
           <>
             <div className="no-repeat position-relative ">
-              <Image src="bg-termos.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
+              <Image src="background-termos.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
               <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
 
               <Termos />

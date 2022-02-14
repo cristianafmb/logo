@@ -11,7 +11,6 @@ import Questoes from '../../components/questoes'
 import QuestoesMobile from '../../components/questoesMobile'
 import Footer from '../../components/footer'
 import FooterMobile from '../../components/footerMobile'
-import top from '../../images/background1.png'
 import PedidoMarcacaoRapidoMobile from '../../components/pedidoMarcacaoRapidoMobile'
 
 import Image from '../Images'

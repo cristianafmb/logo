@@ -38,7 +38,7 @@ const HighlightNew = ({ head, title, details, path, image, btn }) => {
                 </Col>
 
                 <Col sm="12" md="8" lg="8">
-                    {console.log(image)}
+                
                     <Image src={image} alt={title} className="max-width highlight-img" />
                 </Col>
 

@@ -9,7 +9,7 @@ import { Row, Col, Button, Modal } from 'react-bootstrap'
 import Form from "../../components/form"
 
 const CorpoClinico = ({ data, marcacaoRef }) => {
-    console.log('not mobile')
+
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {

@@ -11,7 +11,7 @@ import calendario from '../images/calendar.png'
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
 const MenuMobile = ({ footer, marcacaoRef }) => {
-    console.log(marcacaoRef)
+ 
     const [show2, setShow2] = useState(false);
     function renderSwitch(param) {
         switch (param) {

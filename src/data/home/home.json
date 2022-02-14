@@ -98,10 +98,10 @@
         "btnhref": "/blog"
     },
     "background": {
-        "top": "background1.png",
+        "top": "background-top.png",
         "topmobile": "background-top-mobile.png",
         "bottom": "background-bottom.png",
-        "bottommobile": "background-footer-mobile.png",
+        "bottommobile": "background-bottom-mobile.png",
         "symbol": "symbolup.png"
     }
 }

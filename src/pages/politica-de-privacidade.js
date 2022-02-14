@@ -26,7 +26,7 @@ const PoliticaPage = ({ data, location }) => {
       {!breakpoints.mobile ? (
         <>
           <div className="no-repeat position-relative ">
-            <Image src="try1.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
+            <Image src="background-politica.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
             <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
             <Politica />
           </div>
@@ -37,7 +37,7 @@ const PoliticaPage = ({ data, location }) => {
         (
           <>
             <div className="no-repeat position-relative ">
-              <Image src="try1.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
+              <Image src="background-politica.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
               <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
 
               <Politica />

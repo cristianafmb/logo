@@ -13,7 +13,7 @@ const CardsSection = ({ data }) => {
                 {data.map((item, i) => (
 
                     <Col sm="12" md="2" lg="2" className="mb-4 col-page" key={"col" + i}>
-                        <div className="bg-white height-max position-relative hover-border-gold position-relative">
+                        <div className="bg-white height-max position-relative hover-border-gold position-relative min-height-50vh">
 
                             <div className="p-4">
                                 <p className="head-medium mt-3 mb-4 oLight">{item.title}</p>

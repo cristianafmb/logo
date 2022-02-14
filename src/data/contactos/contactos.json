@@ -1,6 +1,6 @@
 {
-    "backgroundtop": "background1.png",
-    "backgroundfooter": "bottom.png",
+    "backgroundtop": "background-top.png",
+    "backgroundfooter": "background-bottom.png",
     "contactos": {
         "title": "Contactos",
         "M": "+351 968 788 645",

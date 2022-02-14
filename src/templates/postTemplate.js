@@ -19,8 +19,6 @@ import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
 
-import top from '../images/background1.png'
-
 import Image from '../components/Images'
 
 

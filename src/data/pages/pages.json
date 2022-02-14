@@ -3,8 +3,8 @@
         "bannermobile": "especialidades/background-banner-mobile.png",
         "backgroundtop": "examesanalises/background-top.png",
         "backgroundtopmobile": "background-top-mobile.png",
-        "backgroundfooter": "background-footer.png",
-        "backgroundfootermobile": "background-footer-mobile.png"
+        "backgroundfooter": "background-bottom.png",
+        "backgroundfootermobile": "background-bottom-mobile.png"
     },
     "pages": [
         {
