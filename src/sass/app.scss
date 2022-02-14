@@ -288,6 +288,10 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         top: 65% !important;
     }
 }
+
+.icon-mobile-calendar{
+    width: 1rem;
+}
 /** END - menu **/
 
 /** START - home - intro home **/
@@ -1043,8 +1047,8 @@ input:focus-visible {
 .container-btn-marcacao-mobile {
     position: fixed;
     top: 5%;
-    right: 25%;
-    padding: 15px;
+    right: 20%;
+    padding: 10px;
     background-color: $black;
     display: flex;
     justify-content: space-between;

@@ -69,13 +69,13 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
         <div className="position-relative">
             <div className="section-space-mobile pt-4">
                 <Link to="/">
-                    <Image src={footer.logo} className="logo-upcare mt-2" alt="logo logo-upcare " />
+                    <Image src={footer.logo} className="logo-upcare " alt="logo logo-upcare " />
                 </Link>
             </div>
             <div>
                 <button className="container-btn-marcacao-mobile" onClick={handleShow}>
 
-                    <img src={calendario} alt="calendar" />
+                    <img src={calendario} alt="calendar" className="icon-mobile-calendar"/>
                 </button >
 
             </div>
@@ -84,7 +84,7 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
                     onClick={handleShow2}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#957841"
-                    width="50" height="50" viewBox="0 0 50 50"
+                    width="35" height="35" viewBox="0 0 50 50"
                 >
                     <rect id="Retângulo_42" data-name="Retângulo 42" width="50" height="50" rx="25" fill="#3e3e3e" />
                     <g id="Grupo_238" data-name="Grupo 238">
@@ -111,7 +111,7 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
                             onClick={handleHide2}
                             xmlns="http://www.w3.org/2000/svg"
                             fill="#957841"
-                            width="50" height="50" viewBox="0 0 50 50"
+                            width="35" height="35" viewBox="0 0 50 50"
                         >
                             <rect id="Retângulo_42" data-name="Retângulo 42" width="50" height="50" rx="25" fill="#3e3e3e" />
                             <g id="Grupo_238" data-name="Grupo 238">
