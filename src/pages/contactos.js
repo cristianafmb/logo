@@ -73,7 +73,7 @@ const Contactos = ({ data, location }) => {
 
               <Image src={data.homeJson.background.bottommobile} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true}  marcacaoRef={marcacaoRef}/>
 
               <QuestoesMobile data={data.questoesJson.questoes} />
 
