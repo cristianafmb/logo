@@ -39,7 +39,7 @@ const EspecialidadesSobreNos = ({ data }) => {
                                 <Row key={"first-" + i}>
                                     <Col>
                                         <hr className="gold" style={{ height: "2px" }} />
-                                        <a href={array.href}><p className="head-small oLight">{array.title}</p></a>
+                                        <a href={array.href}><p className="head-small oLight mt-4 mb-2">{array.title}</p></a>
 
                                     </Col>
                                 </Row>
@@ -54,7 +54,7 @@ const EspecialidadesSobreNos = ({ data }) => {
                                         <Row key={"second-" + i}>
                                             <Col >
                                                 <hr className="gold" style={{ height: "2px" }} />
-                                                <a href={array.href}><p className="head-small oLight">{array.title}</p></a>
+                                                <a href={array.href}><p className="head-small oLight mt-4 mb-2">{array.title}</p></a>
 
                                             </Col>
                                         </Row>

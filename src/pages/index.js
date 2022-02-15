@@ -48,7 +48,7 @@ const IndexPage = ({ data, location }) => {
             <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={true}/>
 
-            <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} />
+            <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} xl={true} />
 
             <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} xl={true}/>
           </ div>

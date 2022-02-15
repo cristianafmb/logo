@@ -181,10 +181,10 @@ const Formulario = ({ title }) => {
                                 <p className="details-xx-small oRegular"> Preencha o formulário e aguarde o nosso contacto. Todos os campos são de preenchimento obrigatório</p>
                                 <Row className="head-medium oLight">
                                     <Col sm="12" md="6" lg="6">
-                                        <p>Dados Pessoais</p>
+                                        <p className="mb-2">Dados Pessoais</p>
                                     </Col>
                                     <Col sm="12" md="6" lg="6">
-                                        <p>Dados da Consulta</p>
+                                        <p className="mb-2">Dados da Consulta</p>
                                     </Col>
                                 </Row>
 

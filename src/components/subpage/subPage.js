@@ -11,35 +11,36 @@ import { Row, Col } from 'react-bootstrap';
 
 const Subpage = ({ subpage, page, areas, location, marcacaoRef }) => {
     var pathname = location.pathname;
-    
+
     return (
         <div className="pt-5 position-relative">
             <Row className="container-corpo-clinico pt-5">
                 <Col sm="12" md="10" lg="10" className="col-80">
-                    <Row className="mb-5 pb-5">
+                    <Row >
                         <Col sm="12" md="6" lg="6">
                             <div className="d-flex">
-                                <p className="head-x-small oBold">
-                                    <a href={subpage.headhref} className="text-decoration-none">{subpage.head}</a> </p>
+                                <a href={subpage.headhref} className="text-decoration-none"> <p className="head-x-small oBold">{subpage.head}   </p></a>
                                 <p className="head-x-small oBold"> &nbsp;&nbsp; &#62; &nbsp;&nbsp;</p>
-                                <p className="head-x-small oBold">
-                                    <a href={subpage.href} className="text-decoration-none">{subpage.title}</a>
-                                </p>
+                                <a href={subpage.href} className="text-decoration-none">
+                                    <p className="head-x-small oBold">
+                                        {subpage.title}
+                                    </p>
+                                </a>
                             </div>
 
 
-                            <p className="title-large mt-3 mb-3 gold oExtraBold">{subpage.title}</p>
+                            <p className="title-large mt-4 mb-3 gold oExtraBold">{subpage.title}</p>
                             <p className="details-xx-small mt-4 pe-5 oRegular">{subpage.details}</p>
                         </Col>
                         <Col sm="12" md="1" lg="1">
                         </Col>
                         <Col sm="12" md="5" lg="5">
-                            <MiniCorpoClinico corpoclinico={subpage.corpoclinico} mobile={false}/>
+                            <MiniCorpoClinico corpoclinico={subpage.corpoclinico} mobile={false} />
                         </Col>
                     </Row>
-                    <Row className="mt-5 pt-5">
+                    <Row className="pt-5">
                         <Col sm="8" md="8" lg="8">
-                            <PedidoMarcacao img={false}  alt={false} space={false} subpage={subpage} marcacaoRef={marcacaoRef}/>
+                            <PedidoMarcacao img={false} alt={false} space={false} subpage={subpage} marcacaoRef={marcacaoRef} />
                         </Col>
                     </Row>
                 </Col>
@@ -51,14 +52,14 @@ const Subpage = ({ subpage, page, areas, location, marcacaoRef }) => {
                     {areas.map((item, i) => (
 
                         <div key={"subpage-area" + i}>
-                            <hr className="gold" style={{ height: "2px" , margin: "0"}} />
+                            <hr className="gold" style={{ height: "2px", margin: "0" }} />
                             <Link to={item.href} className="text-decoration-none">
-                                <p className={pathname.includes(item.href) ? "bold head-small text-decoration-none oLight line-height-2" : "head-small text-decoration-none oLight line-height-2"}>{item.title}</p>
+                                <p className={pathname.includes(item.href) ? "bold head-small text-decoration-none oLight line-height-2 mt-1 mb-1" : "head-small text-decoration-none oLight line-height-2 mt-1 mb-1"}>{item.title}</p>
                             </Link>
                         </div>
 
                     ))}
-                    <hr className="gold" style={{ height: "2px" , margin: "0"}} />
+                    <hr className="gold" style={{ height: "2px", margin: "0" }} />
                 </Col>
             </Row>
 

@@ -32,7 +32,7 @@ const PedidoMarcacoRapida = ({ img, alt, space, subpage, marcacaoRef, xl }) => {
                 <Row className="max-width  no-space-n-cols">
                     <Col sm="12" md="8" lg="8">
                         <Row >
-                            <Col sm="12" md="12" lg="12">
+                            <Col sm="12" md="12" lg="10">
                                 <Form title="Pedido de Marcação Rápido" />
                             </Col>
                         </Row>

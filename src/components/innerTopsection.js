@@ -27,7 +27,7 @@ const InnerTopsection = ({ areas, page, location }) => {
                         <div key={"area" + i}>
                             <hr className="gold" style={{ height: "2px" }} />
                             <a href={item.href} className="text-decoration-none">
-                                <p className={pathname.includes(item.href) ? "bold head-small text-decoration-none oMedium" : "head-small text-decoration-none oMedium"}>{item.title}</p>
+                                <p className={pathname.includes(item.href) ? "bold head-small text-decoration-none oMedium mt-4 mb-4" : "head-small text-decoration-none oLight mt-4 mb-4"}>{item.title}</p>
                             </a>
                         </div>
 

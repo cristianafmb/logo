@@ -6,15 +6,15 @@ import Button from 'react-bootstrap/Button'
 import '../../sass/app.scss';
 
 const CardIntroHome = ({ head, subject, details, btntext, href }) => (
-    <div className="position-relative width-90">
+    <div className="position-relative width-90 pt-5 mt-5">
         
-        <div className="mt-5 mb-2 ">
+        <div className=" mb-2 ">
             <p className="head-x-small oBold">{head}</p>
         </div>
         <div>
-            <p className="title-large pExtraBold">{subject}</p>
+            <p className="title-large oExtraBold">{subject}</p>
         </div>
-        <div className="mt-4 mb-2 min-height-10vh" >
+        <div className="mt-4 mb-2 min-height-7vh" >
             <p className="details-small oRegular">{details}</p>
         </div>
         <div>

@@ -16,7 +16,7 @@ const CardsSection = ({ data }) => {
                         <div className="bg-white height-max position-relative hover-border-gold position-relative min-height-35vh">
 
                             <div className="p-4">
-                                <p className="head-medium mt-3 mb-4 oLight">{item.title}</p>
+                                <p className="head-medium mb-4 oLight">{item.title}</p>
                                 <p className="head-x-small gold line-height mb-50 oRegular">{item.details}</p>
                                 <div className="max-width m-auto center">
                                     <Button className="btn-questoes btn btn-warning btn-sm btn-card-white oMedium" href={item.href}>
