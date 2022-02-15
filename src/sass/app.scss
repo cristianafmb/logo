@@ -7,7 +7,7 @@ $gold_hover: #9c814c;
 $dark_gold_hover: #8c6f2a;
 $gold_shadow: #908058;
 $black: #3e3e3e;
-$background-menu-mobile: #C1A258;
+$background-menu-mobile: #c1a258;
 $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a28650, #957841);
 
 @import url("https://fonts.googleapis.com/css?family=Poppins");
@@ -317,7 +317,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     @media (max-width: 1025px) {
         width: 85%;
     }
-    @media (max-width: 1445px){
+    @media (max-width: 1445px) {
         width: 80%;
     }
 }
@@ -437,12 +437,12 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     width: 140px;
     box-shadow: 0 0.1rem 0.4rem $gold_shadow;
     margin-top: 50px;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: $white !important;
         background-color: $gold !important;
         border: 1px solid $gold !important;
         box-shadow: $gold_shadow_light 5px 7px 12px !important;
-    
     }
     @media (max-width: 900px) {
         font-size: calc(12px + 6 * (100vw - 769px) / 1189) !important;
@@ -459,12 +459,12 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     font-size: calc(7px + 6 * (100vw - 769px) / 1189) !important;
     width: 140px;
     margin-top: 50px;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: $white !important;
         background-color: $gold !important;
         border: 1px solid $gold !important;
         box-shadow: $gold_shadow_light 5px 7px 12px !important;
-    
     }
     @media (max-width: 900px) {
         font-size: calc(12px + 6 * (100vw - 769px) / 1189) !important;
@@ -484,7 +484,6 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         background-color: $white !important;
         border: 1px solid #ba9e66 !important;
         box-shadow: $gold_shadow_light 5px 7px 12px;
-        
     }
     &:focus {
         box-shadow: $gold_shadow_light 5px 7px 12px;
@@ -523,7 +522,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         width: 60%;
         font-weight: 500 !important;
     }
-    @media (min-width: 1430px){
+    @media (min-width: 1430px) {
         width: 75%;
     }
 }
@@ -565,12 +564,12 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         font-size: calc(9px + (3 * (100vw - 769px)) / 1151);
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: $white !important;
         background-color: $gold !important;
         border: 1px solid $gold !important;
         box-shadow: $gold_shadow_light 5px 7px 12px !important;
-    
     }
 }
 .btn-check:focus + .btn-primary,
@@ -626,12 +625,12 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     z-index: 9999;
     margin: auto;
     display: flex;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: $gold !important;
         background-color: $white !important;
         border: 1px solid $gold !important;
         box-shadow: $gold_shadow_light 5px 7px 12px !important;
-    
     }
     @media (max-width: 990px) {
         width: 50%;
@@ -807,8 +806,8 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         @media (min-width: 1000px) and (max-width: 1367px) {
             max-width: calc(40vh + 12 * (100vh - 769vh) / 1151);
         }
-        @media (min-width: 1368px){
-            max-width: calc(60vh + 12 * (100vh - 769vh) / 1151)
+        @media (min-width: 1368px) {
+            max-width: calc(60vh + 12 * (100vh - 769vh) / 1151);
         }
     }
 }
@@ -1316,6 +1315,13 @@ input:focus-visible {
 }
 
 /** END - effects **/
+
+/** START - COVID **/
+.img-passos {
+    width: 25vh;
+    height: 25vh;
+}
+/** END - COVID **/
 
 /** START - general **/
 .grid-container-two-rows {

@@ -1,0 +1,26 @@
+{
+    "img":"covid/desktop.png",
+    "imgMobile":"covid/mobile.png",
+    "visitarSeguranca": {
+        "title": "Visite-nos com segurança.",
+        "details":"Quando vier à clínica:",
+        "passos":[
+            {
+                "img":"covid/passo1.png",
+                "details":"Entre com a máscara colocada."
+            },
+            {
+                "img":"covid/passo2.png",
+                "details":"Respeite a distância de segurança de 2 metros."
+            },
+            {
+                "img":"covid/passo3.png",
+                "details":"Desinfete as mãos e evite tocar em superfícies."
+            },
+            {
+                "img":"covid/passo4.png",
+                "details":"Evite tocar com as mãos na boca, nariz e olhos."
+            }
+        ]
+    }
+}
