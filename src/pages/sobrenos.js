@@ -40,9 +40,9 @@ const SobreNos = ({ data, location }) => {
             <Image src={data.sobrenosJson.sobrenos.backgroundtop} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <Seo title="Sobre Nós" />
 
-            <Menu location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+            <Menu location={location} marcacaoRef={marcacaoRef} xl={true}/>
 
-            <Sobrenos data={data.sobrenosJson.sobrenos} xl={breakpoints.xl}/>
+            <Sobrenos data={data.sobrenosJson.sobrenos} xl={true}/>
           </ div>
 
           <CorpoClinico data={data.corpoclinicoJson.corpoclinico} marcacaoRef={marcacaoRef}/>
@@ -56,15 +56,15 @@ const SobreNos = ({ data, location }) => {
             </div>
             <Image src="home/up.png" className="up" alt="up" />
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={true}/>
 
-            <Opinioes data={data.sobrenosJson.opiniao} xl={breakpoints.xl}/>
+            <Opinioes data={data.sobrenosJson.opiniao} xl={true}/>
 
-            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
+            <Questoes data={data.questoesJson.questoes} xl={true}/>
           </div>
 
 
-          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
+          <Footer data={data.footerJson.footer} xl={true}/>
 
         </>
       )

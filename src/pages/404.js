@@ -32,15 +32,15 @@ const NotFoundPage = ({ data, location }) => {
 
           <div className="no-repeat position-relative " >
             <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-            <Menu marcacaoRef={marcacaoRef} location={location} xl={breakpoints.xl}/>
+            <Menu marcacaoRef={marcacaoRef} location={location} xl={true}/>
 
-            <Blocks text="Página não encontrada." xl={breakpoints.xl}/>
+            <Blocks text="Página não encontrada." xl={true}/>
 
-            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
+            <Questoes data={data.questoesJson.questoes} xl={true}/>
 
           </div>
 
-          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
+          <Footer data={data.footerJson.footer} xl={true}/>
         </>
       )
         :

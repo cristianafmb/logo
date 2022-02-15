@@ -51,7 +51,7 @@ const PostTemplate = ({ data, location }) => {
 
             <Image src={homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} post={true} xl={breakpoints.xl}/>
+            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} post={true} xl={true}/>
 
             <div>
               <HighlightNew head={frontmatter.head} title={frontmatter.title} details={frontmatter.details} path={frontmatter.path} btn={false} image={frontmatter.image} />
@@ -86,12 +86,12 @@ const PostTemplate = ({ data, location }) => {
             
             <Image src={homeJson.background.bottom} alt="bg-bottom" objectPosition="0% 35%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Questoes data={questoesJson.questoes} xl={breakpoints.xl}/>
+            <Questoes data={questoesJson.questoes} xl={true}/>
 
           </ div>
 
 
-          <Footer data={footerJson.footer} xl={breakpoints.xl}/>
+          <Footer data={footerJson.footer} xl={true}/>
         </>
       )
         :

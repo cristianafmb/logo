@@ -46,28 +46,28 @@ const IndexPage = ({ data, location }) => {
 
           <div className="no-repeat position-relative ">
             <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={true}/>
 
             <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} />
 
-            <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} xl={breakpoints.xl}/>
+            <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} xl={true}/>
           </ div>
 
-          <Especialidades especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+          <Especialidades especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} xl={true}/>
 
           <div className="no-repeat position-relative bg-position-bottom">
             <Image src={data.homeJson.background.bottom} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-            <Invisalign data={data.homeJson.invisalign} medium={breakpoints.md} xl={breakpoints.xl}/>
+            <Invisalign data={data.homeJson.invisalign} medium={breakpoints.md} xl={true}/>
             {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
-              <Noticias posts={posts} xl={breakpoints.xl}/>
+              <Noticias posts={posts} xl={true}/>
             }
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={true}/>
 
-            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
+            <Questoes data={data.questoesJson.questoes} xl={true}/>
 
           </div>
-          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
+          <Footer data={data.footerJson.footer} xl={true}/>
         </>
       )
         :

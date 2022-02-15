@@ -185,7 +185,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         font-size: calc(24px + 12 * (27vw - 769px) / 1151);
     }
     @media (min-width: 1650px){
-        font-size: 22px !important;
+        font-size: 20px !important;
     }
 }
 .head-xx-small {
@@ -312,6 +312,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 #navbar {
     width: 75%;
     margin-left: 0%;
+    @media (max-width: 1025px){
+        width: 85%;
+    }
 }
 #navbar-without-logo {
     width: 100%;
@@ -415,6 +418,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 }
 .logo-footer {
     width: calc(105px + 12 * (100vw - 769px) / 1151) !important;
+    max-width: 12vh;
 }
 /** END - footer **/
 
@@ -1626,7 +1630,10 @@ a:hover{
     min-height: 10vh;
 }
 .container-xl-devices{
-    width: 85% !important;
+    width: 80% !important;
     margin: auto !important;
+    @media (max-width: 1025px){
+        width: 93% !important;
+    }
 }
 /** END - general **/
