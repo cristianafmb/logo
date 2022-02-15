@@ -41,7 +41,7 @@
                     },
                     {
                         "title": "Medicina Dentária Generalista",
-                        "details": "Medicina Dentária Generalista é responsável pela anamnese médica e dentária (historial clínico do paciente) e exame clínico extra e intra oral para reunir os elementos necessários ao mais apropriado tratamento de problemas biológicos, estruturais, funcionais e estéticos da dentição natural e tecidos adjacentes.",
+                        "details": "Medicina Dentária é a área da saúde humana que estuda e trata do sistema estomatognático - compreende o crânio, a face, pescoço e cavidade bucal, abrangendo ossos, musculatura mastigatória, articulações, dentes e tecidos.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/medicinadentariageneralista"
                     },
@@ -182,7 +182,7 @@
                         "headhref": "/medicinadentaria",
                         "title": "Medicina Dentária Generalista",
                         "href": "/medicinadentaria/medicinadentariageneralista",
-                        "details": "Medicina Dentária Generalista é responsável pela anamnese médica e dentária (historial clínico do paciente) e exame clínico extra e intra oral para reunir os elementos necessários ao mais apropriado tratamento de problemas biológicos, estruturais, funcionais e estéticos da dentição natural e tecidos adjacentes.",
+                        "details": "Medicina Dentária é a área da saúde humana que estuda e trata do sistema estomatognático - compreende o crânio, a face, pescoço e cavidade bucal, abrangendo ossos, musculatura mastigatória, articulações, dentes e tecidos.",
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dra-maria-joao-duarte-icon.jpg",

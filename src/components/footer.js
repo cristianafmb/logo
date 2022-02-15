@@ -26,7 +26,7 @@ const Footer = ({ data }) => {
 
 
     return (
-        <div  style={{ backgroundColor: "#D7C891" }} className="position-relative">
+        <div  style={{ backgroundColor: "#C2A257" }} className="position-relative">
             <Row className=" center heigth-footer d-flex  align-items-center m-auto width-footer">
                 <Col sm="12" md="1" lg="1" className="right ">
                     <Link to="/">

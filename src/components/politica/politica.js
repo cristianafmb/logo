@@ -96,7 +96,7 @@ const Politica = ({ data }) => {
         de corrigir e actualizar os seus dados, devendo o utilizador contactar a Upcare Medical
         Center por e-mail para geral@upcare.pt ou por correio, para a Estrada Nacional 109, n.o 167
         Distrito: Aveiro Concelho: Aveiro Freguesia: Aradas 3810 140 Aveiro. Todos os utilizadores
-        poderão, através do website <a href="https://www.upcare.pt" style={{ color: "#d7c891", display: "inline", textDecoration: "underline" }}>www.upcare.pt</a> subscrever newsletters. Em todas as newsletters
+        poderão, através do website <a href="https://www.upcare.pt" style={{ color: "#C2A257", display: "inline", textDecoration: "underline" }}>www.upcare.pt</a> subscrever newsletters. Em todas as newsletters
         enviadas aos subscritos do website Up Care Medical Center têm a opção de cancelamento
         da subscrição.</p>
       <p className=""><span className="bold">7 |  Outras questões de que deverá ter conhecimento sobre a política de privacidade do
@@ -128,7 +128,7 @@ const StyledPolitica = styled.div`
     .smallUnderline{
       width: 2em;
       height: 0.25em;
-      background-color: #d7c891;
+      background-color: #C2A257;
       position: absolute;
       top: 1.6em;
       left: 0;

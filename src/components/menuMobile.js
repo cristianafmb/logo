@@ -89,9 +89,9 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
                 >
                     <rect id="Retângulo_42" data-name="Retângulo 42" width="50" height="50" rx="25" fill="#3e3e3e" />
                     <g id="Grupo_238" data-name="Grupo 238">
-                        <animated.rect width="26" height="3" transform="translate(12 17)" fill="#d7c891" style={first} />
-                        <animated.rect width={show2 ? "26" : "20"} height="3" transform="translate(15 24)" fill="#d7c891" style={second} />
-                        <animated.rect width="26" height="3" transform="translate(12 31)" fill="#d7c891" style={third} />
+                        <animated.rect width="26" height="3" transform="translate(12 17)" fill="#C2A257" style={first} />
+                        <animated.rect width={show2 ? "26" : "20"} height="3" transform="translate(15 24)" fill="#C2A257" style={second} />
+                        <animated.rect width="26" height="3" transform="translate(12 31)" fill="#C2A257" style={third} />
                     </g>
 
                 </svg>
@@ -116,9 +116,9 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
                         >
                             <rect id="Retângulo_42" data-name="Retângulo 42" width="50" height="50" rx="25" fill="#3e3e3e" />
                             <g id="Grupo_238" data-name="Grupo 238">
-                                <animated.rect width="26" height="3" transform="translate(12 17)" fill="#d7c891" style={first} />
-                                <animated.rect width={show2 ? "26" : "20"} height="3" transform="translate(15 24)" fill="#d7c891" style={second} />
-                                <animated.rect width="26" height="3" transform="translate(12 31)" fill="#d7c891" style={third} />
+                                <animated.rect width="26" height="3" transform="translate(12 17)" fill="#C2A257" style={first} />
+                                <animated.rect width={show2 ? "26" : "20"} height="3" transform="translate(15 24)" fill="#C2A257" style={second} />
+                                <animated.rect width="26" height="3" transform="translate(12 31)" fill="#C2A257" style={third} />
                             </g>
 
                         </svg>

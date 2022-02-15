@@ -308,7 +308,7 @@ const StyledPolitica = styled.div`
     .smallUnderline{
       width: 2em;
       height: 0.25em;
-      background-color: #d7c891;
+      background-color: #C2A257;
       position: absolute;
       top: 1.6em;
       left: 0;

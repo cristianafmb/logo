@@ -1,6 +1,7 @@
 {
     "footer": {
-        "logo": "footer/logo.png",
+        "logo": "logo.png",
+        "logomobile": "mobile/menu/logo.png",
         "logowhite": "mobile/menu/logowhite.png",
         "socialmedia": [
             {

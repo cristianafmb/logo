@@ -12,7 +12,7 @@ const Cookies = () => {
                 background: '#957841',
                 justifyContent: 'center',
                 alignItems: 'center',
-                borderTop: '1px solid #d7c891'
+                borderTop: '1px solid #C2A257'
             }}
             contentStyle={{
                 fontFamily: 'rM, sans-serif',
@@ -26,7 +26,7 @@ const Cookies = () => {
             }}
             buttonStyle={{ 
                 color: '#fff',
-                background: '#d7c891',
+                background: '#C2A257',
                 fontFamily: 'rM, sans-serif',
                 textTransform: 'uppercase',
                 letterSpacing: '1px',

@@ -1,5 +1,5 @@
 $white: white;
-$light_gold: #d7c891;
+$light_gold: #C2A257;
 $gold: #957841;
 $dark_gold: #84754e;
 $gold_hover: #9c814c;
@@ -108,6 +108,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     @media (max-width: 900px) {
         font-size: calc(19px + 12 * (27vw - 769px) / 1151);
     }
+    @media (min-width: 1650px){
+        font-size: 13px !important;
+    }
 }
 .title-large {
     font-size: calc(19px + 12 * (100vw - 769px) / 1151);
@@ -117,6 +120,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         font-size: calc(30px + 12 * (27vw - 769px) / 1151);
         line-height: 1.2;
     }
+    @media (min-width: 1650px){
+        font-size: 28px !important;
+    }
 }
 .details-small {
     font-size: calc(11px + (3 * (100vw - 769px)) / 1151);
@@ -125,23 +131,35 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         font-size: calc(13px + (3 * (100vw - 769px)) / 1151);
         line-height: 2;
     }
+    @media (min-width: 1650px){
+        font-size: 14px !important;
+    }
 }
 .details-large {
     font-size: calc(16px + 12 * (100vw - 769px) / 1151);
     color: $gold;
     line-height: 110%;
     font-weight: 500;
+    @media (min-width: 1650px){
+        font-size: 23px !important;
+    }
 }
 .details-x-large {
     font-size: calc(30px + 12 * (100vw - 769px) / 1151);
     color: #957841;
     line-height: 1;
+    @media (min-width: 1650px){
+        font-size: 25px !important;
+    }
 }
 .title-x-large {
     font-size: calc(30px + 12 * (100vw - 769px) / 11510);
     color: $dark_gold;
     font-weight: 650;
     line-height: 1;
+    @media (min-width: 1650px){
+        font-size: 30px !important;
+    }
 }
 .details-xx-small {
     font-size: calc(16px + 12 * (27vw - 769px) / 1151);
@@ -156,12 +174,18 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         display: table-cell;
         line-height: 2;
     }
+    @media (min-width: 1650px){
+        font-size: 14px !important;
+    }
 }
 .head-medium {
     font-size: calc(12px + 12 * (100vw - 769px) / 1151);
     color: $gold;
     @media (max-width: 990px) {
         font-size: calc(24px + 12 * (27vw - 769px) / 1151);
+    }
+    @media (min-width: 1650px){
+        font-size: 22px !important;
     }
 }
 .head-xx-small {
@@ -171,15 +195,24 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     @media (max-width: 990px) {
         font-size: calc(11px + (3 * (100vw - 769px)) / 1151);
     }
+    @media (min-width: 1650px){
+        font-size: 12px !important;
+    }
 }
 .head-large {
     font-size: calc(30px + 12 * (27vw - 769px) / 1151);
     color: $gold;
+    @media (min-width: 1650px){
+        font-size: 27px !important;
+    }
 }
 .head-small {
     font-size: calc(18px + 12 * (27vw - 769px) / 1151);
     color: $gold;
     line-height: 0;
+    @media (min-width: 1650px){
+        font-size: 15px !important;
+    }
 }
 .head-xxx-small {
     font-size: calc(5px + 12 * (100vw - 769px) / 1151);
@@ -187,6 +220,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     margin: auto;
     @media (max-width: 990px) {
         font-size: calc(7px + 12 * (100vw - 769px) / 1151);
+    }
+    @media (min-width: 1650px){
+        font-size: 15px !important;
     }
 }
 /** END - fonts **/
@@ -221,6 +257,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 
     img {
         width: 85% !important;
+        max-width: 25vh;
     }
 }
 .navbar-letters {
@@ -1443,14 +1480,16 @@ a {
 }
 .up {
     position: fixed !important;
-    left: -240px;
+    left: -220px;
     width: 40%;
+    max-width: 55vh;
 }
 .up-sobrenos {
     position: absolute fixed !important;
     width: 40%;
     left: -9%;
     bottom: 17%;
+    max-width: 55vh;
 }
 .space-sections {
     margin-top: 170px !important;
@@ -1476,7 +1515,7 @@ a {
 }
 .especialidades-img {
     margin-bottom: 0 !important;
-    max-width: calc(55px + 12 * (100vw - 769px) / 1151) !important;
+    max-width: calc(40px + 12 * (100vw - 769px) / 1151) !important;
 }
 .margin-l-05 {
     margin-left: 0.5rem !important;
@@ -1568,13 +1607,20 @@ a {
 .z-index-minus-1 {
     z-index: -1;
 }
-.min-height-50vh {
-    min-height: 50vh;
+.min-height-45vh {
+    min-height: 45vh;
+    max-height: 45vh;
+    @media (min-width: 1650px) {
+        height: 420px !important;
+        min-height: 420px;
+        max-height: 420px;
+    }
 }
 a:hover{
     color: $gold !important;
 }
 .min-height-10vh{
     min-height: 10vh;
+
 }
 /** END - general **/
