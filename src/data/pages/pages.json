@@ -41,7 +41,7 @@
                     },
                     {
                         "title": "Medicina Dentária Generalista",
-                        "details": "Medicina Dentária é a área da saúde humana que estuda e trata do sistema estomatognático - compreende o crânio, a face, pescoço e cavidade bucal, abrangendo ossos, musculatura mastigatória, articulações, dentes e tecidos.",
+                        "details": "Medicina Dentária é a área da saúde que previne, diagnostica e trata as doenças que afectam os dentes, as gengivas e a mucosa oral.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/medicinadentariageneralista"
                     },
@@ -182,7 +182,7 @@
                         "headhref": "/medicinadentaria",
                         "title": "Medicina Dentária Generalista",
                         "href": "/medicinadentaria/medicinadentariageneralista",
-                        "details": "Medicina Dentária é a área da saúde humana que estuda e trata do sistema estomatognático - compreende o crânio, a face, pescoço e cavidade bucal, abrangendo ossos, musculatura mastigatória, articulações, dentes e tecidos.",
+                        "details": "Medicina Dentária é a área da saúde que previne, diagnostica e trata as doenças que afectam os dentes, as gengivas e a mucosa oral.",
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dra-maria-joao-duarte-icon.jpg",

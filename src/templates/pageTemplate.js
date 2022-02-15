@@ -36,8 +36,11 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
 
   var cards2 = null
-  if (cards.length > 10) {
-    cards2 = cards.slice(10, cards.length)
+  var number_max_cards_top = null
+  if(breakpoints.md) number_max_cards_top = 9
+  else number_max_cards_top = 10
+  if (cards.length > number_max_cards_top) {
+    cards2 = cards.slice(number_max_cards_top, cards.length)
   }
  
   return (
@@ -60,7 +63,7 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
             <InnerTopsection areas={areas} page={page} location={location} />
 
-            <CardsSection data={cards.slice(0, 10)} />
+            <CardsSection data={cards.slice(0, number_max_cards_top)} />
 
           </div>
 

@@ -1607,9 +1607,9 @@ a {
 .z-index-minus-1 {
     z-index: -1;
 }
-.min-height-45vh {
-    min-height: 45vh;
-    max-height: 45vh;
+.min-height-35vh {
+    min-height: 35vh;
+    max-height: 35vh;
     @media (min-width: 1650px) {
         height: 420px !important;
         min-height: 420px;
