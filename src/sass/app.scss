@@ -317,6 +317,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     @media (max-width: 1025px) {
         width: 85%;
     }
+    @media (max-width: 1445px){
+        width: 80%;
+    }
 }
 #navbar-without-logo {
     width: 100%;
@@ -519,6 +522,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         font-size: calc(15px + 12 * (25vw - 694px) / 1197) !important;
         width: 60%;
         font-weight: 500 !important;
+    }
+    @media (min-width: 1430px){
+        width: 75%;
     }
 }
 .btn-big {
@@ -800,6 +806,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         }
         @media (min-width: 1000px) and (max-width: 1367px) {
             max-width: calc(40vh + 12 * (100vh - 769vh) / 1151);
+        }
+        @media (min-width: 1368px){
+            max-width: calc(60vh + 12 * (100vh - 769vh) / 1151)
         }
     }
 }
@@ -1635,7 +1644,7 @@ a {
 .min-height-35vh {
     min-height: 35vh;
     max-height: 35vh;
-    @media (min-width: 1650px) {
+    @media (min-width: 1430px) {
         height: 390px !important;
         min-height: 390px;
         max-height: 390px;
