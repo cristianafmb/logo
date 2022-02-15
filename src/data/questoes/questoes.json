@@ -9,12 +9,12 @@
                 "link": ""
             },
             {
-                "texto": "Sobre Análises Clínicas",
-                "link": "/examesanalises/analisesclinicas"
-            },
-            {
                 "texto": "Sobre Acordos e Parcerias",
                 "link": ""
+            },
+            {
+                "texto": "Contactos",
+                "link": "/contactos"
             }
         ]
     }

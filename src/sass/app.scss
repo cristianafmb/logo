@@ -7,6 +7,7 @@ $gold_hover: #9c814c;
 $dark_gold_hover: #8c6f2a;
 $gold_shadow: #908058;
 $black: #3e3e3e;
+$background-menu-mobile: #C1A258;
 $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a28650, #957841);
 
 @import url("https://fonts.googleapis.com/css?family=Poppins");
@@ -969,12 +970,12 @@ input:focus-visible {
 }
 .img-corpo-clinico {
     width: 100%;
-    max-height: 30vh;
-    min-height: 30vh;
+    max-height: 42vh;
+    min-height: 42vh;
     object-fit: cover;
     object-position: top center;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     will-change: opacity;
     justify-content: center;
     height: 100%;
@@ -986,9 +987,9 @@ input:focus-visible {
         box-shadow: 0 0 3px 2px $gold_shadow;
         max-width: calc(13vh + 12 * (100vw - 769px) / 11510);
         object-fit: cover;
-        background-position: top;
+        background-position: top center;
         background-size: cover;
-        object-position: center;
+        object-position: top center;
         width: calc(13vh + 12 * (100vw - 769px) / 11510) !important;
         overflow: hidden;
         img {
@@ -1319,7 +1320,7 @@ input:focus-visible {
     margin-top: 10% !important;
 }
 .margin-sections {
-    margin: 12vw auto calc(60px + (100 * (100vw - 320px)) / 1600);
+    margin: 8vw auto calc(60px + (100 * (100vw - 320px)) / 1600);
 }
 .bold {
     font-weight: bold;
@@ -1409,8 +1410,8 @@ input:focus-visible {
         width: 70% !important;
     }
 }
-.margin-5 {
-    margin: 5% !important;
+.margin-10 {
+    margin: 10% !important;
 }
 .light-gold {
     color: $light_gold !important;
@@ -1568,7 +1569,7 @@ a {
 }
 #modal-menu {
     .modal-content {
-        background-color: rgb(215, 200, 145);
+        background-color: $background-menu-mobile;
     }
 }
 .pl-20 {

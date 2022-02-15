@@ -26,7 +26,7 @@ const AllPosts = ({ posts }) => {
                 <p className="head-x-small oBold">{p.head}</p>
               </div>
               <div>
-                <p className="title-large pExtraBold">{p.title}</p>
+                <p className="title-large oExtraBold">{p.title}</p>
               </div>
               <div className="mt-4 mb-2">
                 <p className="details-small oRegular">{p.details}</p>

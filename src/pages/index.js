@@ -57,7 +57,7 @@ const IndexPage = ({ data, location }) => {
 
           <div className="no-repeat position-relative bg-position-bottom">
             <Image src={data.homeJson.background.bottom} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-            <Invisalign data={data.homeJson.invisalign} medium={breakpoints.md} xl={breakpoints.xl}/>
+            {/*<Invisalign data={data.homeJson.invisalign} medium={breakpoints.md} xl={breakpoints.xl}/> */}
             {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
               <Noticias posts={posts} xl={breakpoints.xl}/>
             }

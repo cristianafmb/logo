@@ -25,13 +25,13 @@ const SubPageTemplate = ({ data, pageContext, location }) => {
 
   var pathname = location.pathname;
   const pageName = pathname.split("/")[1]
-  const subPageName = pathname.split("/")[2]
 
   const areas = pageContext['areas']
 
   const background = pageContext['backgrounds']
   const subPage = pageContext['subpages']
 
+  
   return (
 
     <Layout home>
@@ -120,14 +120,15 @@ export const Json = graphql`
         link
           text
         }
-      head
-      people {
-        especiality
+        head
+        people {
+          especiality
           img
-      name
-      occupation
+          imgMobile
+          name
+          occupation
         }
-      title
+        title
       }
     }
       questoesJson{

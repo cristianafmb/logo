@@ -166,6 +166,7 @@ export const Json = graphql`
       people {
         especiality
           img
+          imgMobile
       name
       occupation
         }

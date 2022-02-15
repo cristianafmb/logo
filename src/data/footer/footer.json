@@ -15,7 +15,7 @@
                 "alt": "instagram"
             },
             {
-                "link": "https://pt.linkedin.com/in/upcare-medical-center-827642137?trk=public_profile_browsemap",
+                "link": "https://www.linkedin.com/company/upcare-medical-center/",
                 "icon": "footer/linkedin.png",
                 "alt": "linkedin"
             }
@@ -37,31 +37,31 @@
             ],
             [
                 {
-                    "text": "Análises Avelab",
+                    "text": "Covid-19",
                     "link": "/"
+                },
+                {
+                    "text": "Sobre Nós",
+                    "link": "/sobrenos"
                 },
                 {
                     "text": "Acordos e Parcerias",
                     "link": "/"
-                },
-                {
-                    "text": "Política de Privacidade",
-                    "link": "/politica-de-privacidade/"
                 }
             ],
             [
                 
                 {
-                    "text": "Blog",
-                    "link": "/blog"
-                },
-                {
-                    "text": "Covid-19",
-                    "link": "/"
+                    "text": "Contactos",
+                    "link": "/contactos"
                 },
                 {
                     "text": "Termos & Condições",
                     "link": "/termos-e-condicoes"
+                },
+                {
+                    "text": "Política de Privacidade",
+                    "link": "/politica-de-privacidade/"
                 }
             ]
         ],

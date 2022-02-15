@@ -155,6 +155,7 @@ query SobreNos {
       people {
         especiality
         img
+        imgMobile
         name
         occupation
       }

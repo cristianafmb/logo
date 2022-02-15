@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 const SobreNos = ({ data, xl }) => (
     <div className="container-devices position-relative" >
-        <div className="margin-5">
+        <div className="margin-10">
 
         </div>
         <div className="m-auto half-width">
@@ -13,7 +13,7 @@ const SobreNos = ({ data, xl }) => (
             <p className="title-x-large oExtraBold mt-4 mb-3">{data.title}</p>
             <p className="details-small  mt-5 oRegular">{data.details}</p>
         </div>
-        <div className="margin-5">
+        <div className="margin-10">
 
         </div>
     </div>

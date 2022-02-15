@@ -19,7 +19,7 @@ const HighlightNew = ({ head, title, details, path, image, btn }) => {
                     <p className="head-x-small oBold">{head}</p>
                 </div>
                 <div>
-                    <p className="title-large pExtraBold">{title}</p>
+                    <p className="title-large oExtraBold">{title}</p>
                 </div>
                 <div className="mt-4 mb-2">
                     <p className="details-small oRegular">{details}</p>

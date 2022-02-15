@@ -41,9 +41,8 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
                                 } title={subpage.title} details={subpage.details} btn={false} subpage={subpage} />
                         </div>
 
-
+                                  
                         <div className="pt-5 mt-4">
-
                             <MiniCorpoClinicoMobile corpoclinico={subpage.corpoclinico} mobile={true} />
 
                         </div>

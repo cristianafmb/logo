@@ -10,6 +10,7 @@ import $ from 'jquery' // important: case sensitive.
 
 
 const CorpoClinicoMobile = ({ data }) => {
+    
     const number_per_cols = Math.floor(data.people.length / 4);
     var i, currentFirst, currentSecond, currentThird, currentFourth
     i = currentFirst = currentSecond = currentThird = currentFourth = 0
@@ -124,7 +125,7 @@ const CorpoClinicoMobile = ({ data }) => {
                 <Col sm="6" md="6" lg="6" className="position-relative">
                     {first_col.map((item, i) => (
                         <div className="position-absolute" key={"corpo-mobile-first" + i}>
-                            <img className="img-corpo-clinico" src={item.img} id={"firstMobile" + i} />
+                            <img className="img-corpo-clinico" src={item.imgMobile} id={"firstMobile" + i} />
                             <div className=" max-width">
                                 <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"nameFirstMobile" + i} > {item.name} </p>
                             </div>
@@ -140,7 +141,7 @@ const CorpoClinicoMobile = ({ data }) => {
                 <Col sm="6" md="6" lg="6" className="position-relative">
                     {second_col.map((item, i) => (
                         <div className="position-absolute" key={"corpo-mobile-second" + i}>
-                            <img className="img-corpo-clinico" src={item.img} id={"secondMobile" + i} />
+                            <img className="img-corpo-clinico" src={item.imgMobile} id={"secondMobile" + i} />
                             <div className=" max-width">
                                 <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"nameSecondMobile" + i} > {item.name} </p>
                             </div>
@@ -159,7 +160,7 @@ const CorpoClinicoMobile = ({ data }) => {
                 <Col sm="6" md="6" lg="6" className="position-relative ">
                     {third_col.map((item, i) => (
                         <div className="position-absolute" key={"corpo-mobile-third" + i}>
-                            <img className="img-corpo-clinico" src={item.img} id={"thirdMobile" + i} />
+                            <img className="img-corpo-clinico" src={item.imgMobile} id={"thirdMobile" + i} />
                             <div className=" max-width">
                                 <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"nameThirdMobile" + i} > {item.name} </p>
                             </div>
@@ -175,7 +176,7 @@ const CorpoClinicoMobile = ({ data }) => {
                 <Col sm="6" md="6" lg="6" className="position-relative">
                     {fourth_col.map((item, m) => (
                         <div className="position-absolute" key={"corpo-mobile-fourth" + m}>
-                            <img className="img-corpo-clinico" src={item.img} id={"fourthMobile" + m} />
+                            <img className="img-corpo-clinico" src={item.imgMobile} id={"fourthMobile" + m} />
                             <div className=" max-width">
                                 <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"nameFourthMobile" + m} > {item.name} </p>
                             </div>

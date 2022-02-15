@@ -13,7 +13,7 @@
             "head": "Dermatologia",
             "subject": "Estética Facial nas nossas clínicas.",
             "details": "A Dermatologia é a especialidade da medicina que se ocupa das doenças que afetam o maior orgão do corpo humano, a pele.",
-            "img": "home/02.jpg",
+            "img": "home/03.jpg",
             "alt": "Dermatologia",
             "href":"/especialidades/dermatologia",
             "btntext": "Saber Mais"
@@ -22,7 +22,7 @@
             "head": "Marcação Consulta",
             "subject": "Faça-nos uma visita. Cuide da sua saúde.",
             "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. ",
-            "img": "home/03.jpg",
+            "img": "home/02.jpg",
             "alt": "Marcação Consulta",
             "href": "/marcacao",
             "btntext": "Saber Mais"
@@ -72,7 +72,7 @@
         },
         {
             "title": "Marcar Consulta",
-            "details": "Os exames médicos são essenciais para que tenha um diagnóstico assertivo das suas doenças. Conheça os que fazemos na nossa clínica.",
+            "details": " A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. Conheça o que fazemos na nossa clínica.",
             "button": "Pedir Marcação de Consulta",
             "href": "/",
             "img": "home/especialidades/marcar-consulta.png",
