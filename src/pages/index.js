@@ -46,28 +46,28 @@ const IndexPage = ({ data, location }) => {
 
           <div className="no-repeat position-relative ">
             <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={true}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
 
-            <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} xl={true} />
+            <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} xl={breakpoints.xl} />
 
-            <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} xl={true}/>
+            <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} xl={breakpoints.xl}/>
           </ div>
 
-          <Especialidades especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} xl={true}/>
+          <Especialidades especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
 
           <div className="no-repeat position-relative bg-position-bottom">
             <Image src={data.homeJson.background.bottom} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-            <Invisalign data={data.homeJson.invisalign} medium={breakpoints.md} xl={true}/>
+            <Invisalign data={data.homeJson.invisalign} medium={breakpoints.md} xl={breakpoints.xl}/>
             {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
-              <Noticias posts={posts} xl={true}/>
+              <Noticias posts={posts} xl={breakpoints.xl}/>
             }
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={true}/>
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
 
-            <Questoes data={data.questoesJson.questoes} xl={true}/>
+            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
 
           </div>
-          <Footer data={data.footerJson.footer} xl={true}/>
+          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
         </>
       )
         :

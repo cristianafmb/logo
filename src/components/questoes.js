@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
 const Questoes = ({ data, xl }) => (
-    <div className={xl ? "container-xl-devices container-questoes mt-5 position-relative" : "container-questoes mt-5 position-relative"}>
+    <div className="container-devices container-questoes mt-5 position-relative" >
         <Row>
             <Col sm="12" md="12" lg="12" className="no-space-n-cols">
                 <hr className="gold" style={{ height: "2px" }} />

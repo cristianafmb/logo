@@ -16,15 +16,12 @@ import Form from './form'
 
 const PedidoMarcacoRapida = ({ img, alt, space, subpage, marcacaoRef, xl }) => {
     // all form left
-    console.log(space)
     var classSpace = ""
     if (space) {
-        if (xl) classSpace = "container-xl-devices space-sections position-relative"
-        else classSpace = "space-sections position-relative"
+        classSpace = " container-devices space-sections position-relative"
     }
     else {
-        if (xl) classSpace = "container-xl-devices position-relative"
-        else classSpace = "position-relative"
+        classSpace = "container-devices position-relative"
     }
     if (img !== false) {
         return (

@@ -23,7 +23,7 @@ const Menu = ({ marcacaoRef, location, post, xl }) => {
     };
 
     return (
-        <div className={xl ? "container-xl-devices position-relative" : "position-relative"}>
+        <div className="container-devices position-relative">
             <Navbar expand="lg" >
                 <Container id="navbar">
                     <Navbar.Brand className="m-auto logo" >

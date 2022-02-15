@@ -8,7 +8,6 @@ import Col from 'react-bootstrap/Col'
 import '../../sass/app.scss';
 
 const CardWhiteLeft = ({ title, details, button, href, medium }) => {
-    console.log(medium)
     return (
         <>
             {medium ? (

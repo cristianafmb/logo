@@ -20,7 +20,7 @@ function CustomRigthArrow(props) {
 
 const IntroHome = ({ data, xl }) => {
     return (
-        <div className={xl ? "container-xl-devices margin-sections height-10vh" : "section-intro-home margin-sections" }>
+        <div className="container-devices margin-sections height-10vh">
             <Carousel indicators={false} pause={true} nextIcon={<CustomRigthArrow />} prevIcon={false} fade={true}>
                 {data.home.map((data, i) => (
                     <Carousel.Item key={"card-intro-home" + i}>

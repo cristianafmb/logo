@@ -10,7 +10,7 @@ import InfoSobreNos from '../../components/cardHeadTitleDetails'
 const SobreNosHome = ({ testimony, sobreNos, xl }) => {
 
     return (
-        <div className={xl ?  "container-xl-devices section-sobre-nos-home margin-sections position-relative pt-5percent" : "section-sobre-nos-home margin-sections position-relative pt-5percent" }>
+        <div className="container-devices section-sobre-nos-home margin-sections position-relative pt-5percent">
             <Row>
                 <Col sm="12" md="4" lg="4">
                     <Testimony img={testimony.img} alt={testimony.alt} quote={testimony.quote} person={testimony.person} tfunction={testimony.function} mobile={false} />

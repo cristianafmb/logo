@@ -19,7 +19,7 @@ const Noticias = ({ posts, xl }) => {
     const firstNew = posts[0]
     const secondNew = posts[1]
     return(
-    <div className={xl ? "container-xl-devices space-sections max-width  position-relative" : "space-sections max-width  position-relative"} >
+    <div className="container-devices space-sections max-width  position-relative" >
         <Row className="max-width">
             <Col sm="12" md="5" lg="4" >
                 <Image src={firstNew.image} alt={firstNew.title} className="card-white-img img-noticias" />

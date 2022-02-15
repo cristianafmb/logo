@@ -27,7 +27,7 @@ const Footer = ({ data, xl }) => {
 
     return (
         <div  className="position-relative footer-bg">
-            <Row className={xl ? "container-xl-devices  center heigth-footer d-flex  align-items-center m-auto width-footer" : " center heigth-footer d-flex  align-items-center m-auto width-footer"}>
+            <Row className="container-xl-devices  center heigth-footer d-flex  align-items-center m-auto width-footer">
                 <Col sm="12" md="1" lg="1" className="right ">
                     <Link to="/">
                         <Image src={data.logowhite}  className="logo-footer" alt="logo"/>

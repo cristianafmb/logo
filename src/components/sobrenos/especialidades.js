@@ -6,7 +6,7 @@ import { Row, Col } from 'react-bootstrap';
 import Image from '../Images'
 import '../../sass/app.scss';
 
-const EspecialidadesSobreNos = ({ data }) => {
+const EspecialidadesSobreNos = ({ data, xl }) => {
 
     var areas = data.especs;
     var areas2 = null

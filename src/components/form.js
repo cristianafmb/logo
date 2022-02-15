@@ -183,7 +183,7 @@ const Formulario = ({ title }) => {
                                     <Col sm="12" md="6" lg="6">
                                         <p className="mb-2">Dados Pessoais</p>
                                     </Col>
-                                    <Col sm="12" md="6" lg="6">
+                                    <Col sm="12" md="6" lg="6" className="gx-0">
                                         <p className="mb-2">Dados da Consulta</p>
                                     </Col>
                                 </Row>

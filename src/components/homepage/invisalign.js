@@ -11,9 +11,9 @@ import CardWhiteLeft from "./cardWhiteLeft";
 
 
 const Invisalign = ({ data, medium, xl }) => (
-    <div className={xl ? "container-xl-devices mt-5 position-relative pt-4" : "mt-5 position-relative pt-4" } >
+    <div className="container-devices mt-5 position-relative pt-4">
         <Row className="max-width">
-            <Col sm="12" md="8" lg="9" className="d-flex center position-relative">
+            <Col sm="12" md="8" lg="9" className="d-flex center position-relative ps-4 gx-0">
                 <Image src={data.img} className="card-white-img"  alt={data.alt} />
                 <p className="position-absolute oLight head-medium black p-over-image-invisalign">{data.textoverimg}</p>
             </Col>

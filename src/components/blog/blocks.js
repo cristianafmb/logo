@@ -59,7 +59,7 @@ function Lights() {
 export default function Blocks( { text, xl }) {
   return (
     <>
-      <div className={xl ? "container-xl-devices container-noposts mt-2": "container-noposts mt-2"}>
+      <div className="container-devices container-noposts mt-2">
         <Canvas linear flat shadows camera={{ position: [0, 0, 100], fov: 100 }}>
           <Lights />
 

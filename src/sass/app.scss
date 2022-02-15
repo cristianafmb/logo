@@ -1637,7 +1637,7 @@ a:hover{
 .min-height-7vh{
     min-height: 7vh;
 }
-.container-xl-devices{
+.container-devices{
     width: 80% !important;
     margin: auto !important;
     @media (max-width: 1025px){
@@ -1650,6 +1650,10 @@ a:hover{
 }
 .pt-5percent{
     padding-top: 5%;
+}
+.min-height-10vh{
+    min-height: 10vh;
+    height: 10vh;
 }
 /** END - general **/
 

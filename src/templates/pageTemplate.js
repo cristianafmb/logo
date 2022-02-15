@@ -53,7 +53,7 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
             <Image src={page.banner} alt="bg-banner" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={true}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
 
           </div>
 
@@ -61,9 +61,9 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
             <Image src={backgrounds.backgroundtop} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <InnerTopsection areas={areas} page={page} location={location} xl={true}/>
+            <InnerTopsection areas={areas} page={page} location={location} xl={breakpoints.xl}/>
 
-            <CardsSection data={cards.slice(0, number_max_cards_top)} xl={true}/>
+            <CardsSection data={cards.slice(0, number_max_cards_top)} xl={breakpoints.xl}/>
 
           </div>
 
@@ -79,13 +79,13 @@ const PageTemplate = ({ data, pageContext, location }) => {
               <CorpoClinico data={data.corpoclinicoJson.corpoclinico} marcacaoRef={marcacaoRef} />
               : <CardsSection data={cards2} />}
 
-            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef} xl={true}/>
+            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
 
-            <Questoes data={data.questoesJson.questoes} xl={true}/>
+            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
 
           </div>
 
-          <Footer data={data.footerJson.footer} xl={true}/>
+          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
         </>
       )
         :

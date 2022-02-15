@@ -26,10 +26,10 @@ const TermosPage = ({ data, location }) => {
         <>
           <div className="no-repeat position-relative ">
             <Image src="background-termos.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}  xl={true}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}  xl={breakpoints.xl}/>
             <Termos />
           </div>
-          <Footer data={data.footerJson.footer}  xl={true}/>
+          <Footer data={data.footerJson.footer}  xl={breakpoints.xl}/>
         </>
       )
         :

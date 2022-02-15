@@ -34,7 +34,7 @@ const Contactos = ({ data, location }) => {
 
             <Image src={data.contactosJson.backgroundtop} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Menu location={location} marcacaoRef={marcacaoRef} xl={true}/>
+            <Menu location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
 
             <Contacts data={data.contactosJson} />
 
@@ -46,13 +46,13 @@ const Contactos = ({ data, location }) => {
 
             <Image src={data.contactosJson.backgroundfooter} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={false} marcacaoRef={marcacaoRef} xl={true}/>
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={false} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
 
-            <Questoes data={data.questoesJson.questoes} xl={true}/>
+            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
 
           </div>
 
-          <Footer data={data.footerJson.footer} xl={true}/>
+          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
         </>
       )
         :

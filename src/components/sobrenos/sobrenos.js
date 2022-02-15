@@ -4,7 +4,7 @@ import '../../sass/app.scss';
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const SobreNos = ({ data, xl }) => (
-    <div className={xl ? "container-xl-devices position-relative" : "position-relative"}>
+    <div className="container-devices position-relative" >
         <div className="margin-5">
 
         </div>

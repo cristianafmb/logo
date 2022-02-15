@@ -9,11 +9,11 @@ import CardEspecialidades from '../homepage/cardEspecialidades'
 
 
 const EspecialidadesHome = ({ especialidades, location, marcacaoRef, xl }) => (
-    <div className={xl ? "container-xl-devices space-sections position-relative": "space-sections position-relative"}>
-        <Row className="mt-4" style={{width: "99%"}}>
+    <div className="container-devices space-sections position-relative">
+        <Row className="mt-4 gx-0" style={{width: "99%"}}>
             {especialidades.map((data, i) => (
                 <Col sm="12" md="6" lg="3" className="padding-r-0 padding-l-7" key={"card-especialidades-"+i}>
-                    <CardEspecialidades title={data.title} details={data.details} button={data.button} href={data.href} img={data.img} alt={data.alt} location={location} marcacaoRef={marcacaoRef}/>
+                    <CardEspecialidades xl={xl} title={data.title} details={data.details} button={data.button} href={data.href} img={data.img} alt={data.alt} location={location} marcacaoRef={marcacaoRef}/>
                 </Col>
                 
             ))}

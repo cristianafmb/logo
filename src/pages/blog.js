@@ -54,7 +54,7 @@ const BlogPage = ({ data, location }) => {
 
             <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={true}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
 
             <HighlightNew head={posts[0].head} title={posts[0].title} details={posts[0].details} path={posts[0].path} btn="Ler Tudo" image={posts[0].image} />
 
@@ -67,11 +67,11 @@ const BlogPage = ({ data, location }) => {
 
               </div>
 
-              <Questoes data={data.questoesJson.questoes} xl={true}/>
+              <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
             </div>
           </div>
 
-          <Footer data={data.footerJson.footer} xl={true}/>
+          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
 
         </>
       )
