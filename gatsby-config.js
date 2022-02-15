@@ -1,7 +1,7 @@
 const myCustomQueries = {
   xs: "(max-width: 320px)",
   mobile: "(max-width: 768px)",
-  md: "(max-width: 1024px)",
+  md: "(max-width: 1025px)",
   l: "(max-width: 1536px)",
   xl: "(min-width: 1536px)",
   portrait: "(orientation: portrait)",

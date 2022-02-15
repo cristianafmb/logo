@@ -14,7 +14,7 @@ const CardIntroHome = ({ head, subject, details, btntext, href }) => (
         <div>
             <p className="title-large pExtraBold">{subject}</p>
         </div>
-        <div className="mt-4 mb-2">
+        <div className="mt-4 mb-2 min-height-10vh" >
             <p className="details-small oRegular">{details}</p>
         </div>
         <div>
