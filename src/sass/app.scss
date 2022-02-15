@@ -1,7 +1,7 @@
 $white: white;
-$light_gold: #C2A257;
+$light_gold: #c2a257;
 $gold: #957841;
-$gold_shadow_light: #D7C891;
+$gold_shadow_light: #d7c891;
 $dark_gold: #957841;
 $gold_hover: #9c814c;
 $dark_gold_hover: #8c6f2a;
@@ -109,7 +109,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     @media (max-width: 900px) {
         font-size: calc(19px + 12 * (27vw - 769px) / 1151);
     }
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 16px !important;
     }
 }
@@ -121,7 +121,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         font-size: calc(30px + 12 * (27vw - 769px) / 1151);
         line-height: 1.2;
     }
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 28px !important;
     }
 }
@@ -132,7 +132,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         font-size: calc(13px + (3 * (100vw - 769px)) / 1151);
         line-height: 2;
     }
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 14px !important;
     }
 }
@@ -141,15 +141,15 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     color: $gold;
     line-height: 110%;
     font-weight: 500;
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 23px !important;
     }
 }
 .details-x-large {
     font-size: calc(30px + 12 * (100vw - 769px) / 1151);
-    color: #957841;
+    color: $gold;
     line-height: 1;
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 25px !important;
     }
 }
@@ -158,7 +158,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     color: $dark_gold;
     font-weight: 650;
     line-height: 1;
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 30px !important;
     }
 }
@@ -170,12 +170,12 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     vertical-align: middle;
     @media (max-width: 990px) {
         font-size: calc(18px + 12 * (27vw - 769px) / 1151);
-        color: #957841;
+        color: $gold;
         height: 0px;
         display: table-cell;
         line-height: 2;
     }
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 14px !important;
     }
 }
@@ -185,7 +185,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     @media (max-width: 990px) {
         font-size: calc(24px + 12 * (27vw - 769px) / 1151);
     }
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 20px !important;
     }
 }
@@ -196,14 +196,14 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     @media (max-width: 990px) {
         font-size: calc(11px + (3 * (100vw - 769px)) / 1151);
     }
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 12px !important;
     }
 }
 .head-large {
     font-size: calc(30px + 12 * (27vw - 769px) / 1151);
     color: $gold;
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 27px !important;
     }
 }
@@ -211,7 +211,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     font-size: calc(18px + 12 * (27vw - 769px) / 1151);
     color: $gold;
     line-height: 0;
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 15px !important;
     }
 }
@@ -222,7 +222,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     @media (max-width: 990px) {
         font-size: calc(7px + 12 * (100vw - 769px) / 1151);
     }
-    @media (min-width: 1650px){
+    @media (min-width: 1650px) {
         font-size: 15px !important;
     }
 }
@@ -313,7 +313,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 #navbar {
     width: 75%;
     margin-left: 0%;
-    @media (max-width: 1025px){
+    @media (max-width: 1025px) {
         width: 85%;
     }
 }
@@ -330,7 +330,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     }
 }
 
-.icon-mobile-calendar{
+.icon-mobile-calendar {
     width: 1rem;
 }
 /** END - menu **/
@@ -367,7 +367,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 /** END - home - intro home **/
 
 /** START - footer **/
-.footer-bg{
+.footer-bg {
     background-color: $light_gold;
 }
 .center-footer {
@@ -433,10 +433,12 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     width: 140px;
     box-shadow: 0 0.1rem 0.4rem $gold_shadow;
     margin-top: 50px;
-    &:hover {
-        color: $gold !important;
-        border-color: $gold !important;
-        background-color: $white !important;
+    &:hover, &:focus {
+        color: $white !important;
+        background-color: $gold !important;
+        border: 1px solid $gold !important;
+        box-shadow: $gold_shadow_light 5px 7px 12px !important;
+    
     }
     @media (max-width: 900px) {
         font-size: calc(12px + 6 * (100vw - 769px) / 1189) !important;
@@ -452,12 +454,13 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     border-color: $gold !important;
     font-size: calc(7px + 6 * (100vw - 769px) / 1189) !important;
     width: 140px;
-    box-shadow: 0 0.1rem 0.4rem $gold_shadow;
     margin-top: 50px;
-    &:hover {
-        color: $gold !important;
-        border-color: $gold !important;
-        background-color: $white !important;
+    &:hover, &:focus {
+        color: $white !important;
+        background-color: $gold !important;
+        border: 1px solid $gold !important;
+        box-shadow: $gold_shadow_light 5px 7px 12px !important;
+    
     }
     @media (max-width: 900px) {
         font-size: calc(12px + 6 * (100vw - 769px) / 1189) !important;
@@ -473,12 +476,14 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     border-radius: 40px !important;
     font-size: calc(14px + 12 * (25vw - 694px) / 1197) !important;
     &:hover {
-        color: $white !important;
-        background-color: $dark_gold !important;
-        border-color: $white !important;
+        color: $gold !important;
+        background-color: $white !important;
+        border: 1px solid #ba9e66 !important;
+        box-shadow: $gold_shadow_light 5px 7px 12px;
+        
     }
     &:focus {
-        box-shadow: 0 0 0.9rem $gold !important;
+        box-shadow: $gold_shadow_light 5px 7px 12px;
     }
     @media (max-width: 990px) {
         font-size: calc(18px + 12 * (25vw - 694px) / 1197) !important;
@@ -489,7 +494,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     }
 }
 .btn-questoes {
-    background-color: transparent !important;
+    background-color: $white !important;
     color: $gold !important;
     border-color: $gold !important;
     border-radius: 40px !important;
@@ -497,12 +502,13 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     font-weight: 500 !important;
     line-height: 2 !important;
     &:hover {
-        color: $white !important;
-        background-color: $dark_gold !important;
-        border-color: $white !important;
+        color: $gold !important;
+        background-color: $white !important;
+        border: 1px solid #ba9e66 !important;
+        box-shadow: $gold_shadow_light 5px 7px 12px;
     }
     &:focus {
-        box-shadow: 0 0 0.9rem $gold !important;
+        box-shadow: $gold_shadow_light 5px 7px 12px;
     }
     @media (max-width: 990px) {
         font-size: calc(20px + 12 * (25vw - 694px) / 1197) !important;
@@ -528,7 +534,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         border: 1px solid #ba9e66 !important;
         box-shadow: $gold_shadow_light 5px 7px 12px;
     }
-    &:focus{
+    &:focus {
         box-shadow: $gold_shadow_light 5px 7px 12px !important;
     }
 }
@@ -547,16 +553,17 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     vertical-align: middle !important;
     height: 30px;
     border-radius: 50px !important;
-    box-shadow: 0px 3px 5px 1px $gold;
 
     p {
         font-size: calc(9px + (3 * (100vw - 769px)) / 1151);
     }
 
-    &:hover {
-        color: $dark_gold !important;
-        background-color: $white !important;
-        border-color: $white !important;
+    &:hover, &:focus {
+        color: $white !important;
+        background-color: $gold !important;
+        border: 1px solid $gold !important;
+        box-shadow: $gold_shadow_light 5px 7px 12px !important;
+    
     }
 }
 .btn-check:focus + .btn-primary,
@@ -612,13 +619,12 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     z-index: 9999;
     margin: auto;
     display: flex;
-    &:hover {
-        color: $white !important;
-        background-color: $dark_gold !important;
-        border-color: $white !important;
-    }
-    &:focus {
-        box-shadow: 0 0 0.9rem $gold !important;
+    &:hover, &:focus {
+        color: $gold !important;
+        background-color: $white !important;
+        border: 1px solid $gold !important;
+        box-shadow: $gold_shadow_light 5px 7px 12px !important;
+    
     }
     @media (max-width: 990px) {
         width: 50%;
@@ -636,8 +642,10 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         color: $white !important;
         border-color: $white !important;
         &:hover {
-            color: $dark_gold !important;
+            color: $gold !important;
             background-color: $white !important;
+            border: 1px solid $gold !important;
+            box-shadow: none !important;
         }
         @media (max-width: 990px) {
             font-size: calc(18px + 12 * (25vw - 694px) / 1197) !important;
@@ -1428,7 +1436,7 @@ a {
     @media (min-width: 1500px) and (max-width: 2000px) {
         height: 200px;
     }
-    @media (min-width: 2001px){
+    @media (min-width: 2001px) {
         height: 300px;
     }
 }
@@ -1470,6 +1478,7 @@ a {
     background-position: top;
 }
 .hover-border-gold {
+    border: 1px solid transparent;
     &:hover {
         border: 1px solid #ba9e66;
     }
@@ -1631,29 +1640,28 @@ a {
         max-height: 390px;
     }
 }
-a:hover{
+a:hover {
     color: $gold !important;
 }
-.min-height-7vh{
+.min-height-7vh {
     min-height: 7vh;
 }
-.container-devices{
+.container-devices {
     width: 80% !important;
     margin: auto !important;
-    @media (max-width: 1025px){
+    @media (max-width: 1025px) {
         width: 93% !important;
     }
 }
-.height-10vh{
+.height-10vh {
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
-.pt-5percent{
+.pt-5percent {
     padding-top: 5%;
 }
-.min-height-10vh{
+.min-height-10vh {
     min-height: 10vh;
     height: 10vh;
 }
 /** END - general **/
-
