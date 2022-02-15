@@ -10,8 +10,8 @@ import { Col, Row } from 'react-bootstrap'
 import CardWhiteLeft from "./cardWhiteLeft";
 
 
-const Invisalign = ({ data, medium }) => (
-    <div className="mt-5 position-relative pt-4" >
+const Invisalign = ({ data, medium, xl }) => (
+    <div className={xl ? "container-xl-devices mt-5 position-relative pt-4" : "mt-5 position-relative pt-4" } >
         <Row className="max-width">
             <Col sm="12" md="8" lg="9" className="d-flex center position-relative">
                 <Image src={data.img} className="card-white-img"  alt={data.alt} />

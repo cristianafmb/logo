@@ -7,10 +7,10 @@ import { Row, Col } from 'react-bootstrap';
 import Testimony from '../../components/homepage/testimony'
 import InfoSobreNos from '../../components/cardHeadTitleDetails'
 
-const SobreNosHome = ({ testimony, sobreNos }) => {
+const SobreNosHome = ({ testimony, sobreNos, xl }) => {
 
     return (
-        <div className="section-sobre-nos-home margin-sections position-relative">
+        <div className={xl ?  "container-xl-devices section-sobre-nos-home margin-sections position-relative" : "section-sobre-nos-home margin-sections position-relative" }>
             <Row>
                 <Col sm="12" md="4" lg="4">
                     <Testimony img={testimony.img} alt={testimony.alt} quote={testimony.quote} person={testimony.person} tfunction={testimony.function} mobile={false} />

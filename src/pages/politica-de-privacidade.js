@@ -27,10 +27,10 @@ const PoliticaPage = ({ data, location }) => {
         <>
           <div className="no-repeat position-relative ">
             <Image src="background-politica.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}  xl={breakpoints.xl}/>
             <Politica />
           </div>
-          <Footer data={data.footerJson.footer} />
+          <Footer data={data.footerJson.footer}  xl={breakpoints.xl}/>
         </>
       )
         :

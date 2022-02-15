@@ -14,14 +14,24 @@ import Form from './form'
 
 
 
-const PedidoMarcacoRapida = ({ img, alt, space, subpage, marcacaoRef }) => {
+const PedidoMarcacoRapida = ({ img, alt, space, subpage, marcacaoRef, xl }) => {
     // all form left
+    console.log(space)
+    var classSpace = ""
+    if (space) {
+        if (xl) classSpace = "container-xl-devices space-sections position-relative"
+        else classSpace = "space-sections position-relative"
+    }
+    else {
+        if (xl) classSpace = "container-xl-devices position-relative"
+        else classSpace = "position-relative"
+    }
     if (img !== false) {
         return (
-            <div className={space === true ? "space-sections position-relative" : "position-relative"} id="marcacao" ref={marcacaoRef}>
+            <div className={classSpace} id="marcacao" ref={marcacaoRef}>
                 <Row className="max-width  no-space-n-cols">
                     <Col sm="12" md="8" lg="8">
-                        <Row className=" pl-5">
+                        <Row >
                             <Col sm="12" md="12" lg="12">
                                 <Form title="Pedido de Marcação Rápido" />
                             </Col>
@@ -43,7 +53,7 @@ const PedidoMarcacoRapida = ({ img, alt, space, subpage, marcacaoRef }) => {
                     <Col sm="12" md="12" lg="12">
                         <Row >
                             <Col sm="12" md="12" lg="12">
-                                <Form title={subpage.title}/>
+                                <Form title={subpage.title} />
                             </Col>
                         </Row>
                     </Col>

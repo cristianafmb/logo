@@ -51,7 +51,7 @@ const PostTemplate = ({ data, location }) => {
 
             <Image src={homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} post={true} />
+            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} post={true} xl={breakpoints.xl}/>
 
             <div>
               <HighlightNew head={frontmatter.head} title={frontmatter.title} details={frontmatter.details} path={frontmatter.path} btn={false} image={frontmatter.image} />
@@ -70,7 +70,7 @@ const PostTemplate = ({ data, location }) => {
                     dangerouslySetInnerHTML={{ __html: html }}
                   />
 
-                  <div className='mt-4'>
+                  <div className='mt-4 center'>
                     <Link to="/blog">
                       <Button variant="warning" size="sm" className="button-intro-home-saber-mais oMedium">Voltar</Button>
                     </Link>
@@ -86,12 +86,12 @@ const PostTemplate = ({ data, location }) => {
             
             <Image src={homeJson.background.bottom} alt="bg-bottom" objectPosition="0% 35%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Questoes data={questoesJson.questoes} />
+            <Questoes data={questoesJson.questoes} xl={breakpoints.xl}/>
 
           </ div>
 
 
-          <Footer data={footerJson.footer} />
+          <Footer data={footerJson.footer} xl={breakpoints.xl}/>
         </>
       )
         :

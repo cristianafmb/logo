@@ -42,7 +42,7 @@ const SubPageTemplate = ({ data, pageContext, location }) => {
 
             <Image src={subPage.img} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
 
           </div>
 
@@ -52,18 +52,18 @@ const SubPageTemplate = ({ data, pageContext, location }) => {
 
             <SubPage subpage={subPage} page={pageName} areas={areas} location={location} marcacaoRef={marcacaoRef} />
 
-            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef} />
+            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
           </div>
 
           <div className="no-repeat position-relative ">
 
             <Image src={data.homeJson.background.bottom} alt="bg-bottom" objectPosition="0% 35%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Questoes data={data.questoesJson.questoes} />
+            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
 
           </div>
 
-          <Footer data={data.footerJson.footer} />
+          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
         </>
       )
         :

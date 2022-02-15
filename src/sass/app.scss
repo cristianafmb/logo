@@ -1,7 +1,7 @@
 $white: white;
 $light_gold: #C2A257;
 $gold: #957841;
-$dark_gold: #84754e;
+$dark_gold: #957841;
 $gold_hover: #9c814c;
 $dark_gold_hover: #8c6f2a;
 $gold_shadow: #908058;
@@ -311,7 +311,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 }
 #navbar {
     width: 75%;
-    margin-left: 5%;
+    margin-left: 0%;
 }
 #navbar-without-logo {
     width: 100%;
@@ -363,6 +363,9 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 /** END - home - intro home **/
 
 /** START - footer **/
+.footer-bg{
+    background-color: $light_gold;
+}
 .center-footer {
     flex: 1 1 auto;
     padding: 1rem;
@@ -1158,7 +1161,6 @@ input:focus-visible {
     }
 }
 .col-marcacao-rapida {
-    padding-left: 80px;
     padding-right: 50px;
     padding-top: 5%;
     @media (max-width: 990px) {
@@ -1493,6 +1495,7 @@ a {
 }
 .space-sections {
     margin-top: 170px !important;
+    padding-top: 170px !important;
     @media (max-width: 990px) {
         margin-top: 70px !important;
     }
@@ -1621,6 +1624,9 @@ a:hover{
 }
 .min-height-10vh{
     min-height: 10vh;
-
+}
+.container-xl-devices{
+    width: 85% !important;
+    margin: auto !important;
 }
 /** END - general **/

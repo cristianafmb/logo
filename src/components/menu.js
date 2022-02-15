@@ -8,7 +8,7 @@ import calendario from '../images/calendar.png'
 import Form from "../components/form"
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
-const Menu = ({ marcacaoRef, location, post }) => {
+const Menu = ({ marcacaoRef, location, post, xl }) => {
     var url = location.pathname
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -23,7 +23,7 @@ const Menu = ({ marcacaoRef, location, post }) => {
     };
 
     return (
-        <div className="position-relative">
+        <div className={xl ? "container-xl-devices position-relative" : "position-relative"}>
             <Navbar expand="lg" >
                 <Container id="navbar">
                     <Navbar.Brand className="m-auto logo" >
@@ -61,7 +61,7 @@ const Menu = ({ marcacaoRef, location, post }) => {
                         centered
                         className="modal-marcacao-rapida"
                     >
-                        <Modal.Body >
+                        <Modal.Body className="p-4">
                             <Form title="Pedido de Marcação Rápido" />
                         </Modal.Body>
                     </Modal>
