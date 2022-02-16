@@ -239,6 +239,7 @@ query IntroHome {
   footerJson{
     footer {
       logo
+      logomobile
       logowhite
       socialmedia {
         link

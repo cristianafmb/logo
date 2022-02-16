@@ -192,6 +192,7 @@ export const Json = graphql`
           text
         }
       logo
+      logomobile
       logowhite
       socialmedia {
         alt

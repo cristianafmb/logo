@@ -179,6 +179,7 @@ export const pageQuery = graphql`
       footerJson{
         footer {
         logo
+        logomobile
         logowhite
       socialmedia {
         link

@@ -414,6 +414,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 }
 .footer-icons-mobile {
     width: 60% !important;
+    margin: auto;
 }
 .logo-footer {
     width: calc(105px + 12 * (100vw - 769px) / 1151) !important;
@@ -1307,8 +1308,8 @@ input:focus-visible {
 
 /** START - COVID **/
 .img-passos {
-    width: 25vh;
-    height: 25vh;
+    width: 20vh;
+    height: 20vh;
 }
 /** END - COVID **/
 

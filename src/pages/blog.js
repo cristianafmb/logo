@@ -184,6 +184,7 @@ query BlogPage {
   footerJson{
     footer {
       logo
+      logomobile
       logowhite
       socialmedia {
         link

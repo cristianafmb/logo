@@ -98,6 +98,7 @@ export const Json = graphql`
   footerJson{
     footer {
       logo
+      logomobile
       logowhite
       socialmedia {
         link

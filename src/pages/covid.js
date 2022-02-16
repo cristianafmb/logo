@@ -31,7 +31,7 @@ const NotFoundPage = ({ data, location }) => {
         <>
 
           <div className="no-repeat position-relative " >
-            <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+            <Image src={data.homeJson.background.top} alt="bg-top" objectPosition="0% 60%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <Menu marcacaoRef={marcacaoRef} location={location} xl={breakpoints.xl} />
 
             <Covid data={data.covidJson} />
@@ -120,6 +120,7 @@ export const Json = graphql`
   footerJson{
     footer {
       logo
+      logomobile
       logowhite
       socialmedia {
         link

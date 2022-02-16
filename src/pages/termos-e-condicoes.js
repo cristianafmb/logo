@@ -65,6 +65,7 @@ query termosJson {
   footerJson{
     footer {
       logo
+      logomobile
       logowhite
       socialmedia {
         link

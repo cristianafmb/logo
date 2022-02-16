@@ -185,6 +185,7 @@ query SobreNos {
         text
       }
       logo
+      logomobile
       logowhite
       socialmedia {
         alt

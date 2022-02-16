@@ -66,6 +66,7 @@ query politicaJson {
   footerJson{
     footer {
       logo
+      logomobile
       logowhite
       socialmedia {
         link

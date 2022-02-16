@@ -70,7 +70,7 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
         <div className="position-relative">
             <div className="section-space-mobile pt-4">
                 <Link to="/">
-                    <Image src={footer.logo} className="logo-upcare " alt="logo logo-upcare " />
+                    <Image src={footer.logomobile} className="logo-upcare " alt="logo logo-upcare " />
                 </Link>
             </div>
             <div>

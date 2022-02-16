@@ -78,14 +78,14 @@ const FormMobile = ({ title }) => {
                     .match(
                         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
                     )) {
-                        checkerTemp.push(" Email válido")
+                    checkerTemp.push(" Email válido")
                 }
             }
             if (!document.querySelector("#contact").value) {
                 checkerTemp.push(" Telemóvel")
             }
             if (document.querySelector("#contact").value) {
-                if(!isNumeric(document.querySelector("#contact").value) || document.querySelector("#contact").value.match(/\d/g).length!==9){
+                if (!isNumeric(document.querySelector("#contact").value) || document.querySelector("#contact").value.match(/\d/g).length !== 9) {
                     checkerTemp.push(" Telemóvel válido")
                 }
             }
@@ -104,7 +104,7 @@ const FormMobile = ({ title }) => {
                     checkerTemp.push(" Data válida")
                 }
             }
-            
+
         }
         if (!polCheck) {
             if (checkerTemp.length < 1) {
@@ -235,7 +235,13 @@ const FormMobile = ({ title }) => {
 
                                 </select>
 
-                                <input className="input-form gold oMedium mt-2" type="date" required id="date" name="date" />
+                                <input className="input-form gold oMedium mt-2" onFocus={
+                                    (e) => {
+                                        e.currentTarget.type = "date";
+                                        e.currentTarget.focus();
+                                    }
+                                }
+                                    placeholder="dd/mm/aaaa" type="date" required id="date" name="date" />
 
                                 <select className="input-form oMedium mt-2 mb-4" type="text" required placeholder="Horário" id="hours" name="hours" defaultValue={'DEFAULT'} >
                                     <option value="DEFAULT" disabled hidden>Horário</option>
