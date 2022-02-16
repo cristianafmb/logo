@@ -902,7 +902,7 @@ input[type="date"]:before {
     color: $gold;
     position: absolute;
 }
-input[type="date"]:after {
+input[type="date"]:focus {
     content: "" !important;
     color: $gold;
     position: absolute;
