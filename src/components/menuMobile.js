@@ -4,9 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { animated, useSpring } from "react-spring";
 import '../sass/app.scss';
 import { Modal, Row, Col } from 'react-bootstrap'
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import Image from './Images'
-import calendario from '../images/mobile/menu/marcar-consulta.png'
 
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
@@ -57,8 +56,11 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
     const handleClose = () => setShow(false);
 
     const handleShow = () => {
+        setShow2(false)
+        
         // if there is an element with id #marcacao
         if ($('#marcacao').length > 0) {
+            navigate('#marcacao')
             marcacaoRef.current.scrollIntoView();
         } else {
             // if there is no element with id #marcacao, then show modal
@@ -74,43 +76,25 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
                 </Link>
             </div>
             <div>
-                <button className="container-btn-marcacao-mobile" >
+                <a href="tel:+351234426640" className="container-btn-marcacao-mobile" >
 
-                    <svg
-                    className="icon-mobile-calendar"
-                        onClick={handleShow}
-                        width="150" height="150" viewBox="25 20 100 110">
-                        <defs>
-                            <clipPath id="b">
-                                <rect width="150" height="150" />
-                            </clipPath>
-                        </defs>
-                        <g id="a" clip-path="url(#b)">
-                            <rect width="150" height="150" fill="#3e3e3e" />
-                            <g transform="translate(-113 -2340)">
-                                <g transform="translate(132 2359)">
-                                    <g transform="translate(0 0)">
-                                        <path d="M19.933,115h82.133c8.247,0,14.933-6.4,14.933-14.3V31.6c0-7.9-6.686-14.3-14.933-14.3H89.622V7.766a4.982,4.982,0,0,0-9.956,0V17.3H42.333V7.766a4.982,4.982,0,0,0-9.956,0V17.3H19.933C11.686,17.3,5,23.7,5,31.6V100.7c0,7.9,6.686,14.3,14.933,14.3Zm82.133-9.532H19.933a4.875,4.875,0,0,1-4.978-4.766V52.244h92.089V100.7A4.875,4.875,0,0,1,102.067,105.468ZM19.933,26.83H32.378V31.6a4.982,4.982,0,0,0,9.956,0V26.83H79.667V31.6a4.982,4.982,0,0,0,9.956,0V26.83h12.444a4.875,4.875,0,0,1,4.978,4.766V42.712H14.956V31.6A4.875,4.875,0,0,1,19.933,26.83Z" transform="translate(-5 -3)" fill="#C2A257" />
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
+                    <svg height="18px" version="1.1" viewBox="0 0 18 18" width="18px" ><title /><desc /><defs /><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#C2A257" id="Icons-Communication" transform="translate(-85.000000, -126.000000)"><g id="phone" transform="translate(85.000000, 126.000000)"><path d="M3.6,7.8 C5,10.6 7.4,12.9 10.2,14.4 L12.4,12.2 C12.7,11.9 13.1,11.8 13.4,12 C14.5,12.4 15.7,12.6 17,12.6 C17.6,12.6 18,13 18,13.6 L18,17 C18,17.6 17.6,18 17,18 C7.6,18 0,10.4 0,1 C0,0.4 0.4,0 1,0 L4.5,0 C5.1,0 5.5,0.4 5.5,1 C5.5,2.2 5.7,3.4 6.1,4.6 C6.2,4.9 6.1,5.3 5.9,5.6 L3.6,7.8 L3.6,7.8 Z" id="Shape" /></g></g></g></svg>
 
-                </button >
+
+                </a >
 
             </div>
             <div className="m-auto btn-menu-mobile"  >
                 <svg
                     onClick={handleShow2}
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="#957841"
+                    fill="#C2A257"
                     width="35" height="35" viewBox="0 0 50 50"
                 >
                     <rect id="Retângulo_42" data-name="Retângulo 42" width="50" height="50" rx="25" fill="#3e3e3e" />
                     <g id="Grupo_238" data-name="Grupo 238">
                         <animated.rect width="26" height="3" transform="translate(12 17)" fill="#C2A257" style={first} />
-                        <animated.rect width={show2 ? "26" : "20"} height="3" transform="translate(15 24)" fill="#C2A257" style={second} />
+                        <animated.rect width={show2 ? "26" : "20"} height="3" transform="translate(15 24)" fill="#" style={second} />
                         <animated.rect width="26" height="3" transform="translate(12 31)" fill="#C2A257" style={third} />
                     </g>
 
@@ -144,7 +128,13 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
                         </svg>
                     </div>
                     <Modal.Body>
+
                         <Row className="menu-mobile-options">
+                            <div className="m-auto center p-3">
+                                <button onClick={handleShow} className="especialidades-button oMedium btn btn-primary">
+                                    Marque uma consulta
+                                </button>
+                            </div>
                             {footer.links.map((array, j) => (
                                 <Col sm="12" md="12" lg="12" key={"row-footer-mobile-menu-" + j}>
                                     {j !== 0 ?

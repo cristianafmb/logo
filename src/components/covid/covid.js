@@ -9,7 +9,7 @@ import Img from '../Images'
 const Covid = ({ data }) => {
 
     return (
-        <div className="container-devices position-relative mt-5">
+        <div className="container-devices position-relative mt-5 mb-8vw margin-sections">
             <div className="container-devices">
                 <div className="mt-5">
                     <p className="head-large oBold">{data.visitarSeguranca.title}</p>

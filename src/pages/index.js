@@ -88,7 +88,7 @@ const IndexPage = ({ data, location }) => {
 
             <EspecialidadesMobile especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} />
 
-            <InvisalignMobile data={data.homeJson.invisalign} />
+           {/** <InvisalignMobile data={data.homeJson.invisalign} /> */}
 
             {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
               <NoticiasMobile posts={posts} blogIntro={data.homeJson.blog} />

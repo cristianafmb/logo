@@ -22,7 +22,7 @@ const MiniCorpoClinico = ({ corpoclinico, mobile }) => {
                                 <p className="head-xx-small  oMedium mt-3">{item.name}</p>
                             </div>
                             <div className="center">
-                                <p className="head-xx-small light-gold oMedium mt-3 mb-4">{item.occupation}</p>
+                                <p className="head-xx-small light-gold oMedium mb-4">{item.occupation}</p>
                             </div>
                         </div>
 

@@ -320,11 +320,11 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 }
 .menu-mobile-options {
     position: absolute;
-    top: 50%;
+    top: 45%;
     margin-top: -290px !important;
     max-width: 95%;
     @media (min-width: 300px) and (max-width: 500px) {
-        top: 65% !important;
+        top: 60% !important;
     }
 }
 
@@ -1525,12 +1525,7 @@ a {
 .icon-clinico {
     width: 50% !important;
 }
-.position-relative {
-    position: relative !important;
-}
-.position-absolute {
-    position: absolute !important;
-}
+
 .black {
     color: $black !important;
 }
@@ -1648,6 +1643,9 @@ a {
 .max-width-8vh {
     max-width: 8vh;
 }
+.max-width-10vh{
+    max-width: 10vh;
+}
 .max-width-6vh {
     max-width: 6vh;
 }
@@ -1708,9 +1706,10 @@ a:hover {
     min-width: 50%;
 }
 .mt-8vw{
-    margin-top: 8vw;
+    margin-top: 8vw !important;
 }
 .mb-8vw{
-    margin-bottom: 8vw;
+    margin-bottom: 8vw !important;
 }
+
 /** END - general **/

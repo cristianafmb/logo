@@ -128,7 +128,11 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
               <Image src={backgrounds.backgroundfootermobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-              <CorpoClinicoMobile data={data.corpoclinicoJson.corpoclinico} />
+              <div className="mt-5">
+
+                <CorpoClinicoMobile data={data.corpoclinicoJson.corpoclinico} />
+
+              </div>
 
               <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
 
