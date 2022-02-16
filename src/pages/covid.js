@@ -26,7 +26,7 @@ const NotFoundPage = ({ data, location }) => {
 
   return (
     <Layout home mobile={useBreakpoint().mobile}>
-      <Seo title="Página não encontrada" />
+      <Seo title="Covid-19" />
       {!breakpoints.mobile ? (
         <>
 

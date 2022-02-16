@@ -61,7 +61,7 @@ const Menu = ({ marcacaoRef, location, post, xl }) => {
                         centered
                         className="modal-marcacao-rapida"
                     >
-                        <Modal.Body className="p-4">
+                        <Modal.Body className="p-5">
                             <Form title="Pedido de Marcação Rápido" />
                         </Modal.Body>
                     </Modal>

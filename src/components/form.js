@@ -176,7 +176,7 @@ const Formulario = ({ title }) => {
                     <div className='wrapper'>
 
                         <form method="POST" onSubmit={doSubmit} action="/" id="form">
-                            <div className={title === "Pedido de Marcação Rápido" ? "col-marcacao-rapida" : "pr-5 mt-5"}>
+                            <div className={title === "Pedido de Marcação Rápido" ? "" : "pr-5 mt-5"}>
                                 <p className="details-large oExtraBold">{title === "Pedido de Marcação Rápido" ? "Pedido de Marcação Rápido" : "Pedido de Marcação de " + title}</p>
                                 <p className="details-xx-small oRegular"> Preencha o formulário e aguarde o nosso contacto. Todos os campos são de preenchimento obrigatório</p>
                                 <Row className="head-medium oLight">

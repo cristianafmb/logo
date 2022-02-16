@@ -8,7 +8,6 @@ import Img from '../Images'
 
 const Covid = ({ data }) => {
 
-    console.log(data)
     return (
         <div className="container-devices position-relative mt-5">
             <div className="container-devices">

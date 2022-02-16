@@ -173,7 +173,7 @@ const CorpoClinico = ({ data, marcacaoRef }) => {
                     centered
                     className="modal-marcacao-rapida"
                 >
-                    <Modal.Body >
+                    <Modal.Body className="p-5">
                         <Form title="Pedido de Marcação Rápido" />
                     </Modal.Body>
                 </Modal>

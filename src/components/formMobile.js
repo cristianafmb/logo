@@ -171,7 +171,7 @@ const FormMobile = ({ title }) => {
                     <div className='wrapper'>
 
                         <form method="POST" onSubmit={doSubmit} action="/" id="form">
-                            <div className={title === "Pedido de Marcação Rápido" ? "col-marcacao-rapida" : "pr-5 mt-5"}>
+                            <div className={title === "Pedido de Marcação Rápido" ? "" : "pr-5 mt-5"}>
                                 <p className="title-large oMedium mb-2">{title === "Pedido de Marcação Rápido" ? "Pedido de Marcação Rápido" : "Consulta de " + title}</p>
                                 <p className="details-xx-small oRegular"> Preencha o formulário e aguarde o nosso contacto. Todos os campos são de preenchimento obrigatório</p>
                                 <p className="head-medium oLight mt-3 mb-2">Dados Pessoais</p>
