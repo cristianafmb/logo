@@ -6,7 +6,8 @@ const myCustomQueries = {
   xl: "(min-width: 1536px)",
   portrait: "(orientation: portrait)",
   tablet: "(max-width: 1149px)",
-  custom: "(min-width: 1150px)"
+  custom: "(min-width: 1150px)",
+  customLarge: "(min-width: 2550px)"
 }
 
 

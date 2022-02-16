@@ -37,7 +37,11 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
   var cards2 = null
   var number_max_cards_top = null
-  if (breakpoints.tablet) {
+  if (breakpoints.customLarge) {
+    console.log('customLarge')
+    number_max_cards_top = 10
+  }
+  else if (breakpoints.tablet) {
     console.log('tablet')
     number_max_cards_top = 9
   }
