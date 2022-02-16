@@ -92,7 +92,7 @@ const SobreNos = ({ data, location }) => {
             <div className="no-repeat bg-position-bottom position-relative" >
               <Image src={data.sobrenosJson.sobrenos.backgroundfootermobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} />
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
 
               <QuestoesMobile data={data.questoesJson.questoes} />
 

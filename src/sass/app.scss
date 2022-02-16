@@ -330,6 +330,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 
 .icon-mobile-calendar {
     width: 1rem;
+    height: auto;
 }
 /** END - menu **/
 
@@ -1691,5 +1692,11 @@ a:hover {
 .width-auto {
     width: auto;
     min-width: 50%;
+}
+.mt-8vw{
+    margin-top: 8vw;
+}
+.mb-8vw{
+    margin-bottom: 8vw;
 }
 /** END - general **/

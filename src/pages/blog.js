@@ -33,7 +33,7 @@ const BlogPage = ({ data, location }) => {
 
   const marcacaoRef = useRef(null);
 
-  if (!posts || !Boolean(posts.length ) || posts[0].path === "/noposts/") {
+  if (!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") {
     return (
       <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} location={location} />
     )
@@ -54,7 +54,7 @@ const BlogPage = ({ data, location }) => {
 
             <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
 
             <HighlightNew head={posts[0].head} title={posts[0].title} details={posts[0].details} path={posts[0].path} btn="Ler Tudo" image={posts[0].image} />
 
@@ -67,11 +67,11 @@ const BlogPage = ({ data, location }) => {
 
               </div>
 
-              <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
+              <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl} />
             </div>
           </div>
 
-          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
+          <Footer data={data.footerJson.footer} xl={breakpoints.xl} />
 
         </>
       )
@@ -93,8 +93,9 @@ const BlogPage = ({ data, location }) => {
             <div className="no-repeat bg-position-bottom position-relative" >
 
               <Image src={data.homeJson.background.bottommobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-
-              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
+              <div className="mt-5">
+                <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
+              </div>
 
               <QuestoesMobile data={data.questoesJson.questoes} />
 

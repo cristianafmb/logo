@@ -18,7 +18,7 @@ const NoticiasMobile = ({ posts, blogIntro }) => {
     const firstNew = posts[0]
 
     return (
-        <div className="space-sections section-space-mobile  position-relative margin-bottom-svg" >
+        <div className="margin-sections section-space-mobile  position-relative margin-bottom-svg" >
             <Row className="max-width">
                 <Col sm="12" md="6" lg="6" className="p-4 mb-4">
                     <Card head={blogIntro.title} title={blogIntro.head} details={blogIntro.details} btn={blogIntro.btntxtmobile} btnlink={blogIntro.btnhref} />

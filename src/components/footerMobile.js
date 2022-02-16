@@ -25,7 +25,7 @@ const FooterMobile = ({ footer, marcacaoRef }) => {
 
 
     return (
-        <div style={{ backgroundColor: "#C2A257" }} className="position-relative height-100vh max-width center-footer ">
+        <div className="position-relative height-100vh max-width center-footer footer-bg">
 
             <div className="section-space-mobile center pt-4">
                 <Link to="/">

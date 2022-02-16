@@ -9,7 +9,7 @@ import { Button } from 'react-bootstrap'
 
 
 const InvisalignMobile = ({ data }) => (
-    <div className="position-relative section-space-mobile space-sections cover-invisalign center"  >
+    <div className="position-relative section-space-mobile  margin-sections cover-invisalign center"  >
         <Image className="card-white-img" src={data.imgmobile} alt={data.alt} />
         <p className="position-absolute oLight  p-over-image-invisalign details-x-large">{data.head}</p>
         <Button className="especialidades-button oMedium position-absolute btn-invisalign">

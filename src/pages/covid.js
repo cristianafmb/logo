@@ -96,8 +96,6 @@ export const Json = graphql`
       alt
     }
     covidJson{
-      img
-      imgMobile
       visitarSeguranca{
         title
         details

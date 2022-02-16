@@ -14,7 +14,7 @@ const SobreNosHomeMobile = ({ testimony, sobreNos }) => {
         <div className="section-space-mobile margin-sections position-relative">
 
             <Row>
-                <Col sm="12" md="7" lg="6" className="mb-4">
+                <Col sm="12" md="7" lg="6" className="mb-8vw">
                     <Card head={sobreNos.head} title={sobreNos.subject} details={sobreNos.details} btn={sobreNos.btntext} btnlink={sobreNos.href}/>
                  
                 </Col>

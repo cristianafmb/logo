@@ -14,7 +14,7 @@ const PedidoMarcacoRapidaMobile = ({ img, alt, space, subpage, marcacaoRef }) =>
     // all form left
     if (img !== false) {
         return (
-            <div className={space === true ? "space-sections position-relative section-space-mobile" : "position-relative section-space-mobile"} id="marcacao" ref={marcacaoRef}>
+            <div className={space === true ? "margin-sections position-relative section-space-mobile" : "margin-sections position-relative section-space-mobile"} id="marcacao" ref={marcacaoRef}>
                 <FormMobile title="Pedido de Marcação Rápido" />
                 <Row className="max-width  no-space-n-cols">
                     <Col sm="12" md="4" lg="4" >

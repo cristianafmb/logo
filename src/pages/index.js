@@ -97,7 +97,7 @@ const IndexPage = ({ data, location }) => {
 
             <div className="no-repeat position-relative bg-position-bottom" >
 
-              <Image src={data.homeJson.background.bottommobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+              <Image src={data.homeJson.background.bottommobile} alt="bg-bottom-mobile"  className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
               <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
 

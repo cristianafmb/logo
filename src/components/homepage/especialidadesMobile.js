@@ -9,8 +9,8 @@ import CardEspecialidadesMobile from './cardEspecialidadesMobile'
 
 
 const EspecialidadesHomeMobile = ({ especialidades, marcacaoRef }) => (
-    <div className="space-sections position-relative">
-        <Row className="m-4">
+    <div className="section-space-mobile position-relative margin-sections">
+        <Row>
             {especialidades.map((data, i) => (
                 <Col sm="12" md="3" lg="3" className="padding-r-0 padding-l-7 mb-4" key={"card-especialidades-mobile-"+i}>
                     <CardEspecialidadesMobile title={data.title} details={data.details} button={data.titlemobile} href={data.href} img={data.img} alt={data.alt} marcacaoRef={marcacaoRef}/>

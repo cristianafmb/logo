@@ -6,12 +6,12 @@ import '../sass/app.scss';
 import { Modal, Row, Col } from 'react-bootstrap'
 import { Link } from "gatsby"
 import Image from './Images'
-import calendario from '../images/calendar.png'
+import calendario from '../images/mobile/menu/marcar-consulta.png'
 
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
 const MenuMobile = ({ footer, marcacaoRef }) => {
- 
+
     const [show2, setShow2] = useState(false);
     function renderSwitch(param) {
         switch (param) {
@@ -74,9 +74,29 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
                 </Link>
             </div>
             <div>
-                <button className="container-btn-marcacao-mobile" onClick={handleShow}>
+                <button className="container-btn-marcacao-mobile" >
 
-                    <img src={calendario} alt="calendar" className="icon-mobile-calendar"/>
+                    <svg
+                    className="icon-mobile-calendar"
+                        onClick={handleShow}
+                        width="150" height="150" viewBox="25 20 100 110">
+                        <defs>
+                            <clipPath id="b">
+                                <rect width="150" height="150" />
+                            </clipPath>
+                        </defs>
+                        <g id="a" clip-path="url(#b)">
+                            <rect width="150" height="150" fill="#3e3e3e" />
+                            <g transform="translate(-113 -2340)">
+                                <g transform="translate(132 2359)">
+                                    <g transform="translate(0 0)">
+                                        <path d="M19.933,115h82.133c8.247,0,14.933-6.4,14.933-14.3V31.6c0-7.9-6.686-14.3-14.933-14.3H89.622V7.766a4.982,4.982,0,0,0-9.956,0V17.3H42.333V7.766a4.982,4.982,0,0,0-9.956,0V17.3H19.933C11.686,17.3,5,23.7,5,31.6V100.7c0,7.9,6.686,14.3,14.933,14.3Zm82.133-9.532H19.933a4.875,4.875,0,0,1-4.978-4.766V52.244h92.089V100.7A4.875,4.875,0,0,1,102.067,105.468ZM19.933,26.83H32.378V31.6a4.982,4.982,0,0,0,9.956,0V26.83H79.667V31.6a4.982,4.982,0,0,0,9.956,0V26.83h12.444a4.875,4.875,0,0,1,4.978,4.766V42.712H14.956V31.6A4.875,4.875,0,0,1,19.933,26.83Z" transform="translate(-5 -3)" fill="#C2A257" />
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+
                 </button >
 
             </div>

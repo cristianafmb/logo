@@ -49,13 +49,13 @@ const SubpageMobile = ({ bgtop, bgbanner, areas, subpage, home, bgbottm, questoe
 
                     </div>
 
-                    <div>
+                    <div className="margin-sections">
 
                         <CardSectionMobile page={subpage} cards={areas} location={location} />
 
                     </div>
 
-                    <div className="pt-5 mt-4 section-space-mobile">
+                    <div className="margin-sections section-space-mobile">
 
                         <PedidoMarcacaoMobile img={false} alt={false} space={false} subpage={subpage} marcacaoRef={marcacaoRef} />
 
