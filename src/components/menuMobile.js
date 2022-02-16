@@ -130,9 +130,10 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
                     <Modal.Body>
 
                         <Row className="menu-mobile-options">
-                            <div className="m-auto center p-3">
+                            <div className="m-auto center">
                                 <button onClick={handleShow} className="especialidades-button oMedium btn btn-primary">
-                                    Marque uma consulta
+                                    <p className="footer-text center gold oMedium">Marque uma consulta
+                                        </p>
                                 </button>
                             </div>
                             {footer.links.map((array, j) => (

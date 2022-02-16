@@ -19,7 +19,7 @@ import Image from '../components/Images'
 
 import { graphql } from 'gatsby'
 
-const CovidPage = ({ data, location }) => {
+const ParceirosPage = ({ data, location }) => {
 
   const marcacaoRef = useRef(null);
   const breakpoints = useBreakpoint();
@@ -34,7 +34,7 @@ const CovidPage = ({ data, location }) => {
             <Image src={data.homeJson.background.top} alt="bg-top" objectPosition="0% 60%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <Menu marcacaoRef={marcacaoRef} location={location} xl={breakpoints.xl} />
 
-            <Covid data={data.covidJson} />
+            
           </div>
 
           <div className="no-repeat position-relative " >
@@ -55,7 +55,7 @@ const CovidPage = ({ data, location }) => {
               <Image src={data.homeJson.background.topmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover height-max" />
               <MenuMobile footer={data.footerJson.footer} marcacaoRef={marcacaoRef} />
 
-              <Covid data={data.covidJson} />
+              
 
             </ div>
 
@@ -78,10 +78,10 @@ const CovidPage = ({ data, location }) => {
 }
 
 
-export default CovidPage
+export default ParceirosPage
 
 export const Json = graphql`
-  query covidQueryJson {
+  query parceirosQueryJson {
     homeJson {
       background{
         top
@@ -95,16 +95,7 @@ export const Json = graphql`
       img
       alt
     }
-    covidJson{
-      visitarSeguranca{
-        title
-        details
-        passos{
-          img
-          details
-        }
-      }
-    }
+    
     questoesJson{
       questoes{
       titulo
