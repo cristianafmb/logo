@@ -899,7 +899,7 @@ input[type="text" i] {
 }
 input[type="date"]::before{
     color: $gold;
-    content: attr(placeholder) ": ";
+    content: attr(placeholder);
  }
  input[type="date"]:focus::before {
     content: "" !important;
