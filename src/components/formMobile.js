@@ -236,7 +236,7 @@ const FormMobile = ({ title }) => {
                                 </select>
 
                                 <input className="input-form gold oMedium mt-2" onfocus="(this.type='date')"
-                                    placeholder="dd/mm/aaaa" type="date" required id="date" name="date" />
+                                    placeholder="dd/mm/aaaa" type="text" required id="date" name="date" />
 
                                 <select className="input-form oMedium mt-2 mb-4" type="text" required placeholder="Horário" id="hours" name="hours" defaultValue={'DEFAULT'} >
                                     <option value="DEFAULT" disabled hidden>Horário</option>
