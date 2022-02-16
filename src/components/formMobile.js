@@ -92,7 +92,7 @@ const FormMobile = ({ title }) => {
             if (document.querySelector("#especiality").value === "Especialidade") {
                 checkerTemp.push(" Especialidade")
             }
-            if (document.querySelector("#hours").value === "Horário") {
+            if (document.querySelector("#hours").value === "DEFAULT") {
                 checkerTemp.push(" Horário")
             }
             if (!document.querySelector("#date").value) {
