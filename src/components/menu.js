@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from 'gatsby'
 import '../sass/app.scss';
@@ -22,6 +22,22 @@ const Menu = ({ marcacaoRef, location, post, xl }) => {
         }
     };
 
+
+    const [scrolling, setScrolling] = useState(false);
+    const [scrollTop, setScrollTop] = useState(0);
+    useEffect(() => {
+        const onScroll = e => {
+            setScrollTop(e.target.documentElement.scrollTop);
+            setScrolling(e.target.documentElement.scrollTop > scrollTop);
+            $('#btn-marcacao').removeClass('hover-btn')
+        };
+        $('#btn-marcacao').addClass('hover-btn')
+        window.addEventListener("scroll", onScroll);
+
+        return () => window.removeEventListener("scroll", onScroll);
+    }, [scrollTop]);
+
+
     return (
         <div className="container-devices position-relative">
             <Navbar expand="lg" >
@@ -44,7 +60,7 @@ const Menu = ({ marcacaoRef, location, post, xl }) => {
             </Navbar>
             <div>
                 <button className="container-btn-marcacao" onClick={handleShow}>
-                    <div className="btn-icon-marcacao">
+                    <div className="btn-icon-marcacao" id="btn-marcacao">
                         <img src={calendario} alt="calendar" />
                     </div>
 

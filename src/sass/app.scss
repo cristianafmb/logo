@@ -1126,6 +1126,7 @@ input:focus-visible {
     align-items: center;
     justify-content: center;
 }
+ .hover-btn + .btn-text-marcacao,
 .btn-icon-marcacao:hover + .btn-text-marcacao {
     width: 200px;
     z-index: 99;
@@ -1136,7 +1137,7 @@ input:focus-visible {
 .container-btn-marcacao-mobile {
     position: fixed;
     top: 5%;
-    right: 20%;
+    right: 21%;
     padding: 10px;
     background-color: $black;
     display: flex;
