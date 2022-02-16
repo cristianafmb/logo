@@ -897,15 +897,17 @@ input[type="text" i] {
         padding-bottom: calc(15px + 12 * (27vw - 769px) / 1151) !important;
     }
 }
+
 input[type="date"]:before {
-    content: attr(placeholder) !important;
     color: $gold;
-    position: absolute;
+    content: attr(placeholder);
 }
-input[type="date"] {
+
+input[type="date"].full:before {
+    color: black;
     content: "" !important;
-    color: $gold;
 }
+
 /* Change the white to any color */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
