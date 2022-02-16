@@ -682,10 +682,10 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 .col-page {
     width: 20% !important;
 
-    @media (min-width: 1024px) and (max-width: 1149px) {
+    @media (min-width: 900px) and (max-width: 1149px) {
         width: 32% !important;
     }
-    @media (min-width: 1150px) and (max-width: 1367px) {
+    @media (min-width: 1150px)  {
         width: 25% !important;
     }
 }

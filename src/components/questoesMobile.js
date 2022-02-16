@@ -28,7 +28,7 @@ const QuestoesMobile = ({ data }) => (
                     <Row className="d-flex height-max  align-items-center">
                         {data.questoes.map((data, i) => (
                             <Col className="center" sm="12" md="4" lg="4" key={"questao" + i}>
-                                <Button className="btn-questoes btn btn-warning btn-sm oMedium mt-4" href={data.link}>
+                                <Button className="btn-questoes btn btn-warning btn-sm oMedium mt-4 max-width" href={data.link}>
                                     {data.texto}
                                 </Button>
                             </Col>

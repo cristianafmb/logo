@@ -37,12 +37,22 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
   var cards2 = null
   var number_max_cards_top = null
-  if(breakpoints.md) number_max_cards_top = 9
-  else number_max_cards_top = 10
+  if (breakpoints.tablet) {
+    console.log('tablet')
+    number_max_cards_top = 9
+  }
+  else if (breakpoints.custom) {
+    console.log('custom')
+    number_max_cards_top = 8
+  }
+  else {
+    console.log('else')
+    number_max_cards_top = 10
+  }
   if (cards.length > number_max_cards_top) {
     cards2 = cards.slice(number_max_cards_top, cards.length)
   }
- 
+
   return (
 
     <Layout home>
@@ -53,7 +63,7 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
             <Image src={page.banner} alt="bg-banner" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
 
           </div>
 
@@ -61,14 +71,14 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
             <Image src={backgrounds.backgroundtop} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <InnerTopsection areas={areas} page={page} location={location} xl={breakpoints.xl}/>
+            <InnerTopsection areas={areas} page={page} location={location} xl={breakpoints.xl} />
 
-            <CardsSection data={cards.slice(0, number_max_cards_top)} xl={breakpoints.xl}/>
+            <CardsSection data={cards.slice(0, number_max_cards_top)} xl={breakpoints.xl} />
 
           </div>
 
           {cards2 !== null ?
-            <CorpoClinico data={data.corpoclinicoJson.corpoclinico} marcacaoRef={marcacaoRef}  />
+            <CorpoClinico data={data.corpoclinicoJson.corpoclinico} marcacaoRef={marcacaoRef} />
             : <></>}
 
           <div className="no-repeat bg-position-bottom position-relative" >
@@ -79,20 +89,20 @@ const PageTemplate = ({ data, pageContext, location }) => {
               <CorpoClinico data={data.corpoclinicoJson.corpoclinico} marcacaoRef={marcacaoRef} />
               : <CardsSection data={cards2} />}
 
-            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+            <Especialidades especialidades={data.homeJson.especialidades} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
 
-            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
+            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl} />
 
           </div>
 
-          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
+          <Footer data={data.footerJson.footer} xl={breakpoints.xl} />
         </>
       )
         :
         (
           <>
             <div className="no-repeat position-relative" >
-             
+
 
               <Image src={backgrounds.backgroundtopmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
@@ -100,7 +110,7 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
                 <Image src={page.bannermobile} alt="bg-banner-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-                <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
+                <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
                 <InnerTopsectionMobile areas={areas} page={page} location={location} />
 
@@ -114,11 +124,11 @@ const PageTemplate = ({ data, pageContext, location }) => {
 
               <Image src={backgrounds.backgroundfootermobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-              <CorpoClinicoMobile data={data.corpoclinicoJson.corpoclinico}  />
+              <CorpoClinicoMobile data={data.corpoclinicoJson.corpoclinico} />
 
-              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef}/>
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
 
-              <QuestoesMobile data={data.questoesJson.questoes}  />
+              <QuestoesMobile data={data.questoesJson.questoes} />
 
             </div>
 

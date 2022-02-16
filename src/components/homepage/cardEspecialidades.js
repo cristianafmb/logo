@@ -41,7 +41,6 @@ const CardEspecialidades = ({ title, details, button, href, img, alt, marcacaoRe
                     </p>
                 </Col>
             </Row>
-            {console.log(xl)}
             <Row className={xl ?  "m-5 mt-4 min-height-10vh" : "m-2 mt-4"}>
                 <Col>
                     <p className={title === "Marcar Consulta" ? "details-xx-small white oRegular" : "details-xx-small oRegular"}>
