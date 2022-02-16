@@ -257,6 +257,8 @@ const Formulario = ({ title }) => {
                                     <Col sm="12" md="6" lg="6" >
                                         <input className="input-form oMedium" type='text' id="contact" name='contact' placeholder='Telemóvel' />
                                     </Col>
+
+                                    
                                     <Col sm="12" md="6" lg="6" >
                                         <input className="input-form oMedium"
                                             type="date"
