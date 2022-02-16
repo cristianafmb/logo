@@ -897,6 +897,11 @@ input[type="text" i] {
         padding-bottom: calc(15px + 12 * (27vw - 769px) / 1151) !important;
     }
 }
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: $gold;
+    position: absolute;
+}
 /* Change the white to any color */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -1577,7 +1582,7 @@ a {
         background-color: $background-menu-mobile;
     }
 }
-.modal-backdrop{
+.modal-backdrop {
     background-color: $gold_shadow_light !important;
 }
 .pl-20 {
@@ -1673,7 +1678,7 @@ a:hover {
     min-height: 10vh;
     height: 10vh;
 }
-.width-auto{
+.width-auto {
     width: auto;
     min-width: 50%;
 }
