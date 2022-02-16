@@ -103,6 +103,9 @@ const Formulario = ({ title }) => {
             }
             if (document.querySelector("#date").value) {
                 const dateInput = new Date(document.querySelector("#date").value)
+                var hours = document.querySelector("#hours").value.split("h");
+                dateInput.setHours( hours[0] );
+                dateInput.setMinutes( hours[1] );
                 if (dateInput < today) {
                     checkerTemp.push(" Data válida")
                 }
@@ -258,7 +261,7 @@ const Formulario = ({ title }) => {
                                         <input className="input-form oMedium" type='text' id="contact" name='contact' placeholder='Telemóvel' />
                                     </Col>
 
-                                    
+
                                     <Col sm="12" md="6" lg="6" >
                                         <input className="input-form oMedium"
                                             type="date"

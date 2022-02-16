@@ -98,8 +98,11 @@ const FormMobile = ({ title }) => {
             if (!document.querySelector("#date").value) {
                 checkerTemp.push(" Data")
             }
-            if (document.querySelector("#date").value) {
+            if (document.querySelector("#date").value && document.querySelector("#hours").value !== "Horário") {
                 const dateInput = new Date(document.querySelector("#date").value)
+                var hours = document.querySelector("#hours").value.split("h");
+                dateInput.setHours( hours[0] );
+                dateInput.setMinutes( hours[1] );
                 if (dateInput < today) {
                     checkerTemp.push(" Data válida")
                 }
@@ -236,7 +239,7 @@ const FormMobile = ({ title }) => {
                                 </select>
 
                                 <input className="input-form gold oMedium mt-2" onfocus="(this.type='date')"
-                                    placeholder="dd/mm/aaaa" type="text" required id="date" name="date" />
+                                     defaultValue="dd/mm/aaaa" type="date" required id="date" name="date" />
 
                                 <select className="input-form oMedium mt-2 mb-4" type="text" required placeholder="Horário" id="hours" name="hours" defaultValue={'DEFAULT'} >
                                     <option value="DEFAULT" disabled hidden>Horário</option>
