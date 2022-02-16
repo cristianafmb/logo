@@ -911,6 +911,16 @@ input[type="date"]::before{
  input[type="date"]::after {
     content: "" !important;
  }
+ input[type="date"]:focus:before,
+ input[type="date"]:valid:before {
+    content: "";
+  }
+ ::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+    content: "" !important;
+}
 
 
 /* Change the white to any color */
