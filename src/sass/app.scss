@@ -897,16 +897,20 @@ input[type="text" i] {
         padding-bottom: calc(15px + 12 * (27vw - 769px) / 1151) !important;
     }
 }
-
-input[type="date"]:before {
+input[type="date"]::before{
     color: $gold;
-    content: attr(placeholder);
-}
-
-input[type="date"].full:before {
-    color: black;
+    content: attr(placeholder) ": ";
+ }
+ input[type="date"]:focus::before {
     content: "" !important;
-}
+ }
+ input[type="date"]:focus::after {
+    content: "" !important;
+ }
+ input[type="date"]::after {
+    content: "" !important;
+ }
+
 
 /* Change the white to any color */
 input:-webkit-autofill,
