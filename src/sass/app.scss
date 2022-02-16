@@ -902,6 +902,11 @@ input[type="date"]:before {
     color: $gold;
     position: absolute;
 }
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: $gold;
+    position: absolute;
+}
 /* Change the white to any color */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
