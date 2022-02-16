@@ -6,7 +6,6 @@ import { Row, Col, Button, Modal } from 'react-bootstrap'
 import '../../sass/app.scss';
 import Img from '../Images'
 
-
 const Covid = ({ data }) => {
 
     console.log(data)

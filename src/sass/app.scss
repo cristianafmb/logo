@@ -504,6 +504,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     font-size: calc(14px + 12 * (25vw - 694px) / 1197) !important;
     font-weight: 500 !important;
     line-height: 2 !important;
+    width: 50%;
     &:hover {
         color: $gold !important;
         background-color: $white !important;
@@ -523,7 +524,7 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
         font-weight: 500 !important;
     }
     @media (min-width: 1430px) {
-        width: 75%;
+        width: 50%;
     }
 }
 .btn-big {
@@ -1679,5 +1680,8 @@ a:hover {
 .min-height-10vh {
     min-height: 10vh;
     height: 10vh;
+}
+.width-auto{
+    width: auto;
 }
 /** END - general **/
