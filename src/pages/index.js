@@ -1,36 +1,35 @@
-import React, { useRef} from "react"
+import React, { useRef, lazy, Suspense } from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import { parseBlogPosts } from '../utils/helpers'
 
-import Layout from "../components/layout/layout"
-import Seo from "../components/seo"
-import Menu from '../components/menu'
-import MenuMobile from '../components/menuMobile'
-import IntroHome from '../components/homepage/introHome'
-import IntroHomeMobile from '../components/homepage/introHomeMobile'
-import SobreNos from '../components/homepage/sobreNosHome'
-import SobreNosMobile from '../components/homepage/sobreNosHomeMobile'
-import Especialidades from '../components/homepage/especialidades'
-import EspecialidadesMobile from '../components/homepage/especialidadesMobile'
-import Invisalign from '../components/homepage/invisalign'
-import InvisalignMobile from '../components/homepage/InvisalignMobile'
-import Noticias from '../components/homepage/noticias'
-import NoticiasMobile from '../components/homepage/noticiasMobile'
-import PedidoMarcacaoRapido from '../components/pedidoMarcacaoRapido'
-import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
-import Questoes from '../components/questoes'
-import QuestoesMobile from '../components/questoesMobile'
-import Footer from '../components/footer'
-import FooterMobile from '../components/footerMobile'
-
 import { graphql } from 'gatsby'
 
-import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 import Image from '../components/Images'
 
+
+const Layout = React.lazy(() => import('../components/layout/layout'));
+const Seo = React.lazy(() => import('../components/seo'));
+const Menu = React.lazy(() => import('../components/menu'));
+const MenuMobile = React.lazy(() => import('../components/menuMobile'));
+const IntroHome = React.lazy(() => import('../components/homepage/introHome'));
+const IntroHomeMobile = React.lazy(() => import('../components/homepage/introHomeMobile'));
+const SobreNos = React.lazy(() => import('../components/homepage/sobreNosHome'));
+const SobreNosMobile = React.lazy(() => import('../components/homepage/sobreNosHomeMobile'));
+const Especialidades = React.lazy(() => import('../components/homepage/especialidades'));
+const EspecialidadesMobile = React.lazy(() => import('../components/homepage/especialidadesMobile'));
+const Invisalign = React.lazy(() => import('../components/homepage/invisalign'));
+const InvisalignMobile = React.lazy(() => import('../components/homepage/InvisalignMobile'));
+const Noticias = React.lazy(() => import('../components/homepage/noticias'));
+const NoticiasMobile = React.lazy(() => import('../components/homepage/noticiasMobile'));
+const PedidoMarcacaoRapido = React.lazy(() => import('../components/pedidoMarcacaoRapido'));
+const PedidoMarcacaoRapidoMobile = React.lazy(() => import('../components/pedidoMarcacaoRapidoMobile'));
+const Questoes = React.lazy(() => import('../components/questoes'));
+const QuestoesMobile = React.lazy(() => import('../components/questoesMobile'));
+const Footer = React.lazy(() => import('../components/footer'));
+const FooterMobile = React.lazy(() => import('../components/footerMobile'));
 
 
 const IndexPage = ({ data, location }) => {
@@ -42,79 +41,80 @@ const IndexPage = ({ data, location }) => {
   return (
     <Layout home mobile={useBreakpoint().mobile} >
       <Seo title="Home" />
-      {!breakpoints.mobile ? (
-        <>
-
-          <div className="filter-opacity-0" id="divUpSymbol">
-            <Image src="home/up.png" className="up " alt="up" id="upSymbol" />
-          </div>
-
-
-          <div className="no-repeat position-relative ">
-            <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}  />
-
-            <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} xl={breakpoints.xl} />
-
-            <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} xl={breakpoints.xl} />
-          </ div>
-
-          <Especialidades especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
-
-          <div className="no-repeat position-relative bg-position-bottom">
-            <Image src={data.homeJson.background.bottom} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-            {/*<Invisalign data={data.homeJson.invisalign} medium={breakpoints.md} xl={breakpoints.xl}/> */}
-            {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
-              <Noticias posts={posts} xl={breakpoints.xl} />
-            }
-
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
-
-            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl} />
-
-          </div>
-          <Footer data={data.footerJson.footer} xl={breakpoints.xl} />
-        </>
-      )
-        :
-        (
+      <Suspense fallback={<div>Loading... </div>}>
+        {!breakpoints.mobile ? (
           <>
-            <Image src="home/up.png" className="up" alt="up" />
-            <div className="no-repeat position-relative" >
 
-              <Image src={data.homeJson.background.topmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+            <div className="filter-opacity-0" id="divUpSymbol">
+              <Image src="home/up.png" className="up " alt="up" id="upSymbol" />
+            </div>
 
-              <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
-              <IntroHomeMobile data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} />
+            <div className="no-repeat position-relative ">
+              <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+              <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
 
-              <SobreNosMobile testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} />
+              <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} xl={breakpoints.xl} />
 
+              <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} xl={breakpoints.xl} />
             </ div>
 
-            <EspecialidadesMobile especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} />
+            <Especialidades especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
 
-            {/** <InvisalignMobile data={data.homeJson.invisalign} /> */}
+            <div className="no-repeat position-relative bg-position-bottom">
+              <Image src={data.homeJson.background.bottom} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+              {/*<Invisalign data={data.homeJson.invisalign} medium={breakpoints.md} xl={breakpoints.xl}/> */}
+              {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
+                <Noticias posts={posts} xl={breakpoints.xl} />
+              }
 
-            {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
-              <NoticiasMobile posts={posts} blogIntro={data.homeJson.blog} />
-            }
+              <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
 
+              <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl} />
 
-            <div className="no-repeat position-relative bg-position-bottom" >
-
-              <Image src={data.homeJson.background.bottommobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-
-              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
-
-              <QuestoesMobile data={data.questoesJson.questoes} />
-
-            </ div>
-
-            <FooterMobile footer={data.footerJson.footer} />
+            </div>
+            <Footer data={data.footerJson.footer} xl={breakpoints.xl} />
           </>
-        )}
+        )
+          :
+          (
+            <>
+              <Image src="home/up.png" className="up" alt="up" />
+              <div className="no-repeat position-relative" >
 
+                <Image src={data.homeJson.background.topmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+                <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
+
+                <IntroHomeMobile data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} />
+
+                <SobreNosMobile testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} />
+
+              </ div>
+
+              <EspecialidadesMobile especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} />
+
+              {/** <InvisalignMobile data={data.homeJson.invisalign} /> */}
+
+              {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
+                <NoticiasMobile posts={posts} blogIntro={data.homeJson.blog} />
+              }
+
+
+              <div className="no-repeat position-relative bg-position-bottom" >
+
+                <Image src={data.homeJson.background.bottommobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+                <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
+
+                <QuestoesMobile data={data.questoesJson.questoes} />
+
+              </ div>
+
+              <FooterMobile footer={data.footerJson.footer} />
+            </>
+          )}
+      </Suspense>
     </Layout >
 
   )
