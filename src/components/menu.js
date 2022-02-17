@@ -31,29 +31,36 @@ const Menu = ({ marcacaoRef, location, opacity, setOpacity }) => {
     function scrollOpacity() {
         const winScroll =
             document.body.scrollTop || document.documentElement.scrollTop;
-  
+
         const height =
             document.documentElement.scrollHeight -
             document.documentElement.clientHeight;
-  
+
         const scrolled = winScroll / height;
         const newOpacity = scrolled * 2;
-      
+       
+        $('#upSymbol').filter(function () {
+            console.log(newOpacity)
+            return $(this).css('filter', `opacity(${newOpacity})`)
+        });
         return newOpacity;
     }
     useEffect(() => {
         const onScroll = e => {
+
             setScrollTop(e.target.documentElement.scrollTop);
             setScrolling(e.target.documentElement.scrollTop > scrollTop);
             $('#btn-marcacao').removeClass('hover-btn')
-            
-  
+            console.log($('#divUpSymbol').removeClass('filter-opacity-0'))
+           
+            scrollOpacity()
+
         };
-        up = $('#upSymbol')
-        console.log(up)
+            
+        $('#upSymbol').addClass('filter-opacity-0')
         $('#btn-marcacao').addClass('hover-btn')
         window.addEventListener("scroll", onScroll);
-  
+
         return () => window.removeEventListener("scroll", onScroll);
     }, [scrollTop]);
 

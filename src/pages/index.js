@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react"
+import React, { useRef} from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -38,22 +38,21 @@ const IndexPage = ({ data, location }) => {
   const breakpoints = useBreakpoint();
   const posts = parseBlogPosts(data.allMarkdownRemark.edges)
   const marcacaoRef = useRef(null);
-  var [opacity, setOpacity] = useState(0);
- 
-
 
   return (
     <Layout home mobile={useBreakpoint().mobile} >
       <Seo title="Home" />
       {!breakpoints.mobile ? (
         <>
-         
-        
-          <Image src="home/up.png" className="up" alt="up" id="upSymbol" />
+
+          <div className="filter-opacity-0" id="divUpSymbol">
+            <Image src="home/up.png" className="up " alt="up" id="upSymbol" />
+          </div>
+
 
           <div className="no-repeat position-relative ">
             <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl} opacity={opacity} setOpacity={setOpacity} />
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}  />
 
             <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} xl={breakpoints.xl} />
 

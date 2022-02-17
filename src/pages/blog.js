@@ -39,7 +39,6 @@ const BlogPage = ({ data, location }) => {
       <NoPosts footerJson={data.footerJson} questoesJson={data.questoesJson} homeJson={data.homeJson} location={location} />
     )
   }
-
   return (
     <Layout home>
 
@@ -49,7 +48,10 @@ const BlogPage = ({ data, location }) => {
 
         <>
 
-          <Image src="home/up.png" className="up" alt="up" />
+          <div className="filter-opacity-0" id="divUpSymbol">
+            <Image src="home/up.png" className="up " alt="up" id="upSymbol" />
+          </div>
+
 
           <div className="no-repeat position-relative ">
             <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover" />

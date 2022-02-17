@@ -36,35 +36,36 @@ const SobreNos = ({ data, location }) => {
       {!breakpoints.mobile ? (
         <>
 
+         
           <div className="background-sobrenos position-relative" >
             <Image src={data.sobrenosJson.sobrenos.backgroundtop} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <Seo title="Sobre Nós" />
 
-            <Menu location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+            <Menu location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
 
-            <Sobrenos data={data.sobrenosJson.sobrenos} xl={breakpoints.xl}/>
+            <Sobrenos data={data.sobrenosJson.sobrenos} xl={breakpoints.xl} />
           </ div>
 
-          <CorpoClinico data={data.corpoclinicoJson.corpoclinico} marcacaoRef={marcacaoRef}/>
+          <CorpoClinico data={data.corpoclinicoJson.corpoclinico} marcacaoRef={marcacaoRef} />
 
           <div className="no-repeat background-bottom position-relative" >
             <Image src={data.sobrenosJson.sobrenos.backgroundfooter} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <div className="margin-sections ">
               {data.sobrenosJson.sectionswithbanners.content.map((array, k) => (
-                <Especialidades data={array} key={"especialidade" + k}  xl={breakpoints.xl}/>
+                <Especialidades data={array} key={"especialidade" + k} xl={breakpoints.xl} />
               ))}
             </div>
             <Image src="home/up.png" className="up" alt="up" />
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
 
-            <Opinioes data={data.sobrenosJson.opiniao} xl={breakpoints.xl}/>
+            <Opinioes data={data.sobrenosJson.opiniao} xl={breakpoints.xl} />
 
-            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
+            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl} />
           </div>
 
 
-          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
+          <Footer data={data.footerJson.footer} xl={breakpoints.xl} />
 
         </>
       )
@@ -75,7 +76,7 @@ const SobreNos = ({ data, location }) => {
             <div className="no-repeat bg-cover height-100vh position-relative" >
               <Image src={data.sobrenosJson.sobrenos.backgroundtopmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-              <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
+              <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
               <SobrenosMobile data={data.sobrenosJson.sobrenos} />
 

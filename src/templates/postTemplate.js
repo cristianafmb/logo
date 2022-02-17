@@ -47,12 +47,14 @@ const PostTemplate = ({ data, location }) => {
       <Seo title={frontmatter.title} />
       {!breakpoints.mobile ? (
         <>
-
+          <div className="filter-opacity-0" id="divUpSymbol">
+            <Image src="home/up.png" className="up " alt="up" id="upSymbol" />
+          </div>
           <div className="no-repeat position-relative " >
 
             <Image src={homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
-            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} post={true} xl={true}/>
+            <Menu footer={footerJson.footer} location={location} marcacaoRef={marcacaoRef} post={true} xl={true} />
 
             <div>
               <HighlightNew head={frontmatter.head} title={frontmatter.title} details={frontmatter.details} path={frontmatter.path} btn={false} image={frontmatter.image} />
@@ -84,15 +86,15 @@ const PostTemplate = ({ data, location }) => {
 
           </div>
           <div className="no-repeat bg-position-top position-relative "  >
-            
+
             <Image src={homeJson.background.bottom} alt="bg-bottom" objectPosition="0% 35%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
-            <Questoes data={questoesJson.questoes} xl={true}/>
+            <Questoes data={questoesJson.questoes} xl={true} />
 
           </ div>
 
 
-          <Footer data={footerJson.footer} xl={true}/>
+          <Footer data={footerJson.footer} xl={true} />
         </>
       )
         :
