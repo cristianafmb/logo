@@ -23,11 +23,15 @@ const NoticiasMobile = ({ posts, blogIntro }) => {
                 <Col sm="12" md="6" lg="6" className="p-4 mb-4">
                     <Card head={blogIntro.title} title={blogIntro.head} details={blogIntro.details} btn={blogIntro.btntxtmobile} btnlink={blogIntro.btnhref} />
                 </Col>
-                <Col sm="12" md="4" lg="4" > 
-                    <Image src={firstNew.image} alt={firstNew.title} className="card-white-img img-noticias" />
+                <Col sm="12" md="4" lg="4" >
+                    <Link to={firstNew.path}>
+                        <Image src={firstNew.image} alt={firstNew.title} className="card-white-img img-noticias" />
+                    </Link>
                 </Col>
                 <Col sm="12" md="6" lg="6" className=" mt-5">
-                    <Card head={firstNew.head} title={firstNew.title} details={firstNew.details} btn={false} btnlink={false} />
+                    <Link to={firstNew.path}>
+                        <Card head={firstNew.head} title={firstNew.title} details={firstNew.details} btn={false} btnlink={false} />
+                    </Link>
                 </Col>
                 <Col sm="12" md="8" lg="8" className="mt-2">
                     <Link to={firstNew.path} className="calCell bottom-0 text-decoration-none">
