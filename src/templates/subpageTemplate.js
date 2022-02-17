@@ -13,7 +13,6 @@ import SubPageMobile from '../components/subpage/subPageMobile'
 import Especialidades from '../components/homepage/especialidades'
 import Questoes from '../components/questoes'
 import Footer from '../components/footer'
-import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
 
 import Image from '../components/Images'
 
@@ -125,6 +124,7 @@ export const Json = graphql`
           especiality
           img
           imgMobile
+          alt
           name
           occupation
         }

@@ -156,6 +156,7 @@ query SobreNos {
         especiality
         img
         imgMobile
+        alt
         name
         occupation
       }

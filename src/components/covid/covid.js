@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import * as React from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Row, Col, Button, Modal } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 
 import '../../sass/app.scss';
 import Img from '../Images'
@@ -19,7 +19,7 @@ const Covid = ({ data }) => {
                 </div>
                 <Row className="mt-2 center m-auto">
                     {data.visitarSeguranca.passos.map((item, i) => (
-                        <Col md="3" lg="3" sm="12" className="mt-5">
+                        <Col md="3" lg="3" sm="12" className="mt-5" key={"passo"+i+1}>
 
                             <Img src={item.img} alt={"passo" + i} className="img-passos m-auto" />
 

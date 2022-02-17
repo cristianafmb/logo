@@ -13,7 +13,7 @@ import Questoes from '../components/questoes'
 import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
-import Covid from '../components/covid/covid'
+import AcordosParcerias from '../components/acordosparcerias/acordosparcerias'
 
 import Image from '../components/Images'
 
@@ -34,7 +34,7 @@ const ParceirosPage = ({ data, location }) => {
             <Image src={data.homeJson.background.top} alt="bg-top" objectPosition="0% 60%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             <Menu marcacaoRef={marcacaoRef} location={location} xl={breakpoints.xl} />
 
-            
+            <AcordosParcerias data={data.acordosparceriasJson}/>
           </div>
 
           <div className="no-repeat position-relative " >
@@ -55,7 +55,7 @@ const ParceirosPage = ({ data, location }) => {
               <Image src={data.homeJson.background.topmobile} alt="bg-top-mobile" className="position-absolute z-index-minus-1 max-width bg-cover height-max" />
               <MenuMobile footer={data.footerJson.footer} marcacaoRef={marcacaoRef} />
 
-              
+              <AcordosParcerias data={data.acordosparceriasJson}/>
 
             </ div>
 
@@ -89,6 +89,15 @@ export const Json = graphql`
         bottom
         bottommobile
         symbol
+      }
+    }
+    acordosparceriasJson{
+      title
+      parceiros{
+        img
+        alt
+        title
+        details
       }
     }
     marcacaoJson{

@@ -1096,13 +1096,6 @@ input:focus-visible {
 
     .details-small {
         color: $white !important;
-        font-size: calc(5px + 12 * (100vw - 769px) / 1151);
-        @media (min-width: 1023px) and (max-width: 1600px) {
-            font-size: calc(10px + 12 * (100vw - 769px) / 1151);
-        }
-        @media (min-width: 1950px) {
-            font-size: calc(10px + 12 * (100vw - 769px) / 1151);
-        }
     }
 }
 // btn fixed in home - black btn in right that follows the page
@@ -1128,10 +1121,13 @@ input:focus-visible {
 }
  .hover-btn + .btn-text-marcacao,
 .btn-icon-marcacao:hover + .btn-text-marcacao {
-    width: 200px;
+    width: 150px;
     z-index: 99;
     color: $white !important;
     text-decoration: none !important;
+    @media (min-width: 1650px){
+        width: 200px;
+    }
 }
 
 .container-btn-marcacao-mobile {
@@ -1149,10 +1145,13 @@ input:focus-visible {
 }
 
 .btn-text-marcacao:hover {
-    width: 200px;
+    width: 150px;
     z-index: 99;
     color: $white !important;
     text-decoration: none !important;
+    @media (min-width: 1650px){
+        width: 200px;
+    }
 }
 // end of btn fixed in home - black btn in right that follows the page
 .modal-marcacao-rapida .modal-content {
@@ -1339,6 +1338,12 @@ input:focus-visible {
     width: 20vh;
     height: 20vh;
 }
+.img-parceiros{
+    width: 100%;
+    height: auto;
+    max-width: 30vh;
+}
+
 /** END - COVID **/
 
 /** START - general **/

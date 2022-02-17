@@ -788,7 +788,7 @@
                         "details": "A Neurologia define-se como a especialidade médica que trata das disfunções estruturais do sistema nervoso.",
                         "corpoclinico": [
                             {
-                                "img": "corpoclinico/default.jpg",
+                                "img": "corpoclinico/especialidades/dr-jose-coelho-icon.jpg",
                                 "alt": "Dr José Coelho",
                                 "name": "Dr. José Coelho",
                                 "occupation": "Médico Neurológico"
@@ -879,7 +879,7 @@
                         "details": "A Pediatria é a área da medicina que trata o ser humano desde o nascimento até à maioridade.",
                         "corpoclinico": [
                             {
-                                "img": "corpoclinico/default.jpg",
+                                "img": "corpoclinico/especialidades/dra-fatima-ribeiro-icon.jpg",
                                 "alt": "Dra Fátima Ribeiro",
                                 "name": "Dra. Fátima Ribeiro",
                                 "occupation": "Médica Pediatra"
@@ -957,6 +957,12 @@
                                 "alt": "Dr Óscar Neves",
                                 "name": "Dr. Óscar Neves",
                                 "occupation": "Médico Psiquiatra"
+                            },
+                            {
+                                "img": "corpoclinico/especialidades/dra-fabiana-ventura-icon.jpg",
+                                "alt": "Dra Fabiana Ventura",
+                                "name": "Dra. Fabiana Ventura",
+                                "occupation": "Médica Psiquiatra"
                             }
                         ]
                     },

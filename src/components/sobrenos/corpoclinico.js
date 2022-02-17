@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import '../../sass/app.scss';
-import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import $ from 'jquery' // important: case sensitive.
@@ -118,8 +117,8 @@ const CorpoClinico = ({ data, marcacaoRef }) => {
                         <Col sm="12" lg="4" md="4" className="d-flex">
                             <div className="container-image-corpo-clinico position-relative">
                                 {first_col.map((item, i) => (
-                                    <div className="position-absolute">
-                                        <img className="img-corpo-clinico" src={item.img} id={"first" + i} />
+                                    <div className="position-absolute" key={"first_col"+i}>
+                                        <img className="img-corpo-clinico" src={item.img} alt={item.alt} id={"first" + i} />
                                         <div className=" max-width">
                                             <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"nameFirst" + i} > {item.name} </p>
                                         </div>
@@ -132,8 +131,8 @@ const CorpoClinico = ({ data, marcacaoRef }) => {
                         <Col sm="12" lg="4" md="4" className="d-flex">
                             <div className="container-image-corpo-clinico position-relative">
                                 {second_col.map((itemSecond, j) => (
-                                    <div className="position-absolute">
-                                        <img className="img-corpo-clinico" src={itemSecond.img} id={"second" + j} />
+                                    <div className="position-absolute" key={"second_col"+j}>
+                                        <img className="img-corpo-clinico" src={itemSecond.img} alt={itemSecond.alt} id={"second" + j} />
                                         <div className=" max-width">
                                             <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"nameSecond" + j} > {itemSecond.name} </p>
                                         </div>
@@ -146,8 +145,8 @@ const CorpoClinico = ({ data, marcacaoRef }) => {
                         <Col sm="12" lg="4" md="4" className="d-flex">
                             <div className="container-image-corpo-clinico position-relative">
                                 {third_col.map((itemThird, k) => (
-                                    <div className="position-absolute">
-                                        <img className="img-corpo-clinico" src={itemThird.img} id={"third" + k} />
+                                    <div className="position-absolute" key={"third_col"+k}>
+                                        <img className="img-corpo-clinico" src={itemThird.img} alt={itemThird.alt} id={"third" + k} />
                                         <div className=" max-width">
                                             <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"nameThird" + k} > {itemThird.name} </p>
                                         </div>

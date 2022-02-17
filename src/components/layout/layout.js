@@ -18,13 +18,7 @@ const Layout = ({ children, home, mobile }) => {
         {children}
       </main>
       <Helmet>
-        <script src={withPrefix('../../scripts/jquery.min.js')} type="text/javascript" />
-        <script src={withPrefix('../../scripts/jquery.scrollex.min.js')} type="text/javascript" />
-        <script src={withPrefix('../../scripts/jquery.scrolly.min.js')} type="text/javascript" />
-        <script src={withPrefix('../../scripts/browser.min.js')} type="text/javascript" />
-        <script src={withPrefix('../../scripts/breakpoints.min.js')} type="text/javascript" />
-        <script src={withPrefix('../../scripts/util.js')} type="text/javascript" />
-        <script src={withPrefix('../../scripts/main.js')} type="text/javascript" />
+     
       </Helmet>
       <Cookies />
     </>

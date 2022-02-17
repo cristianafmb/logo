@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react"
+import React, { useRef } from "react"
 import { graphql } from 'gatsby'
 
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -38,19 +38,15 @@ const PageTemplate = ({ data, pageContext, location }) => {
   var cards2 = null
   var number_max_cards_top = null
   if (breakpoints.customLarge) {
-    console.log('customLarge')
     number_max_cards_top = 10
   }
   else if (breakpoints.tablet) {
-    console.log('tablet')
     number_max_cards_top = 9
   }
   else if (breakpoints.custom) {
-    console.log('custom')
     number_max_cards_top = 8
   }
   else {
-    console.log('else')
     number_max_cards_top = 10
   }
   if (cards.length > number_max_cards_top) {
@@ -185,6 +181,7 @@ export const Json = graphql`
         especiality
           img
           imgMobile
+          alt
       name
       occupation
         }
