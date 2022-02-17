@@ -23,8 +23,6 @@ const Menu = ({ marcacaoRef, location, opacity, setOpacity }) => {
         }
     };
 
-
-
     const [scrolling, setScrolling] = useState(false);
     const [scrollTop, setScrollTop] = useState(0);
     var up
