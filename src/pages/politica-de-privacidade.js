@@ -13,6 +13,9 @@ import Politica from "../components/politica/politica"
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
 import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
+import PedidoMarcacaoRapido from '../components/pedidoMarcacaoRapido'
+import Questoes from '../components/questoes'
+import QuestoesMobile from '../components/questoesMobile'
 
 import Image from '../components/Images'
 
@@ -26,21 +29,38 @@ const PoliticaPage = ({ data, location }) => {
       {!breakpoints.mobile ? (
         <>
           <div className="no-repeat position-relative ">
-            <Image src="background-politica.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}  xl={breakpoints.xl}/>
+            <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover bg-position-bottom" />
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
             <Politica />
+
           </div>
-          <Footer data={data.footerJson.footer}  xl={breakpoints.xl}/>
+          <div className="no-repeat position-relative bg-position-bottom">
+            <Image src={data.homeJson.background.bottom} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
+
+            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl} />
+          </div>
+          <Footer data={data.footerJson.footer} xl={breakpoints.xl} />
         </>
       )
         :
         (
           <>
             <div className="no-repeat position-relative ">
-              <Image src="background-politica.png" alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover height-max bg-position-bottom" />
-              <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef}/>
+              <Image src={data.homeJson.background.topmobile} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover bg-position-bottom" />
+              <MenuMobile footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} />
 
               <Politica />
+
+            </div>
+            <div className="no-repeat position-relative bg-position-bottom" >
+
+              <Image src={data.homeJson.background.bottommobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+
+              <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
+
+              <QuestoesMobile data={data.questoesJson.questoes} />
             </div>
             <FooterMobile footer={data.footerJson.footer} />
           </>
@@ -63,6 +83,20 @@ query politicaJson {
       symbol
     }
   }
+  marcacaoJson{
+    img
+    alt
+  }
+  questoesJson{
+    questoes{
+        titulo
+        texto
+      questoes{
+          link
+          texto
+        }
+      }
+    }
   footerJson{
     footer {
       logo

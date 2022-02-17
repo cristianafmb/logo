@@ -17,6 +17,7 @@ import Questoes from '../components/questoes'
 import QuestoesMobile from '../components/questoesMobile'
 import Footer from '../components/footer'
 import FooterMobile from '../components/footerMobile'
+import PedidoMarcacaoRapido from '../components/pedidoMarcacaoRapido'
 import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
 
 import Image from '../components/Images'
@@ -85,7 +86,7 @@ const PostTemplate = ({ data, location }) => {
           <div className="no-repeat bg-position-top position-relative "  >
             
             <Image src={homeJson.background.bottom} alt="bg-bottom" objectPosition="0% 35%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
             <Questoes data={questoesJson.questoes} xl={true}/>
 
           </ div>

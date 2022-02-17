@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import '../sass/app.scss';
 import { Container, Navbar, Nav, Modal } from 'react-bootstrap'
 import logo from '../images/logo.png'
@@ -8,13 +8,14 @@ import calendario from '../images/calendar.png'
 import Form from "../components/form"
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
-const Menu = ({ marcacaoRef, location, post, xl }) => {
+const Menu = ({ marcacaoRef, location, opacity, setOpacity }) => {
     var url = location.pathname
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
         // if there is an element with id #marcacao
         if ($('#marcacao').length > 0) {
+            navigate('#marcacao')
             marcacaoRef.current.scrollIntoView();
         } else {
             // if there is no element with id #marcacao, then show modal
@@ -23,20 +24,38 @@ const Menu = ({ marcacaoRef, location, post, xl }) => {
     };
 
 
+
     const [scrolling, setScrolling] = useState(false);
     const [scrollTop, setScrollTop] = useState(0);
+    var up
+    function scrollOpacity() {
+        const winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop;
+  
+        const height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+  
+        const scrolled = winScroll / height;
+        const newOpacity = scrolled * 2;
+      
+        return newOpacity;
+    }
     useEffect(() => {
         const onScroll = e => {
             setScrollTop(e.target.documentElement.scrollTop);
             setScrolling(e.target.documentElement.scrollTop > scrollTop);
             $('#btn-marcacao').removeClass('hover-btn')
+            
+  
         };
+        up = $('#upSymbol')
+        console.log(up)
         $('#btn-marcacao').addClass('hover-btn')
         window.addEventListener("scroll", onScroll);
-
+  
         return () => window.removeEventListener("scroll", onScroll);
     }, [scrollTop]);
-
 
     return (
         <div className="container-devices position-relative">

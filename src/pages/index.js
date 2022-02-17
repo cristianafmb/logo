@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useState, useEffect } from "react"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -28,6 +28,7 @@ import FooterMobile from '../components/footerMobile'
 
 import { graphql } from 'gatsby'
 
+import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 import Image from '../components/Images'
 
 
@@ -37,37 +38,43 @@ const IndexPage = ({ data, location }) => {
   const breakpoints = useBreakpoint();
   const posts = parseBlogPosts(data.allMarkdownRemark.edges)
   const marcacaoRef = useRef(null);
+  var [opacity, setOpacity] = useState(0);
+ 
+
+
   return (
     <Layout home mobile={useBreakpoint().mobile} >
       <Seo title="Home" />
       {!breakpoints.mobile ? (
         <>
-          <Image src="home/up.png" className="up" alt="up" />
+         
+        
+          <Image src="home/up.png" className="up" alt="up" id="upSymbol" />
 
           <div className="no-repeat position-relative ">
             <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
-            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+            <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl} opacity={opacity} setOpacity={setOpacity} />
 
             <IntroHome data={data.homeJson} btntext={data.homeJson.home.btntext} href={data.homeJson.home.href} xl={breakpoints.xl} />
 
-            <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} xl={breakpoints.xl}/>
+            <SobreNos testimony={data.homeJson.testimony} sobreNos={data.homeJson.sobre_nos} xl={breakpoints.xl} />
           </ div>
 
-          <Especialidades especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+          <Especialidades especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
 
           <div className="no-repeat position-relative bg-position-bottom">
             <Image src={data.homeJson.background.bottom} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
             {/*<Invisalign data={data.homeJson.invisalign} medium={breakpoints.md} xl={breakpoints.xl}/> */}
             {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
-              <Noticias posts={posts} xl={breakpoints.xl}/>
+              <Noticias posts={posts} xl={breakpoints.xl} />
             }
 
-            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl}/>
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
 
-            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl}/>
+            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl} />
 
           </div>
-          <Footer data={data.footerJson.footer} xl={breakpoints.xl}/>
+          <Footer data={data.footerJson.footer} xl={breakpoints.xl} />
         </>
       )
         :
@@ -88,7 +95,7 @@ const IndexPage = ({ data, location }) => {
 
             <EspecialidadesMobile especialidades={data.homeJson.especialidades} marcacaoRef={marcacaoRef} />
 
-           {/** <InvisalignMobile data={data.homeJson.invisalign} /> */}
+            {/** <InvisalignMobile data={data.homeJson.invisalign} /> */}
 
             {(!posts || !Boolean(posts.length) || posts[0].path === "/noposts/") ? <> </> :
               <NoticiasMobile posts={posts} blogIntro={data.homeJson.blog} />
@@ -97,7 +104,7 @@ const IndexPage = ({ data, location }) => {
 
             <div className="no-repeat position-relative bg-position-bottom" >
 
-              <Image src={data.homeJson.background.bottommobile} alt="bg-bottom-mobile"  className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+              <Image src={data.homeJson.background.bottommobile} alt="bg-bottom-mobile" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
 
               <PedidoMarcacaoRapidoMobile img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} />
 
@@ -122,137 +129,137 @@ query IntroHome {
     edges {
       node {
         frontmatter {
-          data
-          date
-          details
-          head
-          id
-          image
-          path
-          title
+            data
+            date
+            details
+            head
+            id
+            image
+            path
+            title
+          }
         }
       }
     }
-  }
   homeJson {
     home {
-      head
-      subject
-      details
-      img
-      
-      alt
-      href
-      btntext
-    }
+        head
+        subject
+        details
+        img
+
+        alt
+        href
+        btntext
+      }
     testimony {
-      function
-      person
+        function
+          person
       quote
-      img
-      alt
-    }
+        img
+        alt
+      }
     sobre_nos {
-      details
-      subject
-      head
-      href
-      btntext
-    }
+        details
+        subject
+        head
+        href
+        btntext
+      }
     especialidades{
-      title
-      details
-      button
-      href
-      img
-      alt
-      titlemobile
-    }
+        title
+        details
+        button
+        href
+        img
+        alt
+        titlemobile
+      }
     invisalign{
-      img
-      imgmobile
-      alt
-      head
-      details
-      button
-      href
-      textoverimg
-    }
+        img
+        imgmobile
+        alt
+        head
+        details
+        button
+        href
+        textoverimg
+      }
     blog{
-      title
-      head
-      details
-      btntxtmobile
-      btnhref
-    } 
+        title
+        head
+        details
+        btntxtmobile
+        btnhref
+      } 
     background{
-      top
-      topmobile
-      bottom
-      bottommobile
-      symbol
+        top
+        topmobile
+        bottom
+        bottommobile
+        symbol
+      }
     }
-  }
   marcacaoJson{
-    img
-    alt
-  }
+      img
+      alt
+    }
   sobrenosJson {
     opiniao {
       opinioes {
-        details
-        head
+          details
+          head
+        }
+        title
       }
-      title
-    }
     sectionswithbanners {
       content {
-        background
-        details
+          background
+          details
         especs {
             title
+          }
+          img
+          title
         }
-        img
+      }
+    sobrenos {
+        details
+        head
         title
       }
     }
-    sobrenos {
-      details
-      head
-      title
-    }
-  }
   marcacaoJson{
-    img
-    alt
-  }
+      img
+      alt
+    }
   questoesJson{
     questoes{
-      titulo
-      texto
-      questoes{
-        link
+        titulo
         texto
+      questoes{
+          link
+          texto
+        }
       }
     }
-  }
   footerJson{
     footer {
-      logo
-      logomobile
-      logowhite
+        logo
+        logomobile
+        logowhite
       socialmedia {
-        link
-        icon
-        alt
-      }
+          link
+          icon
+          alt
+        }
       links {
-        link
-        text
+          link
+          text
+        }
+        copyrigths
+        copyrightsmobile
       }
-      copyrigths
-      copyrightsmobile
     }
   }
-}
-`
+  `

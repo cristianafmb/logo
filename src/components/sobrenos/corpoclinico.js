@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 import $ from 'jquery' // important: case sensitive.
 import { Row, Col, Button, Modal } from 'react-bootstrap'
-
+import {  navigate } from 'gatsby'
 import Form from "../../components/form"
 
 const CorpoClinico = ({ data, marcacaoRef }) => {
@@ -14,6 +14,7 @@ const CorpoClinico = ({ data, marcacaoRef }) => {
     const handleShow = () => {
         // if there is an element with id #marcacao
         if ($('#marcacao').length > 0) {
+            navigate('#marcacao')
             marcacaoRef.current.scrollIntoView();
         } else {
             // if there is no element with id #marcacao, then show modal

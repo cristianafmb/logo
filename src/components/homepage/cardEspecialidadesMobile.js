@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Row, Col, Button, Modal } from 'react-bootstrap'
 import Image from '../Images'
-
+import {  navigate } from 'gatsby'
 import '../../sass/app.scss';
 import Form from '../form'
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
@@ -18,6 +18,7 @@ const CardEspecialidadesMobile = ({ title, details, button, href, img, alt, marc
     const handleShow = () => {
         // if there is an element with id #marcacao
         if ($('#marcacao').length > 0) {
+            navigate('#marcacao')
             marcacaoRef.current.scrollIntoView();
         } else {
             // if there is no element with id #marcacao, then show modal
@@ -29,7 +30,7 @@ const CardEspecialidadesMobile = ({ title, details, button, href, img, alt, marc
         <div className={cardClass + " position-relative"}>
             <Row className="m-3 height-especialidades-img mt-3">
                 <Col className="m-auto ">
-                    <Image src={img} alt={alt} className={title !== "Exames & Análises" ? "especialidades-img max-width-10vh m-auto" : "especialidades-img max-width-8vh m-auto"} />
+                    <Image src={img} alt={alt} className={title !== "Exames & Análises" ? "especialidades-img max-width-10vh m-auto" : "especialidades-img-analises max-width-8vh m-auto"} />
                 </Col>
             </Row>
             <Row className="m-3 mt-5">

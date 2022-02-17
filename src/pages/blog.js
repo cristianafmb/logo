@@ -19,6 +19,7 @@ import HighlightNew from '../components/blog/highlightNew'
 import HighlightNewMobile from '../components/blog/highlightNewMobile'
 import AllPosts from '../components/blog/allPosts'
 import AllPostsMobile from '../components/blog/allPostsMobile'
+import PedidoMarcacaoRapido from '../components/pedidoMarcacaoRapido'
 import PedidoMarcacaoRapidoMobile from '../components/pedidoMarcacaoRapidoMobile'
 import Questoes from '../components/questoes'
 import QuestoesMobile from '../components/questoesMobile'
@@ -50,25 +51,25 @@ const BlogPage = ({ data, location }) => {
 
           <Image src="home/up.png" className="up" alt="up" />
 
-          <div className="no-repeat bg-cover position-relative">
-
-            <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />
+          <div className="no-repeat position-relative ">
+            <Image src={data.homeJson.background.top} alt="bg-top" className="position-absolute z-index-minus-1 max-width bg-cover" />
 
             <Menu footer={data.footerJson.footer} location={location} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
 
             <HighlightNew head={posts[0].head} title={posts[0].title} details={posts[0].details} path={posts[0].path} btn="Ler Tudo" image={posts[0].image} />
+            {posts.length > 1 ?
+              <AllPosts posts={posts} />
+              : <></>}
 
-            <AllPosts posts={posts} />
+            <PedidoMarcacaoRapido img={data.marcacaoJson.img} alt={data.marcacaoJson.alt} space={true} marcacaoRef={marcacaoRef} xl={breakpoints.xl} />
+          </div>
 
-            <div className=" no-repeat bg-cover position-relative ">
-              <Image src={data.homeJson.background.bottom} alt="bg-bottom" objectPosition="0% 35%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max bg-position-top" />
+          <div className=" no-repeat bg-cover position-relative ">
+            <Image src={data.homeJson.background.bottom} alt="bg-bottom" objectPosition="0% 35%" className="position-absolute z-index-minus-1 max-width bg-cover  height-max bg-position-top" />
 
-              <div className="margin-sections">
 
-              </div>
+            <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl} />
 
-              <Questoes data={data.questoesJson.questoes} xl={breakpoints.xl} />
-            </div>
           </div>
 
           <Footer data={data.footerJson.footer} xl={breakpoints.xl} />

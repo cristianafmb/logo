@@ -59,6 +59,7 @@ const MenuMobile = ({ footer, marcacaoRef }) => {
         
         // if there is an element with id #marcacao
         if ($('#marcacao').length > 0) {
+            
             navigate('#marcacao')
             marcacaoRef.current.scrollIntoView();
         } else {

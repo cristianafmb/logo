@@ -1573,6 +1573,10 @@ a {
 }
 .especialidades-img {
     margin-bottom: 0 !important;
+    max-width: calc(50px + 12 * (100vw - 769px) / 1151) !important;
+}
+.especialidades-img-analises {
+    margin-bottom: 0 !important;
     max-width: calc(40px + 12 * (100vw - 769px) / 1151) !important;
 }
 .margin-l-05 {
