@@ -45,16 +45,69 @@ if (isset($_POST)) {
     $mail->isHTML(true);
     $mail->WordWrap = 50;
     $mail->Subject = "Pedido de consulta pelo website por {$username} | UpCare";
-    $mail->Body = "
-    Acabou de receber um pedido de contacto através de www.upcare.pt<br/>
-    _________________________________________________________<br/><br/>
-    <b>Nome:</b> {$username}<br/><br/>
-    <b>Email:</b> {$useremail}<br/><br/>
-    <b>Telefone:</b> {$userphone}<br/><br/>
-    <b>Especialidade:</b> {$userespeciality}<br/><br/>
-    <b>Horas:</b> {$userhours}<br/><br/>
-    <b>Data:</b> {$userdate}<br/><br/>
-    ";
+    $mail->Body =
+
+      '<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="x-apple-disable-message-reformatting">
+    <title></title>
+    <style>
+       
+    </style>
+    <body style=" margin:2rem; padding:0; font-family: Tahoma, sans-serif; font-size: 13px;">
+        <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
+            <tr>
+                <td align="left" style="padding:0; font-size: 20px; color:#957841; font-weight: bold;">
+                    Pedido De Contacto
+                </td>
+            </tr>
+            <tr>
+                <td align="left" style="padding:0; font-size: 16px; color:#957841; ">
+                    www.upcare.pt
+                </td>
+            </tr>
+        </table>
+
+        <table role="presentation" style="margin-top: 2rem; width:60%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
+            <tr>
+                <td align="left" style="padding:0; font-size: 16px; color:#957841;  ">
+                    Dados Pessoais
+                </td>
+                <td align="left" style="padding:0; font-size: 16px; color:#957841;  ">
+                    Dados da Consulta
+                </td>
+            </tr>
+            <tr>
+                <td align="left" style="padding-top: 10px;  margin-top:2rem">
+                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' . $username . '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Nome)</p> 
+                </td>
+                <td align="left" style="padding-top: 10px;  margin-top:2rem">
+                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' .$userespeciality . '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Especialidade)</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" style="padding-top: 10px;  margin-top:2rem">
+                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' .$userphone. '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Telemóvel)</p> 
+                </td>
+                <td align="left" style="padding-top: 10px;  margin-top:2rem">
+                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' . $userdate . '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Data)</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" style="padding-top: 10px;  margin-top:2rem">
+                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' . $useremail . '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Email)</p> 
+                </td>
+                <td align="left" style="padding-top: 10px;  margin-top:2rem">
+                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' . $userhours . '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Horário)</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</head>
+</html>';
     $mail->send();
     echo 'success';
   } catch (Exception $e) {

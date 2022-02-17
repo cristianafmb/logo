@@ -132,11 +132,11 @@ const Formulario = ({ title }) => {
             title === "Pedido de Marcação Rápido" ? document.querySelector("#especiality").value = "DEFAULT" : document.querySelector("#especiality").value = title
 
             document.querySelector("#hours").value = "DEFAULT"
-            {/*fbTrack("trackCustom", "Envio de formulário Marcação Rápida - Página Home")
+            {/*
              typeof window !== "undefined" &&
             window.gtag("event", "Submit", {
-                event_category: "Submit Button",
-                event_label: "Envio de formulário Marcação Rápida - Página Home",
+                event_category: "Formulário Consulta",
+                event_label: "Marcação de Consulta",
             })*/}
         }
 
@@ -164,7 +164,7 @@ const Formulario = ({ title }) => {
             render={data => (
 
                 <div className="position-relative">
-                    <Modal show={show} onHide={handleClose} centered className="">
+                    <Modal show={show} onHide={handleClose} centered className="success-form">
                         <Modal.Header >
                             <Modal.Title>Sucesso!</Modal.Title>
                         </Modal.Header>
