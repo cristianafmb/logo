@@ -124,7 +124,7 @@ const CorpoClinicoMobile = ({ data }) => {
                 <Col sm="6" md="6" lg="6" className="position-relative">
                     {first_col.map((item, i) => (
                         <div className="position-absolute" key={"corpo-mobile-first" + i}>
-                            <img className="img-corpo-clinico" src={item.imgMobile} alt={item.alt} id={"firstMobile" + i} />
+                            <img className="img-corpo-clinico" loading="lazy" src={item.imgMobile} alt={item.alt} id={"firstMobile" + i} />
                             <div className=" max-width">
                                 <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"nameFirstMobile" + i} > {item.name} </p>
                             </div>
@@ -140,7 +140,7 @@ const CorpoClinicoMobile = ({ data }) => {
                 <Col sm="6" md="6" lg="6" className="position-relative">
                     {second_col.map((item, i) => (
                         <div className="position-absolute" key={"corpo-mobile-second" + i}>
-                            <img className="img-corpo-clinico" src={item.imgMobile} alt={item.alt} id={"secondMobile" + i} />
+                            <img className="img-corpo-clinico" loading="lazy" src={item.imgMobile} alt={item.alt} id={"secondMobile" + i} />
                             <div className=" max-width">
                                 <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"nameSecondMobile" + i} > {item.name} </p>
                             </div>
@@ -159,7 +159,7 @@ const CorpoClinicoMobile = ({ data }) => {
                 <Col sm="6" md="6" lg="6" className="position-relative ">
                     {third_col.map((item, i) => (
                         <div className="position-absolute" key={"corpo-mobile-third" + i}>
-                            <img className="img-corpo-clinico" src={item.imgMobile} alt={item.alt} id={"thirdMobile" + i} />
+                            <img className="img-corpo-clinico" loading="lazy" src={item.imgMobile} alt={item.alt} id={"thirdMobile" + i} />
                             <div className=" max-width">
                                 <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"nameThirdMobile" + i} > {item.name} </p>
                             </div>
@@ -175,7 +175,7 @@ const CorpoClinicoMobile = ({ data }) => {
                 <Col sm="6" md="6" lg="6" className="position-relative">
                     {fourth_col.map((item, m) => (
                         <div className="position-absolute" key={"corpo-mobile-fourth" + m}>
-                            <img className="img-corpo-clinico" src={item.imgMobile} alt={item.alt} id={"fourthMobile" + m} />
+                            <img className="img-corpo-clinico" loading="lazy" src={item.imgMobile} alt={item.alt} id={"fourthMobile" + m} />
                             <div className=" max-width">
                                 <p className="head-xx-small oMedium mt-3 p-corpo-clinico" id={"nameFourthMobile" + m} > {item.name} </p>
                             </div>

@@ -38,7 +38,7 @@ const CorpoClinico = ({ img, name, occupation, especiality, classname, id, inter
 
     return (
         <div className={classname} id={id}>
-            <img src={img} className="img-corpo-clinico " />
+            <img src={img} loading="lazy" className="img-corpo-clinico " />
             <div className="d-flex max-width">
                 <p className="head-xx-small oMedium mt-3 d-flex" >
                     {name}

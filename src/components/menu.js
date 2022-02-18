@@ -68,7 +68,7 @@ const Menu = ({ marcacaoRef, location, opacity, setOpacity }) => {
                 <Container id="navbar">
                     <Navbar.Brand className="m-auto logo" >
                         <Link to="/">
-                            <img src={logo} alt="logo" className="m-auto" />
+                            <img src={logo} loading="lazy" alt="logo" className="m-auto" />
                         </Link>
                     </Navbar.Brand>
                     <Navbar.Collapse id="navbar-without-logo">
@@ -85,7 +85,7 @@ const Menu = ({ marcacaoRef, location, opacity, setOpacity }) => {
             <div>
                 <button className="container-btn-marcacao" onClick={handleShow}>
                     <div className="btn-icon-marcacao" id="btn-marcacao">
-                        <img src={calendario} alt="calendar" />
+                        <img loading="lazy" src={calendario} alt="calendar" />
                     </div>
 
                     <div className="btn-text-marcacao">
