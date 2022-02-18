@@ -10,6 +10,22 @@
         },
         "people": [
             {
+                "img": "../images/corpoclinico/medicinadentaria/dr-joao-nunes.jpg",
+                "imgMobile": "../images/corpoclinico/medicinadentaria/dr-joao-nunes-icon.jpg",
+                "name": "Dr. João Nunes",
+                "alt": "Dr. João Nunes",
+                "occupation": "Médico Dentista",
+                "especiality": "Reabilitação Oral"
+            },
+            {
+                "img": "../images/corpoclinico/medicinadentaria/dra-sonia-teixeira.jpg",
+                "imgMobile": "../images/corpoclinico/medicinadentaria/dra-sonia-teixeira-icon.jpg",
+                "name": "Dra. Sónia Teixeira",
+                "alt": "Dra. Sónia Teixeira",
+                "occupation": "Médica",
+                "especiality": "Medicina Dentária"
+            },
+            {
                 "img": "../images/corpoclinico/especialidades/dr-luis-cabral.jpg",
                 "imgMobile": "../images/corpoclinico/especialidades/dr-luis-cabral-icon.jpg",
                 "name": "Dr. Luís Cabral",
@@ -32,23 +48,7 @@
                 "alt": "Dra. Maria João Duarte",
                 "occupation": "Médica",
                 "especiality": "Medicina Dentária"
-            },
-            {
-                "img": "../images/corpoclinico/medicinadentaria/dra-sonia-teixeira.jpg",
-                "imgMobile": "../images/corpoclinico/medicinadentaria/dra-sonia-teixeira-icon.jpg",
-                "name": "Dra. Sónia Teixeira",
-                "alt": "Dra. Sónia Teixeira",
-                "occupation": "Médica",
-                "especiality": "Medicina Dentária"
-            },
-            {
-                "img": "../images/corpoclinico/medicinadentaria/dr-joao-nunes.jpg",
-                "imgMobile": "../images/corpoclinico/medicinadentaria/dr-joao-nunes-icon.jpg",
-                "name": "Dr. João Nunes",
-                "alt": "Dr. João Nunes",
-                "occupation": "Médico Dentista",
-                "especiality": "Reabilitação Oral"
-            },
+            },           
             {
                 "img": "../images/corpoclinico/especialidades/dr-david-serra.jpg",
                 "imgMobile": "../images/corpoclinico/especialidades/dr-david-serra-icon.jpg",
