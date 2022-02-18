@@ -690,6 +690,19 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
     }
     
 }
+
+/* corpo clinico block */
+.col-corpoclinico-block{
+    position: relative;
+}
+.img-corpo-clinico-block{
+    width: 25vh;
+    height: 30vh;
+    
+    background-position: top center;
+    object-fit: cover;
+
+}
 /** END - cards **/
 
 /** START - arrows **/
