@@ -42,7 +42,7 @@ const Formulario = ({ title }) => {
             }
 
             axios({
-                url: 'https://invisual.pt/teste-form/website-form-contact.php',
+                url: 'https://upcare.pt/assets/website-form-contact.php',
                 method: 'post',
                 config: { headers: { 'Content-Type': 'multipart/form-data' } },
                 data: formData
@@ -132,12 +132,12 @@ const Formulario = ({ title }) => {
             title === "Pedido de Marcação Rápido" ? document.querySelector("#especiality").value = "DEFAULT" : document.querySelector("#especiality").value = title
 
             document.querySelector("#hours").value = "DEFAULT"
-            {/*
+            
              typeof window !== "undefined" &&
             window.gtag("event", "Submit", {
                 event_category: "Formulário Consulta",
                 event_label: "Marcação de Consulta",
-            })*/}
+            })
         }
 
     }

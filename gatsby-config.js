@@ -19,6 +19,16 @@ module.exports = {
     siteUrl: `https://upcare.pt`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-WMNPVDQ",
+        includeInDevelopment: false,
+        defaultDataLayer: {
+          platform: "gatsby"
+        }
+      }
+    },
     "gatsby-plugin-htaccess",
     {
       resolve: `gatsby-source-filesystem`,

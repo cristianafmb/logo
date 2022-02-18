@@ -698,7 +698,6 @@ $background-modal: linear-gradient(to left top, #c9b07f, #bca26f, #af945f, #a286
 .img-corpo-clinico-block{
     width: 25vh;
     height: 30vh;
-    
     background-position: top center;
     object-fit: cover;
 
@@ -1578,10 +1577,10 @@ a {
 .user-icon {
     border-radius: 50%;
     box-shadow: 0 0 3px 2px $gold_shadow;
-    max-width: calc(100px + 12 * (100vw - 769px) / 11510);
+    max-width: calc(110px + 12 * (100vw - 769px) / 11510);
     object-fit: cover;
     object-position: center;
-    width: calc(100px + 12 * (100vw - 769px) / 11510) !important;
+    width: calc(110px + 12 * (100vw - 769px) / 11510) !important;
     overflow: hidden;
     img {
         border-radius: 50%;

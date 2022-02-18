@@ -27,17 +27,17 @@ if (isset($_POST)) {
         }
         // Server settings
         $mail->IsSMTP();
-        $mail->Host = "mail.invisual.pt";
+        $mail->Host = "mail.upcare.pt";
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = "ssl";
         $mail->Port = 465;
-        $mail->Username = "suporte@invisual.pt";
-        $mail->Password = "k7pQP9dI1A@v";
+        $mail->Username = "geral@upcare.pt";
+        $mail->Password = "HZqmQWJWgOdJ";
 
         // Recipients
         $mail->setFrom('noreply@invisual.pt', 'noreply');
         //$mail->addAddress('geral@invisual.pt', 'Contacto do website');
-        $mail->addAddress('cristiana.baiorte@invisual.pt', 'Contacto do website');
+        $mail->addAddress('geral@upcare.pt', 'Contacto do website');
         $mail->addReplyTo($useremail, $username);
 
         // Content
