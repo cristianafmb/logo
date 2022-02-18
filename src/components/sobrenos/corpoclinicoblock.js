@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import '../../sass/app.scss';
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import $ from 'jquery' // important: case sensitive.
-import { Row, Col, Button, Modal } from 'react-bootstrap'
+import { Row, Col, Modal } from 'react-bootstrap'
 import { navigate } from 'gatsby'
 import Form from "../form"
+
+import Image from '../Images'
 
 const CorpoClinicoBlock = ({ data, marcacaoRef }) => {
 
@@ -30,8 +32,8 @@ const CorpoClinicoBlock = ({ data, marcacaoRef }) => {
             <Row className="container-corpo-clinico m-auto">
                 {data.people.map((item, i) => (
                     <Col className="col-corpoclinico-block mt-5 m-auto " key={"corpoclinicoblock" + i}>
-                     
-                            <img className="img-corpo-clinico-block " src={item.img} alt={item.alt} id={"first" + i} />
+
+                            <Image className="img-corpo-clinico-block " src={item.img.substring(10)} alt={item.alt} id={"first" + i} />
                             <div className=" max-width">
                                 <p className="head-xx-small oMedium mt-3" id={"nameFirst" + i} > {item.name} </p>
                             </div>
