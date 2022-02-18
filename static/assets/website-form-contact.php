@@ -11,43 +11,43 @@ require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
 if (isset($_POST)) {
-  $mail = new PHPMailer(TRUE);
+    $mail = new PHPMailer(TRUE);
 
-  $username = $_POST['name'];
-  $useremail = $_POST['email'];
-  $userphone = $_POST['contact'];
-  $userespeciality = $_POST['especiality'];
-  $userhours = $_POST['hours'];
-  $userdate = $_POST['date'];
+    $username = $_POST['name'];
+    $useremail = $_POST['email'];
+    $userphone = $_POST['contact'];
+    $userespeciality = $_POST['especiality'];
+    $userhours = $_POST['hours'];
+    $userdate = $_POST['date'];
 
-  try {
-    if (!filter_var($useremail, FILTER_VALIDATE_EMAIL)) {
-      echo 'Email inválido.';
-      exit;
-    }
-    // Server settings
-    $mail->IsSMTP();
-    $mail->Host = "mail.invisual.pt";
-    $mail->SMTPAuth = true;
-    $mail->SMTPSecure = "ssl";
-    $mail->Port = 465;
-    $mail->Username = "suporte@invisual.pt";
-    $mail->Password = "k7pQP9dI1A@v";
+    try {
+        if (!filter_var($useremail, FILTER_VALIDATE_EMAIL)) {
+            echo 'Email inválido.';
+            exit;
+        }
+        // Server settings
+        $mail->IsSMTP();
+        $mail->Host = "mail.invisual.pt";
+        $mail->SMTPAuth = true;
+        $mail->SMTPSecure = "ssl";
+        $mail->Port = 465;
+        $mail->Username = "suporte@invisual.pt";
+        $mail->Password = "k7pQP9dI1A@v";
 
-    // Recipients
-    $mail->setFrom('noreply@invisual.pt', 'noreply');
-    //$mail->addAddress('geral@invisual.pt', 'Contacto do website');
-    $mail->addAddress('cristiana.baiorte@invisual.pt', 'Contacto do website');
-    $mail->addReplyTo($useremail, $username);
+        // Recipients
+        $mail->setFrom('noreply@invisual.pt', 'noreply');
+        //$mail->addAddress('geral@invisual.pt', 'Contacto do website');
+        $mail->addAddress('cristiana.baiorte@invisual.pt', 'Contacto do website');
+        $mail->addReplyTo($useremail, $username);
 
-    // Content
-    $mail->CharSet = 'UTF-8';
-    $mail->isHTML(true);
-    $mail->WordWrap = 50;
-    $mail->Subject = "Pedido de consulta pelo website por {$username} | UpCare";
-    $mail->Body =
+        // Content
+        $mail->CharSet = 'UTF-8';
+        $mail->isHTML(true);
+        $mail->WordWrap = 50;
+        $mail->Subject = "Pedido de consulta pelo website por {$username} | UpCare";
+        $mail->Body =
 
-      '<!DOCTYPE html>
+            '<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
     <meta charset="UTF-8">
@@ -58,7 +58,15 @@ if (isset($_POST)) {
        
     </style>
     <body style=" margin:2rem; padding:0; font-family: Tahoma, sans-serif; font-size: 13px;">
-        <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
+        <table style="margin-bottom: 30px">
+            <tr>
+                <td>
+                    <img src="https://upcare.pt/assinaturas/Upcare-Mobile.png" alt="Upcare-geral" name="Upcare-geral" usemap="#logo_inbranding" width="150" height="80" id="logo" border="0" align="bottom" />
+                </td>
+            </tr>
+        </table>
+
+        <table role="presentation" style="width:800px;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
             <tr>
                 <td align="left" style="padding:0; font-size: 20px; color:#957841; font-weight: bold;">
                     Pedido De Contacto
@@ -71,7 +79,8 @@ if (isset($_POST)) {
             </tr>
         </table>
 
-        <table role="presentation" style="margin-top: 2rem; width:60%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
+        
+        <table role="presentation" style="margin-top: 30px; width:800px;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
             <tr>
                 <td align="left" style="padding:0; font-size: 16px; color:#957841;  ">
                     Dados Pessoais
@@ -81,40 +90,94 @@ if (isset($_POST)) {
                 </td>
             </tr>
             <tr>
-                <td align="left" style="padding-top: 10px;  margin-top:2rem">
-                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' . $username . '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Nome)</p> 
+                <td align="left" style="padding-top: 15px;">
+                    <table>
+                        <tr>
+                            <td style="width: 150px">
+                                <p style="font-size: 15px; color: #3e3e3e; ">' . $username . '</p>
+                            </td>
+                            <td >
+                                <p style="font-size: 13px; color:#957841; font-style: italic;">  (Nome)</p> 
+                            </td>
+                        </tr>
+                    </table>
                 </td>
-                <td align="left" style="padding-top: 10px;  margin-top:2rem">
-                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' .$userespeciality . '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Especialidade)</p>
+                <td align="left" style="padding-top: 15px;">
+                    <table>
+                        <tr>
+                            <td style="width: 150px">
+                                <p style="font-size: 15px; color: #3e3e3e; ">' . $userespeciality . '</p>
+                            </td>
+                            <td >
+                                <p style="font-size: 13px; color:#957841; font-style: italic;">  (Especialidade)</p> 
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
             <tr>
-                <td align="left" style="padding-top: 10px;  margin-top:2rem">
-                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' .$userphone. '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Telemóvel)</p> 
+                <td align="left" style="padding-top: 15px;">
+                    <table>
+                        <tr>
+                            <td style="width: 150px">
+                                <p style="font-size: 15px; color: #3e3e3e; ">' . $userphone . '</p>
+                            </td>
+                            <td >
+                                <p style="font-size: 13px; color:#957841; font-style: italic;">  (Telemóvel)</p> 
+                            </td>
+                        </tr>
+                    </table>    
                 </td>
-                <td align="left" style="padding-top: 10px;  margin-top:2rem">
-                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' . $userdate . '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Data)</p>
+                <td align="left" style="padding-top: 15px;">
+                    <table>
+                        <tr>
+                            <td style="width: 150px">
+                                <p style="font-size: 15px; color: #3e3e3e; ">' . $userdate . '</p>
+                            </td>
+                            <td >
+                                <p style="font-size: 13px; color:#957841; font-style: italic;">  (Data)</p> 
+                            </td>
+                        </tr>
+                    </table>  
                 </td>
             </tr>
             <tr>
-                <td align="left" style="padding-top: 10px;  margin-top:2rem">
-                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' . $useremail . '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Email)</p> 
+                <td align="left" style="padding-top: 15px;">
+                    <table>
+                        <tr>
+                            <td style="width: 150px">
+                                <p style="font-size: 15px; color: #3e3e3e; ">' . $useremail . '</p>
+                            </td>
+                            <td >
+                                <p style="font-size: 13px; color:#957841; font-style: italic;">  (Email)</p> 
+                            </td>
+                        </tr>
+                    </table>  
                 </td>
-                <td align="left" style="padding-top: 10px;  margin-top:2rem">
-                    <p style="font-size: 15px; color: #3e3e3e; display: inline-block;">' . $userhours . '</p> <p style="font-size: 13px; color:#957841;display: inline-block; font-style: italic;">  (Horário)</p>
+                <td align="left" style="padding-top: 15px;">
+                    <table>
+                        <tr>
+                            <td style="width: 150px">
+                                <p style="font-size: 15px; color: #3e3e3e; ">' . $userhours . '</p>
+                            </td>
+                            <td >
+                                <p style="font-size: 13px; color:#957841; font-style: italic;">  (Horário)</p> 
+                            </td>
+                        </tr>
+                    </table> 
                 </td>
             </tr>
         </table>
     </body>
 </head>
 </html>';
-    $mail->send();
-    echo 'success';
-  } catch (Exception $e) {
-    /* PHPMailer exception. */
-    echo $e->errorMessage();
-  } catch (\Exception $e) {
-    /* PHP exception (note the backslash to select the global namespace Exception class). */
-    echo $e->getMessage();
-  }
+        $mail->send();
+        echo 'success';
+    } catch (Exception $e) {
+        /* PHPMailer exception. */
+        echo $e->errorMessage();
+    } catch (\Exception $e) {
+        /* PHP exception (note the backslash to select the global namespace Exception class). */
+        echo $e->getMessage();
+    }
 }
