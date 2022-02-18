@@ -133,11 +133,13 @@ const Formulario = ({ title }) => {
 
             document.querySelector("#hours").value = "DEFAULT"
             
-             typeof window !== "undefined" &&
-            window.gtag("event", "Submit", {
-                event_category: "Formulário Consulta",
-                event_label: "Marcação de Consulta",
-            })
+            if (typeof window !== "undefined") {
+                console.log('window !== "undefined"')
+                window.gtag("event", "Submit", {
+                    event_category: "Formulário Consulta",
+                    event_label: "Marcação de Consulta",
+                })
+            }
         }
 
     }

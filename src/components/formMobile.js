@@ -101,8 +101,8 @@ const FormMobile = ({ title }) => {
             if (document.querySelector("#date").value && document.querySelector("#hours").value !== "Horário") {
                 const dateInput = new Date(document.querySelector("#date").value)
                 var hours = document.querySelector("#hours").value.split("h");
-                dateInput.setHours( hours[0] );
-                dateInput.setMinutes( hours[1] );
+                dateInput.setHours(hours[0]);
+                dateInput.setMinutes(hours[1]);
                 if (dateInput < today) {
                     checkerTemp.push(" Data válida")
                 }
@@ -129,12 +129,16 @@ const FormMobile = ({ title }) => {
             document.querySelector("#hours").value = "DEFAULT"
         }
         setPolCheck(false)
-        
-        typeof window !== "undefined" &&
-        window.gtag("event", "Submit", {
-            event_category: "Formulário Consulta",
-            event_label: "Marcação de Consulta",
-        })
+
+        if (typeof window !== "undefined") {
+            console.log('window !== "undefined"')
+            window.gtag("event", "Submit", {
+                event_category: "Formulário Consulta",
+                event_label: "Marcação de Consulta",
+            })
+        }
+
+
     }
 
     return (
