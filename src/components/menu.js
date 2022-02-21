@@ -48,9 +48,7 @@ const Menu = ({ marcacaoRef, location, opacity, setOpacity }) => {
             setScrollTop(e.target.documentElement.scrollTop);
             setScrolling(e.target.documentElement.scrollTop > scrollTop);
             $('#btn-marcacao').removeClass('hover-btn')
-           
             scrollOpacity()
-
         };
             
         $('#upSymbol').addClass('filter-opacity-0')
