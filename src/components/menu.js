@@ -38,7 +38,6 @@ const Menu = ({ marcacaoRef, location, opacity, setOpacity }) => {
         const newOpacity = scrolled * 2;
        
         $('#upSymbol').filter(function () {
-            console.log(newOpacity)
             return $(this).css('filter', `opacity(${newOpacity})`)
         });
         return newOpacity;
@@ -49,7 +48,6 @@ const Menu = ({ marcacaoRef, location, opacity, setOpacity }) => {
             setScrollTop(e.target.documentElement.scrollTop);
             setScrolling(e.target.documentElement.scrollTop > scrollTop);
             $('#btn-marcacao').removeClass('hover-btn')
-            console.log($('#divUpSymbol').removeClass('filter-opacity-0'))
            
             scrollOpacity()
 

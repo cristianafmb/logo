@@ -131,7 +131,6 @@ const FormMobile = ({ title }) => {
         setPolCheck(false)
 
         if (typeof window !== "undefined") {
-            console.log('window !== "undefined"')
             window.gtag("event", "Submit", {
                 event_category: "Formulário Consulta",
                 event_label: "Marcação de Consulta",
