@@ -29,6 +29,21 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+          trackingIds: ["UA-219239730-1"],
+          gtagConfig: {
+              anonymize_ip: true,
+              cookie_expires: 0,
+          },
+          pluginConfig: {
+              head: true,
+              respectDNT: true,
+              exclude: ["/404/**"],
+          },
+      },
+  },
     "gatsby-plugin-htaccess",
     {
       resolve: `gatsby-source-filesystem`,
