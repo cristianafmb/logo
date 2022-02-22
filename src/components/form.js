@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Radio from '@mui/material/Radio';
 import { Row, Col, Modal } from 'react-bootstrap'
 
-
 import $ from 'jquery/dist/jquery.slim' // importing this worked like a charm
 
 const Formulario = ({ title }) => {
