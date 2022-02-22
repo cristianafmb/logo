@@ -26,6 +26,7 @@ import FooterMobile from '../components/footerMobile'
 
 import Image from '../components/Images'
 
+
 const SobreNos = ({ data, location }) => {
 
   const breakpoints = useBreakpoint();
