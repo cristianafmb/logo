@@ -76,6 +76,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                     occupation
                   }
                   details
+                  detailsbig
                   head
                   headhref
                   href

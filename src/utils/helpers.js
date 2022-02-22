@@ -39,6 +39,7 @@ export const parseBlogPosts = (edges) =>
       data: node.frontmatter.data,
       image: node.frontmatter.image,
       details: node.frontmatter.details,
+      detailsbig: node.frontmatter.detailsbig,
     }
     )
     ).sort((a, b) => String(b['id']).localeCompare(a['id']))

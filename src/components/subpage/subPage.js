@@ -30,7 +30,14 @@ const Subpage = ({ subpage, page, areas, location, marcacaoRef }) => {
 
 
                             <p className="title-large mt-4 mb-3 gold oExtraBold">{subpage.title}</p>
-                            <p className="details-xx-small mt-4 pe-5 oRegular">{subpage.details}</p>
+                            {subpage.detailsbig.map((detail, i) => (
+                                <div key={"div"+i}>
+                                    <p className="details-small oRegular">{detail}</p>
+                                    <br />
+                                </div>
+
+                            ))}
+
                         </Col>
                         <Col sm="12" md="1" lg="1">
                         </Col>

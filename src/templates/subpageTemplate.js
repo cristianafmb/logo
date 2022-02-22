@@ -30,7 +30,7 @@ const SubPageTemplate = ({ data, pageContext, location }) => {
   const background = pageContext['backgrounds']
   const subPage = pageContext['subpages']
 
-  
+  console.log(subPage)
   return (
 
     <Layout home>

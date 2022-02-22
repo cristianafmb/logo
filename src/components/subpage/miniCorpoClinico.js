@@ -10,7 +10,9 @@ import { Row, Col } from 'react-bootstrap';
 const MiniCorpoClinico = ({ corpoclinico, mobile }) => {
     return (
         <Row className="position-relative">
-            <p className="head-x-small oBold mb-4">Corpo Clínico</p>
+            
+            {corpoclinico.length > 0 ?  <p className="head-x-small oBold mb-4">Corpo Clínico</p> :  <></>}
+           
             {mobile ? (
                 <div className="grid-container center">
                     {corpoclinico.map((item, i) => (

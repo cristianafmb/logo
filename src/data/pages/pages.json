@@ -85,19 +85,8 @@
                         "title": "Cirurgia Oral",
                         "href": "/medicinadentaria/cirurgiaoral",
                         "details": "Cirurgia Oral é a área da Medicina Dentária que engloba intervenções cirúrgicas.",
+                        "detailsbig": ["Cirurgia Oral é a área da Medicina Dentária que engloba intervenções cirúrgicas."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/medicinadentaria/dr-joao-nunes-icon.jpg",
-                                "alt": "Dr João Nunes",
-                                "name": "Dr. João Nunes",
-                                "occupation": "Médico Dentista"
-                            },
-                            {
-                                "img": "corpoclinico/medicinadentaria/dra-sonia-teixeira-icon.jpg",
-                                "alt": "Dra Sónia Teixeira",
-                                "name": "Dra. Sónia Teixeira",
-                                "occupation": "Médica Dentista"
-                            }
                         ]
                     },
                     {
@@ -108,25 +97,9 @@
                         "title": "Dentisteria",
                         "href": "/medicinadentaria/dentisteria",
                         "details": "A dentisteria é a especialidade responsável pela restauração de lesões dentárias restituindo assim a aparência original do dente.",
+                        "detailsbig": ["A dentisteria é a especialidade responsável pela restauração de lesões dentárias restituindo assim a aparência original do dente."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/medicinadentaria/dr-joao-nunes-icon.jpg",
-                                "alt": "Dr João Nunes",
-                                "name": "Dr. João Nunes",
-                                "occupation": "Médico Dentista"
-                            },
-                            {
-                                "img": "corpoclinico/medicinadentaria/dra-sonia-teixeira-icon.jpg",
-                                "alt": "Dra Sónia Teixeira",
-                                "name": "Dra. Sónia Teixeira",
-                                "occupation": "Médica Dentista"
-                            },
-                            {
-                                "img": "corpoclinico/medicinadentaria/dra-maria-joao-duarte-icon.jpg",
-                                "alt": "Dra Maria João Duarte",
-                                "name": "Dra. Maria João Duarte",
-                                "occupation": "Médica Dentista"
-                            }
+                        
                         ]
                     },
                     {
@@ -137,10 +110,11 @@
                         "title": "Endodontia",
                         "href": "/medicinadentaria/endodontia",
                         "details": "Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente.",
+                        "detailsbig": ["Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dr-rodrigo-camargo-icon.jpg",
-                                "alt": "Dr Rodrigo Camargo",
+                                "alt": "Dr. Rodrigo Camargo",
                                 "name": "Dr. Rodrigo Camargo",
                                 "occupation": "Médico Dentista"
                             },
@@ -160,10 +134,11 @@
                         "title": "Implantologia",
                         "href": "/medicinadentaria/implantologia",
                         "details": "Implantologia é a área da Medicina Dentária que visa a substituição de dentes perdidos através da colocação de implantes.",
+                        "detailsbig": ["Implantologia é a área da Medicina Dentária que visa a substituição de dentes perdidos através da colocação de implantes."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dr-joao-nunes-icon.jpg",
-                                "alt": "Dr João Nunes",
+                                "alt": "Dr. João Nunes",
                                 "name": "Dr. João Nunes",
                                 "occupation": "Médico Dentista"
                             },
@@ -183,6 +158,7 @@
                         "title": "Medicina Dentária Generalista",
                         "href": "/medicinadentaria/medicinadentariageneralista",
                         "details": "Medicina Dentária é a área da saúde que previne, diagnostica e trata as doenças que afectam os dentes, as gengivas e a mucosa oral.",
+                        "detailsbig": ["Medicina Dentária é a área da saúde que previne, diagnostica e trata as doenças que afectam os dentes, as gengivas e a mucosa oral."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dra-maria-joao-duarte-icon.jpg",
@@ -200,22 +176,12 @@
                         "title": "Oclusão",
                         "href": "/medicinadentaria/oclusao",
                         "details": "Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias.",
+                        "detailsbig": ["Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/medicinadentaria/dr-joao-nunes-icon.jpg",
-                                "alt": "Dr João Nunes",
-                                "name": "Dr. João Nunes",
-                                "occupation": "Médico Dentista"
-                            },
-                            {
-                                "img": "corpoclinico/medicinadentaria/dra-sonia-teixeira-icon.jpg",
-                                "alt": "Dra Sónia Teixeira",
-                                "name": "Dra. Sónia Teixeira",
-                                "occupation": "Médica Dentista"
-                            }
+                    
                         ]
                     },
-                     {
+                    {
                         "img": "medicinadentaria/medicinadentaria.png",
                         "alt": "Odontopediatria",
                         "head": "Medicina Dentária",
@@ -223,6 +189,7 @@
                         "title": "Odontopediatria",
                         "href": "/medicinadentaria/odontopediatria",
                         "details": "Odontopediatria é a especialidade da Medicina Dentária que se dedica à saúde oral dos bebés, crianças e adolescentes.",
+                        "detailsbig": ["Odontopediatria é a especialidade da Medicina Dentária que se dedica à saúde oral dos bebés, crianças e adolescentes."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dra-mariana-gomes-icon.jpg",
@@ -231,7 +198,7 @@
                                 "occupation": "Médica Dentista"
                             }
                         ]
-                    },                   
+                    },
                     {
                         "img": "medicinadentaria/medicinadentaria.png",
                         "alt": "ortodontia",
@@ -240,12 +207,13 @@
                         "title": "Ortodontia",
                         "href": "/medicinadentaria/ortodontia",
                         "details": "Ortodontia é a especialidade que trata os problemas relacionados com o mau posicionamento dentário e ósseo.",
+                        "detailsbig":[ "Ortodontia é a especialidade que trata os problemas relacionados com o mau posicionamento dentário e ósseo."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dr-rui-pedro-icon.jpg",
-                                "alt": "Dr Rui Pedro",
+                                "alt": "Dr. Rui Pedro",
                                 "name": "Dr. Rui Pedro",
-                                "occupation": "Médico Dentista Ortodontista"
+                                "occupation": "Médico Dentista"
                             }
                         ]
                     },
@@ -257,13 +225,9 @@
                         "title": "Periodontologia",
                         "href": "/medicinadentaria/periodontologia",
                         "details": "Periodontologia é a ciência que estuda e trata as doenças do sistema de implantação e suporte dos dentes.",
+                        "detailsbig": ["Periodontologia é a ciência que estuda e trata as doenças do sistema de implantação e suporte dos dentes."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/medicinadentaria/dra-sonia-teixeira-icon.jpg",
-                                "alt": "Dra Sónia Teixeira",
-                                "name": "Dra. Sónia Teixeira",
-                                "occupation": "Médica Dentista"
-                            }
+                            
                         ]
                     },
                     {
@@ -274,13 +238,9 @@
                         "title": "Reabilitação Oral",
                         "href": "/medicinadentaria/reabilitacaooral",
                         "details": "Reabilitação oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social.",
+                        "detailsbig": ["Reabilitação oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/medicinadentaria/dr-joao-nunes-icon.jpg",
-                                "alt": "Dr João Nunes",
-                                "name": "Dr. João Nunes",
-                                "occupation": "Reabilitação Oral"
-                            }
+                           
                         ]
                     }
                 ]
@@ -352,6 +312,7 @@
                         "title": "Análises Clínicas",
                         "href": "/examesanalises/analisesclinicas",
                         "details": "Em parceria com a Avelab, a UpCare Medical Center dispôe deste serviço na sua clínica todos os dias da semana.",
+                        "detailsbig": ["Em parceria com a Avelab, a UpCare Medical Center dispôe deste serviço na sua clínica todos os dias da semana."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/default.jpg",
@@ -369,13 +330,9 @@
                         "title": "CBCT",
                         "href": "/examesanalises/cbct",
                         "details": "A TAC dentária é uma técnica de imagiologia que permite obter imagens 3D das estruturas da cabeça em foco na Medicina Dentária.",
+                        "detailsbig": ["A TAC dentária é uma técnica de imagiologia que permite obter imagens 3D das estruturas da cabeça em foco na Medicina Dentária."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/default.jpg",
-                                "alt": "Enfª Daniela Lopes",
-                                "name": "Enfª Daniela Lopes",
-                                "occupation": "Enfermeira"
-                            }
+                           
                         ]
                     },
                     {
@@ -386,13 +343,9 @@
                         "title": "Electrocardiograma",
                         "href": "/examesanalises/electrocardiograma",
                         "details": "O ECG detecta os impulsos eléctricos do coração e permite analisar o ritmo cardíaco e suas alterações.",
+                        "detailsbig": ["O ECG detecta os impulsos eléctricos do coração e permite analisar o ritmo cardíaco e suas alterações."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/default.jpg",
-                                "alt": "Enfª Daniela Lopes",
-                                "name": "Enfª Daniela Lopes",
-                                "occupation": "Enfermeira"
-                            }
+                            
                         ]
                     },
                     {
@@ -403,13 +356,9 @@
                         "title": "Espirometria",
                         "href": "/examesanalises/espirometria",
                         "details": "Exame que mede o fluxo de ar que entra e sai dos pulmões. Pode ser realizado com broncodilatação.",
+                        "detailsbig": ["Exame que mede o fluxo de ar que entra e sai dos pulmões. Pode ser realizado com broncodilatação."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/default.jpg",
-                                "alt": "Enfª Daniela Lopes",
-                                "name": "Enfª Daniela Lopes",
-                                "occupation": "Enfermeira"
-                            }
+                           
                         ]
                     },
                     {
@@ -420,13 +369,9 @@
                         "title": "Exames Genéticos",
                         "href": "/examesanalises/examesgeneticos",
                         "details": "Em parceria com a Genética dispomos de testes genéticos de rastreio pré-natal não invasivos, assim como testes de avaliação de risco.",
+                        "detailsbig": ["Em parceria com a Genética dispomos de testes genéticos de rastreio pré-natal não invasivos, assim como testes de avaliação de risco."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/default.jpg",
-                                "alt": "Enfª Daniela Lopes",
-                                "name": "Enfª Daniela Lopes",
-                                "occupation": "Enfermeira"
-                            }
+                            
                         ]
                     },
                     {
@@ -437,13 +382,9 @@
                         "title": "Holter de 24h",
                         "href": "/examesanalises/holterde24h",
                         "details": "Eletrocardiograma dinâmico que regista a atividade cardíaca ao longo de 24h.",
+                        "detailsbig": ["Eletrocardiograma dinâmico que regista a atividade cardíaca ao longo de 24h."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/default.jpg",
-                                "alt": "Enfª Daniela Lopes",
-                                "name": "Enfª Daniela Lopes",
-                                "occupation": "Enfermeira"
-                            }
+                            
                         ]
                     },
                     {
@@ -454,13 +395,9 @@
                         "title": "Laser",
                         "href": "/examesanalises/laser",
                         "details": "Atualmente o laser permite cirurgias com melhor pós operatório, assim como acelera a recuperação dos pacientes com problemas musculares e esqueléticos.",
+                        "detailsbig": ["Atualmente o laser permite cirurgias com melhor pós operatório, assim como acelera a recuperação dos pacientes com problemas musculares e esqueléticos."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/default.jpg",
-                                "alt": "Enfª Daniela Lopes",
-                                "name": "Enfª Daniela Lopes",
-                                "occupation": "Enfermeira"
-                            }
+                            
                         ]
                     },
                     {
@@ -471,13 +408,9 @@
                         "title": "Polissonografia",
                         "href": "/examesanalises/polissonografia",
                         "details": "A polissonografia é um exame que mede a atividade respiratória, muscular e cerebral durante o sono.",
+                        "detailsbig": ["A polissonografia é um exame que mede a atividade respiratória, muscular e cerebral durante o sono."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/default.jpg",
-                                "alt": "Enfª Daniela Lopes",
-                                "name": "Enfª Daniela Lopes",
-                                "occupation": "Enfermeira"
-                            }
+                            
                         ]
                     }
                 ]
@@ -505,13 +438,13 @@
                     },
                     {
                         "title": "Clínica Geral",
-                        "details": "A Clínica Geral é especialidade médica que tem como fundamento o primeiro contacto do paciente com os cuidados primários de saúde.",
+                        "details": "A Clínica Geral abrange as diversas áreas da Medicina e dedica-se à avaliação geral do paciente, estando particularmente vocacionada para a prevenção e tratamento das doenças mais frequentes",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/clinicageral"
                     },
                     {
-                        "title": "Clínica Geral Familiar",
-                        "details": "A Clínica Geral é especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
+                        "title": "Medicina Geral e Familiar",
+                        "details": "A Clínica Geral e Familiar é especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/clinicageralfamiliar"
                     },
@@ -535,7 +468,7 @@
                     },
                     {
                         "title": "Medicina Estética",
-                        "details": "É uma área que se concentram na alteração da aparência cosmética por meio do tratamento de doenças.",
+                        "details": "A Medicina Estética é a Medicina aplicada à Beleza. Muitos problemas estéticos podem atualmente resolver-se com tratamentos médicos pouco ou nada invasivos.",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/medicinaestetica"
                     },
@@ -627,12 +560,13 @@
                         "title": "Cardiologia",
                         "href": "/especialidades/cardiologia",
                         "details": "A Cardiologia é a especialidade médica que se destaca pelo diagnóstico e tratamento das doenças do coração e restantes componentes do sistema circulatório.",
+                        "detailsbig": ["A Cardiologia é a especialidade médica que se destaca pelo diagnóstico e tratamento das doenças do coração e restantes componentes do sistema circulatório."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/default.jpg",
-                                "alt": "Dr Tiago Teixeira",
+                                "alt": "Dr. Tiago Teixeira",
                                 "name": "Dr. Tiago Godinho Teixeira",
-                                "occupation": "Médico Cardiologista"
+                                "occupation": "Cardiologista"
                             }
                         ]
                     },
@@ -644,12 +578,13 @@
                         "title": "Cirurgia Plástica Reconstrutiva e Estética",
                         "href": "/especialidades/cirurgiaplasticareconstrutivaestetica",
                         "details": "A Cirurgia Plática tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
+                        "detailsbig": ["A Cirurgia Plática tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dr-luis-cabral-icon.jpg",
                                 "alt": "Prof. Dr. Luís Cabral",
                                 "name": "Prof. Dr. Luís Cabral",
-                                "occupation": "Médico Cirurgião Plástico"
+                                "occupation": "Cirurgião Plástico"
                             }
                         ]
                     },
@@ -660,13 +595,14 @@
                         "headhref": "/especialidades",
                         "title": "Clínica Geral",
                         "href": "/especialidades/clinicageral",
-                        "details": "A Clínica Geral é especialidade médica que tem como fundamento o primeiro contacto do paciente com os cuidados primários de saúde.",
+                        "details": "A Clínica Geral abrange as diversas áreas da Medicina e dedica-se à avaliação geral do paciente, estando particularmente vocacionada para a prevenção e tratamento das doenças mais frequentes",
+                        "detailsbig":[ "A Clínica Geral abrange as diversas áreas da Medicina e dedica-se à avaliação geral do paciente, estando particularmente vocacionada para a prevenção e tratamento das doenças mais frequentes"],
                         "corpoclinico": [
                             {
-                                "img": "corpoclinico/default.jpg",
-                                "alt": "Dra. Rita Simões",
-                                "name": "Dra. Rita Simões",
-                                "occupation": "Médica Clínica Geral"
+                                "img": "corpoclinico/especialidades/dra-sara-santana-icon.jpg",
+                                "alt": "Dra. Sara Santana",
+                                "name": "Dra. Sara Santana",
+                                "occupation": "Clínica Geral"
                             }
                         ]
                     },
@@ -675,16 +611,12 @@
                         "alt": "clinicageralfamiliar",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
-                        "title": "Clínica Geral Familiar",
+                        "title": "Medicina Geral e Familiar",
                         "href": "/especialidades/clinicageralfamiliar",
-                        "details": "A Clínica Geral Familiar é especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
+                        "details": "A Medicina Geral e Familiar é especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
+                        "detailsbig": ["A Medicina Geral e Familiar é especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/especialidades/dra-sara-santana-icon.jpg",
-                                "alt": "Dra. Sara Santana",
-                                "name": "Dra. Sara Santana",
-                                "occupation": "Médica Clínica Geral Familiar"
-                            }
+                            
                         ]
                     },
                     {
@@ -695,12 +627,13 @@
                         "title": "Dermatologia",
                         "href": "/especialidades/dermatologia",
                         "details": "A Dermatologia é a especialidade da medicina que se ocupa das doenças que afetam o maior orgão do corpo humano, a pele.",
+                        "detailsbig": ["A Dermatologia é a especialidade da medicina que se ocupa das doenças que afetam o maior orgão do corpo humano, a pele."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dr-david-serra-icon.jpg",
-                                "alt": "Dr David Serra",
+                                "alt": "Dr. David Serra",
                                 "name": "Dr. David Serra",
-                                "occupation": "Médico Dermatologista"
+                                "occupation": "Dermatologista"
                             }
                         ]
                     },
@@ -712,17 +645,18 @@
                         "title": "Fisioterapia",
                         "href": "/especialidades/fisioterapia",
                         "details": "A Fisioterapia é uma área que estuda, diagnostica, previne e trata disfunções cinético funcionais decorrentes de orgãos ou sistemas do corpo humano.",
+                        "detailsbig": ["A Fisioterapia é uma área que estuda, diagnostica, previne e trata disfunções cinético funcionais decorrentes de orgãos ou sistemas do corpo humano."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dr-ivo-bento-icon.jpg",
-                                "alt": "Dr Ivo Bento",
-                                "name": "Dr. Ivo Bento",
+                                "alt": "Fisioterapeuta Ivo Bento",
+                                "name": "Fisioterapeuta Ivo Bento",
                                 "occupation": "Fisioterapeuta"
                             },
                             {
                                 "img": "corpoclinico/especialidades/dr-rafael-goncalves-icon.jpg",
-                                "alt": "Dr. Rafael Gonçalves",
-                                "name": "Dr. Rafael Gonçalves",
+                                "alt": "Fisioterapeuta Rafael Gonçalves",
+                                "name": "Fisioterapeuta Rafael Gonçalves",
                                 "occupation": "Fisioterapeuta"
                             }
                         ]
@@ -735,12 +669,13 @@
                         "title": "Ginecologia-Obstetrícia",
                         "href": "/especialidades/ginecologiaobstetricia",
                         "details": "A Ginecologia é a especialidade médica que estuda as patologias do aparelho reprodutor feminino. A Obstetrícia é a área médica que se ocupa da gravidez e parto.",
+                        "detailsbig": ["A Ginecologia é a especialidade médica que estuda as patologias do aparelho reprodutor feminino. A Obstetrícia é a área médica que se ocupa da gravidez e parto."],
                         "corpoclinico": [
                             {
-                                "img": "corpoclinico/especialidades/dra-sara-pereira-icon.jpg",
-                                "alt": "Dra Sara Pereira",
-                                "name": "Dra Sara Pereira",
-                                "occupation": "Médica Ginecologia-Obstetrícia"
+                                "img": "corpoclinico/default.jpg",
+                                "alt": "Dra Inês Coutinho",
+                                "name": "Dra Inês Coutinho",
+                                "occupation": "Ginecologia-Obstetricia"
                             }
                         ]
                     },
@@ -751,13 +686,39 @@
                         "headhref": "/especialidades",
                         "title": "Medicina Estética",
                         "href": "/especialidades/medicinaestetica",
-                        "details": "É uma área que se concentram na alteração da aparência cosmética por meio do tratamento de doenças.",
+                        "details": "A Medicina Estética é a Medicina aplicada à Beleza. Muitos problemas estéticos podem atualmente resolver-se com tratamentos médicos pouco ou nada invasivos.",
+                        "detailsbig": [
+                            "A Medicina Estética é a Medicina aplicada à Beleza. Muitos problemas estéticos podem atualmente resolver-se com tratamentos médicos pouco ou nada invasivos.",
+                            "Patologias frequentes:",
+                            "• Rugas ",
+                            "• Flacidez ",
+                            "• Olheiras",
+                            "• Manchas; Melasma",
+                            "• Rosácea; vermelhidão; lesões vasculares",
+                            "• Pele baça; Perda de brilho/luminosidade ",
+                            "• Poros dilatados ",
+                            "• Cicatrizes",
+                            "• Estrias ",
+                            "Principais tratamentos:",
+                            "• Toxina botulínica ",
+                            "• Preenchimento com ácido hialurónico ",
+                            "• Harmonização facial ",
+                            "• Rejuvenescimento do pescoço e decote",
+                            "• Rejuvenescimento das mãos ",
+                            "• Skinboosters ",
+                            "• Peelings ",
+                            "• Microagulhamento (microneedling) - Dermapen 4",
+                            "• Mesoterapia",
+                            "• Nanosoft com NCTF 135 HA ",
+                            "• Fios tensores",
+                            "• Tratamentos com IPL e LASER (Rosácea, Lentigos solares no rosto, pescoço, decote, mãos, Poiquilodermia de Civatte, Acne, Cicatrizes de acne, Cicatrizes cirúrgicas, Manchas vinho do Porto"
+                        ],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dra-sara-pereira-icon.jpg",
                                 "alt": "Dra Sara Pereira",
                                 "name": "Dra Sara Pereira",
-                                "occupation": "Médica Medicina Estética"
+                                "occupation": "Medicina Estética"
                             }
                         ]
                     },
@@ -769,12 +730,13 @@
                         "title": "Medicina Interna",
                         "href": "/especialidades/medicinainterna",
                         "details": "A Medicina Interna é a especialidade que aborda o estado de saúde do paciente no seu todo, tendo em conta os vários distúrbios que podem afetar o seu organismo.",
+                        "detailsbig": ["A Medicina Interna é a especialidade que aborda o estado de saúde do paciente no seu todo, tendo em conta os vários distúrbios que podem afetar o seu organismo."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/default.jpg",
                                 "alt": "Dra Rita Simões",
                                 "name": "Dra Rita Simões",
-                                "occupation": "Médica Medicina Interna"
+                                "occupation": "Medicina Interna"
                             }
                         ]
                     },
@@ -786,12 +748,13 @@
                         "title": "Neurologia",
                         "href": "/especialidades/neurologia",
                         "details": "A Neurologia define-se como a especialidade médica que trata das disfunções estruturais do sistema nervoso.",
+                        "detailsbig": ["A Neurologia define-se como a especialidade médica que trata das disfunções estruturais do sistema nervoso."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dr-jose-coelho-icon.jpg",
-                                "alt": "Dr José Coelho",
+                                "alt": "Dr. José Coelho",
                                 "name": "Dr. José Coelho",
-                                "occupation": "Médico Neurológico"
+                                "occupation": "Neurologista"
                             }
                         ]
                     },
@@ -803,12 +766,13 @@
                         "title": "Neuropsicologia",
                         "href": "/especialidades/neuropsicologia",
                         "details": "É uma área que estuda as relações entre o cérebro e o comportamento humano.",
+                        "detailsbig": ["É uma área que estuda as relações entre o cérebro e o comportamento humano."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dra-filipa-miriam-icon.jpg",
                                 "alt": "Dra Filipa Miriam",
                                 "name": "Dra Filipa Miriam",
-                                "occupation": "Médica Neuropsicóloga"
+                                "occupation": "Neuropsicóloga"
                             }
                         ]
                     },
@@ -820,12 +784,13 @@
                         "title": "Nutrição",
                         "href": "/especialidades/nutricao",
                         "details": "A nutrição é a área clínica que orienta pessoas que necessitem de dieta alimentar específica, como os casos de excesso de peso, diabéticos, hipertensos e outros.",
+                        "detailsbig": ["A nutrição é a área clínica que orienta pessoas que necessitem de dieta alimentar específica, como os casos de excesso de peso, diabéticos, hipertensos e outros."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/default.jpg",
-                                "alt": "Dra Dinora Bastos",
-                                "name": "Dra. Dinora Bastos",
-                                "occupation": "Médica Nutricionista"
+                                "alt": "Dra Inês Gonçalves",
+                                "name": "Dra. Inês Gonçalves",
+                                "occupation": "Nutricionista"
                             }
                         ]
                     },
@@ -837,18 +802,19 @@
                         "title": "Ortopedia",
                         "href": "/especialidades/ortopedia",
                         "details": "A Ortopedia é a especialidade que se dedica ao estudo e tratamento de deformações dos ossos, das articulações, dos músculos e dos tendões.",
+                        "detailsbig": ["A Ortopedia é a especialidade que se dedica ao estudo e tratamento de deformações dos ossos, das articulações, dos músculos e dos tendões."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/default.jpg",
-                                "alt": "Dr Romeu Pinho",
+                                "alt": "Dr. Romeu Pinho",
                                 "name": "Dr. Romeu Pinho",
-                                "occupation": "Médico Ortopedista"
+                                "occupation": "Ortopedista"
                             },
                             {
                                 "img": "corpoclinico/default.jpg",
-                                "alt": "Dr Orlando Luís",
+                                "alt": "Dr. Orlando Luís",
                                 "name": "Dr. Orlando Luís",
-                                "occupation": "Médico Ortopedista"
+                                "occupation": "Ortopedista"
                             }
                         ]
                     },
@@ -860,12 +826,13 @@
                         "title": "Otorrinolaringologia",
                         "href": "/especialidades/otorrinolaringologia",
                         "details": "A Otorrinolaringologia é a especialidade da medicina que se ocupa do diagnóstico e tratamento das doenças de ouvido, nariz e garganta.",
+                        "detailsbig": ["A Otorrinolaringologia é a especialidade da medicina que se ocupa do diagnóstico e tratamento das doenças de ouvido, nariz e garganta."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dr-joao-barosa-icon.jpg",
-                                "alt": "Dr João Barosa",
+                                "alt": "Dr. João Barosa",
                                 "name": "Dr. João Barosa",
-                                "occupation": "Médico Otorrinolaringologista"
+                                "occupation": "Otorrinolaringologista"
                             }
                         ]
                     },
@@ -877,18 +844,19 @@
                         "title": "Pediatria",
                         "href": "/especialidades/pediatria",
                         "details": "A Pediatria é a área da medicina que trata o ser humano desde o nascimento até à maioridade.",
+                        "detailsbig":[ "A Pediatria é a área da medicina que trata o ser humano desde o nascimento até à maioridade."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dra-fatima-ribeiro-icon.jpg",
                                 "alt": "Dra Fátima Ribeiro",
                                 "name": "Dra. Fátima Ribeiro",
-                                "occupation": "Médica Pediatra"
+                                "occupation": "Pediatra"
                             },
                             {
                                 "img": "corpoclinico/default.jpg",
                                 "alt": "Dra Ana Ratola",
                                 "name": "Dra. Ana Ratola",
-                                "occupation": "Médica Pediatra"
+                                "occupation": "Pediatra"
                             }
                         ]
                     },
@@ -900,12 +868,13 @@
                         "title": "Pneumologia",
                         "href": "/especialidades/pneumologia",
                         "details": "A Pneumologia é a área da medicina que diagnostica e trata as doenças do aparelho respiratório.",
+                        "detailsbig": ["A Pneumologia é a área da medicina que diagnostica e trata as doenças do aparelho respiratório."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/default.jpg",
-                                "alt": "Dr João Cravo",
+                                "alt": "Dr. João Cravo",
                                 "name": "Dr. João Cravo",
-                                "occupation": "Médico Pneumologista"
+                                "occupation": "Pneumologista"
                             }
                         ]
                     },
@@ -917,12 +886,13 @@
                         "title": "Podologia",
                         "href": "/especialidades/podologia",
                         "details": "A Podologia é uma área da saúde que visa o diagnóstico, tratamento e prevenção de doenças relacionadas com os pés.",
+                        "detailsbig": ["A Podologia é uma área da saúde que visa o diagnóstico, tratamento e prevenção de doenças relacionadas com os pés."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dr-vitor-barbosa-icon.jpg",
-                                "alt": "Dr Vítor Barbosa",
+                                "alt": "Dr. Vítor Barbosa",
                                 "name": "Dr. Vítor Barbosa",
-                                "occupation": "Médico Podologista"
+                                "occupation": "Podologista"
                             }
                         ]
                     },
@@ -934,12 +904,19 @@
                         "title": "Psicologia",
                         "href": "/especialidades/psicologia",
                         "details": "A Psicologia é a área da saúde que estuda os processos mentais e do comportamento do ser humano e a sua interação com o ambiente físico e social.",
+                        "detailsbig": ["A Psicologia é a área da saúde que estuda os processos mentais e do comportamento do ser humano e a sua interação com o ambiente físico e social."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dra-ana-menezes-icon.jpg",
                                 "alt": "Dra Ana Menezes",
                                 "name": "Dra. Ana Menezes",
-                                "occupation": "Médica Psicóloga"
+                                "occupation": "Psicóloga"
+                            },
+                            {
+                                "img": "corpoclinico/especialidades/dra-filipa-miriam-icon.jpg",
+                                "alt": "Dra Filipa Miriam",
+                                "name": "Dra Filipa Miriam",
+                                "occupation": "Neuropsicóloga"
                             }
                         ]
                     },
@@ -951,18 +928,19 @@
                         "title": "Psiquiatria",
                         "href": "/especialidades/psiquiatria",
                         "details": "A Psiquiatria é a área da medicina que lida com prevenção, diagnóstico e tratamento das diferentes perturbações mentais, sejam elas de origem orgânica ou funcional.",
+                        "detailsbig": ["A Psiquiatria é a área da medicina que lida com prevenção, diagnóstico e tratamento das diferentes perturbações mentais, sejam elas de origem orgânica ou funcional."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dr-oscar-neves-icon.jpg",
-                                "alt": "Dr Óscar Neves",
+                                "alt": "Dr. Óscar Neves",
                                 "name": "Dr. Óscar Neves",
-                                "occupation": "Médico Psiquiatra"
+                                "occupation": "Psiquiatra"
                             },
                             {
                                 "img": "corpoclinico/especialidades/dra-fabiana-ventura-icon.jpg",
                                 "alt": "Dra Fabiana Ventura",
                                 "name": "Dra. Fabiana Ventura",
-                                "occupation": "Médica Psiquiatra"
+                                "occupation": "Psiquiatra"
                             }
                         ]
                     },
@@ -974,12 +952,13 @@
                         "title": "Terapia da Fala",
                         "href": "/especialidades/terapiadafala",
                         "details": "É a área da saúde responsável pelo estudo, prevenção e tratamento das alterações da comunicação.",
+                        "detailsbig": ["É a área da saúde responsável pelo estudo, prevenção e tratamento das alterações da comunicação."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dra-raquel-costa-icon.jpg",
-                                "alt": "Dra Raquel Costa",
-                                "name": "Dra. Raquel Costa",
-                                "occupation": "Médica Terapeuta Ocupacional"
+                                "alt": "Terapeuta Raquel Costa",
+                                "name": "Terapeuta Raquel Costa",
+                                "occupation": "Terapeuta da Fala"
                             }
                         ]
                     },
@@ -991,13 +970,9 @@
                         "title": "Terapia Ocupacional",
                         "href": "/especialidades/terapiaocupacional",
                         "details": "O principal objetivo da Terapia Ocupacional é capacitar as pessoas para participarem com sucesso em atividades da vida diária nos diversos ambientes bem como na comunidade.",
+                        "detailsbig": ["O principal objetivo da Terapia Ocupacional é capacitar as pessoas para participarem com sucesso em atividades da vida diária nos diversos ambientes bem como na comunidade."],
                         "corpoclinico": [
-                            {
-                                "img": "corpoclinico/especialidades/dra-raquel-costa-icon.jpg",
-                                "alt": "Dra Raquel Costa",
-                                "name": "Dra. Raquel Costa",
-                                "occupation": "Médica Terapeuta Ocupacional"
-                            }
+                           
                         ]
                     }
                 ]

@@ -133,7 +133,7 @@ const FormMobile = ({ title }) => {
         if (typeof window !== "undefined") {
             window.gtag("event", "Submit", {
                 event_category: "Formulário Consulta",
-                event_label: "Marcação de Consulta",
+                event_label: "Marcação de Consulta " + document.querySelector("#especiality").value,
             })
         }
 
