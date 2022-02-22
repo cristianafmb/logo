@@ -38,7 +38,7 @@
                 "imgMobile": "../images/corpoclinico/especialidades/dra-sara-santana-icon.jpg",
                 "name": "Dra. Sara Santana",
                 "alt": "Dra. Sara Santana",
-                "occupation": "Clínica Geral",
+                "occupation": "Médica de Medicina Geral",
                 "especiality": "Medicina Geral"
             },
             {
@@ -86,7 +86,7 @@
                 "imgMobile": "../images/corpoclinico/especialidades/dra-sara-pereira-icon.jpg",
                 "name": "Dra. Sara Pereira",
                 "alt": "Dra. Sara Pereira",
-                "occupation": "Médica",
+                "occupation": "Médica de Medicina Estética",
                 "especiality": "Medicina Estética"
             },
             {
