@@ -227,7 +227,12 @@
                         "details": "A Periodontologia é a ciência que estuda e trata as doenças do sistema de implantação e suporte dos dentes.",
                         "detailsbig": ["A Periodontologia é a ciência que estuda e trata as doenças do sistema de implantação e suporte dos dentes."],
                         "corpoclinico": [
-                            
+                            {
+                                "img": "corpoclinico/medicinadentaria/dra-sonia-teixeira-icon.jpg",
+                                "alt": "Dra Sónia Teixeira",
+                                "name": "Dra. Sónia Teixeira",
+                                "occupation": "Médica Dentista"
+                            }
                         ]
                     },
                     {
@@ -240,7 +245,12 @@
                         "details": "A Reabilitação Oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social.",
                         "detailsbig": ["A Reabilitação Oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social."],
                         "corpoclinico": [
-                           
+                            {
+                                "img": "corpoclinico/medicinadentaria/dra-sonia-teixeira-icon.jpg",
+                                "alt": "Dra Sónia Teixeira",
+                                "name": "Dra. Sónia Teixeira",
+                                "occupation": "Médica Dentista"
+                            }
                         ]
                     }
                 ]
@@ -256,7 +266,7 @@
                 "simple": [
                     {
                         "title": "Análises Clínicas",
-                        "details": "Em parceria com a Avelab, a UpCare Medical Center dispõe deste serviço na sua clínica todos os dias da semana.",
+                        "details": "Em parceria com a Avelab, a UpCare Medical Center dispõe deste serviço na sua clínica por marcação.",
                         "btntext": "Saber Mais",
                         "href": "/examesanalises/analisesclinicas"
                     },
@@ -280,7 +290,7 @@
                     },
                     {
                         "title": "Exames Genéticos",
-                        "details": "Em parceria com a Genética dispomos de testes genéticos de rastreio pré-natal não invasivos, assim como testes de avaliação de risco.",
+                        "details": "Em parceria com a Genetyca dispomos de testes genéticos de rastreio pré-natal não invasivos, assim como testes de avaliação de risco.",
                         "btntext": "Saber Mais",
                         "href": "/examesanalises/examesgeneticos"
                     },
@@ -289,12 +299,6 @@
                         "details": "Eletrocardiograma dinâmico que regista a atividade cardíaca ao longo de 24h.",
                         "btntext": "Saber Mais",
                         "href": "/examesanalises/holterde24h"
-                    },
-                    {
-                        "title": "Laser",
-                        "details": "Atualmente o laser permite cirurgias com melhor pós operatório, assim como acelera a recuperação dos pacientes com problemas musculares e esqueléticos.",
-                        "btntext": "Saber Mais",
-                        "href": "/examesanalises/laser"
                     },
                     {
                         "title": "Polissonografia",
@@ -311,8 +315,8 @@
                         "headhref": "/examesanalises",
                         "title": "Análises Clínicas",
                         "href": "/examesanalises/analisesclinicas",
-                        "details": "Em parceria com a Avelab, a UpCare Medical Center dispõe deste serviço na sua clínica todos os dias da semana.",
-                        "detailsbig": ["Em parceria com a Avelab, a UpCare Medical Center dispõe deste serviço na sua clínica todos os dias da semana."],
+                        "details": "Em parceria com a Avelab, a UpCare Medical Center dispõe deste serviço na sua clínica por marcação.",
+                        "detailsbig": ["Em parceria com a Avelab, a UpCare Medical Center dispõe deste serviço na sua clínica por marcação."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/default.jpg",
@@ -368,8 +372,8 @@
                         "headhref": "/examesanalises",
                         "title": "Exames Genéticos",
                         "href": "/examesanalises/examesgeneticos",
-                        "details": "Em parceria com a Genética dispomos de testes genéticos de rastreio pré-natal não invasivos, assim como testes de avaliação de risco.",
-                        "detailsbig": ["Em parceria com a Genética dispomos de testes genéticos de rastreio pré-natal não invasivos, assim como testes de avaliação de risco."],
+                        "details": "Em parceria com a Genetyca dispomos de testes genéticos de rastreio pré-natal não invasivos, assim como testes de avaliação de risco.",
+                        "detailsbig": ["Em parceria com a Genetyca dispomos de testes genéticos de rastreio pré-natal não invasivos, assim como testes de avaliação de risco."],
                         "corpoclinico": [
                             
                         ]
@@ -383,19 +387,6 @@
                         "href": "/examesanalises/holterde24h",
                         "details": "Eletrocardiograma dinâmico que regista a atividade cardíaca ao longo de 24h.",
                         "detailsbig": ["Eletrocardiograma dinâmico que regista a atividade cardíaca ao longo de 24h."],
-                        "corpoclinico": [
-                            
-                        ]
-                    },
-                    {
-                        "img": "examesanalises/examesanalises.png",
-                        "alt": "Laser",
-                        "head": "Exames & Análises",
-                        "headhref": "/examesanalises",
-                        "title": "Laser",
-                        "href": "/examesanalises/laser",
-                        "details": "Atualmente o laser permite cirurgias com melhor pós operatório, assim como acelera a recuperação dos pacientes com problemas musculares e esqueléticos.",
-                        "detailsbig": ["Atualmente o laser permite cirurgias com melhor pós operatório, assim como acelera a recuperação dos pacientes com problemas musculares e esqueléticos."],
                         "corpoclinico": [
                             
                         ]
@@ -432,7 +423,7 @@
                     },
                     {
                         "title": "Cirurgia Plástica Reconstrutiva e Estética",
-                        "details": "A Cirurgia Plástica Reconstrutiva e Estética tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
+                        "details": "A Cirurgia Plástica Reconstrutiva e Estética tem como objetivo a modificação reconstrutiva de uma parte do corpo com motivo médico ou estético.",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/cirurgiaplastica"
                     },
@@ -441,12 +432,6 @@
                         "details": "A Clínica Geral abrange as diversas áreas da Medicina e dedica-se à avaliação geral do paciente, estando particularmente vocacionada para a prevenção e tratamento das doenças mais frequentes",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/clinicageral"
-                    },
-                    {
-                        "title": "Medicina Geral e Familiar",
-                        "details": "A Medicina Geral e Familiar é a especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
-                        "btntext": "Saber Mais",
-                        "href": "/especialidades/clinicageralfamiliar"
                     },
                     {
                         "title": "Dermatologia",
@@ -577,8 +562,8 @@
                         "headhref": "/especialidades",
                         "title": "Cirurgia Plástica Reconstrutiva e Estética",
                         "href": "/especialidades/cirurgiaplastica",
-                        "details": "A Cirurgia Plástica Reconstrutiva e Estética tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
-                        "detailsbig": ["A Cirurgia Plástica Reconstrutiva e Estética tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético."],
+                        "details": "A Cirurgia Plástica Reconstrutiva e Estética tem como objetivo a modificação reconstrutiva de uma parte do corpo com motivo médico ou estético.",
+                        "detailsbig": ["A Cirurgia Plástica Reconstrutiva e Estética tem como objetivo a modificação reconstrutiva de uma parte do corpo com motivo médico ou estético."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dr-luis-cabral-icon.jpg",
@@ -602,21 +587,8 @@
                                 "img": "corpoclinico/especialidades/dra-sara-santana-icon.jpg",
                                 "alt": "Dra. Sara Santana",
                                 "name": "Dra. Sara Santana",
-                                "occupation": "Clínica Geral"
+                                "occupation": "Medicina Geral e Familiar"
                             }
-                        ]
-                    },
-                    {
-                        "img": "especialidades/cardiologia.png",
-                        "alt": "clinicageralfamiliar",
-                        "head": "Especialidades",
-                        "headhref": "/especialidades",
-                        "title": "Medicina Geral e Familiar",
-                        "href": "/especialidades/clinicageralfamiliar",
-                        "details": "A Medicina Geral e Familiar é a especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
-                        "detailsbig": ["A Medicina Geral e Familiar é a especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias."],
-                        "corpoclinico": [
-                            
                         ]
                     },
                     {
@@ -811,7 +783,7 @@
                                 "occupation": "Ortopedista"
                             },
                             {
-                                "img": "corpoclinico/default.jpg",
+                                "img": "corpoclinico/especialidades/dr-orlando-icon.jpg",
                                 "alt": "Dr. Orlando Luís",
                                 "name": "Dr. Orlando Luís",
                                 "occupation": "Ortopedista"

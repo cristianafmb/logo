@@ -13,10 +13,6 @@
             "text": "A Clínica Geral abrange as diversas áreas da Medicina e dedica-se à avaliação geral do paciente, estando particularmente vocacionada para a prevenção e tratamento das doenças mais frequentes"
         },
         {
-            "title": "Medicina Geral e Familiar",
-            "text": "A Medicina Geral e Familiar é a especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias."
-        },
-        {
             "title": "Dermatologia",
             "text": "A Dermatologia é a especialidade da medicina que se ocupa das doenças que afetam o maior orgão do corpo humano, a pele."
         },
@@ -98,7 +94,7 @@
     "ExaMed": [
         {
             "title": "Análises Clínicas",
-            "text": "Em parceria com a Avelab, a UpCare Medical Center dispõe deste serviço na sua clínica todos os dias da semana."
+            "text": "Em parceria com a Avelab, a UpCare Medical Center dispõe deste serviço na sua clínica por marcação."
         }
     ]
 }
