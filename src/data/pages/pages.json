@@ -17,61 +17,61 @@
                 "simple": [
                     {
                         "title": "Cirurgia Oral",
-                        "details": "Cirurgia Oral é a área da Medicina Dentária que engloba intervenções cirúrgicas.",
+                        "details": "A Cirurgia Oral é a área da Medicina Dentária que engloba intervenções cirúrgicas.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/cirurgiaoral"
                     },
                     {
                         "title": "Dentisteria",
-                        "details": "A dentisteria é a especialidade responsável pela restauração de lesões dentárias restituindo assim a aparência original do dente.",
+                        "details": "A Dentisteria é a especialidade responsável pela restauração de lesões dentárias restituindo assim a aparência original do dente.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/dentisteria"
                     },
                     {
                         "title": "Endodontia",
-                        "details": "Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente.",
+                        "details": "A Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/endodontia"
                     },
                     {
                         "title": "Implantologia",
-                        "details": "Implantologia é a área da Medicina Dentária que visa a substituição de dentes perdidos através da colocação de implantes.",
+                        "details": "A Implantologia é a área da Medicina Dentária que visa a substituição de dentes perdidos através da colocação de implantes.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/implantologia"
                     },
                     {
                         "title": "Medicina Dentária Generalista",
-                        "details": "Medicina Dentária é a área da saúde que previne, diagnostica e trata as doenças que afectam os dentes, as gengivas e a mucosa oral.",
+                        "details": "A Medicina Dentária é a área da saúde que previne, diagnostica e trata as doenças que afectam os dentes, as gengivas e a mucosa oral.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/medicinadentariageneralista"
                     },
                     {
                         "title": "Oclusão",
-                        "details": "Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias.",
+                        "details": "A Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/oclusao"
                     },
                     {
                         "title": "Odontopediatria",
-                        "details": "Odontopediatria é a especialidade da Medicina Dentária que se dedica à saúde oral dos bebés, crianças e adolescentes.",
+                        "details": "A Odontopediatria é a especialidade da Medicina Dentária que se dedica à saúde oral dos bebés, crianças e adolescentes.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/odontopediatria"
                     },
                     {
                         "title": "Ortodontia",
-                        "details": "Ortodontia é a especialidade que trata os problemas relacionados com o mau posicionamento dentário e ósseo.",
+                        "details": "A Ortodontia é a especialidade que trata os problemas relacionados com o mau posicionamento dentário e ósseo.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/ortodontia"
                     },
                     {
                         "title": "Periodontologia",
-                        "details": "Periodontologia é a ciência que estuda e trata as doenças do sistema de implantação e suporte dos dentes.",
+                        "details": "A Periodontologia é a ciência que estuda e trata as doenças do sistema de implantação e suporte dos dentes.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/periodontologia"
                     },
                     {
                         "title": "Reabilitação Oral",
-                        "details": "Reabilitação oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social.",
+                        "details": "A Reabilitação Oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social.",
                         "btntext": "Saber Mais",
                         "href": "/medicinadentaria/reabilitacaooral"
                     }
@@ -84,8 +84,8 @@
                         "headhref": "/medicinadentaria",
                         "title": "Cirurgia Oral",
                         "href": "/medicinadentaria/cirurgiaoral",
-                        "details": "Cirurgia Oral é a área da Medicina Dentária que engloba intervenções cirúrgicas.",
-                        "detailsbig": ["Cirurgia Oral é a área da Medicina Dentária que engloba intervenções cirúrgicas."],
+                        "details": "A Cirurgia Oral é a área da Medicina Dentária que engloba intervenções cirúrgicas.",
+                        "detailsbig": ["A Cirurgia Oral é a área da Medicina Dentária que engloba intervenções cirúrgicas."],
                         "corpoclinico": [
                         ]
                     },
@@ -96,8 +96,8 @@
                         "headhref": "/medicinadentaria",
                         "title": "Dentisteria",
                         "href": "/medicinadentaria/dentisteria",
-                        "details": "A dentisteria é a especialidade responsável pela restauração de lesões dentárias restituindo assim a aparência original do dente.",
-                        "detailsbig": ["A dentisteria é a especialidade responsável pela restauração de lesões dentárias restituindo assim a aparência original do dente."],
+                        "details": "A Dentisteria é a especialidade responsável pela restauração de lesões dentárias restituindo assim a aparência original do dente.",
+                        "detailsbig": ["A Dentisteria é a especialidade responsável pela restauração de lesões dentárias restituindo assim a aparência original do dente."],
                         "corpoclinico": [
                         
                         ]
@@ -109,8 +109,8 @@
                         "headhref": "/medicinadentaria",
                         "title": "Endodontia",
                         "href": "/medicinadentaria/endodontia",
-                        "details": "Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente.",
-                        "detailsbig": ["Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente."],
+                        "details": "A Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente.",
+                        "detailsbig": ["A Endodontia é a especialidade da Medicina Dentária que trata as lesões da polpa, sistema de canais e meio envolvente do dente."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dr-rodrigo-camargo-icon.jpg",
@@ -133,8 +133,8 @@
                         "headhref": "/medicinadentaria",
                         "title": "Implantologia",
                         "href": "/medicinadentaria/implantologia",
-                        "details": "Implantologia é a área da Medicina Dentária que visa a substituição de dentes perdidos através da colocação de implantes.",
-                        "detailsbig": ["Implantologia é a área da Medicina Dentária que visa a substituição de dentes perdidos através da colocação de implantes."],
+                        "details": "A Implantologia é a área da Medicina Dentária que visa a substituição de dentes perdidos através da colocação de implantes.",
+                        "detailsbig": ["A Implantologia é a área da Medicina Dentária que visa a substituição de dentes perdidos através da colocação de implantes."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dr-joao-nunes-icon.jpg",
@@ -157,8 +157,8 @@
                         "headhref": "/medicinadentaria",
                         "title": "Medicina Dentária Generalista",
                         "href": "/medicinadentaria/medicinadentariageneralista",
-                        "details": "Medicina Dentária é a área da saúde que previne, diagnostica e trata as doenças que afectam os dentes, as gengivas e a mucosa oral.",
-                        "detailsbig": ["Medicina Dentária é a área da saúde que previne, diagnostica e trata as doenças que afectam os dentes, as gengivas e a mucosa oral."],
+                        "details": "A Medicina Dentária é a área da saúde que previne, diagnostica e trata as doenças que afectam os dentes, as gengivas e a mucosa oral.",
+                        "detailsbig": ["A Medicina Dentária é a área da saúde que previne, diagnostica e trata as doenças que afectam os dentes, as gengivas e a mucosa oral."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dra-maria-joao-duarte-icon.jpg",
@@ -175,8 +175,8 @@
                         "headhref": "/medicinadentaria",
                         "title": "Oclusão",
                         "href": "/medicinadentaria/oclusao",
-                        "details": "Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias.",
-                        "detailsbig": ["Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias."],
+                        "details": "A Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias.",
+                        "detailsbig": ["A Oclusão é área responsável pela prevenção e tratamento dos problemas funcionais das estruturas articulares e dentárias."],
                         "corpoclinico": [
                     
                         ]
@@ -188,8 +188,8 @@
                         "headhref": "/medicinadentaria",
                         "title": "Odontopediatria",
                         "href": "/medicinadentaria/odontopediatria",
-                        "details": "Odontopediatria é a especialidade da Medicina Dentária que se dedica à saúde oral dos bebés, crianças e adolescentes.",
-                        "detailsbig": ["Odontopediatria é a especialidade da Medicina Dentária que se dedica à saúde oral dos bebés, crianças e adolescentes."],
+                        "details": "A Odontopediatria é a especialidade da Medicina Dentária que se dedica à saúde oral dos bebés, crianças e adolescentes.",
+                        "detailsbig": ["A Odontopediatria é a especialidade da Medicina Dentária que se dedica à saúde oral dos bebés, crianças e adolescentes."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dra-mariana-gomes-icon.jpg",
@@ -206,8 +206,8 @@
                         "headhref": "/medicinadentaria",
                         "title": "Ortodontia",
                         "href": "/medicinadentaria/ortodontia",
-                        "details": "Ortodontia é a especialidade que trata os problemas relacionados com o mau posicionamento dentário e ósseo.",
-                        "detailsbig":[ "Ortodontia é a especialidade que trata os problemas relacionados com o mau posicionamento dentário e ósseo."],
+                        "details": "A Ortodontia é a especialidade que trata os problemas relacionados com o mau posicionamento dentário e ósseo.",
+                        "detailsbig":[ "A Ortodontia é a especialidade que trata os problemas relacionados com o mau posicionamento dentário e ósseo."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/medicinadentaria/dr-rui-pedro-icon.jpg",
@@ -224,8 +224,8 @@
                         "headhref": "/medicinadentaria",
                         "title": "Periodontologia",
                         "href": "/medicinadentaria/periodontologia",
-                        "details": "Periodontologia é a ciência que estuda e trata as doenças do sistema de implantação e suporte dos dentes.",
-                        "detailsbig": ["Periodontologia é a ciência que estuda e trata as doenças do sistema de implantação e suporte dos dentes."],
+                        "details": "A Periodontologia é a ciência que estuda e trata as doenças do sistema de implantação e suporte dos dentes.",
+                        "detailsbig": ["A Periodontologia é a ciência que estuda e trata as doenças do sistema de implantação e suporte dos dentes."],
                         "corpoclinico": [
                             
                         ]
@@ -237,8 +237,8 @@
                         "headhref": "/medicinadentaria",
                         "title": "Reabilitação Oral",
                         "href": "/medicinadentaria/reabilitacaooral",
-                        "details": "Reabilitação oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social.",
-                        "detailsbig": ["Reabilitação oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social."],
+                        "details": "A Reabilitação Oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social.",
+                        "detailsbig": ["A Reabilitação Oral consiste em devolver ao paciente a segurança da mastigação e o bem-estar no convívio social."],
                         "corpoclinico": [
                            
                         ]
@@ -432,7 +432,7 @@
                     },
                     {
                         "title": "Cirurgia Plástica Reconstrutiva e Estética",
-                        "details": "A Cirurgia Plática tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
+                        "details": "A Cirurgia Plástica tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/cirurgiaplasticareconstrutivaestetica"
                     },
@@ -444,7 +444,7 @@
                     },
                     {
                         "title": "Medicina Geral e Familiar",
-                        "details": "A Clínica Geral e Familiar é especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
+                        "details": "A Medicina Geral e Familiar é especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/clinicageralfamiliar"
                     },
@@ -486,13 +486,13 @@
                     },
                     {
                         "title": "Neuropsicologia",
-                        "details": "É uma área que estuda as relações entre o cérebro e o comportamento humano.",
+                        "details": "A Neuropsicologia é uma área que estuda as relações entre o cérebro e o comportamento humano.",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/neuropsicologia"
                     },
                     {
                         "title": "Nutrição",
-                        "details": "A nutrição é a área clínica que orienta pessoas que necessitem de dieta alimentar específica, como os casos de excesso de peso, diabéticos, hipertensos e outros.",
+                        "details": "A Nutrição é a área clínica que orienta pessoas que necessitem de dieta alimentar específica, como os casos de excesso de peso, diabéticos, hipertensos e outros.",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/nutricao"
                     },
@@ -540,13 +540,13 @@
                     },
                     {
                         "title": "Terapia da Fala",
-                        "details": "É a área da saúde responsável pelo estudo, prevenção e tratamento das alterações da comunicação.",
+                        "details": "A Terapia da Fala é a área da saúde responsável pelo estudo, prevenção e tratamento das alterações da comunicação.",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/terapiadafala"
                     },
                     {
                         "title": "Terapia Ocupacional",
-                        "details": "O principal objetivo da Terapia Ocupacional é capacitar as pessoas para participarem com sucesso em atividades da vida diária nos diversos ambientes bem como na comunidade.",
+                        "details": "A Terapia Ocupacional é uma profissão relacionada com a promoção da saúde e bem-estar através da ocupação.",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/terapiaocupacional"
                     }
@@ -577,8 +577,8 @@
                         "headhref": "/especialidades",
                         "title": "Cirurgia Plástica Reconstrutiva e Estética",
                         "href": "/especialidades/cirurgiaplasticareconstrutivaestetica",
-                        "details": "A Cirurgia Plática tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
-                        "detailsbig": ["A Cirurgia Plática tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético."],
+                        "details": "A Cirurgia Plástica tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
+                        "detailsbig": ["A Cirurgia Plástica tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dr-luis-cabral-icon.jpg",
@@ -783,8 +783,8 @@
                         "headhref": "/especialidades",
                         "title": "Nutrição",
                         "href": "/especialidades/nutricao",
-                        "details": "A nutrição é a área clínica que orienta pessoas que necessitem de dieta alimentar específica, como os casos de excesso de peso, diabéticos, hipertensos e outros.",
-                        "detailsbig": ["A nutrição é a área clínica que orienta pessoas que necessitem de dieta alimentar específica, como os casos de excesso de peso, diabéticos, hipertensos e outros."],
+                        "details": "A Nutrição é a área clínica que orienta pessoas que necessitem de dieta alimentar específica, como os casos de excesso de peso, diabéticos, hipertensos e outros.",
+                        "detailsbig": ["A Nutrição é a área clínica que orienta pessoas que necessitem de dieta alimentar específica, como os casos de excesso de peso, diabéticos, hipertensos e outros."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/default.jpg",
@@ -969,8 +969,8 @@
                         "headhref": "/especialidades",
                         "title": "Terapia Ocupacional",
                         "href": "/especialidades/terapiaocupacional",
-                        "details": "O principal objetivo da Terapia Ocupacional é capacitar as pessoas para participarem com sucesso em atividades da vida diária nos diversos ambientes bem como na comunidade.",
-                        "detailsbig": ["O principal objetivo da Terapia Ocupacional é capacitar as pessoas para participarem com sucesso em atividades da vida diária nos diversos ambientes bem como na comunidade."],
+                        "details": "A Terapia Ocupacional é uma profissão relacionada com a promoção da saúde e bem-estar através da ocupação.",
+                        "detailsbig": ["A Terapia Ocupacional é uma profissão relacionada com a promoção da saúde e bem-estar através da ocupação."],
                         "corpoclinico": [
                            
                         ]
