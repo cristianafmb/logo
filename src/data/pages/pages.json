@@ -432,9 +432,9 @@
                     },
                     {
                         "title": "Cirurgia Plástica Reconstrutiva e Estética",
-                        "details": "A Cirurgia Plástica tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
+                        "details": "A Cirurgia Plástica Reconstrutiva e Estética tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
                         "btntext": "Saber Mais",
-                        "href": "/especialidades/cirurgiaplasticareconstrutivaestetica"
+                        "href": "/especialidades/cirurgiaplastica"
                     },
                     {
                         "title": "Clínica Geral",
@@ -444,7 +444,7 @@
                     },
                     {
                         "title": "Medicina Geral e Familiar",
-                        "details": "A Medicina Geral e Familiar é especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
+                        "details": "A Medicina Geral e Familiar é a especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
                         "btntext": "Saber Mais",
                         "href": "/especialidades/clinicageralfamiliar"
                     },
@@ -572,13 +572,13 @@
                     },
                     {
                         "img": "especialidades/cardiologia.png",
-                        "alt": "cirurgiaplasticareconstrutivaestetica",
+                        "alt": "cirurgiaplastica",
                         "head": "Especialidades",
                         "headhref": "/especialidades",
                         "title": "Cirurgia Plástica Reconstrutiva e Estética",
-                        "href": "/especialidades/cirurgiaplasticareconstrutivaestetica",
-                        "details": "A Cirurgia Plástica tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
-                        "detailsbig": ["A Cirurgia Plástica tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético."],
+                        "href": "/especialidades/cirurgiaplastica",
+                        "details": "A Cirurgia Plástica Reconstrutiva e Estética tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético.",
+                        "detailsbig": ["A Cirurgia Plástica Reconstrutiva e Estética tem como objetivo a modificação resconstrutiva de uma parte do corpo com motivo médico ou estético."],
                         "corpoclinico": [
                             {
                                 "img": "corpoclinico/especialidades/dr-luis-cabral-icon.jpg",
@@ -613,8 +613,8 @@
                         "headhref": "/especialidades",
                         "title": "Medicina Geral e Familiar",
                         "href": "/especialidades/clinicageralfamiliar",
-                        "details": "A Medicina Geral e Familiar é especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
-                        "detailsbig": ["A Medicina Geral e Familiar é especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias."],
+                        "details": "A Medicina Geral e Familiar é a especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias.",
+                        "detailsbig": ["A Medicina Geral e Familiar é a especialidade médica que se destina a oferecer uma assistência de caráter integral, contínuo e personalizado para indivíduos, famílias e organizações comunitárias."],
                         "corpoclinico": [
                             
                         ]
