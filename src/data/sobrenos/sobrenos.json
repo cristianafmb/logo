@@ -5,7 +5,7 @@
         "backgroundtopmobile": "sobrenos/backgroundtopmobile.png",
         "backgroundfootermobile": "background-bottom-mobile.png",
         "head": "Sobre Nós",
-        "title": "A nossa prioridade será sempre o seu bem estar.",
+        "title": "A nossa prioridade será sempre o seu bem-estar.",
         "details": "A Upcare Medical Center nasceu no dia 2 de abril de 2013 com o propósito de proporcionar novos tratamentos na área da saúde. A Upcare é uma clínica multidisciplinar, da cidade de Aveiro, que conta com uma equipa de profissionais de excelência com a principal preocupação no bem-estar individual de cada paciente, em prol de resultados rápidos, eficazes e duradouros.É a pensar em cada paciente que são disponibilizadas as mais variadas  especialidades médicas e exames auxiliares de diagnóstico para, de uma forma geral, corresponder às necessidades de toda a população."
     },
     "sectionswithbanners": {
@@ -22,7 +22,7 @@
                         "href": "/especialidades/cardiologia"
                     },
                     {
-                        "title": "Cirurgia Plástica",
+                        "title": "Cirurgia Plástica e Reconstrutiva",
                         "href": "/especialidades/cirurgiaplastica"
                     },
                     {
@@ -137,7 +137,7 @@
                 "backgroundmobile": "sobrenos/examesanalises/backgroundmobile.png",
                 "img": "sobrenos/examesanalises/simbolo.png",
                 "title": "Exames & Análises",
-                "details": "Os exames médicos são essenciais para que tenhaum diagnóstico assertivo das suas doenças. Conheça os que fazemos na nossa clínica.",
+                "details": "Os exames médicos são essenciais para que tenha um diagnóstico assertivo das suas doenças. Conheça os que fazemos na nossa clínica.",
                 "especs": [
                     {
                         "title": "Análises Clínicas",

@@ -14,7 +14,7 @@ const myCustomQueries = {
 module.exports = {
   siteMetadata: {
     title: `Upcare`,
-    description: `A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. Contamos com uma equipa de profissionais de excelência que têm como principal preocupação o bem estar individual de cada paciente.`,
+    description: `A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. Contamos com uma equipa de profissionais de excelência que têm como principal preocupação o bem-estar individual de cada paciente.`,
     author: `Invisual Branding Solutions`,
     siteUrl: `https://upcare.pt`,
   },

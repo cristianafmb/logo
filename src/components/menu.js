@@ -73,6 +73,7 @@ const Menu = ({ marcacaoRef, location, opacity, setOpacity }) => {
                             <Nav.Link href="/especialidades" className={url.includes("especialidades") ? "oMedium m-auto navbar-letters  link-active" : "oMedium m-auto navbar-letters leftSide "}>Especialidades</Nav.Link>
                             <Nav.Link href="/medicinadentaria" className={url.includes("medicinadentaria") ? "oMedium m-auto navbar-letters  link-active" : "oMedium m-auto navbar-letters leftSide "}>Medicina Dentária</Nav.Link>
                             <Nav.Link href="/examesanalises" className={url.includes("examesanalises") ? "oMedium m-auto navbar-letters  link-active" : "oMedium m-auto navbar-letters  leftSide"}>Exames & Análises</Nav.Link>
+                            <Nav.Link href="/blog" className={url.includes("blog") ? "oMedium m-auto navbar-letters  link-active" : "oMedium m-auto navbar-letters  leftSide"}>Blog</Nav.Link>
                             <Nav.Link href="/contactos" className={url.includes("contactos") ? "oMedium m-auto navbar-letters  link-active" : "oMedium m-auto navbar-letters leftSide "}>Contactos</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

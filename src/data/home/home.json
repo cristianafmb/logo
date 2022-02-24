@@ -2,8 +2,8 @@
     "home": [
         {
             "head": "Medicina Dentária",
-            "subject": "Preocupamo-nos com a saúde do seu sorriso.",
-            "details": "A Medicina Dentaria é a área da saúde que previne, diagonistica e trata as doenças que afetam os detes, as gengivas e a mucosa oral.",
+            "subject": "Preocupamo-nos com a saúde do seu sorriso",
+            "details": "A Medicina Dentaria é a área da saúde que previne, diagonistica e trata as doenças que afetam os dentes, as gengivas e a mucosa oral.",
             "img": "home/01.jpg",
             "alt": "medicina-dentaria",
             "href": "/medicinadentaria",
@@ -20,7 +20,7 @@
         },
         {
             "head": "Marcação Consulta",
-            "subject": "Faça-nos uma visita. Cuide da sua saúde.",
+            "subject": "Faça-nos uma visita. Cuide da sua saúde",
             "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. ",
             "img": "home/02.jpg",
             "alt": "Marcação Consulta",
@@ -37,8 +37,8 @@
     },
     "sobre-nos": {
         "head": "Sobre Nós",
-        "subject": "A nossa prioridade será sempre o seu bem estar.",
-        "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. \n Contamos com uma equipa de profissionais de excelência que tem como principal preocupação o bem-estar individual de cada paciente. Contamos com várias especialidades médicas e exames auxiliares de diagnóstico para, de forma geral, corresponder às necessidades de toda a população.",
+        "subject": "A nossa prioridade será sempre o seu bem-estar",
+        "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. \n Contamos com uma equipa de profissionais de excelência que tem como principal preocupação o bem-estar individual de cada paciente. Contamos com várias especialidades médicas e exames auxiliares de diagnóstico para, de uma forma geral, corresponder às necessidades de toda a população.",
         "href": "/sobrenos",
         "btntext": "Saber Mais"
     },
