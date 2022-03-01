@@ -42,21 +42,21 @@ function Seo({
     "@type": "BlogPosting",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://upcare.pt${path}`,
+      "@id": `https://logo.pt${path}`,
     },
     headline: `${title}`,
     description: `${description}`,
-    image: `https://upcare.pt${img}`,
+    image: `https://logo.pt${img}`,
     author: {
       "@type": "Organization",
-      name: "Upcare",
+      name: "Logo",
     },
     publisher: {
       "@type": "Organization",
-      name: "Upcare",
+      name: "Logo",
       logo: {
         "@type": "ImageObject",
-        url: "https://upcare.pt/assets/favico.jpg",
+        url: "https://logo.pt/assets/favico.jpg",
       },
     },
     datePublished: `${date}`,

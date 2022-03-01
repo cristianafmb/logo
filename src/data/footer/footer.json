@@ -1,21 +1,21 @@
 {
     "footer": {
         "logo": "logo.png",
-        "logomobile": "mobile/menu/logo.png",
-        "logowhite": "mobile/menu/logowhite.png",
+        "logomobile": "logo.png",
+        "logowhite": "logo-white.png",
         "socialmedia": [
             {
-                "link": "https://pt-pt.facebook.com/upcaremedicalcenter/",
+                "link": "https://pt-pt.facebook.com/",
                 "icon": "footer/facebook.png",
                 "alt": "facebook"
             },
             {
-                "link": "https://www.instagram.com/upcaremedicalcenter/",
+                "link": "https://www.instagram.com/",
                 "icon": "footer/instagram.png",
                 "alt": "instagram"
             },
             {
-                "link": "https://www.linkedin.com/company/upcare-medical-center/",
+                "link": "https://www.linkedin.com/",
                 "icon": "footer/linkedin.png",
                 "alt": "linkedin"
             }
@@ -45,8 +45,8 @@
                     "link": "/sobrenos"
                 },
                 {
-                    "text": "Acordos e Parcerias",
-                    "link": "/acordos-e-parcerias"
+                    "text": "Blog",
+                    "link": "/blog"
                 }
             ],
             [
@@ -65,9 +65,9 @@
                 }
             ]
         ],
-        "copyrigths": "Upcare Medical Center 2020 - Todos os direitos reservados",
+        "copyrigths": "Logo 2022 - Todos os direitos reservados",
         "copyrightsmobile": [
-            "Upcare Medical Center ©2020",
+            "Logo ©2022",
             "Todos os direitos reservados"
         ]
     }

@@ -12,7 +12,7 @@ import Menu from '../components/menu'
 import MenuMobile from '../components/menuMobile'
 import Sobrenos from '../components/sobrenos/sobrenos'
 import SobrenosMobile from '../components/sobrenos/sobrenosMobile'
-import CorpoClinicoBlock from '../components/sobrenos/corpoclinicoblock'
+import CorpoClinico from '../components/sobrenos/corpoclinico'
 import CorpoClinicoMobile from '../components/sobrenos/corpoclinicoMobile'
 import Especialidades from '../components/sobrenos/especialidades'
 import EspecialidadesMobile from '../components/sobrenos/especialidadesMobile'
@@ -48,7 +48,7 @@ const SobreNos = ({ data, location }) => {
           </ div>
 
 
-          <CorpoClinicoBlock data={data.corpoclinicoJson.corpoclinico} marcacaoRef={marcacaoRef} />
+          <CorpoClinico data={data.corpoclinicoJson.corpoclinico} marcacaoRef={marcacaoRef} />
 
           <div className="no-repeat background-bottom position-relative" >
             <Image src={data.sobrenosJson.sobrenos.backgroundfooter} alt="bg-bottom" className="position-absolute z-index-minus-1 max-width bg-cover  height-max" />

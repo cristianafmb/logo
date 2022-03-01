@@ -29,7 +29,7 @@ const FooterMobile = ({ footer, marcacaoRef }) => {
 
             <div className="section-space-mobile center pt-4">
                 <Link to="/">
-                    <Image src={footer.logowhite} className=" mb-4 logo-upcare" alt="logo mobile" />
+                    <Image src={footer.logowhite} className=" mb-4 logo-lg" alt="logo mobile" />
                 </Link>
 
             </div>

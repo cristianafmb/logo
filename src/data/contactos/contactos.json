@@ -3,14 +3,14 @@
     "backgroundfooter": "background-bottom.png",
     "contactos": {
         "title": "Contactos",
-        "M": "+351 968 788 645",
-        "Mlink": "+351968788645",
-        "T": "+351 234 426 640",
-        "Tlink": "+351234426640"
+        "M": "+351 919 987 899",
+        "Mlink": "+351919987899",
+        "T": "+351 222 678 899",
+        "Tlink": "+351222678899"
     },
     "email": {
         "title": "E-mail",
-        "email": "geral@upcare.pt"
+        "email": "geral@logo.pt"
     },
     "horario": {
         "title": "Horário de Atendimento",
@@ -19,7 +19,7 @@
     },
     "morada": {
         "title": "Morada",
-        "rua": "Avenida Europa Mº 741 Frac. B.",
-        "cpostal": "3810-140 Aveiro"
+        "rua": "Avenida do Logo",
+        "cpostal": "3340-000 Logo"
     }
 }

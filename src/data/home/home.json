@@ -21,7 +21,7 @@
         {
             "head": "Marcação Consulta",
             "subject": "Faça-nos uma visita. Cuide da sua saúde",
-            "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. ",
+            "details": "A Logo é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. ",
             "img": "home/02.jpg",
             "alt": "Marcação Consulta",
             "href": "/marcacao",
@@ -30,15 +30,15 @@
     ],
     "testimony": {
         "quote": "Queremos ajudá-lo a cuidar da sua saúde. Um passo de cada vez.",
-        "person": "Dr. João Mano Nunes",
+        "person": "Dr. Elias Martins",
         "function": "Diretor Clínico",
-        "img": "corpoclinico/medicinadentaria/dr-joao-nunes-icon.jpg",
+        "img": "corpoclinico/dr-2-icon.png",
         "alt": "testemunho"
     },
     "sobre-nos": {
         "head": "Sobre Nós",
         "subject": "A nossa prioridade será sempre o seu bem-estar",
-        "details": "A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. \n Contamos com uma equipa de profissionais de excelência que tem como principal preocupação o bem-estar individual de cada paciente. Contamos com várias especialidades médicas e exames auxiliares de diagnóstico para, de uma forma geral, corresponder às necessidades de toda a população.",
+        "details": "A Logo é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. \n Contamos com uma equipa de profissionais de excelência que tem como principal preocupação o bem-estar individual de cada paciente. Contamos com várias especialidades médicas e exames auxiliares de diagnóstico para, de uma forma geral, corresponder às necessidades de toda a população.",
         "href": "/sobrenos",
         "btntext": "Saber Mais"
     },
@@ -72,7 +72,7 @@
         },
         {
             "title": "Marcar Consulta",
-            "details": " A Upcare Medical Center é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. Conheça o que fazemos na nossa clínica.",
+            "details": " A Logo é uma clínica multidisciplinar que proporciona novos tratamentos na área da saúde. Conheça o que fazemos na nossa clínica.",
             "button": "Pedir Marcação de Consulta",
             "href": "/",
             "img": "home/especialidades/marcar-consulta.png",
@@ -93,7 +93,7 @@
     "blog": {
         "title": "Blog",
         "head": "Saiba tudo o que está a acontecer na nossa clínica",
-        "details": "A Upcare Medical Center está em contacto com os seus utentes para que estejam informados de novidades e soluções clínicas que sejam do seu interesse.",
+        "details": "A Logo está em contacto com os seus utentes para que estejam informados de novidades e soluções clínicas que sejam do seu interesse.",
         "btntxtmobile": "Ver todas as notícias",
         "btnhref": "/blog"
     },

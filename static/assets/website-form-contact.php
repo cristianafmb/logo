@@ -27,24 +27,23 @@ if (isset($_POST)) {
         }
         // Server settings
         $mail->IsSMTP();
-        $mail->Host = "mail.upcare.pt";
+        $mail->Host = "mail.logo.pt";
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = "ssl";
         $mail->Port = 465;
-        $mail->Username = "geral@upcare.pt";
-        $mail->Password = "HZqmQWJWgOdJ";
+        $mail->Username = "geral@logo.pt";
+        $mail->Password = "tttyyyyue";
 
         // Recipients
-        $mail->setFrom('noreply@invisual.pt', 'noreply');
-        //$mail->addAddress('geral@invisual.pt', 'Contacto do website');
-        $mail->addAddress('geral@upcare.pt', 'Contacto do website');
+        $mail->setFrom('noreply@logo.pt', 'noreply');
+        $mail->addAddress('geral@logo.pt', 'Contacto do website');
         $mail->addReplyTo($useremail, $username);
 
         // Content
         $mail->CharSet = 'UTF-8';
         $mail->isHTML(true);
         $mail->WordWrap = 50;
-        $mail->Subject = "Pedido de consulta pelo website por {$username} | UpCare";
+        $mail->Subject = "Pedido de consulta pelo website por {$username} | Logo";
         $mail->Body =
 
             '<!DOCTYPE html>
@@ -61,7 +60,7 @@ if (isset($_POST)) {
         <table style="margin-bottom: 30px">
             <tr>
                 <td>
-                    <img src="https://upcare.pt/assinaturas/Upcare-Mobile.png" alt="Upcare-geral" name="Upcare-geral" usemap="#logo_inbranding" width="150" height="80" id="logo" border="0" align="bottom" />
+                    <img src="https://logo.pt/assinaturas/logo-Mobile.png" alt="Logo-geral" name="Logo-geral" usemap="#logo_inbranding" width="150" height="80" id="logo" border="0" align="bottom" />
                 </td>
             </tr>
         </table>
@@ -74,7 +73,7 @@ if (isset($_POST)) {
             </tr>
             <tr>
                 <td align="left" style="padding:0; font-size: 16px; color:#957841; ">
-                    www.upcare.pt
+                    www.logo.pt
                 </td>
             </tr>
         </table>

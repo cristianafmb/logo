@@ -39,7 +39,7 @@ const Formulario = ({ title }) => {
             }
 
             axios({
-                url: 'https://upcare.pt/assets/website-form-contact.php',
+                url: 'https://logo.pt/assets/website-form-contact.php',
                 method: 'post',
                 config: { headers: { 'Content-Type': 'multipart/form-data' } },
                 data: formData
