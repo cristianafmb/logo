@@ -1,3 +1,8 @@
+1º git clone https://github.com/cristianafmb/logo.git
+2º npm install
+3º gatsby develop
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
