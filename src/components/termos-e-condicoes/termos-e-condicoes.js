@@ -11,17 +11,14 @@ const Politica = ({ data }) => {
         TERMOS & CONDIÇÕES
       </p>
 
-      <p className="">A Upcare Medical Center, com sede na estrada Nacional 109, n.o 167
-        Distrito: Aveiro Concelho: Aveiro Freguesia: Aradas 3810 140 Aveiro, pessoa
-        coletiva número 513594949, é detentora do presente website. A utilização do
-        www.upcare.pt reconhece os termos e condições gerais abaixo enumerados
+      <p className="">A utilização do www.logo.pt reconhece os termos e condições gerais abaixo enumerados
         e descritos. A sua aceitação é absolutamente indispensável à utilização dos
         serviços e informações aqui prestados. Caso não concorde com os mesmos,
-        deverá cessar imediatamente a utilização deste Website. www.upcare.pt é
+        deverá cessar imediatamente a utilização deste Website. www.logo.pt é
         um serviço online com o objetivo de distribuir informação sobre os serviços
-        prestados pela a Upcare Medical Center, bem como divulgar e promover as
+        prestados pela a Logo, bem como divulgar e promover as
         respetivas características e condições dos mesmos.
-        À Upcare reserva-se o direito de, a qualquer momento, sem necessidade de
+        À Logo reserva-se o direito de, a qualquer momento, sem necessidade de
         aviso prévio e com efeitos imediatos, alterar, adicionar, atualizar, eliminar,
         parcial ou totalmente, os presentes Termos e Condições de Utilização e
         Política de Privacidade. Garantindo, em qualquer circunstancia, a qualidade,
@@ -39,7 +36,7 @@ const Politica = ({ data }) => {
         de formulários preenchidos para marcação de consulta serão contactados e
         informados sobre o serviço através do endereço eletrónico ou telefone
         previamente submetidos em formulários próprios. Receberão atualizações e
-        informações sobre os serviços disponíveis na Upcare, no caso de terem
+        informações sobre os serviços disponíveis na Logo, no caso de terem
         previamente aceite no respetivo registo ou formulário submetido,
         comunicação para esse efeito.</p>
       <p className="">Este Website, ou qualquer um dos nossos serviços, não deverá ser utilizado:</p>
@@ -59,11 +56,11 @@ const Politica = ({ data }) => {
             ou software) ou equipamento de telecomunicações;</p>
         </li>
         <li>
-          <p className="">De forma que possa ofender outrem ou prejudicar a Upcare,
+          <p className="">De forma que possa ofender outrem ou prejudicar a Logo,
             designadamente, enviar ou disponibilizar qualquer conteúdo ilegal,
             falso, enganoso, ameaçador, maldoso, abusivo, difamatório, injurioso,
             invasivo da privacidade, prejudicial ou ainda que possa afetar
-            negativamente a imagem ou atividade da Upcare;</p>
+            negativamente a imagem ou atividade da Logo;</p>
         </li>
         <li>
           <p className="">Para promover qualquer tipo de atividade comercial, ou enviar ou
@@ -76,22 +73,22 @@ const Politica = ({ data }) => {
       <p className="">Em geral, o Utilizador deve utilizar o Website de forma responsável, prudente
         e cuidadosa, não devendo perturbar ou danificar a continuidade ou
         integridade do mesmo.</p>
-      <p className="">A Upcare não é responsável por quaisquer danos diretos, indiretos e ou
+      <p className="">A Logo não é responsável por quaisquer danos diretos, indiretos e ou
         negligentes decorrente do uso da informação contida neste Website ou do
         próprio Website bem como da conduta prejudicial ou perturbadora do
         Utilizador.</p>
         <br />
       <p className="bold">Informações e conteúdos deste website</p>
       <p className="">Todos os conteúdos e informações publicados no presente website são da
-        responsabilidade da Upcare que zela pela veracidade e transparência dos
+        responsabilidade da Logo que zela pela veracidade e transparência dos
         mesmos. Esforçando-se para oferecer informações úteis, atualizadas e
         ajustadas à realidade. No entanto, a mesma pode não estar correta ou
         completamente atualizada. Neste sentido, não nos podemos responsabilizar
         por quaisquer ações tomadas como resultado de ou com base nas
         informações contidas ou fornecidas por este Website, seja numa ação de
-        contrato, negligência ou outra ação ilícita. Através do geral@upcare.pt
+        contrato, negligência ou outra ação ilícita. Através do geral@logo.pt
         poderá sempre enviar as suas sugestões ou erratas.
-        À Upcare está reservado o direito de mover, alterar, excluir o Website, ou
+        À Logo está reservado o direito de mover, alterar, excluir o Website, ou
         conteúdo do mesmo (incluindo o conteúdo de utilizadores registados, se o
         caso), a qualquer momento e por qualquer motivo. Deve, portanto, manter
         uma cópia de qualquer conteúdo que enviar para o Website, que deseje
@@ -99,7 +96,7 @@ const Politica = ({ data }) => {
         conteúdo a qualquer momento.
         Caso deseje reportar as suas preocupações relativas a qualquer conteúdo
         disponível neste site, por favor, envie um e-mail diretamente para
-        geral@upcare.p</p>
+        geral@Logo.p</p>
         <br />
       <p className="bold">Registo de dados</p>
       <p className="">É permitido o registo de dados de todos os utilizadores interessados em
@@ -115,7 +112,7 @@ const Politica = ({ data }) => {
         despersonalizados e não identificáveis.
         É-lhe permitido questionar os dados e poderá solicitar a eliminação dos
         dados, retificação, atualização ou completar os mesmos. Estes pedidos
-        devem ser encaminhados para geral@upcare.pt
+        devem ser encaminhados para geral@logo.pt
         Sugerimos a consulta da Política de Privacidade do presente Website.</p>
       <p className="">É permitido o registo de dados de todos os utilizadores interessados em
         receber informações ou marcar uma consulta ou serviço aqui anunciado e
@@ -130,37 +127,37 @@ const Politica = ({ data }) => {
         despersonalizados e não identificáveis.
         É-lhe permitido questionar os dados e poderá solicitar a eliminação dos
         dados, retificação, atualização ou completar os mesmos. Estes pedidos
-        devem ser encaminhados para geral@upcare.pt
+        devem ser encaminhados para geral@logo.pt
         Sugerimos a consulta da Política de Privacidade do presente Website.</p>
       <p className="">O conteúdo deste Website pode incluir Hyperlinks (hiperligações) para outros
-        Sites que não são operados pela Upcare. A Upcare não é responsável pelo
+        Sites que não são operados pela Logo. A Logo não é responsável pelo
         conteúdo de qualquer outro Website, incluindo aqueles que dêem acesso ao
         presente ou cujo acesso tenha sido conseguido através do nosso Website.
-        A Upcare não endossa quaisquer Sites vinculados ou os produtos/serviços
+        A Logo não endossa quaisquer Sites vinculados ou os produtos/serviços
         que são fornecidos nesses Sites. Os conteúdos nos sites vinculados podem
         mudar ao longo do tempo. Recomenda-se a verificação dos termos e
         políticas dos Sites vinculados.
-        Ao fornecer neste Website um hyperlink para um Website externo, a Upcare
+        Ao fornecer neste Website um hyperlink para um Website externo, a Logo
         fá-lo na boa-fé de que este contenha ou possa conter informações relevantes
         adicionais às apresentadas no seu próprio Website. A existência desse
         hyperlink não implica nem pressupõe a sua revisão e aprovação por parte da
-        Upcare - em determinadas instâncias, um hyperlink poderá levá-lo a aceder a
+        Logo - em determinadas instâncias, um hyperlink poderá levá-lo a aceder a
         um Website que apresente informação contraditória à apresentada no nosso
-        Website ou a outro pertencente à Upcare ou às suas subsidiárias.</p>
+        Website ou a outro pertencente à Logo ou às suas subsidiárias.</p>
         <br />
       <p className="bold">A Nossa Responsabilidade e Contactos</p>
-      <p className="">A Upcare não é responsável, por perdas ou danos diretos, indiretos ou
+      <p className="">A Logo não é responsável, por perdas ou danos diretos, indiretos ou
         específicos ou quaisquer outras consequências provenientes do acesso ou
         utilização deste Website, nem de qualquer informação no mesmo contida.
         Não obstante, estamos disponíveis para discutir com o utilizador as
         implicações de qualquer questão que venha a surgir, devendo contactar-nos
-        através do nosso site em geral@upcare.pt (contactos), através da morada
+        através do nosso site em geral@logo.pt (contactos), através da morada
         Estrada Nacional 109, n.o 167 Distrito: Aveiro Concelho: Aveiro Freguesia:
         Aradas 3810 140 Aveiro, do nosso telefone +351 234 426 640, ou através do
-        endereço de email geral@upcare.pt.
+        endereço de email geral@logo.pt.
         Ao aceder à nossa área de contacto, o utilizador estará a aceitar que a
         informação que nos presta, através desse contacto, passará a ser detida
-        pela Upcare, que a poderá utilizar nos termos que entender mais adequados,
+        pela Logo, que a poderá utilizar nos termos que entender mais adequados,
         não havendo lugar, em situação alguma, a qualquer direito ou pagamento a
         seu favor por essa utilização.
         Até ao limite máximo permitido por lei, todas as garantias, explícitas ou
@@ -186,7 +183,7 @@ const Politica = ({ data }) => {
         manter este Website disponível, não garantimos que o mesmo esteja
         acessível ou disponível numa base temporal constante ou que o acesso não
         seja interrompido ou isento de erros.
-        A Upcare é a entidade responsável pela recolha e tratamento de dados
+        A Logo é a entidade responsável pela recolha e tratamento de dados
         pessoais. Respeita a privacidade de todos os utilizadores e compromete-se
         em proteger todas as informações submetidas por cada utilizador em
         conformidade com a legislação nacional e comunitária em vigor.
@@ -199,7 +196,7 @@ const Politica = ({ data }) => {
         pedido de contacto e será sempre garantido, nos termos da lei, o direito de
         acesso, retificação e anulação de qualquer dado fornecido, podendo aquele
         direito ser exercido por escrito, a qualquer momento, através do emai
-        geral@upcare.pt ou clicando no link de cessação da subscrição, na parte
+        geral@logo.pt ou clicando no link de cessação da subscrição, na parte
         inferior do e-mail</p>
       <br />
       <p className="bold">Registo de dados</p>
@@ -236,8 +233,8 @@ const Politica = ({ data }) => {
       <p className="bold">Acesso aos dados pessoais</p>
       <p className="">Para solicitar esclarecimentos acerca do acesso aos dados pessoais, ou
         para o esclarecimento de questões relacionadas com a política de
-        privacidade de dados, praticada na Upcare, contacte-nos através do e-mail
-        geral@upcare.pt, ou utilize o seguinte endereço postal: Estrada Nacional
+        privacidade de dados, praticada na Logo, contacte-nos através do e-mail
+        geral@logo.pt, ou utilize o seguinte endereço postal: Estrada Nacional
         109, n.o 167 Distrito: Aveiro Concelho: Aveiro Freguesia: Aradas 3810 140
         Aveiro. Fornecer-lhe-emos uma cópia dos dados pessoais que dispomos
         sobre si num prazo máximo de 40 dias, a contar do seu pedido feito para
@@ -253,7 +250,7 @@ const Politica = ({ data }) => {
       <p className="">O utilizador poderá cessar a subscrição do seu registo a qualquer momento,
         sendo este um processo simples. Ao disponibilizar os seus dados pessoais
         no início, fornecemos-lhe os procedimentos para o seu cancelamento, quer
-        através de um link, quer através da disponibilização de um endereço de e-mail geral@upcare.pt. Ao disponibilizarmos os dados pessoais do utilizador
+        através de um link, quer através da disponibilização de um endereço de e-mail geral@logo.pt. Ao disponibilizarmos os dados pessoais do utilizador
         para propósitos diferentes dos indicados, oferecemos a oportunidade ao
         utilizador de dar a sua autorização prévia.</p>
       <br />
@@ -270,24 +267,24 @@ const Politica = ({ data }) => {
         aplicável, nomeadamente a Lei n.º 67/98, de 26/10. A legislação de proteção
         de dados está sujeita a revisão, pelo que recomendamos ao utilizador a
         consulta regular da nossa declaração de privacidade. A título meramente
-        indicativo, poderá para este efeito consultar o site upcare.pt. Este website
+        indicativo, poderá para este efeito consultar o site logo.pt. Este website
         encontra-se em conformidade com a legislação nacional e comunitária. Os
         tribunais portugueses terão jurisdição exclusiva sobre qualquer disputa
         proveniente da utilização deste website.</p>
       <br />
       <p className="bold">Hyperlinks</p>
-      <p className="">Os websites da Upcare poderão fornecer links para sites externos para sua
+      <p className="">Os websites da Logo poderão fornecer links para sites externos para sua
         conveniência e informação. Ao aceder a esses links sairá dos sites da
-        Upcare , pelo que, a Upcare não controla esses websites nem as suas
-        políticas de privacidade, que poderão ser diferentes das da Upcare Medical
+        Logo , pelo que, a Logo não controla esses websites nem as suas
+        políticas de privacidade, que poderão ser diferentes das da Logo Medical
         Center;
         Não aprova nem representa estes sites.
-        A Declaração de Privacidade da Upcare não cobre os dados pessoais
-        eventualmente cedidos pelo utilizador para sites externos à Upcare.
+        A Declaração de Privacidade da Logo não cobre os dados pessoais
+        eventualmente cedidos pelo utilizador para sites externos à Logo.
         Recomendamos-lhe que reveja as políticas de privacidade de qualquer
         companhia antes de submeter a sua informação pessoal. Algumas
         companhias externas poderão escolher partilhar a sua informação pessoal
-        com a Upcare, pelo que esta partilha será regida pela política de privacidade
+        com a Logo, pelo que esta partilha será regida pela política de privacidade
         dessa companhia</p>
     </StyledPolitica>
   )
